@@ -199,12 +199,12 @@ html body .star4 {
     transform:rotate(45deg)
 }
 
-html body .rehme-renerehme-image figure img {
+html body .kesenheimer-image figure img {
     max-width: 100%;
     height:auto
 }
 
-html body .rehme-renerehme-headline > div > h1 {
+html body .kesenheimer-headline > div > h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 36px;
@@ -216,7 +216,7 @@ html body .rehme-renerehme-headline > div > h1 {
     -webkit-text-fill-color:transparent
 }
 
-html body .rehme-renerehme-headline > div > h2 {
+html body .kesenheimer-headline > div > h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 26px;
@@ -226,7 +226,7 @@ html body .rehme-renerehme-headline > div > h2 {
     -webkit-text-fill-color:transparent
 }
 
-html body .rehme-renerehme-headline > div > h3 {
+html body .kesenheimer-headline > div > h3 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 22px;
@@ -239,11 +239,11 @@ html body .rehme-renerehme-headline > div > h3 {
     -webkit-text-fill-color:transparent
 }
 
-html body .rehme-renerehme-text {
+html body .kesenheimer-text {
     color:#e1d9ff
 }
 
-html body .rehme-renerehme-code pre {
+html body .kesenheimer-code pre {
     background: white;
     padding: 0;
     margin: 0;
@@ -252,23 +252,23 @@ html body .rehme-renerehme-code pre {
     display:flex
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post {
+html body .kesenheimer-blogoverview .blog_posts .post {
     display: flex;
     align-items: center;
     padding:11px 0px
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post .image > img {
+html body .kesenheimer-blogoverview .blog_posts .post .image > img {
     width: 60px;
     margin-right: 15px;
     filter:grayscale(50%)
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post a {
+html body .kesenheimer-blogoverview .blog_posts .post a {
     text-decoration:none
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post a h2 {
+html body .kesenheimer-blogoverview .blog_posts .post a h2 {
     margin-top: 0;
     margin-bottom: 2px;
     font-size: 26px;
@@ -276,7 +276,7 @@ html body .rehme-renerehme-blogoverview .blog_posts .post a h2 {
     color:#5f5f8c
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post.featured {
+html body .kesenheimer-blogoverview .blog_posts .post.featured {
     position: relative;
     padding: 11px 11px 11px 15px;
     background: #e9f0ff;
@@ -285,7 +285,7 @@ html body .rehme-renerehme-blogoverview .blog_posts .post.featured {
     margin-bottom:11px
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post.featured:after {
+html body .kesenheimer-blogoverview .blog_posts .post.featured:after {
     color: #86aaf1;
     font-family: "Gochi Hand", cursive;
     position: absolute;
@@ -298,15 +298,15 @@ html body .rehme-renerehme-blogoverview .blog_posts .post.featured:after {
     transform:rotate(-7deg)
 }
 
-html body .rehme-renerehme-blogoverview .blog_posts .post.featured .image > img {
+html body .kesenheimer-blogoverview .blog_posts .post.featured .image > img {
     margin:11px 15px 0px 0
 }
 
-html body .rehme-renerehme-quote {
+html body .kesenheimer-quote {
     font-family: "Roboto Mono", monospace
 }
 
-html body .rehme-renerehme-quote div {
+html body .kesenheimer-quote div {
     position: relative;
     margin: 0 0 0 60px;
     background: #4c2f90;
@@ -317,12 +317,12 @@ html body .rehme-renerehme-quote div {
 }
 
 @media only screen and (max-width: 767px) {
-    html body .rehme-renerehme-quote div {
+    html body .kesenheimer-quote div {
         margin:10px 0 0 0
     }
 }
 
-html body .rehme-renerehme-quote div:before {
+html body .kesenheimer-quote div:before {
     color: #8282ff;
     font-family: "Gochi Hand", cursive;
     position: absolute;
@@ -335,7 +335,7 @@ html body .rehme-renerehme-quote div:before {
 }
 
 @media only screen and (max-width: 767px) {
-    html body .rehme-renerehme-quote div:before {
+    html body .kesenheimer-quote div:before {
         left: -10px;
         top: -23px;
         font-size: 22px;
@@ -343,7 +343,7 @@ html body .rehme-renerehme-quote div:before {
     }
 }
 
-html body .rehme-renerehme-quote div:after {
+html body .kesenheimer-quote div:after {
     color: #8663da;
     font-family: "Gochi Hand", cursive;
     position: absolute;
@@ -356,7 +356,7 @@ html body .rehme-renerehme-quote div:after {
 }
 
 @media only screen and (max-width: 767px) {
-    html body .rehme-renerehme-quote div:after {
+    html body .kesenheimer-quote div:after {
         left: 10px;
         top: -21px;
         font-size: 19px;
@@ -364,48 +364,48 @@ html body .rehme-renerehme-quote div:after {
     }
 }
 
-html body .rehme-renerehme-quote div p {
+html body .kesenheimer-quote div p {
     margin: 0;
     font-size: 14px;
     color:white
 }
 
-html body .rehme-renerehme-quote div p a {
+html body .kesenheimer-quote div p a {
     color: #cdccff;
     border-bottom: 2px dashed #cdccff;
     text-decoration:none
 }
 
-html body .rehme-renerehme-quote div p a:hover {
+html body .kesenheimer-quote div p a:hover {
     border-bottom:2px dashed white
 }
 
-html body .rehme-renerehme-container {
+html body .kesenheimer-container {
     position: relative;
     padding-left: 15px;
     padding-right:15px
 }
 
-html body .rehme-renerehme-container.color-white .rehme-renerehme-text {
+html body .kesenheimer-container.color-white .kesenheimer-text {
     color:#252554
 }
 
-html body .rehme-renerehme-container.color-white .rehme-renerehme-text sub {
+html body .kesenheimer-container.color-white .kesenheimer-text sub {
     line-height: 19px !important;
     font-size: 12px;
     display:block
 }
 
-html body .rehme-renerehme-container.color-white .rehme-renerehme-headline div h1 {
+html body .kesenheimer-container.color-white .kesenheimer-headline div h1 {
     color:#4c2f90
 }
 
-html body .rehme-renerehme-container.color-white .inner {
+html body .kesenheimer-container.color-white .inner {
     border-radius: 3px;
     background-color:white
 }
 
-html body .rehme-renerehme-container .rotate45:after {
+html body .kesenheimer-container .rotate45:after {
     position: absolute;
     content: " ";
     display: block;
@@ -486,7 +486,7 @@ html body #wrapper #header .logo .right {
     margin-left:2px
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul {
+html body #wrapper #header .menu .kesenheimer-menu > ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -494,11 +494,11 @@ html body #wrapper #header .menu .rehme-renerehme-menu > ul {
     justify-content:center
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li {
+html body #wrapper #header .menu .kesenheimer-menu > ul > li {
     padding:0 15px 0 15px
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a {
+html body #wrapper #header .menu .kesenheimer-menu > ul > li > a {
     color: #e1d9ff;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -507,25 +507,25 @@ html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a {
     text-shadow:0px 0px 10px #202040
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:hover {
+html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:hover {
     color: white;
     padding-bottom: 2px;
     border-bottom:2px dashed
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:hover, html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:active, html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:focus {
+html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:hover, html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:active, html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:focus {
     text-decoration:none
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li.current a {
+html body #wrapper #header .menu .kesenheimer-menu > ul > li.current a {
     color:#8282ff
 }
 
-html body #wrapper #content > .neos-contentcollection .rehme-renerehme-container.color-white > .inner {
+html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
     position:relative
 }
 
-html body #wrapper #content > .neos-contentcollection .rehme-renerehme-container.color-white > .inner:before {
+html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner:before {
     position: absolute;
     content: '';
     top: -48px;
@@ -536,7 +536,7 @@ html body #wrapper #content > .neos-contentcollection .rehme-renerehme-container
 }
 
 @media only screen and (max-width: 479px) {
-    html body #wrapper #content > .neos-contentcollection .rehme-renerehme-container.color-white > .inner:before {
+    html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner:before {
         left:0
     }
 }
@@ -667,11 +667,11 @@ html body #wrapper #footer .copy {
     background:#001b23
 }
 
-html body #wrapper #footer .copy .rehme-renerehme-text {
+html body #wrapper #footer .copy .kesenheimer-text {
     color:#344b3e
 }
 
-html body #wrapper #footer .copy .rehme-renerehme-text a {
+html body #wrapper #footer .copy .kesenheimer-text a {
     color:#617277
 }
 
