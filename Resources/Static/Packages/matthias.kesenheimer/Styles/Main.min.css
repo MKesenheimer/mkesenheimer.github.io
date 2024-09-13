@@ -525,16 +525,6 @@ html body #wrapper #content > .neos-contentcollection .kesenheimer-container.col
     position:relative
 }
 
-html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner:before {
-    position: absolute;
-    content: '';
-    top: -48px;
-    left: 15px;
-    width: 64px;
-    height: 48px;
-    background: url("../Images/rene_cat.gif") no-repeat
-}
-
 @media only screen and (max-width: 479px) {
     html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner:before {
         left:0
