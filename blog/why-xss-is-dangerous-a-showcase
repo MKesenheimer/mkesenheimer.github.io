@@ -15,7 +15,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
-		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css?v=1.3.2" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
 		
 			<script type="application/ld+json">
 				{
@@ -49,7 +49,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Why XSS is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Why XSS is dangerous (a showcase)" /><meta name="twitter:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /><meta property="og:type" content="article" /><meta property="og:title" content="Why XSS is dangerous (a showcase)" /><meta property="og:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /></head><body class>
