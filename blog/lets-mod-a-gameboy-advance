@@ -7,11 +7,11 @@
 <head><meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#202040">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/mkesenheimer.github.io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/mkesenheimer.github.io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/mkesenheimer.github.io/favicon-16x16.png">
+		<link rel="manifest" href="/mkesenheimer.github.io/site.webmanifest">
+		<link rel="mask-icon" href="/mkesenheimer.github.io/safari-pinned-tab.svg" color="#202040">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
@@ -50,8 +50,8 @@
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
-    <title>Let's mod a Gameboy Advance - Blog - Matthias Kesenheimer</title><meta name="description" content="I have an IPS-V2 display installed in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="robots" content="index,follow" /><link rel="canonical" href="/index.html/blog/lets-mod-a-gameboy-advance" />
-<link rel="alternate" hreflang="x-default" href="/index.html/blog/lets-mod-a-gameboy-advance" /><link rel="alternate" hreflang="de" href="/index.html/blog/lets-mod-a-gameboy-advance" />
+    <title>Let's mod a Gameboy Advance - Blog - Matthias Kesenheimer</title><meta name="description" content="I have an IPS-V2 display installed in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="robots" content="index,follow" /><link rel="canonical" href="/mkesenheimer.github.io/index.html/blog/lets-mod-a-gameboy-advance" />
+<link rel="alternate" hreflang="x-default" href="/mkesenheimer.github.io/index.html/blog/lets-mod-a-gameboy-advance" /><link rel="alternate" hreflang="de" href="/mkesenheimer.github.io/index.html/blog/lets-mod-a-gameboy-advance" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Let's mod a Gameboy Advance" /><meta name="twitter:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="twitter:image" content="_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta name="twitter:url" content="/index.html/blog/lets-mod-a-gameboy-advance" /><meta property="og:type" content="article" /><meta property="og:title" content="Let's mod a Gameboy Advance" /><meta property="og:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta property="og:image" content="_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="lets_mod_graph.jpg" /><meta property="og:url" content="/index.html/blog/lets-mod-a-gameboy-advance" /></head><body class>
 	<div id="wrapper">
 		<div id="header">
@@ -69,17 +69,17 @@
 
 
 <li class="">
-    <a href="/about-me">Über mich</a>
+    <a href="/mkesenheimer.github.io/about-me">Über mich</a>
 </li>
 
 
 <li class="current">
-    <a href="/">Blog</a>
+    <a href="/mkesenheimer.github.io/">Blog</a>
 </li>
 
 
 <li class="">
-    <a href="/contact">Kontakt</a>
+    <a href="/mkesenheimer.github.io/contact">Kontakt</a>
 </li></ul></nav>
             </div>
 		</div>
@@ -252,7 +252,7 @@
 			<div class="footer_scene">
 				<div class="inner">
 					<div class="bg_image"></div>
-					<a class="char" href="/world">
+					<a class="char" href="/mkesenheimer.github.io/world">
 						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
@@ -267,7 +267,7 @@
 					<div class="neos-contentcollection">
 <div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
-<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+<a href="/mkesenheimer.github.io/impressum">Impressum</a> | <a href="/mkesenheimer.github.io/datenschutz">Datenschutz</a></p>
 </div>
 </div></div>
 				</div>

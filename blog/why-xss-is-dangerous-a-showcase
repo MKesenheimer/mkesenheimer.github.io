@@ -7,11 +7,11 @@
 <head><meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#202040">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/mkesenheimer.github.io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/mkesenheimer.github.io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/mkesenheimer.github.io/favicon-16x16.png">
+		<link rel="manifest" href="/mkesenheimer.github.io/site.webmanifest">
+		<link rel="mask-icon" href="/mkesenheimer.github.io/safari-pinned-tab.svg" color="#202040">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
@@ -50,8 +50,8 @@
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
-    <title>Why XSS is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="/index.html/blog/why-xss-is-dangerous-a-showcase" />
-<link rel="alternate" hreflang="x-default" href="/index.html/blog/why-xss-is-dangerous-a-showcase" /><link rel="alternate" hreflang="de" href="/index.html/blog/why-xss-is-dangerous-a-showcase" />
+    <title>Why XSS is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" />
+<link rel="alternate" hreflang="x-default" href="/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /><link rel="alternate" hreflang="de" href="/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Why XSS is dangerous (a showcase)" /><meta name="twitter:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="twitter:image" content="_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta name="twitter:url" content="/index.html/blog/why-xss-is-dangerous-a-showcase" /><meta property="og:type" content="article" /><meta property="og:title" content="Why XSS is dangerous (a showcase)" /><meta property="og:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta property="og:image" content="_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:url" content="/index.html/blog/why-xss-is-dangerous-a-showcase" /></head><body class>
 	<div id="wrapper">
 		<div id="header">
@@ -69,17 +69,17 @@
 
 
 <li class="">
-    <a href="/about-me">Über mich</a>
+    <a href="/mkesenheimer.github.io/about-me">Über mich</a>
 </li>
 
 
 <li class="current">
-    <a href="/">Blog</a>
+    <a href="/mkesenheimer.github.io/">Blog</a>
 </li>
 
 
 <li class="">
-    <a href="/contact">Kontakt</a>
+    <a href="/mkesenheimer.github.io/contact">Kontakt</a>
 </li></ul></nav>
             </div>
 		</div>
@@ -307,7 +307,7 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 			<div class="footer_scene">
 				<div class="inner">
 					<div class="bg_image"></div>
-					<a class="char" href="/world">
+					<a class="char" href="/mkesenheimer.github.io/world">
 						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
@@ -322,7 +322,7 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 					<div class="neos-contentcollection">
 <div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
-<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+<a href="/mkesenheimer.github.io/impressum">Impressum</a> | <a href="/mkesenheimer.github.io/datenschutz">Datenschutz</a></p>
 </div>
 </div></div>
 				</div>
