@@ -14,8 +14,8 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
-		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css?v=1.3.2" />
 		
 			<script type="application/ld+json">
 				{
@@ -23,7 +23,7 @@
 					"@type": "BlogPosting",
 					"headline": "How I created an action role-playing game",
 					"image": [
-						"https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+						"https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 					],
 					"author" :{
 						"@type": "Person",
@@ -38,18 +38,18 @@
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
-							"url":"https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+							"url":"https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 						}
 					}
 				}
 			</script>
 		
 	
-		<script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+		<script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
     <title>How I created an action role-playing game (RPG)</title><meta name="description" content="I created an Action RPG on my website where the visitor can play and explore the website's content. Read interesting things that I faced while developing." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/how-i-created-a-action-role-playing-game" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/how-i-created-a-action-role-playing-game" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/how-i-created-a-action-role-playing-game" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="How I created an action role-playing game" /><meta name="twitter:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/how-i-created-a-action-role-playing-game" /><meta property="og:type" content="article" /><meta property="og:title" content="How I created an action role-playing game" /><meta property="og:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_game.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/how-i-created-a-action-role-playing-game" /></head><body class>
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="rehme-renerehme-menu"><ul>
@@ -370,7 +370,7 @@ Management</h3>
 			<div>namespace Rehme\Renerehme\Controller;
 
 /*
- * This file is part of the Rehme.Renerehme package.
+ * This file is part of the matthias.kesenheimer package.
  */
 
 use Rehme\Renerehme\Domain\Repository\GameSettingsRepository;
@@ -451,7 +451,7 @@ class GameController extends ActionController
 			<div>namespace Rehme\Renerehme\Domain\Model;
 
 /*
- * This file is part of the Rehme.Renerehme package.
+ * This file is part of the matthias.kesenheimer package.
  */
 
 use Doctrine\ORM\Mapping as ORM;
@@ -539,7 +539,7 @@ class GameJson
 			<div>namespace Rehme\Renerehme\Command;
 
 /*
- * This file is part of the Rehme.Renerehme package.
+ * This file is part of the matthias.kesenheimer package.
  */
 
 use Rehme\Renerehme\Domain\Repository\GameSettingsRepository;
@@ -660,23 +660,23 @@ class GameCommandController extends CommandController
 		<code class="language-php">
 			<div>privilegeTargets:
   Neos\Neos\Security\Authorization\Privilege\ModulePrivilege:
-    'Rehme.Renerehme:GameBackendModule':
+    'matthias.kesenheimer:GameBackendModule':
       matcher: 'management/gamemodule'
   Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
-    'Rehme.Renerehme:Api':
+    'matthias.kesenheimer:Api':
       matcher: 'method(Rehme\Renerehme\Controller\ApiController->.*Action())'
 
 roles:
   'Neos.Neos:Editor':
     privileges:
       -
-        privilegeTarget: 'Rehme.Renerehme:GameBackendModule'
+        privilegeTarget: 'matthias.kesenheimer:GameBackendModule'
         permission: GRANT
 
   'Neos.Flow:Everybody':
     privileges:
       -
-        privilegeTarget: 'Rehme.Renerehme:Api'
+        privilegeTarget: 'matthias.kesenheimer:Api'
         permission: GRANT</div>
 		</code>
 	</pre>
@@ -694,7 +694,7 @@ roles:
   name: 'get interactions'
   uriPattern: 'api/getgameinteractions.{@format}'
   defaults:
-    '@package': 'Rehme.Renerehme'
+    '@package': 'matthias.kesenheimer'
     '@controller': 'Api'
     '@action': 'getGameInteractionJson'
     '@format': 'json'
@@ -703,7 +703,7 @@ roles:
   name: 'get quests'
   uriPattern: 'api/getgamequests.{@format}'
   defaults:
-    '@package': 'Rehme.Renerehme'
+    '@package': 'matthias.kesenheimer'
     '@controller': 'Api'
     '@action': 'getGameQuestJson'
     '@format': 'json'
@@ -712,7 +712,7 @@ roles:
   name: 'get maps'
   uriPattern: 'api/getgamemaps.{@format}'
   defaults:
-    '@package': 'Rehme.Renerehme'
+    '@package': 'matthias.kesenheimer'
     '@controller': 'Api'
     '@action': 'getGameMapsJson'
     '@format': 'json'</div>
@@ -800,7 +800,7 @@ public function getHtmlByIdentifierAction(string $identifier): string
             // check if the node is a Post or Page nodeType
             $documentName = $documentNode->getNodeType()->getName();
 
-            if($documentName == 'Rehme.Renerehme:Post' || $documentName == 'Rehme.Renerehme:Page') {
+            if($documentName == 'matthias.kesenheimer:Post' || $documentName == 'matthias.kesenheimer:Page') {
                 // get the main path from child nodes
                 $childNodes = $documentNode->getChildNodes();
                 $mainPath = $childNodes[0];
@@ -837,7 +837,7 @@ public function getHtmlByIdentifierAction(string $identifier): string
   name: 'get rendered html'
   uriPattern: 'api/getcontentbyid'
   defaults:
-    '@package': 'Rehme.Renerehme'
+    '@package': 'matthias.kesenheimer'
     '@controller': 'Api'
     '@action': 'getHtmlByIdentifier'
     '@format': ''</div>
@@ -851,9 +851,9 @@ public function getHtmlByIdentifierAction(string $identifier): string
 <div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
 	<pre class="line-numbers">
 		<code class="language-php">
-			<div>'Rehme.Renerehme:Game':
+			<div>'matthias.kesenheimer:Game':
   superTypes:
-    'Rehme.Renerehme:Page': TRUE
+    'matthias.kesenheimer:Page': TRUE
   ui:
     label: 'Game'
     inspector:
@@ -925,7 +925,7 @@ public function getHtmlByIdentifierAction(string $identifier): string
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
