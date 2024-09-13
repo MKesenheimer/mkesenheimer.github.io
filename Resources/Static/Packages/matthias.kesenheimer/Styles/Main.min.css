@@ -208,10 +208,10 @@ html body .kesenheimer-headline > div > h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 36px;
-    background: -webkit-linear-gradient(left, #8282ff, #8663da);
-    background: -o-linear-gradient(right, #8282ff, #8663da);
-    background: -moz-linear-gradient(right, #8282ff, #8663da);
-    background: linear-gradient(to right, #8282ff, #8663da);
+    background: -webkit-linear-gradient(left, #f53b3b, #bd503d);
+    background: -o-linear-gradient(right, #f53b3b, #bd503d);
+    background: -moz-linear-gradient(right, #f53b3b, #bd503d);
+    background: linear-gradient(to right, #f53b3b, #bd503d);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent
 }
@@ -310,8 +310,8 @@ html body .kesenheimer-quote div {
     position: relative;
     margin: 0 0 0 60px;
     background: #4c2f90;
-    background: -webkit-linear-gradient(to right, #8282ff, #8663da);
-    background: linear-gradient(to right, #8282ff, #8663da);
+    background: -webkit-linear-gradient(to right, #bd503d, #8663da);
+    background: linear-gradient(to right, #bd503d, #8663da);
     padding: 14px 16px 14px 22px;
     border-radius:3px
 }
@@ -323,7 +323,7 @@ html body .kesenheimer-quote div {
 }
 
 html body .kesenheimer-quote div:before {
-    color: #8282ff;
+    color: #bd503d;
     font-family: "Gochi Hand", cursive;
     position: absolute;
     left: -59px;
@@ -453,7 +453,7 @@ html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:hover, html bod
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > ul > li.current a {
-    color:#8282ff
+    color:#bd503d
 }
 
 html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
