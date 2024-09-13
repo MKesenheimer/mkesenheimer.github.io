@@ -14,8 +14,8 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
-		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
 		
 			<script type="application/ld+json">
 				{
@@ -23,7 +23,7 @@
 					"@type": "BlogPosting",
 					"headline": "#1SecFailEverySecondDay",
 					"image": [
-						"https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
+						"https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 					],
 					"author" :{
 						"@type": "Person",
@@ -38,21 +38,21 @@
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
-							"url":"https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
+							"url":"https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 						}
 					}
 				}
 			</script>
 		
 	
-		<script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
-    <title>#1SecFailEverySecondDay - Blog - Matthias Kesenheimer</title><meta name="description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" />
-<link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" />
-<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="#1SecFailEverySecondDay" /><meta name="twitter:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9bc3b5871b47050a6f099b8cfb602da5ae305cfb/card-2000x1410.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /><meta property="og:type" content="article" /><meta property="og:title" content="#1SecFailEverySecondDay" /><meta property="og:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9041cc5a48f8f49996284fd5cc455bf420ab3d13/card-2560x1805.jpg" /><meta property="og:image:width" content="3163" /><meta property="og:image:height" content="2230" /><meta property="og:image:alt" content="card.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /></head><body class>
+		<script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>#1SecFailEverySecondDay - Blog - Matthias Kesenheimer</title><meta name="description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/1-sec-fail-every-second-day" />
+<link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/1-sec-fail-every-second-day" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/1-sec-fail-every-second-day" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="#1SecFailEverySecondDay" /><meta name="twitter:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="twitter:image" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/9bc3b5871b47050a6f099b8cfb602da5ae305cfb/card-2000x1410.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/1-sec-fail-every-second-day" /><meta property="og:type" content="article" /><meta property="og:title" content="#1SecFailEverySecondDay" /><meta property="og:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta property="og:image" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/9041cc5a48f8f49996284fd5cc455bf420ab3d13/card-2560x1805.jpg" /><meta property="og:image:width" content="3163" /><meta property="og:image:height" content="2230" /><meta property="og:image:alt" content="card.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/1-sec-fail-every-second-day" /></head><body class>
 	<div id="wrapper">
 		<div id="header">
 			<div class="stripes">
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -470,7 +470,7 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
 
 		
 				
-	<img src="https://mkesenheimer.github.io/_Resources/Persistent/91f1f88128a38be8432a06b088ad185767c1fe93/ionos-1025x875.png" width="1025" height="875" />
+	<img src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/91f1f88128a38be8432a06b088ad185767c1fe93/ionos-1025x875.png" width="1025" height="875" />
 
 			
 	
@@ -525,7 +525,7 @@ Enthalten waren z.B.:</p>
 
 		
 				
-	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/_Resources/Persistent/49c55cba5da92da1518f6c9d1cb0156d6f343e52/2024-01-05_22-53.png" width="1703" height="1526" />
+	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/49c55cba5da92da1518f6c9d1cb0156d6f343e52/2024-01-05_22-53.png" width="1703" height="1526" />
 
 			
 	
@@ -542,7 +542,7 @@ Enthalten waren z.B.:</p>
 
 		
 				
-	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/_Resources/Persistent/ffaaa9a1ca7832802658466c66a166d29f8d16d5/2024-01-05_22-56.png" width="1027" height="1046" />
+	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/ffaaa9a1ca7832802658466c66a166d29f8d16d5/2024-01-05_22-56.png" width="1027" height="1046" />
 
 			
 	
@@ -633,7 +633,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 
 		
 				
-	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/_Resources/Persistent/36ca709416115259cc21f9881e82bc094cda49a8/datenschutzbeauftragter_geld.png" width="1262" height="1627" />
+	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/36ca709416115259cc21f9881e82bc094cda49a8/datenschutzbeauftragter_geld.png" width="1262" height="1627" />
 
 			
 	
@@ -654,7 +654,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 
 		
 				
-	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/_Resources/Persistent/84d653ff76b34ec8c4277821e9503821143c841e/datenschutzbeauftragter_geld.png" width="2202" height="1244" />
+	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/84d653ff76b34ec8c4277821e9503821143c841e/datenschutzbeauftragter_geld.png" width="2202" height="1244" />
 
 			
 	
@@ -674,7 +674,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 
 		
 				
-	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/_Resources/Persistent/4ef98496aa131204041015f721c013a00f1c6551/waiting.png" width="862" height="505" />
+	<img title="Intranet" alt="Intranet" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/4ef98496aa131204041015f721c013a00f1c6551/waiting.png" width="862" height="505" />
 
 			
 	
@@ -726,7 +726,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 		
 				<a href="https://www.br.de/nachrichten/bayern/cyberangriffe-auf-kommunen-in-einer-minute-war-ich-im-system">
 					
-	<img src="https://mkesenheimer.github.io/_Resources/Persistent/949471cf1d6542920db3d4dc6265111fcb1e1fba/2024-01-11_15-25-1514x674.png" width="1514" height="674" />
+	<img src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/949471cf1d6542920db3d4dc6265111fcb1e1fba/2024-01-11_15-25-1514x674.png" width="1514" height="674" />
 
 				</a>
 			
@@ -790,7 +790,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 </div>
 </div>
 <div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
-	<div><p>Eine vulnerable Third-Party Komponente, welche Sicherheitslücken eröffnet, wird bei jedem (!) System Türen für Angreifer öffnen. Ich <a href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen">untersuche nun seit drei Jahren</a> immer wieder kommunale Webapplikationen und muss unter dem Strich feststellen, dass so gut wie nie das zugrundeliegende System an sich vulnerabel ist, sondern entweder Fehlkonfigurationen oder Eigenentwicklungen in Form von Erweiterungen, Plugins bzw. Extensions durch die jeweiligen Dienstleister, welche Sicherheitslücken eröffneten.</p>
+	<div><p>Eine vulnerable Third-Party Komponente, welche Sicherheitslücken eröffnet, wird bei jedem (!) System Türen für Angreifer öffnen. Ich <a href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/informationssicherheit-in-den-kommunen">untersuche nun seit drei Jahren</a> immer wieder kommunale Webapplikationen und muss unter dem Strich feststellen, dass so gut wie nie das zugrundeliegende System an sich vulnerabel ist, sondern entweder Fehlkonfigurationen oder Eigenentwicklungen in Form von Erweiterungen, Plugins bzw. Extensions durch die jeweiligen Dienstleister, welche Sicherheitslücken eröffneten.</p>
 </div>
 </div>
 
@@ -835,7 +835,7 @@ Achja. Sollte Ihnen jemand Wordpress andrehen wollen, dann verbannen Sie das Ang
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -856,4 +856,4 @@ Achja. Sollte Ihnen jemand Wordpress andrehen wollen, dann verbannen Sie das Ang
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-wmaycdh5qflf6@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-wmaycdh5qflf6@live;language=de" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
