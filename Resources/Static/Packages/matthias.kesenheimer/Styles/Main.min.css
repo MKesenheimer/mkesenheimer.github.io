@@ -535,25 +535,6 @@ html body #wrapper #footer {
     position:relative
 }
 
-html body #wrapper #footer .footer_top {
-    padding:0 15px
-}
-
-html body #wrapper #footer .footer_top .bg_image {
-    background-image: url("../Images/footer_top.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: contain;
-    height: 210px;
-    width:100%
-}
-
-@media only screen and (max-width: 479px) {
-    html body #wrapper #footer .footer_top .bg_image {
-        background-image: url("../Images/footer_top_m.png")
-    }
-}
-
 html body #wrapper #footer .footer_bottom .parallax {
     position:relative
 }
