@@ -18,11 +18,11 @@
 		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
 		
 	
-		<script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Kontakt - Matthias Kesenheimer</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/contact" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/contact" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/contact" />
 </head><body class>
@@ -34,8 +34,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -86,10 +86,10 @@
 	<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>
 	  <b>Privat</b>: <a href='mailto&#58;c%6Fnt&#97;%6&#51;&#116;&#64;%72e&#37;&#54;E&#101;re%68%6De&#46;d%&#54;5'>c&#111;n&#116;act&#64;renere&#104;&#109;&#101;&#46;de</a><br>
-	  Ende-zu-Ende verschlüsselt senden? [<a href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/fd24c869fb8a879a4713428ed19ae8ce0313232b/publickey.contact%40renerehme.de-dd3a483e907b7c69ae93031d011937ac1859cd6b.asc" target="_blank">PGP</a>]
+	  Ende-zu-Ende verschlüsselt senden? [<a href="_Resources/Persistent/fd24c869fb8a879a4713428ed19ae8ce0313232b/publickey.contact%40renerehme.de-dd3a483e907b7c69ae93031d011937ac1859cd6b.asc" target="_blank">PGP</a>]
 <br><br>
 	  <b>Presse</b>: <a href='ma&#105;lto&#58;m%61nag&#101;me&#110;t%40&#114;%65&#110;e&#114;&#101;&#104;%&#54;D%6&#53;&#46;&#100;e'>mana&#103;ement&#64;&#114;ene&#114;e&#104;me&#46;d&#101;</a><br>
-	  Ende-zu-Ende verschlüsselt senden? [<a href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/1978fd62e5c526506869bdb0423ecf465a7ad6e6/publickey.management%40renerehme.de-fd5b7b1935583f5448cc0d175f17f6bb645e622b.asc" target="_blank">PGP</a>]
+	  Ende-zu-Ende verschlüsselt senden? [<a href="_Resources/Persistent/1978fd62e5c526506869bdb0423ecf465a7ad6e6/publickey.management%40renerehme.de-fd5b7b1935583f5448cc0d175f17f6bb645e622b.asc" target="_blank">PGP</a>]
 	  </p>
 </div>
 </div>
@@ -126,7 +126,7 @@
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -147,4 +147,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-edo8ys1kleoq9@live;language=de" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-edo8ys1kleoq9@live;language=de" src="_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

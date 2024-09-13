@@ -23,7 +23,7 @@
 					"@type": "BlogPosting",
 					"headline": "Why XSS is dangerous (a showcase)",
 					"image": [
-						"https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
+						"_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 					],
 					"author" :{
 						"@type": "Person",
@@ -38,21 +38,21 @@
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
-							"url":"https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
+							"url":"_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png"
 						}
 					}
 				}
 			</script>
 		
 	
-		<script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Why XSS is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" />
-<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Why XSS is dangerous (a showcase)" /><meta name="twitter:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="twitter:image" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta name="twitter:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /><meta property="og:type" content="article" /><meta property="og:title" content="Why XSS is dangerous (a showcase)" /><meta property="og:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta property="og:image" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /></head><body class>
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Why XSS is dangerous (a showcase)" /><meta name="twitter:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="twitter:image" content="_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta name="twitter:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /><meta property="og:type" content="article" /><meta property="og:title" content="Why XSS is dangerous (a showcase)" /><meta property="og:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta property="og:image" content="_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/why-xss-is-dangerous-a-showcase" /></head><body class>
 	<div id="wrapper">
 		<div id="header">
 			<div class="stripes">
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -167,7 +167,7 @@
 
 		
 				
-	<img title="proof of concept" alt="proof of concept" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/87ecd5ff8b0ba9fb748ad70e52f1cd876ccab3c7/semicolin_postig.gif" width="2086" height="1236" />
+	<img title="proof of concept" alt="proof of concept" src="_Resources/Persistent/87ecd5ff8b0ba9fb748ad70e52f1cd876ccab3c7/semicolin_postig.gif" width="2086" height="1236" />
 
 			
 	
@@ -221,7 +221,7 @@
 
 		
 				
-	<img src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/08a02f975b3d69772b4d91a093af038f205ac76b/attack.png" width="1268" height="629" />
+	<img src="_Resources/Persistent/08a02f975b3d69772b4d91a093af038f205ac76b/attack.png" width="1268" height="629" />
 
 			
 	
@@ -256,7 +256,7 @@
 
 		
 				
-	<img src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Persistent/7a1f9e46c9c07443437e8a54d3191a0c352d70fb/console_semicolon.png" width="780" height="172" />
+	<img src="_Resources/Persistent/7a1f9e46c9c07443437e8a54d3191a0c352d70fb/console_semicolon.png" width="780" height="172" />
 
 			
 	
@@ -308,7 +308,7 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -329,4 +329,4 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-ypkaffjt1p20z@live;language=de" src="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-ypkaffjt1p20z@live;language=de" src="_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
