@@ -574,13 +574,13 @@ html body #wrapper #footer .footer_bottom .parallax .layer.layer1 {
 html body #wrapper #footer .footer_bottom .parallax .layer.layer2 {
     background-image: url("../Images/bottom_footer_layer02.png");
     background-repeat: repeat-x;
-    animation:movebg 30s infinite linear
+    animation:movebg 70s infinite linear
 }
 
 html body #wrapper #footer .footer_bottom .parallax .layer.layer3 {
     background-image: url("../Images/bottom_footer_layer03.png");
     background-repeat: repeat-x;
-    animation:movebg 20s infinite linear
+    animation:movebg 70s infinite linear
 }
 
 html body #wrapper #footer .footer_scene {
