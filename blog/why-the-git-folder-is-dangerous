@@ -45,11 +45,11 @@
 			</script>
 		
 	
-		<script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Why the .git folder is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="robots" content="index,follow" /><link rel="canonical" href="/mkesenheimer.github.io/index.html/blog/why-the-git-folder-is-dangerous" />
 <link rel="alternate" hreflang="x-default" href="/mkesenheimer.github.io/index.html/blog/why-the-git-folder-is-dangerous" /><link rel="alternate" hreflang="de" href="/mkesenheimer.github.io/index.html/blog/why-the-git-folder-is-dangerous" />
 </head><body class>
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -167,7 +167,7 @@
 
 		
 				
-	<img title="Index of /.git" alt="Index of /.git" src="/_Resources/Persistent/5c29b2c8347e340c1d90aba2c4df9a89dfe435c8/git-folder-647x541.png" width="647" height="541" />
+	<img title="Index of /.git" alt="Index of /.git" src="/mkesenheimer.github.io/_Resources/Persistent/5c29b2c8347e340c1d90aba2c4df9a89dfe435c8/git-folder-647x541.png" width="647" height="541" />
 
 			
 	
@@ -189,7 +189,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="/_Resources/Persistent/d2dd32a11a9b8519f16b63749183ab3fd8c3eff2/expose_gittools.png" width="1226" height="292" />
+	<img title="censored data" alt="censored data" src="/mkesenheimer.github.io/_Resources/Persistent/d2dd32a11a9b8519f16b63749183ab3fd8c3eff2/expose_gittools.png" width="1226" height="292" />
 
 			
 	
@@ -218,7 +218,7 @@
 
 		
 				
-	<img title="source code" alt="source code" src="/_Resources/Persistent/ad4f3bdd5ee5038377898bd004ede6b2ef2aeee6/creds-789x94.png" width="789" height="94" />
+	<img title="source code" alt="source code" src="/mkesenheimer.github.io/_Resources/Persistent/ad4f3bdd5ee5038377898bd004ede6b2ef2aeee6/creds-789x94.png" width="789" height="94" />
 
 			
 	
@@ -242,7 +242,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="/_Resources/Persistent/8bb8de3e9089fa37127a71adffee6f3aff648aeb/customer.png" width="1859" height="509" />
+	<img title="censored data" alt="censored data" src="/mkesenheimer.github.io/_Resources/Persistent/8bb8de3e9089fa37127a71adffee6f3aff648aeb/customer.png" width="1859" height="509" />
 
 			
 	
@@ -275,7 +275,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="/_Resources/Persistent/083ce1f88891a682aafaebf26ddd4587e12c5649/database-828x109.png" width="828" height="109" />
+	<img title="censored data" alt="censored data" src="/mkesenheimer.github.io/_Resources/Persistent/083ce1f88891a682aafaebf26ddd4587e12c5649/database-828x109.png" width="828" height="109" />
 
 			
 	
@@ -337,7 +337,7 @@
 
 		
 				
-	<img title="shoot the messenger" alt="shoot the messenger" src="/_Resources/Persistent/861b79699bf1569bc0639ee19162efff16049e08/iRT.gif" width="250" height="275" />
+	<img title="shoot the messenger" alt="shoot the messenger" src="/mkesenheimer.github.io/_Resources/Persistent/861b79699bf1569bc0639ee19162efff16049e08/iRT.gif" width="250" height="275" />
 
 			
 	
@@ -375,7 +375,7 @@
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/mkesenheimer.github.io/world">
-						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -396,4 +396,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-16lrgl89esk1g@live;language=de" src="/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-16lrgl89esk1g@live;language=de" src="/mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
