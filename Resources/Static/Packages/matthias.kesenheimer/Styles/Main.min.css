@@ -309,9 +309,9 @@ html body .kesenheimer-quote {
 html body .kesenheimer-quote div {
     position: relative;
     margin: 0 0 0 60px;
-    background: #4c2f90;
-    background: -webkit-linear-gradient(to right, #bd503d, #8663da);
-    background: linear-gradient(to right, #bd503d, #8663da);
+    background: #bd503d;
+    background: -webkit-linear-gradient(to right, #f53b3b, #bd503d);
+    background: linear-gradient(to right, #f53b3b, #bd503d);
     padding: 14px 16px 14px 22px;
     border-radius:3px
 }
