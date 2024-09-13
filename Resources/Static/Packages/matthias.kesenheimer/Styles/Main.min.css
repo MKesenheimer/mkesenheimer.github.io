@@ -117,7 +117,7 @@ html {
 html body {
     color: #e1d9ff;
     height: 100%;
-    background: #202040;
+    background: #002241;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     overflow-x:hidden
@@ -160,7 +160,7 @@ html body .controls .btn-success {
 }
 
 html body .controls .btn-success:hover {
-    background:#202040
+    background:#002241
 }
 
 html body .star1 {
@@ -439,7 +439,7 @@ html body #wrapper #header .menu .kesenheimer-menu > ul > li > a {
     font-family: "Roboto Mono", monospace;
     letter-spacing: 1.3px;
     text-transform: uppercase;
-    text-shadow:0px 0px 10px #202040
+    text-shadow:0px 0px 10px #002241
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > ul > li > a:hover {
