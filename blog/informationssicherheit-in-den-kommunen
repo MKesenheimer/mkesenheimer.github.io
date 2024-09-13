@@ -1,0 +1,1218 @@
+<!DOCTYPE html><html lang="en"><!--
+	This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL.
+	Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.
+
+	More information and contribution opportunities at https://www.neos.io
+-->
+<head><meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		
+			<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "BlogPosting",
+					"headline": "IT-Sicherheit in deutschen Kommunen. Let&#039;s check vulnerabilities!",
+					"image": [
+						"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+					],
+					"author" :{
+						"@type": "Person",
+						"name":"Rene Rehme",
+						"email":"contact@renerehme.de"
+					},
+					"datePublished": "2022-10-26T11:34:51+02:00",
+					"dateModified": "2022-12-15T11:40:23+01:00",
+					"publisher" : {
+						"@type": "Organization",
+						"name":"Rene Rehme",
+						"url":"https:\/\/renerehme.de",
+						"logo":{
+							"@type":"ImageObject",
+							"url":"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+						}
+					}
+				}
+			</script>
+		
+	
+		<script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+    <title>IT-Sicherheit in deutschen Kommunen. Let's check vulnerabilities! - Blog - Rene Rehme</title><meta name="description" content="Informationssicherheit in den Kommunen - Wie sicher sind unsere Daten?" /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://renerehme.dev/blog/informationssicherheit-in-den-kommunen" />
+<link rel="alternate" hreflang="x-default" href="https://renerehme.dev/blog/informationssicherheit-in-den-kommunen" /><link rel="alternate" hreflang="de" href="https://renerehme.dev/blog/informationssicherheit-in-den-kommunen" />
+<meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@renereh1" /><meta name="twitter:title" content="Informationssicherheit in den Kommunen" /><meta name="twitter:description" content="Wie sicher sind unsere Daten?" /><meta name="twitter:image" content="https://renerehme.dev/_Resources/Persistent/9bc3b5871b47050a6f099b8cfb602da5ae305cfb/card-2000x1410.jpg" /><meta name="twitter:url" content="https://renerehme.dev/blog/informationssicherheit-in-den-kommunen" /></head><body class>
+	<div id="wrapper">
+		<div id="header">
+			<div class="stripes">
+				<span class="stripe el1"></span>
+				<span class="stripe el2"></span>
+				<span class="stripe el3"></span>
+			</div>
+            <div class="logo">
+				<img height="119" width="119" class="left" alt="logo left" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+            </div>
+            <div class="menu">
+                <nav class="rehme-renerehme-menu"><ul>
+
+
+<li class="">
+    <a href="/about-me">Über mich</a>
+</li>
+
+
+<li class="current">
+    <a href="/">Blog</a>
+</li>
+
+
+<li class="">
+    <a href="/contact">Kontakt</a>
+</li></ul></nav>
+            </div>
+		</div>
+
+		<section id="content">
+			<div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+	<div><h1 style="text-align:center">&nbsp;Informationssicherheit in den Kommunen</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p style="text-align:center">Wie sicher sind unsere Daten?</p>
+</div>
+</div></div>
+    </div>
+</div>
+
+<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Ich habe deutsche Kommunen auf Schwachstellen überprüft</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>In diesem Artikel zeige ich auf, wie mit einfachsten Methoden Schwachstellen und Datenabflüsse bei deutschen Kommunen / Städten aufzudecken waren. Über 3 Monate hinweg habe ich Server / Applikationen überprüft und dabei so einiges gefunden. Darunter massive Datenabflüsse von E-Mails und Anhängen, persönliche Dokumente (z.B. Personalausweise, Anträge etc.), allg. Schriftverkehr mit Bürgern, Log-Files mit sensiblen Daten, Zugang zu diversen Datenbanken, Zugang zu Intranet-Plattformen und viele weitere Schwachstellen, die ich zum Teil (aktuell) gar nicht aufzeigen kann, weil das&nbsp;Responsible Disclosure in vielen Fällen noch im Gange ist oder noch nicht bearbeitet wurde.</p>
+</div>
+</div><div class="neos-nodetypes-html">
+	<div class="rehme-renerehme-warning">
+  <div style="border: 1px solid #b93737; background: #ffdfdf; padding: 17px; border-radius: 3px; color: #773939; border-left-width: 10px;">
+Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte mir Screenshots mit ggf. personenbezogenen Daten in zensierter oder unkenntlicher Fassung für dieses Writeup vor.
+  </div>
+</div>
+</div>
+
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Warum überhaupt das Ganze?</h1>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Zu den Hintergründen</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>In den Jahren 2021 und 2022 konnte man erschreckend viele Berichte über Ransomware oder allg. Hacker Angriffe auf Kommunen lesen. Dabei wurden nicht nur Daten durch Ransomware unbrauchbar, sondern auch massive Datenabflüsse festgestellt. Das passiert nicht nur in Deutschland, sondern europaweit. Da landen dann auch mal <a target="_blank" rel="noopener" href="https://www.nzz.ch/technologie/cyberangriff-auf-rolle-wie-hacker-die-gemeinde-durchschuettelten-ld.1687856">32 GB im Darknet</a>. Als Anwendungsentwickler habe ich mir die Frage gestellt, wie sicher die Web-Applikationen/Services unserer Gemeinden wirklich sind. Aber bevor ich darauf eingehe, sollten wir uns kurz noch die aktuelle Lage anschauen.</p>
+
+<p>Cybercrime-Schäden in Deutschland beliefen sich 2021 auf <strong>223,5 Mrd. Euro jährlich</strong> und sind damit mehr als doppelt so hoch wie noch 2019. Das geht aus dem vom 09. Mai 2022 durch das Bundeskriminalamt (BKA) veröffentlichten <a href=" https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2022/Presse2022/220509_PM_CybercrimeBLB.html">Bundeslagebild Cybercrime 2021</a> Bericht hervor.</p>
+
+<p>Die Anzahl erfasster Cyber-Straftaten hat im Jahr 2021 einen neuen Höchstwert erreicht. Die Polizeiliche Kriminalstatistik (PKS) verzeichnet im Phänomenbereich Cybercrime 146.363 Delikte, was einem Anstieg um mehr als zwölf Prozent gegenüber dem Vorjahr entspricht.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Geschädigte von Cyberkriminellen</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Geschädigte und somit auch Ziele solcher Attacken sind lauf dem Bericht vor allem die deutsche Wirtschaft und ab Mitte 2021 insbesondere auch die öffentliche Verwaltung (siehe Lagebild: Punkt 4.1). Tendenz steigend.</p>
+
+<p>Man sollte also eigentlich davon ausgehen können, dass sich in Sachen IT-Sicherheit einiges getan hat und ein besonderes Interesse darin besteht, zumindest die Basics einzuhalten.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Lasst uns mal sehen, wie sicher deutsche Kommunen tatsächlich sind.</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Während meiner Recherchen bin ich wie schon erwähnt auf diverse Schwachstellen gestoßen. Einige davon nicht wirklich nennenswert, andere hingegen fatal. So gut wie alle Schwachstellen waren auf die<a target="_blank" rel="noopener" href="https://owasp.org/www-project-top-ten/"> top 10 OWASP</a> Kategorien zurückzuführen.</p>
+
+<p>Es gibt stand Januar 2022 genau <strong>10.787</strong> Kommunen in Deutschland, davon <strong>2.054</strong> Städte. Überprüft habe ich etwa 10.200 TLD. Bei meiner Recherche fehlen also ein paar Kandidaten, da schlichtweg das Onlineangebot nicht auffindbar war oder nicht existiert.</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Ich möchte erwähnen, dass ich meinen Haupt-Datenbestand durch dieses <a target="_blank" rel="noopener" href="https://github.com/robbi5/german-gov-domains">GitHub repository</a> initial füllen konnte. Ein Dank an dieser Stelle an <a target="_blank" rel="noopener" href="https://twitter.com/robbi5">@robbi5</a>! Hat mir viel Recherche erspart und konnte damit Prozesse automatisieren.</p>
+</div>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="pn3uma" alt="pn3uma" src="https://renerehme.dev/_Resources/Persistent/680fb98ea0f11a59deaa25003ebbb513171022de/pn3uma.gif" width="600" height="278" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h3>Ok, los gehts.</h3>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Intranet</h1>
+</div>
+</div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Ein besonderes Interesse während meiner Recherchen galt dem Intranet der Kommunen. Eigentlich bin ich davon ausgegangen, dass ein Großteil der Instanzen überhaupt nicht aufgerufen werden können. Dem war aber nicht so. In den meisten Fällen war der Zugriff auf das jeweilige Intranet möglich und wurde lediglich durch eine Loginmaske geschützt. Neben anderen sinnvollen Sicherheitsmechanismen sollte man meiner Meinung zumindest den Aufruf eines Intranets einschränken und lediglich über das interne Netzwerk zulassen oder für extern ein VPN Zugang schaffen - also allgemein den externen Zugriff nur über eine bestimmte IP erlauben.</p>
+
+<p>Ok, aber die Instanzen sind ja alle durch ein Authentifizierungsverfahren geschützt. Wie schafft man es also, Zugang zu einem Intranet zu bekommen? Es ist banaler als man annehmen würde.</p>
+
+<p>Nach 13 Jahren Applikationsentwicklung weiß ich nur zu gut, dass Entwickler*innen während der Umsetzung gerne Test-Zugangsdaten erstellen, um einen schnellen Zugriff während eines Testings&nbsp; "griffbereit" zu haben. Natürlich gehören solche Zugänge spätestens bei einem Livegang gelöscht - was aber oft vergessen wird.</p>
+
+<p>Die Zugangsdaten "<em>test / test</em>" habe ich einfach mal ausprobiert.</p>
+
+<p>Bei den Instanzen eines Landkreises, einer Gemeinde und zwei weiteren Städten hatte ich damit tatsächlich Erfolg und Zugriff auf interne Informationen, Diskussionen, Zugangsdaten zu externen Diensten und vertraulichen Dokumenten (auch VS-NfD). Natürlich lehne ich mich rechtlich gesehen hiermit weit aus dem Fenster, meine aber durch meine Intention und das sofortige Melden die zuständigen Stellen nicht verärgert zu haben. Auch wurden die Zugänge zeitnah entfernt, sodass diese nicht ausgenutzt werden können.</p>
+</div>
+</div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="Intranet" alt="Intranet" src="https://renerehme.dev/_Resources/Persistent/149174dcfe1a3e5df737dc94b3776c127ffb9432/intranet_02.png" width="1091" height="866" />
+
+			
+	
+
+
+	
+</figure>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="Intranet" alt="Intranet" src="https://renerehme.dev/_Resources/Persistent/7e1849aa1cde7f4f9768343566263e3caab9ace9/intranet_04.png" width="1219" height="866" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-4 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="Intranet" alt="Intranet" src="https://renerehme.dev/_Resources/Persistent/4a4ae4632334a9b274b6dbaa9e5b898c5d2211c4/2022-10-26_11-10.png" width="626" height="871" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="Intranet" alt="Intranet" src="https://renerehme.dev/_Resources/Persistent/a6408886832d910f75fe40a64e9c02ab7fc3cb74/intranet_01.png" width="1133" height="914" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="Intranet" alt="Intranet" src="https://renerehme.dev/_Resources/Persistent/2473882cae5dc2a702d59795318d51987bdfd9d8/intranet_03.png" width="974" height="626" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>E-Mails</h1>
+</div>
+</div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Auch habe ich mir die Mail-Server angeschaut. Dabei waren für mich vor allem online Webmailer interessant. Unter einem Webmailer versteht man eine Weboberfläche, über die man direkt mit einem Browser E-Mails einsehen, empfangen oder senden kann. Man benötigt also keinen E-Mail-Client, der auf einem Endgerät installiert und eingerichtet sein muss. Weit verbreitet ist die Software Horde oder Roundcube. Durch die breite Nutzung dieser Software, kann man davon ausgehen, dass diese durchaus sicher ist - sofern sie <strong>korrekt</strong> installiert und konfiguriert wurde.</p>
+
+<p>In der Dokumentation von Roundcube <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/wiki/Dev-Docs#important-files">ist zu lesen</a>, dass sensible Verzeichnisse entsprechend vor direktem Zugriff geschützt werden sollten. z.B. mithilfe einer <a target="_blank" rel="noopener" href="https://httpd.apache.org/docs/2.4/howto/htaccess.html">.htaccess</a>. Besonders sensible Verzeichnisse sind:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/28237621a4c0af6d2c8e30f4e33faf452c772671/rc_files.png" width="648" height="109" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Ihr ahnt vielleicht schon, wo uns das hinführt.</p>
+
+<p>Schweifen wir kurz ein wenig ab: Eine Martkanteil-Statistik von <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Nginx">ngnix</a> vs. <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Apache_HTTP_Server">apache</a> aus dem Jahr 2018 (ich habe auf die schnelle nichts Aktuelleres gefunden) zeigt einen deutlichen ngnix Nutzer Zuwachs.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/d690644ad74ebd8652f553473abd14a8f87ea23a/marktshare_ngnix_apache.png" width="605" height="340" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Es ist für die nicht so technisch versierten Leser jetzt wichtig zu wissen, dass ngnix eine .htaccess nicht unterstützt. Wenn man bei ngnix also nicht die direktiven entsprechend in eine&nbsp;nginx.conf überführt, haben die Regelungen, auch wenn sie zuvor über eine .htaccess definiert wurden, überhaupt keine Auswirkung.</p>
+
+<p>Ich habe mir also Gedanken darüber gemacht, ob Webserver, auf denen Roundcube installiert ist, nach einer Migration auf ngnix auch entsprechend konfiguriert wurden.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Eine Untersuchung der roundcube Instanzen, die von Kommunen eingesetzt wurden, war erschreckend und ließ mich fassungslos zurück.</p>
+
+<p>In den gefundenen ungeschützten Verzeichnissen konnte ich anhand der dort abgelegten Logfiles (<em>/logs</em>) den E-Mail-Verkehr nachvollziehen: <strong>Wer</strong> (also welches E-Mail-Postfach) hat <strong>wann</strong> eine E-Mail an <strong>wen</strong> (Empfänger-E-Mail-Adresse) verschickt.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/84ffd61cd52bf48a23b17ef1e893a1b44e1f5087/2022-10-25_23-00.png" width="1575" height="558" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>In den meisten Fällen, wo das /logs Verzeichnis ungeschützt war, konnte ich auch auf das /temp Verzeichnis, indem z.B. Anhänge gespeichert werden, zugreifen. Im Browser wird einem das bei aktivem directory listing so angezeigt:</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/f6bc18ba8d70b37d52cbc811c6d536147c58b205/temp_dir.png" width="727" height="827" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Ich habe mir also die Files alle mal gezogen um zu schauen was in diesem einen Fall so abliegt.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/0aa69f35160f09a1b1101951022635777a11e510/wgetdatafrommailserver.gif" width="364" height="214" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/ab18b88607abcb75d49bb03cdf9f05858552b0cc/download.png" width="460" height="64" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Unter den Files (einer einzigen Instanz!) konnte ich <strong>Personalausweise</strong>, <strong>Reisepässe</strong>, <strong>Krankenkarten</strong>, unterschiedlichste <strong>Anträge</strong>, <strong>Geburtsurkunden</strong>, <strong>Krankmeldungen</strong> und vieles mehr einsehen. Identitätsdiebstahl leichtgemacht.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="pn3uma" alt="pn3uma" src="https://renerehme.dev/_Resources/Persistent/9d704ea2e88022d9153f4da56300a3abaa811bf6/documents.gif" width="800" height="420" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Das hier gezeigte ist bei weitem nicht alles. Es sei zudem angemerkt, dass ich lediglich einen kleinen Teil der eigentlich verschickten und empfangenen Anhänge einsehen konnte. Denn Roundcube speichert Anhänge im <em>/temp</em> Verzeichnis nur bei bestimmten Interaktionen des Users. Hierzu ein Auszug aus den <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/plugins/filesystem_attachments/filesystem_attachments.php#L5-L10">Source Files</a>:</p>
+
+<p><em>"This is a core plugin [...] includes <strong>storing attachments of messages</strong> <strong>currently being composed</strong>, writing attachments to disk <strong>when drafts with attachments are re-opened </strong>and writing attachments to disk for <strong>inline display in current html compositions</strong>. [...]"</em></p>
+
+<p>Auch gibt es einen Garbadge Collector, welcher die Inhalte des /temp Verzeichnisses nach und nach löscht [<a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/program/lib/Roundcube/rcube.php#L508-L543">source</a>]. Das passiert je nachdem wie es in den PHP Einstellungen definiert wurde [<a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/program/lib/Roundcube/rcube.php#L508-L561">source</a>] und wird final durch den Session-Handler getriggert. Bedeutet: Man wird - mit etwas Glück - nur die aktuellen und zuletzt generierten Anhänge vorfinden.</p>
+
+<p>Aber krass, oder? Kommt das tatsächlich so oft vor? Ich habe etwa 200 Roundcube Instanzen über Suchmaschinen gefunden und <u>wirklich viele</u> davon waren nicht abgesichert oder zum Teil auch einfach falsch abgesichert. Denn nur weil ein Verzeichnisaufruf in einer 403 Response endet, bedeutet das nicht automatisch auch, dass darin liegende Dateien vor direktem Aufruf geschützt wurden.</p>
+
+<p>Um das Ausmaß zu verdeutlichen:&nbsp; Die Roundcube Instanzen der <strong>Technischen Universität Berlin</strong>, der <strong>TU Dresden (Fachschaftsrat Informatik)</strong> oder der <strong>Universität Kassel</strong> waren, um mal drei zu nennen, ebenfalls betroffen.</p>
+
+<p>Puh, zum Glück kann wenigstens der eigentliche Inhalt einer Mail (also der E-Mail Body) nicht eingesehen werden. Zumindest, wenn <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/config/defaults.inc.php#L112">imap_debug</a> nicht auf <em>true</em> gesetzt ist. Leider war das in zwei Fällen möglich:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/e9c4b92a3be8b83c43fe150ea6128aea1a5dbcc4/2022-10-25_20-42_imaplog.png" width="1285" height="811" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p>Es ist sogar möglich, Zugriff auf ein ganzes Postfach zu erlangen. Denn es werden auch SQL Errors geloggt. Wenn in Roundcube eine Session in die Datenbank wandert, die aber schon existent ist, wird die query in der Log gespeichert. Wenn man nun das Logfile monitoren würde, könnte man so aktive Sessions abgreifen.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/0b52df64b69efd500a8487875e2a4c7d8f0e190d/log_2022-06-21_09-00.png" width="878" height="23" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p>Der Identifier der Session kann manuell im Browser als Cookie hinterlegt werden, wodurch die aktive Session angesprochen und der Nutzer automatisch im Webmailer eingeloggt wäre. Habe ich natürlich nicht gemacht und ist nur Theorie.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Ja gut, solche Fehler können beim kleinen lokalen IT-Dienstleister schon mal passieren, könnte man sagen. Viele Kommunen haben sich dazu entschieden, auf big player zu setzen. z.B. DomainFactory. Die verwalten mehr als 1,3 Millionen Domainnamen, gehören zu den größten Webhosting-Unternehmen im deutschsprachigen Raum und sind seit 2013 GoDaddy zugehörig. Welchen Webmailer die anbieten?</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/ad81f0ee6630331d9a2ee6aa23c1302cb8a01c59/df_should_i_try.png" width="1056" height="732" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Neeee. Das wäre jetzt zu krass. Oder? Guess what:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/8d84b366837d8b43df490be9298fe555286772f4/domainfactory-email.png" width="698" height="789" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p>Bevor nun alle DomainFactory-Kunden Schnappatmung bekommen: Infrastruktur bedingt, betreibt die Firma mehrere Instanzen, wovon nur eine einzige vulnerable war. Die meisten Kunden sind also nicht betroffen.</p>
+</div>
+</div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection"></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Sonstiges</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Habt ihr schonmal eine Sperrmüllabholung online beantragt? Eine Neuanmeldung oder ein Eigentümerwechsel zur öffentlichen Müllabfuhr? Sensible Daten wurden z.B. von einer Kreisstadt in einem öffentlich abrufbaren Logfile gespeichert (Bild links). Dabei wurde wohl alles, was über das jeweilige Online-Formular verschickt wurde, nochmal separat abgespeichert. Auch eine Möglichkeit, die Einwohner einer Stadt zu erfassen.</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/fc74ee2c3b821b93655f4ab271d921ca5526feb6/2022-10-26_10-32.png" width="347" height="799" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Solche Log Files oder auch andere interessante Sachen findet man sehr oft anhand der <em>.DS_Store</em> Datei, welche von iOS im Finder automatisch erstellt wird. Diese beinhaltet z.B. Informationen über die im Ordner abgelegten Dateien und kann ausgelesen werden. Da das File hidden ist, bemerkt man oftmals überhaupt nicht, dass man die beim traditionellen File-Upload&nbsp; (FTP, SFTP etc.) auf ein Webserver mitnimmt.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/d886a7440ca4dd1ce31a13967968ece805dcb15e/2022-10-26_10-36-242x549.png" width="242" height="549" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Datenbanken</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Vorab kann ich schonmal sagen, dass ich Einsicht in weit über 200.000 Datensätze mit personen bezogenem Kontext hatte.</p>
+
+<p>Es gibt verschiedene Wege, sich mit einer Datenbank zu verbinden. Beliebt sind Verwaltungssysteme, da die durch eine GUI einfach zu handhaben sind und keine CLI Kenntnisse erforderlich sind. Eine Datenbank-Verwaltungssoftware wird über den Browser aufgerufen und man erlangt DB Zugriff, wenn Host, User und Passwort bekannt sind. Das mag erstmal super sicher klingen, ist es aber nur bedingt. Der Host ist in den meisten Fällen <em>localhost</em>, da sich die Datenbanken fast immer auf demselben Server befinden, wo auch die Verwaltungssoftware installiert ist. Der User und das Passwort lassen sich z.B. durch andere Schwachstellen herausfinden. Bei einigen der von mir überprüften Servern wurden z.B. Credentials durch öffentlich zugängliche Backupdateien oder komischen Installer, die nicht gelöscht wurden, offengelegt.</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/b33f4dab049ac63c1a99a2a7cb1bd77014a5a978/2022-10-25_23-11.png" width="343" height="202" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/31e29b7d8d53179dec86b9908fc654c814e4b4df/2022-10-25_15-16_db.png" width="391" height="243" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Bei so einem Fund ist so eine offen zugängliche Verwaltungsoberfläche das passende Schlüsselloch, denn idealerweise, lässt man - sofern nicht gewollt - den Verbindungsaufbau zu MySQL remote erst gar nicht zu. Bringt dann nur nichts, weil man sich direkt über das System Zugriff verschaffen kann.</p>
+
+<p>Es ist allgemein common practice den Zugang zu einer Datenbankverwaltung nicht öffentlich abrufbar zu machen oder zumindest diese durch weitere Sicherheitsmechanismen zu schützen. Meist erfolgt das durch eine benutzerdefinierte Zugriffskontrolle via htaccess (apache) oder in der (Virt)Host-Konfiguration der Domain, worüber sich ein effektiver Passwortschutz vorschalten lässt. Im besten Fall ist der Aufruf nur mit aktiver SCP Session möglich (kennt man z.B. von ISPConfig).</p>
+
+<p>Anyway - Ich konnte mir ohne Probleme auf die ein oder andere Datenbankenverwaltungen (so oder so ähnlich) Zugriff verschaffen, auch weil keinerlei Schutz vorgeschaltet wurde.</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/56f46b9857506eb0072dea9f8777db5198fa63ff/db_leak_zens.png" width="1138" height="519" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/93a867db628b42039f7109a6db3708f87b331496/db_leak2_zens-1080x511.png" width="1080" height="511" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Das geht aber noch krasser. z.B. das Generieren eines Backups der Datenbank in Echtzeit über einen simplen URL-Aufruf. Als ich die Seite das erste Mal aufgerufen habe, hatte ich mich schon gewundert, warum der Seitenaufbau so lange dauert. Ich bin davon ausgegangen, dass ich hier durch das Erreichen der max execution time in einem Error lande. Dem war nicht so und das warten hat sich gelohnt, denn was hier so lange gedauert hat, war das Packen von Dateien in Echtzeit im Hintergrund. Als Bonus bekommt man dann sogar noch das gesamte Filesystem on top. Wie kommt man auf solche Ideen?</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/4162f98c77ebbb280f32d9a0c1ed4d28c229183d/2022-10-26_10-27.png" width="786" height="282" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Der absolute Overkill ist aber, wenn ein Hoster <strong>ALLE</strong> Datenbanken seiner Kunden über eine ungeschützte phpMyAdmin Instanz öffentlich zugänglich macht. Man musste nur den URL kennen, welchen ich z.B. in einem dump file einer Stadt gefunden und aufgerufen habe.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/49919cce3e71aeebbf7bdb513a4f63489b90c27b/2022-10-25_21-19_db.png" width="1618" height="913" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Die Datenbanken sind von 1 bis 325 durchnummeriert. Jede einzelne davon einer Web-Applikation zugehörig. Ich hatte hierdurch Zugriff auf solch eine Masse an personen bezogenen Daten, dass ich bis heute nicht sicher sagen kann, wie viele Personen hiervon letztendlich betroffen sind. Selbst wenn ich wollte, hätte ich nicht die Zeit gehabt, das alles zu überprüfen. Auch mit dem Gedanken, diese Instanz so schnell wie möglich zu melden, habe ich irgendwann mit der Erfassung aufgehört. Aber natürlich habe ich mich ein wenig umgeschaut und scheiße, was man da alles finden konnte. Sogar Accounts mit bundestag.de E-Mail-Adressen. Immer auch etwas kritisch, wenn Passwörter teils Plaintext gespeichert werden.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/0c9f140fb0241e4deaca13bd4b663d9c92f5c776/2022-10-25_21-37_bundestag.png" width="595" height="88" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Oder interne Kommunikation zur Entwicklung und Fehlerbehebung irgendeiner Software mit und von dem IT-Dienstleister KDO aus einer Datenbank für eine Art CRM-System. Das war so spannend zu lesen, dass ich mir die öffentlichen IT-Dienstleister genauer anschauen musste.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p><strong>Nachtrag 11.08.2023</strong>: Der Hoster wurde einen Monat nach meinem Hinweis von der dogado group übernommen. Ein Schelm, wer Böses dabei denkt.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Öffentliche IT-Dienstleister für Kommunen</h1>
+</div>
+</div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Kommen wir zu den öffentlichen IT-Dienstleistern. Um einen groben Überblick zu bekommen, welche Unternehmen hier maßgeblich mitspielen, habe ich mich bei der govdigital belesen. Die govdigital ist eine bundesweite Genossenschaft zur Integration von IT-Lösungen für Bund, Länder und Kommunen. Dort sind aktuell 23 Mitglieder aufgeführt, die Software herstellen oder allg. IT Dienstleistungen anbieten. Diese habe ich mir grob angeschaut, da deren Dienste weit verbreitet in Kommunen Anklang finden.</p>
+
+<p>Als ich mir das Themenfeld auf deren Webseite angeschaut habe, ist beim <u>Schlag</u>wort "Blockchain" beinahe die Faust im Bildschirm gelandet. Ich pflege (wie viele andere Personen aus meinem IT-Umfeld) gegenüber der Blockchain-Technologie eine äußerst kritische Haltung. Aber das ist ein Thema, um das es hier nicht gehen soll. Halten wir einfach fest, dass es eine scheiß Idee ist auf eine Blockchain-Technologie zu setzen - vor allem im öffentlichen Sektor.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Komm.ONE</h2>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>„Erstes Anliegen von Komm.ONE ist es, die <strong>digitale Souveränität</strong> der Kommunen zu stärken. Dies gelingt unserer Erfahrung nach vor allem über die Zusammenarbeit maßgeblicher Akteure. Innovative Netzwerke sind für uns deshalb der Weg, den wir konsequent verfolgen, um Know-How und Kompetenzen im Interesse der Kommunen in Baden-Württemberg weiter auf- und auszubauen“, erklärt William Schmitt, Vorstandsvorsitzender der Komm.ONE. Die Mitgliedschaft von Komm.ONE in der govdigital eG sei daher ein schlüssiger Schritt, mit dem das Unternehmen dazu beitrage, innovative Lösungen wie zum Beispiel die <strong>Blockchain-Technologie</strong> für den öffentlichen Sektor weiter zu entwickeln, so Schmitt weiter.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Also die digitale Souveränität ist in meinen Augen direkt zerbröselt, als ich bemerkte, dass die Komm.ONE Serverkonfigurationen <a target="_blank" rel="noopener" href="http://web.archive.org/web/20221010215120/https://cmstest.komm.one/server-info">öffentlich abrufbar</a> macht (Upsi: <a target="_blank" rel="noopener" href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 </a><a target="_blank" rel="noopener" href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:H/RL:O/RC:C">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</a>). Warum das ein Problem ist? Nunja, als potenzieller Angreifer kann ich genau nachvollziehen, welche Module installiert oder welche Einstellungen getroffen wurden, um den Server abzusichern. z.B. auch ob und wie bestimmte Dateitypen interpretiert werden, welche vHost Einstellungen gegeben oder wie die Firewall-Einstellungen für <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/ModSecurity">Modsec</a> gesetzt sind.</p>
+
+<p>Ich fand es auch durchaus interessant, welche Kommunen gehostet werden. Idealerweise kann man das ohne großartige Recherchen anzustellen ganz einfach einsehen, da - warum auch immer (?) - das&nbsp; <em>/etc/passwd</em> file gedumpt wird [<a target="_blank" rel="noopener" href="https://web.archive.org/web/20221010220604/https://module.kivbf.de/test.php">1</a>, <a target="_blank" rel="noopener" href="https://web.archive.org/web/20221010220721/http://www.breitnau.de/test.php">2</a>]:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>testroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+sshd:x:100:65534::/var/run/sshd:/usr/sbin/nologin
+ftpsecure:x:102:65534::/var/run/vsftpd/:/bin/false
+messagebus:x:104:105::/var/run/dbus:/bin/false
+shared-secure-04:x:1000:1003::/var/www/de.rz-kiru.shared-secure-04/data/:/sbin/nologin
+shared-secure-04-sftp01:x:1001:1003::/var/www/de.rz-kiru.shared-secure-04/data/:/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/bin/false
+radar:x:1002:1004::/home/radar:/bin/sh
+_apt:x:101:65534::/nonexistent:/bin/false
+systemd-timesync:x:105:109:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:106:110:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:107:111:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+php56:x:1003:1005::/var/www/de.rz-kiru.php56/data/:/sbin/nologin
+php56-sftp01:x:1004:1005::/var/www/de.rz-kiru.php56/data/:/sbin/nologin
+php72:x:1005:1006::/var/www/de.rz-kiru.php72/data/:/sbin/nologin
+php72-sftp01:x:1006:1006::/var/www/de.rz-kiru.php72/data/:/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+rammingen:x:1007:1007::/var/www/de.rammingen-bw.www/data/:/sbin/nologin
+rammingen-sftp01:x:1008:1007::/var/www/de.rammingen-bw.www/data/:/sbin/nologin
+allmendingen:x:1009:1009::/var/www/de.allmendingen.www/data/:/sbin/nologin
+allmendingen-sftp01:x:1010:1009::/var/www/de.allmendingen.www/data/:/sbin/nologin
+altheim:x:1011:1011::/var/www/de.altheim-info.www/data/:/sbin/nologin
+altheim-sftp01:x:1012:1011::/var/www/de.altheim-info.www/data/:/sbin/nologin
+wendlingen:x:1013:1013::/var/www/de.wendlingen.service/data/:/sbin/nologin
+wendlingen-sftp01:x:1014:1013::/var/www/de.wendlingen.service/data/:/sbin/nologin
+müllheim:x:1015:1015::/var/www/de.dwwwmüllheim/data/:/sbin/nologin
+müllheim-sftp01:x:1016:1015::/var/www/de.dwwwmüllheim/data/:/sbin/nologin
+muellheim:x:1017:1017::/var/www/de.muellheim.www/data/:/sbin/nologin
+muellheim-sftp01:x:1018:1017::/var/www/de.muellheim.www/data/:/sbin/nologin
+lrabb:x:1019:1019::/var/www/de.lrabb.sftp/data/:/sbin/nologin
+lrabb-sftp01:x:1020:1019::/var/www/de.lrabb.sftp/data/:/sbin/nologin
+lra-karlsruhe:x:1021:1021::/var/www/de.landratsamt-karlsruhe.ftp/data/:/sbin/nologin
+lra-karlsruhe-sftp01:x:1022:1021::/var/www/de.landratsamt-karlsruhe.ftp/data/:/sbin/nologin
+formsend:x:1023:1023::/var/www/one.komm.formsend/data/:/sbin/nologin
+formsend-sftp01:x:1024:1023::/var/www/one.komm.formsend/data/:/sbin/nologin
+sftp-impfzentren01:x:1025:1024::/var/www/de.landratsamt-karlsruhe.ftp/data/website/Impfzentren/:/sbin/nologin
+sftp-impfzentren02:x:1026:1025::/var/www/de.landratsamt-karlsruhe.ftp/data/website/Impfzentren/:/sbin/nologin
+huelben:x:1027:1027::/var/www/de.huelben.service/data/:/sbin/nologin
+huelben-sftp01:x:1028:1027::/var/www/de.huelben.service/data/:/sbin/nologin
+lra-goeppingen:x:1029:1029::/var/www/de.landkreis-goeppingen.www/data/:/sbin/nologin
+lra-goeppingen-sftp01:x:1030:1029::/var/www/de.landkreis-goeppingen.www/data/:/sbin/nologin
+immendingen:x:1031:1031::/var/www/de.immendingen.service/data/:/sbin/nologin
+immendingen-sftp01:x:1032:1031::/var/www/de.immendingen.service/data/:/sbin/nologin
+feuerwehr.leutenbach.de:x:1033:1033::/var/www/de.leutenbach.feuerwehr.www/data/:/sbin/nologin
+feuerwehr.leutenbach.de-sftp01:x:1034:1033::/var/www/de.leutenbach.feuerwehr.www/data/:/sbin/nologin
+schloss-achberg:x:1035:1035::/var/www/de.schloss-achberg.www/data/:/sbin/nologin
+schloss-achberg-sftp01:x:1036:1035::/var/www/de.schloss-achberg.www/data/:/sbin/nologin
+abwasserverband-murg:x:1037:1037::/var/www/de.abwasserverband-murg/data/:/sbin/nologin
+abwasserverband-murg-sftp01:x:1038:1037::/var/www/de.abwasserverband-murg/data/:/sbin/nologin
+ortenauline:x:1039:1039::/var/www/de.ortenauline.www2/data/:/sbin/nologin
+ortenauline-sftp01:x:1040:1039::/var/www/de.ortenauline.www2/data/:/sbin/nologin
+gerabronn:x:1043:1043::/var/www/de.gerabronn.www/data/:/sbin/nologin
+gerabronn-sftp01:x:1044:1043::/var/www/de.gerabronn.www/data/:/sbin/nologin
+achstetten:x:1045:1045::/var/www/de.achstetten.service/data/:/sbin/nologin
+achstetten-sftp01:x:1046:1045::/var/www/de.achstetten.service/data/:/sbin/nologin
+alva_lra-sftp01:x:1047:1021::/var/www/de.landratsamt-karlsruhe.ftp/data/ALVA/:/sbin/nologin
+www10.dzbw.de:x:1048:1048::/var/www/de.dzbw.www10/data/:/sbin/nologin
+www10.dzbw.de-sftp01:x:1049:1048::/var/www/de.dzbw.www10/data/:/sbin/nologin
+schwetzingen:x:1050:1050::/var/www/de.schwetzingen.stadt.www/data/:/sbin/nologin
+schwetzingen-sftp01:x:1051:1050::/var/www/de.schwetzingen.stadt.www/data/:/sbin/nologin
+windenelztal:x:1052:1052::/var/www/de.winden-im-elztal.www/data/:/sbin/nologin
+windenelztal-sftp01:x:1053:1052::/var/www/de.winden-im-elztal.www/data/:/sbin/nologin
+landkreisbw:x:1054:1054::/var/www/de.landkreise-bw.www/data/:/sbin/nologin
+landkreisbw-sftp01:x:1055:1054::/var/www/de.landkreise-bw.www/data/:/sbin/nologin
+kuessaberg:x:1056:1056::/var/www/de.kuessaberg.www/data/:/sbin/nologin
+kuessaberg-sftp01:x:1057:1056::/var/www/de.kuessaberg.www/data/:/sbin/nologin
+hansthomaschule:x:1058:1058::/var/www/de.hans-thoma-schule-malsch.www/data/:/sbin/nologin
+hansthomaschule-sftp01:x:1059:1058::/var/www/de.hans-thoma-schule-malsch.www/data/:/sbin/nologin
+gemeindehasel:x:1060:1060::/var/www/de.gemeinde-hasel.www/data/:/sbin/nologin
+gemeindehasel-sftp01:x:1061:1060::/var/www/de.gemeinde-hasel.www/data/:/sbin/nologin
+eichstetten:x:1062:1062::/var/www/de.eichstetten.www/data/:/sbin/nologin
+eichstetten-sftp01:x:1063:1062::/var/www/de.eichstetten.www/data/:/sbin/nologin
+breitnau:x:1064:1064::/var/www/de.breitnau.www/data/:/sbin/nologin
+breitnau-sftp01:x:1065:1064::/var/www/de.breitnau.www/data/:/sbin/nologin
+erdmannsreich:x:1066:1066::/var/www/de.erdmannsreich.www/data/:/sbin/nologin
+erdmannsreich-sftp01:x:1067:1066::/var/www/de.erdmannsreich.www/data/:/sbin/nologin
+modulekommone:x:1068:1068::/var/www/one.komm.module/data/:/sbin/nologin
+modulekommone-sftp01:x:1069:1068::/var/www/one.komm.module/data/:/sbin/nologin
+ncpclientkommone:x:1070:1070::/var/www/one.komm.ncpclient/data/:/sbin/nologin
+ncpclientkommone-sftp01:x:1071:1070::/var/www/one.komm.ncpclient/data/:/sbin/nologin
+hebelschule-malsch:x:1072:1072::/var/www/de.hebelschule-malsch.www/data/:/sbin/nologin
+hebelschule-malsch-sftp01:x:1073:1072::/var/www/de.hebelschule-malsch.www/data/:/sbin/nologin
+malsburg-marzell:x:1074:1074::/var/www/de.malsburg-marzell.www/data/:/sbin/nologin
+malsburg-marzell-sftp01:x:1075:1074::/var/www/de.malsburg-marzell.www/data/:/sbin/nologin
+lewis-ftp:x:1076:1076::/var/www/de.kivbf.lewis-ftp/data/:/sbin/nologin
+lewis-ftp-sftp01:x:1077:1076::/var/www/de.kivbf.lewis-ftp/data/:/sbin/nologin
+zell:x:1078:1078::/var/www/de.zell.stadt/data/:/sbin/nologin
+zell-sftp01:x:1079:1078::/var/www/de.zell.stadt/data/:/sbin/nologin
+shared-secure-01:x:1000:1003::/var/www/de.rz-kiru.shared-secure-01/data/:/sbin/nologin
+shared-secure-01-sftp01:x:1001:1003::/var/www/de.rz-kiru.shared-secure-01/data/:/sbin/nologin
+zv-wasser-hz:x:1002:1004::/var/www/de.zv-wasserversorgung-hohenzollern.www/data/:/sbin/nologin
+zv-wasser-hz-sftp01:x:1003:1004::/var/www/de.zv-wasserversorgung-hohenzollern.www/data/:/sbin/nologin
+fischingen:x:1004:1005::/var/www/de.fischingen-am-neckar.www/data/:/sbin/nologin
+fischingen-sftp01:x:1005:1005::/var/www/de.fischingen-am-neckar.www/data/:/sbin/nologin
+hdh-ris:x:1010:1010::/var/www/de.heidenheim.ris/data/:/sbin/nologin
+hdh-ris-sftp01:x:1011:1010::/var/www/de.heidenheim.ris/data/:/sbin/nologin
+lauterach:x:1012:1012::/var/www/de.gemeinde-lauterach.www/data/:/sbin/nologin
+lauterach-sftp01:x:1013:1012::/var/www/de.gemeinde-lauterach.www/data/:/sbin/nologin
+biberach:x:1014:1014::/var/www/de.biberach.www/data/:/sbin/nologin
+biberach-sftp01:x:1015:1014::/var/www/de.biberach.www/data/:/sbin/nologin
+medienrecherche-biberach:x:1027:1027::/var/www/de.landkreisbiberach.www/data/:/sbin/nologin
+medienrecherche-biberach-sftp01:x:1028:1027::/var/www/de.landkreisbiberach.www/data/:/sbin/nologin
+landesakademie-ochsenhausen:x:1029:1029::/var/www/de.landesakademie-ochsenhausen.www/data/:/sbin/nologin
+landesakademie-ochsenhausen-sftp01:x:1037:1029::/var/www/de.landesakademie-ochsenhausen.www/data/:/sbin/nologin
+ratsinfo-biberach:x:1032:1032::/var/www/de.biberach.ratsinfo/data/:/sbin/nologin
+ratsinfo-biberach-sftp01:x:1033:1032::/var/www/de.biberach.ratsinfo/data/:/sbin/nologin
+boebingen:x:1040:1040::/var/www/de.boebingen.service/data/:/sbin/nologin
+boebingen-sftp01:x:1041:1040::/var/www/de.boebingen.service/data/:/sbin/nologin
+bad-schussenried:x:1042:1042::/var/www/de.bad-schussenried.service/data/:/sbin/nologin
+bad-schussenried-sftp01:x:1043:1042::/var/www/de.bad-schussenried.service/data/:/sbin/nologin
+aitrach:x:1044:1044::/var/www/de.aitrach.www/data/:/sbin/nologin
+aitrach-sftp01:x:1045:1044::/var/www/de.aitrach.www/data/:/sbin/nologin
+beuron:x:1046:1046::/var/www/de.beuron.www/data/:/sbin/nologin
+beuron-sftp01:x:1047:1046::/var/www/de.beuron.www/data/:/sbin/nologin
+tuningen:x:1048:1048::/var/www/de.tuningen.service/data/:/sbin/nologin
+tuningen-sftp01:x:1049:1048::/var/www/de.tuningen.service/data/:/sbin/nologin
+sontheim-brenz:x:1050:1050::/var/www/de.sontheim-brenz.service/data/:/sbin/nologin
+sontheim-brenz-sftp01:x:1051:1050::/var/www/de.sontheim-brenz.service/data/:/sbin/nologin
+sontheim-brenz-sftp02:x:1052:1050::/var/www/de.sontheim-brenz.service/data/:/sbin/nologin
+kitasschemmerhofen:x:1053:1053::/var/www/de.kitas-schemmerhofen.www/data/:/sbin/nologin
+kitasschemmerhofen-sftp01:x:1054:1053::/var/www/de.kitas-schemmerhofen.www/data/:/sbin/nologin
+moegglingen:x:1057:1057::/var/www/de.moegglingen.service/data/:/sbin/nologin
+moegglingen-sftp01:x:1058:1057::/var/www/de.moegglingen.service/data/:/sbin/nologin
+kressbronn:x:1059:1059::/var/www/de.kressbronn.service/data/:/sbin/nologin
+kressbronn-sftp01:x:1060:1059::/var/www/de.kressbronn.service/data/:/sbin/nologin
+servicehuelben:x:1061:1006::/var/www/de.huelben.www/data/:/sbin/nologin
+servicehuelben-sftp01:x:1062:1006::/var/www/de.huelben.www/data/:/sbin/nologin
+holzgerlingen:x:1063:1063::/var/www/de.holzgerlingen.service/data/:/sbin/nologin
+holzgerlingen-sftp01:x:1064:1063::/var/www/de.holzgerlingen.service/data/:/sbin/nologin
+gwg-tuebingen:x:1065:1065::/var/www/de.gwg-tuebingen.service/data/:/sbin/nologin
+gwg-tuebingen-sftp01:x:1066:1065::/var/www/de.gwg-tuebingen.service/data/:/sbin/nologin
+rietheim-weilheim:x:1067:1067::/var/www/de.rietheim-weilheim.service/data/:/sbin/nologin
+rietheim-weilheim-sftp01:x:1068:1067::/var/www/de.rietheim-weilheim.service/data/:/sbin/nologin
+biberach-riss:x:1069:1069::/var/www/de.biberach-riss.service/data/:/sbin/nologin
+biberach-riss-sftp01:x:1070:1069::/var/www/de.biberach-riss.service/data/:/sbin/nologin
+sessiontest:x:1071:1071::/var/www/de.rz-kiru.sessiontest/data/:/sbin/nologin
+sessiontest-sftp01:x:1072:1071::/var/www/de.rz-kiru.sessiontest/data/:/sbin/nologin
+klinikum-tut:x:1073:1073::/var/www/de.klinikum-tut.www/data/:/sbin/nologin
+systemd-timesync:x:101:109:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:105:110:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:106:111:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+kirchheim-teck:x:1074:1074::/var/www/de.kirchheim-teck.service/data/:/sbin/nologin
+kirchheim-teck-sftp01:x:1075:1074::/var/www/de.kirchheim-teck.service/data/:/sbin/nologin
+boeblingen:x:1076:1076::/var/www/de.boeblingen.service/data/:/sbin/nologin
+boeblingen-sftp01:x:1077:1076::/var/www/de.boeblingen.service/data/:/sbin/nologin
+dornstadt:x:1078:1078::/var/www/de.dornstadt.service/data/:/sbin/nologin
+dornstadt-sftp01:x:1079:1078::/var/www/de.dornstadt.service/data/:/sbin/nologin
+albershausen:x:1080:1080::/var/www/de.albershausen.service/data/:/sbin/nologin
+albershausen-sftp01:x:1081:1080::/var/www/de.albershausen.service/data/:/sbin/nologin
+urbach:x:1082:1082::/var/www/de.urbach.service/data/:/sbin/nologin
+urbach-sftp01:x:1083:1082::/var/www/de.urbach.service/data/:/sbin/nologin
+denkingen:x:1084:1084::/var/www/de.denkingen.service/data/:/sbin/nologin
+denkingen-sftp01:x:1085:1084::/var/www/de.denkingen.service/data/:/sbin/nologin
+gerlingen:x:1086:1086::/var/www/de.gerlingen.service/data/:/sbin/nologin
+gerlingen-sftp01:x:1087:1086::/var/www/de.gerlingen.service/data/:/sbin/nologin
+remsmurrkreis:x:1088:1088::/var/www/de.rems-murr-kreis.service/data/:/sbin/nologin
+remsmurrkreis-sftp01:x:1089:1088::/var/www/de.rems-murr-kreis.service/data/:/sbin/nologin
+albstadt:x:1090:1090::/var/www/de.albstadt.service/data/:/sbin/nologin
+albstadt-sftp01:x:1091:1090::/var/www/de.albstadt.service/data/:/sbin/nologin
+radar:x:1092:1092:Radar Service,,,:/home/radar:/bin/bash
+steinenbronn:x:1093:1093::/var/www/de.steinenbronn.service/data/:/sbin/nologin
+steinenbronn-sftp01:x:1094:1093::/var/www/de.steinenbronn.service/data/:/sbin/nologin
+_apt:x:108:65534::/nonexistent:/bin/false</div>
+		</code>
+	</pre>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>KDO</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Bei der KDO konnte ich auf drei unterschiedlichen Servern die Apache Server-Status Seite auffinden. Betroffen waren die Domains:</p>
+
+<p>https://<strong>collabora.kdo.de</strong>/server-status<br />
+https://<strong>fachbetrieberegister.zks-mtu.kdo.de</strong>/server-status<br />
+https://<strong>kupata.kdo.de</strong>/server-status</p>
+
+<p>Nachdem ich ein wenig mit den angezeigten Requests gespielt hatte, wurden zwei der Seiten&nbsp;wenige Stunden später vom Netz genommen - ohne dass ich diese überhaupt melden musste. Das ist wohl auch in den Logs aufgefallen. Monitoring FTW. Screenshots habe ich natürlich trotzdem gemacht, denn die Informationen, die durch die URL Parameter dort geleakt wurden, sind schon etwas brisanter. z.B. E-Mails, Tokens und UUIDs, die teils verwendet werden können, um Anfragen an deren Systeme zu schicken. Interessante Endpunkte, oder?</p>
+</div>
+</div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/7f5008c9507813657bfdd47cc04b85e6578dd547/2022-08-05_08-59.png" width="1611" height="807" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Softwareaktualisierungen</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Kommen wir zum Thema der Wartung von Serverkomponenten. Interessant dürfte sein, dass bei vielen Kommunen serverseitige Komponenten verwenden werden, die längst nicht mehr aktuell sind und schon seit Jahren keine Sicherheitsupdates mehr bekommen. Warum ich das sicher sagen kann?</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Nun, durch eine Information Disclosure Schwachstelle (<a target="_blank" rel="noopener" href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 </a><a target="_blank" rel="noopener" href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N</a>) konnte ich bei 60 der überprüften Server genau diese Informationen einsehen. Dabei handelt es sich um eine Datei, welche <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.phpinfo.php">eine Funktion</a> ausführt, die neben der verwendeten PHP Version auch weitere detaillierte Informationen über das System preisgibt, sofern sie existiert. Die hat eig. nichts in einer Produktivumgebung zu suchen.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>PHP ist eine Sprache, die zum Programmieren von Web-Applikationen verwendet wird. PHP muss als Software auf dem Webserver installiert sein, um eine PHP-Applikationen (z.B. ein CMS) auszuführen.</p>
+</div>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+	<div><h2>Von Kommunen verwendete PHP-Binaries</h2>
+</div>
+</div><div class="neos-nodetypes-html">
+	<div class="paddingBottom15">
+  <canvas id="myChart"></canvas>
+</div>
+
+<script>
+  $(function() {
+const data = {
+  labels: [
+	'PHP4.3',
+    'PHP5.2',
+	'PHP5.3',
+    'PHP5.4',
+	'PHP5.6',
+	'PHP7.0',
+	'PHP7.1',
+	'PHP7.2',
+	'PHP7.3',
+	'PHP7.4',
+	'PHP8.0',
+	'PHP8.1'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [1,4,1,5,8,1,3,2,13,20,1,1],
+    backgroundColor: [
+'rgb(255, 0, 0)',
+'rgb(255, 0, 64)',
+'rgb(255, 0, 128)',
+'rgb(255, 0, 148)',
+'rgb(255, 0, 175)',
+'rgb(255, 0, 191)',
+'rgb(255, 0, 255)',
+'rgb(191, 0, 255)',
+'rgb(128, 0, 255)',
+'rgb(0, 255, 255)',
+'rgb(0, 255, 64)',
+'rgb(0, 255, 0)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+  const config = {
+    type: 'doughnut',
+    data: data,
+    options: {}
+  };
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+  });
+</script>
+
+</div>
+</div>
+</div>
+<div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Wie bei jeder Software, die aktiv weiterentwickelt wird, werden Support für Bug- und Security fixes bei älteren Versionen irgendwann eingestellt. Spätestens wenn Sicherheitslücken nicht mehr gepatched werden, wird es Zeit zu updaten.</p>
+
+<p>Stellt man nun die von Kommunen verwendeten PHP Versionen der aktuellen Release-Roadmap von PHP gegenüber, kann man stark annehmen, dass bei einer Hochrechnung auf wohl über der Hälfte aller Webserver (worauf Kommunen ihre Webapplikationen laufen lassen) veraltete PHP Binaries installiert sind und auch aktiv verwendet werden.</p>
+</div>
+</div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="censored data" alt="censored data" src="https://renerehme.dev/_Resources/Persistent/40930504a723abea648b23357bd7771b8cd3edc9/php_matrix.png" width="991" height="531" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p><em>Quelle: <a target="_blank" rel="noopener" href="https://www.php.net/supported-versions.php">https://www.php.net/supported-versions.php</a></em></p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p>Um sich einen Überblick zu verschaffen, welche existenten Sicherheitslücken öffentlich bekannt sind, kann man sich <a target="_blank" rel="noopener" href="https://www.cvedetails.com/vulnerability-list.php?vendor_id=74&amp;product_id=128&amp;version_id=&amp;page=1&amp;hasexp=0&amp;opdos=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opfileinc=0&amp;opginf=0&amp;cvssscoremin=0&amp;cvssscoremax=0&amp;year=0&amp;month=0&amp;cweid=0&amp;order=3&amp;trc=644&amp;sha=d8a9f07b702ae6252893a7ef73f2f2812bbcbb8a">hier</a> mal durch die Einträge pagnieren.</p>
+</div>
+</div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h1>Fazit</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Teilweise erschreckend, wie einfach man an vermeintlich geschützte Daten und Informationen gelangt.</p>
+
+<p>Meine Vorgehensweise zielte ursprünglich tatsächlich nur auf eine kleine Range an möglichen Schwachstellen ab. Also wenige Szenarien, die bei Web- und Mail-Server/Applikationen theoretisch möglich sind und direkt abgerufen werden können, ohne Sicherheitsvorkehrungen zu umgehen.</p>
+
+<p>Jetzt kann man sich die Frage stellen, wie es mit "richtigen" Angriffsvektoren auf größere Teile der Infrastrukturen aussieht. Ich meine, wenn ein kleiner Sicherheitsforscher mit den einfachsten Mitteln an solche Informationen und Daten kommt, schaffen organisierte Gruppen mit genug krimineller Energie das auch. Zudem solche Leute meist weitaus bessere und effektivere Methoden, wie auch die notwendigen Ressourcen zur Verfügung haben.</p>
+
+<p>Viele der hier gezeigten Schwachstellen waren auf fehlerhafte Konfigurationen zurückzuführen. Einige davon existierten einfach nur aus Mangel und Nichtanwendung einfachster Standards. Es ist allgemein bekannt, dass IT-Fachkräfte in den Kommunen fehlen und Dienstleistungen extern eingekauft werden (müssen). Um so wichtiger wäre es zukünftig IT-Kompetenzen intern aufzubauen, damit Systeme auch kontrollierbar in eigener Hand bleiben.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Auch wir als Bürger sollten immer ein Auge darauf haben, wem wir unsere Daten anvertrauen. Klar ist eine Gemeinde, ein größerer Dienstleister oder der Mailverkehr mit staatlichen Akteuren vertrauenswürdig und man sollte annehmen, dass mit unseren persönlichen Daten entsprechen umgegangen wird. Wie man aber sieht, sind zivilgesellschaftliche Recherchen ab und an notwendig, um Schwachstellen und Probleme öffentlich aufzuzeigen und die zuständigen Stellen dahingehend zu sensibilisieren. Und wenn dies auch nur marginal dazu beiträgt, dass unsere Daten in Zukunft besser geschützt werden, dann hat es sich schon gelohnt.</p>
+
+<p>Mein persönlicher Appell an euch: Versendet nicht euren Personalausweis, Reisepass oder sonstige Ausweisdokumente per E-Mail oder Onlineformular. Bleibt von eurer Seite datensparsam.</p>
+
+<p>Zum Schluss möchte ich noch betonen, dass sicherlich nicht alles kaputt ist. Es gibt einige Kommunen, die aus meiner Sicht saubere Applikationen und wirklich gute online Angebote umgesetzt haben.</p>
+
+<p>Ist euch eigentlich aufgefallen, dass ich bei allen beschriebenen Schwachstellen keine besonderen Schutzmaßnahmen ausgehebelt habe (Ausnahme Intranet)? Alles war öffentlich einsehbar. Ging da etwa nicht mehr? RCE wäre doch noch interessant, oder? Darüber werde ich in diesem Kontext trotz meiner (wohl vertretbaren) Motivation aber leider nicht schreiben können. § 202c StGB lässt grüßen.</p>
+
+<p>Danke fürs Lesen!</p>
+
+<p style="text-align:right"><em>Veröffentlicht am 25.10.2022</em></p>
+</div>
+</div></div>
+    </div>
+</div></div>
+		</section>
+
+		<section id="footer">
+			<div class="footer_top inner">
+				<div class="bg_image"></div>
+			</div>
+			<div class="footer_bottom">
+				<div class="parallax">
+					<div class="layer layer1"></div>
+					<div class="layer layer2"></div>
+					<div class="layer layer3"></div>
+				</div>
+			</div>
+			<div class="footer_scene">
+				<div class="inner">
+					<div class="bg_image"></div>
+					<a class="char" href="/world">
+						<img alt="easter egg" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<div class="speak">
+							<div class="boubble">
+								Enter my world!
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="inner">
+					<div class="neos-contentcollection">
+<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
+<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+</div>
+</div></div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-flxn3v5evnisk@live;language=de" src="https://renerehme.dev/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

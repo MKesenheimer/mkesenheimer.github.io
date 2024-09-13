@@ -1,0 +1,949 @@
+<!DOCTYPE html><html lang="en"><!--
+	This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL.
+	Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.
+
+	More information and contribution opportunities at https://www.neos.io
+-->
+<head><meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		
+			<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "BlogPosting",
+					"headline": "How I created an action role-playing game",
+					"image": [
+						"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+					],
+					"author" :{
+						"@type": "Person",
+						"name":"Rene Rehme",
+						"email":"contact@renerehme.de"
+					},
+					"datePublished": "2021-01-17T00:00:00+01:00",
+					"dateModified": "2024-01-01T16:08:07+01:00",
+					"publisher" : {
+						"@type": "Organization",
+						"name":"Rene Rehme",
+						"url":"https:\/\/renerehme.de",
+						"logo":{
+							"@type":"ImageObject",
+							"url":"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+						}
+					}
+				}
+			</script>
+		
+	
+		<script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+    <title>How I created an action role-playing game (RPG)</title><meta name="description" content="I created an Action RPG on my website where the visitor can play and explore the website's content. Read interesting things that I faced while developing." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://renerehme.dev/blog/how-i-created-a-action-role-playing-game" />
+<link rel="alternate" hreflang="x-default" href="https://renerehme.dev/blog/how-i-created-a-action-role-playing-game" /><link rel="alternate" hreflang="de" href="https://renerehme.dev/blog/how-i-created-a-action-role-playing-game" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="How I created an action role-playing game" /><meta name="twitter:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta name="twitter:image" content="https://renerehme.dev/_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta name="twitter:url" content="https://renerehme.dev/blog/how-i-created-a-action-role-playing-game" /><meta property="og:type" content="article" /><meta property="og:title" content="How I created an action role-playing game" /><meta property="og:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta property="og:image" content="https://renerehme.dev/_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_game.jpg" /><meta property="og:url" content="https://renerehme.dev/blog/how-i-created-a-action-role-playing-game" /></head><body class>
+	<div id="wrapper">
+		<div id="header">
+			<div class="stripes">
+				<span class="stripe el1"></span>
+				<span class="stripe el2"></span>
+				<span class="stripe el3"></span>
+			</div>
+            <div class="logo">
+				<img height="119" width="119" class="left" alt="logo left" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+            </div>
+            <div class="menu">
+                <nav class="rehme-renerehme-menu"><ul>
+
+
+<li class="">
+    <a href="/about-me">Über mich</a>
+</li>
+
+
+<li class="current">
+    <a href="/">Blog</a>
+</li>
+
+
+<li class="">
+    <a href="/contact">Kontakt</a>
+</li></ul></nav>
+            </div>
+		</div>
+
+		<section id="content">
+			<div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+	<div><h1 style="text-align:center">How I created an action role-playing game</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p style="text-align:center">Let's play neos! (<strong>Part 1 &amp;&nbsp;2</strong>)</p>
+</div>
+</div></div>
+    </div>
+</div>
+
+<div class="color-white paddingTop0 paddingBottom30 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Did you notice that my website allows you to play an Action RPG? No? Then take a look at the footer.</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>When I started programming this blog,&nbsp;I thought about doing something special. So I started thinking about how to make this website more interesting for people. I asked myself: <em>How cool would it be to have an Easter egg where the visitor can play and explore the website's content in an Action RPG?</em><br />
+<br />
+Very cool! Now, this blog article is about the game development process. I'm still developing the game so I'll update&nbsp;this&nbsp;first part from time to time.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>I recorded a video for the&nbsp;"<a target="_blank" rel="noopener" href="https://www.meetup.com/de-DE/neos-cms-online/events/274408634/">Neos CMS Online Meetup V - Neos VI &amp; Flow VII</a>" showing the community the game in its early state. Some changes have been made since then. If you've already seen the video and found it interesting, you should read the article anyway :)</p>
+</div>
+</div><div class="neos-nodetypes-html">
+	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
+<style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p>In this article series I will explain how I create the game and how I implemented this game in the <span class="sparkling-test">Neos CMS</span>. This is the first part ?.</p></div></div>
+</div>
+<div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>This is the game</h2>
+</div>
+</div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/5c17204cf62c99eb3e9505d09f88301b8cd95ade/game_overview.jpg" width="1290" height="790" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Bevor I started&nbsp;I had to read some articles about how RPGs were made in the 90s. What I've learned is that most of these games are actually based on tilemaps. So, we&nbsp;can create the game world from small, regularly shaped images, which are known as tiles. This means that large image files containing whole-layer maps are not required, as they are created multiple times from&nbsp;image fragments.</p>
+
+<p>The most efficient way to store the tile images is with an atlas. These are all of the required tiles, combined into a single image file. When a tile is rendered in-game, it's only a small part of that larger image.<br />
+You can compare this technique to a spritesheet known from CSS sprites by using one single&nbsp;<strong>background-image </strong>and just changing the <strong>background-position</strong> for a corresponding element.</p>
+</div>
+</div><div class="row paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>The following picture&nbsp;shows a tile atlas with 10 x 2 tiles. Some of these tiles<strong>*</strong> are used as backgrounds, others as objects or overlays in several layers. Different layers automatically create perspectives. In the follwong interaction demo this tile atlas is used as example.</p>
+</div>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/d7ccbc6f2ff5ee7b1f186677bd46b8a110470888/tilemap_pattern.png" width="320" height="64" />
+
+			
+	
+
+
+	
+</figure>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p><sub><strong>*</strong>Please note that some of these tiles are licenced. I bought them from&nbsp;<a target="_blank" rel="noopener" href="https://itch.io/game-assets">itch.io</a>. If you want, you can buy them there for your own use. Another great resource for tiles is&nbsp;<a target="_blank" rel="noopener" href="https://www.gamedevmarket.net/">GameDev Market</a>.</sub></p>
+</div>
+</div></div>
+</div>
+
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p style="text-align:center"><strong>Layer Demo</strong>&nbsp;(Interactive):</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p style="text-align:center"><sup>How is this interaction created? <a target="_blank" rel="noopener" href="https://codepen.io/renerehme/pen/vYXdXmJ">Check my CodePen</a>.</sup></p>
+</div>
+</div><div class="neos-nodetypes-html">
+	<!-- interactive tilemaps: css -->
+<style>@keyframes layer1{0%{transform:translateX(0)}50%{transform:translateX(-30%)}100%{transform:translateX(0)}}@keyframes layer2{0%{transform:translateX(0)}50%{transform:translateX(15%)}100%{transform:translateX(0)}}@keyframes layer3{0%{transform:translateX(0)}50%{transform:translateX(0)}100%{transform:translateX(0)}}@keyframes layer4{0%{transform:translateX(0)}50%{transform:translateX(30%)}100%{transform:translateX(0)}}@keyframes character{0%{left:-32px}100%{left:262px}}@keyframes border{0%{-webkit-box-shadow:inset 0 0 0 1px transparent;-moz-box-shadow:inset 0 0 0 1px transparent;box-shadow:inset 0 0 0 1px transparent;color:transparent}50%{-webkit-box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);-moz-box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);box-shadow:inset 0 0 0 1px rgba(0,0,0,.4);color:#000}100%{-webkit-box-shadow:inset 0 0 0 1px transparent;-moz-box-shadow:inset 0 0 0 1px transparent;box-shadow:inset 0 0 0 1px transparent;color:transparent}}html body .tilemaps-controls{display:flex;justify-content:center;align-items:center;color:#252554}html body .tilemaps-controls button{margin:10px 5px;color: white;background: #252554;border: 0;padding: 10px 20px;}html body .tilemaps-container{position:relative;width:100%;height:330px;margin-left:-30px}html body .tilemaps-container .tilemaps{display:block;width:176px;margin: 62px auto;padding:0;position:relative;outline:0;border:none;cursor:unset;}html body .tilemaps-container .tilemaps .tilemap{position:absolute;top:0;left:0}html body .tilemaps-container .tilemaps .tilemap>div{transform:skewY(18deg);display:flex;flex-wrap:wrap;width:256px}html body .tilemaps-container .tilemaps .tilemap>div>div{background-image:url(https://renerehme.dev/_Resources/Persistent/d7ccbc6f2ff5ee7b1f186677bd46b8a110470888/tilemap_pattern.png);background-repeat:repeat-y;background-position:32px 0;float:left;height:32px;width:32px;display:flex;justify-content:flex-end;line-height: 540px;color:#252554;font-weight:600;animation:border 10s infinite}html body .tilemaps-container .tilemaps .tilemap>div>div.id1{background-position:0 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id2{background-position:-32px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id3{background-position:-64px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id4{background-position:-96px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id5{background-position:-128px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id6{background-position:-160px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id7{background-position:-192px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id8{background-position:-224px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id9{background-position:-256px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id10{background-position:-288px 0}html body .tilemaps-container .tilemaps .tilemap>div>div.id11{background-position:0 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id12{background-position:-32px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id13{background-position:-64px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id14{background-position:-96px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id15{background-position:-128px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id16{background-position:-160px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id17{background-position:-192px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id18{background-position:-224px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id19{background-position:-256px 32px}html body .tilemaps-container .tilemaps .tilemap>div>div.id20{background-position:-288px 32px}html body .tilemaps-container .tilemaps .tilemap.markTile>div>div{-webkit-box-shadow:inset 0 0 0 32px rgba(0,0,0,.4);-moz-box-shadow:inset 0 0 0 32px rgba(0,0,0,.4);box-shadow:inset 0 0 0 32px rgba(0,0,0,.4)!important;opacity:.3}html body .tilemaps-container .tilemaps .tilemap.layer1{z-index:4;animation:layer1 10s infinite}html body .tilemaps-container .tilemaps .tilemap.layer2{z-index:3;animation:layer2 10s infinite}html body .tilemaps-container .tilemaps .tilemap.layer2 span{position:absolute;left:-100px;top:85px;height:64px;width:30px;background:url(https://renerehme.dev/_Resources/Persistent/f83d694bc2e2e4c0284a5058cd914cf59e528e7e/hero_walks_right03.png);animation:character 2s infinite}html body .tilemaps-container .tilemaps .tilemap.layer3{z-index:2;animation:layer3 10s infinite}html body .tilemaps-container .tilemaps .tilemap.layer4{z-index:1;animation:layer4 10s infinite}</style>
+
+<!-- interactive tilemaps: js -->
+<script>$(function(){$(".tilemaps-controls > button").click(function(){var a=$(this).data("id");"all"===a?$(".tilemap").removeClass("markTile"):($(".tilemaps-controls > button").each(function(){$(".tilemap").addClass("markTile")}),$("."+a).removeClass("markTile"))})});</script>
+
+<!-- interactive tilemaps: html -->
+<div class="tilemaps-controls"><button data-id="all">All</button> <button data-id="layer4">Ground</button> <button data-id="layer3">Objects</button> <button data-id="layer1">Overlays</button></div><div class="tilemaps-container"> <button class="tilemaps"> <div class="tilemap layer1"> <div> <div>Overlays</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id17"></div><div class="id18"></div><div class="id19"></div><div></div><div></div><div class="id9"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div class="tilemap layer2"> <div> <span></span> </div></div><div class="tilemap layer3"> <div> <div>Objects</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id20"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id11"></div><div class="id12"></div><div class="id13"></div><div></div><div></div><div class="id10"></div><div></div><div></div><div class="id14"></div><div class="id15"></div><div class="id16"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id20"></div></div></div><div class="tilemap layer4"> <div> <div class="id1">Ground</div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id6"></div><div class="id7"></div><div class="id6"></div><div class="id6"></div><div class="id8"></div><div class="id7"></div><div class="id6"></div><div class="id7"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div></div></div></button></div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>In my game I'm using scrolling tilemaps. I had performance issues on my first try as it was difficult to draw scrolling tile maps on a large viewport without lags. For rendering the game im using a canvas element. I was loading the whole map at once, so the problem was that too much data had to be loaded on every Frame when the canvas was rendering the view.&nbsp;There are, however, techniques that can be used to keep scrolling smoothly. The approach was&nbsp;to draw only visible tiles.&nbsp;This means that the tiles are&nbsp;rendered individually in a canvas element via the Canvas API if required, so that unnecessary tiles do not have to be redrawn with each frame.&nbsp;So if you have a 10x10 visible grid, you should load&nbsp;12x12 tiles to avoid a bleeding effect.</p>
+
+<p>It was important to me that the world looks&nbsp;right and intended because it&nbsp;sets the mood and journey that the player experiences. I installed a software named tiled for creating the worldmap. This makes it very easy to put tiles in a grid because you can see what you do. At the end there is an&nbsp;export function which is basicly an array with Ids for each layer.&nbsp;I&nbsp;really recommend a software like Tiled for&nbsp;that.&nbsp;</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>What is the logic behind all this?</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>At first I have to say that my game&nbsp;is based on game developer technics I learned from mozilla dev articles, which helped me a lot.&nbsp;Some code snippets from there are still used in my code. There is no&nbsp;game engine or some kind of RPG lib&nbsp;used. This game is 100% based on native JavaScript and a bit of jQuery (I'll get rid of that soon).</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p>To give you an overview of the basic structure (life cycle), you can take the following code as a guide to get an idea of ​​it:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>// necessary stuff to run the game
+Game.run = function (context) { /* this.load(); this.init(); this.tick(elapsed)  */ }
+// load all important data
+Game.load = function () { /* e.g interactions. See the following part 2 for an example: JsonLoader.loadJson('interactions') */ }
+// init the game
+Game.init = function () { /* id mappings, keyboard event listening, create hero, create camera, init game interface */ }
+// keep the game alive
+Game.tick = function (elapsed) { /* compute delta, update frames and stuff, render graphics: this.update(delta); this.render(); */ }
+// update stuff
+Game.update = function () { /* update hero position, detect hero interactions, update camera position */ }
+// render graphics.
+Game.render = function () { /* draw layers, render tile animations, draw the grid */ }</div>
+		</code>
+	</pre>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>Interested in Game Development? Useful tutorials and technique articles can be found in the&nbsp;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Games">MDN game development center</a>.&nbsp;If you want to know exactly how this game works, it is worth reading these articles.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Problems I faced</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Due to the responsive implementation, the canvas element always takes up 100% of the browser width and height. This means that, despite the technology described above, there are currently performance problems if the game has to load too many tiles (e.g. with a high screen resolution). In addition, animated tiles require additional performance as the sesctios&nbsp;are constantly changing. I still have to work&nbsp;? on this problem.&nbsp;</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Let's improve this by expanding hard-coded functionality.</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Neos is one of the best Content Application Platform I've worked with so far. And here you have a perfect example of how powerful this system is. I thought about making a few hard-coded passages from my game source code maintainable via Neos.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>You don't know what <a target="_blank" rel="noopener" href="https://neos.io">neos</a> is? Neos is a content management system. Some also call it an Content Application Platform. The underlying framework makes it possible to create individual extensions via (e.g.) own packages.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Well, there are many ways in which the system can be expanded. I'll show you mine. You can extend this CMS so easily that it is no problem to manage a game on it&nbsp;?</p>
+</div>
+</div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+	<div><h3>Neos Backend<br />
+Management</h3>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>I'll show you two screenshots of my extension&nbsp;in the neos backend. The next part is mainly about that backend module. As you can see there are already some general settings and a JSON builder for game interactions.&nbsp;</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="https://renerehme.dev/_Resources/Persistent/965e9ffe92f808e35f0534d8672312a5eb23a1bd/backendmodule_01.jpg" width="1102" height="1237" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="https://renerehme.dev/_Resources/Persistent/cd60e4c7d364eb7e28295eb8a569405344412046/interactions.jpg" width="1049" height="2311" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+</div>
+    </div>
+</div>
+
+<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h3>Part 2</h3>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Let's create&nbsp;a backend modul&nbsp;</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Before we start this part, I need to briefly explain what I did and what has changed. Originally, much of the business logic in my game was hardcoded into JavaScript. This meant that when I changed the map, the interactions or settings, I always had to change and overwrite the hard-coded passages in the code. In the long run, it has always been my goal to configure and develop the game as well as possible using the Neos CMS. At least in the aforementioned points. I did this with this update. Here we go!</p>
+
+<p>Well, there are many ways in which the neos system can be expanded. We&nbsp;can extend this CMS so easily that it is no problem to manage a game on it&nbsp;?</p>
+
+<p>First I configured a new submodule called <strong>gamemodule</strong>, which directly creates a new navigation entry in the neos backend navigation:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>Neos:
+  Neos:
+    modules:
+      'management':
+        submodules:
+          'gamemodule':
+            label: 'Game'
+            controller: 'Rehme\Renerehme\Controller\GameController'
+            description: 'Game Management'
+            icon: 'fa fa-gamepad'</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Next, I created an action controller and injected the repositories for the models I created for the game. Later, when I submit a form in the backend module, I can use the following update actions to update the delivered model object via the repository and trigger a flash message to get a response in the Neos backend:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>namespace Rehme\Renerehme\Controller;
+
+/*
+ * This file is part of the Rehme.Renerehme package.
+ */
+
+use Rehme\Renerehme\Domain\Repository\GameSettingsRepository;
+use Rehme\Renerehme\Domain\Repository\GameJsonRepository;
+use Rehme\Renerehme\Domain\Model\GameJson;
+use Rehme\Renerehme\Domain\Model\GameSettings;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Mvc\Controller\ActionController;
+
+class GameController extends ActionController
+{
+    /**
+     * @Flow\Inject
+     * @var GameSettingsRepository
+     */
+    protected $gameSettingsRepository;
+
+    /**
+     * @Flow\Inject
+     * @var GameJsonRepository
+     */
+    protected $gameJsonRepository;
+
+    /**
+     * Index
+     */
+    public function indexAction(): void
+    {
+        $this->view->assign('gameSettings', $this->gameSettingsRepository->findAll()->getFirst());
+        $this->view->assign('gameInteractions', $this->gameJsonRepository->findOneByTitle('interactions'));
+        $this->view->assign('gameQuests', $this->gameJsonRepository->findOneByTitle('quests'));
+        $this->view->assign('gameMaps', $this->gameJsonRepository->findOneByTitle('maps'));
+    }
+
+    /**
+     * Update game settings
+     * @param GameSettings $gameSettings
+     */
+    public function updateGameSettingsAction(GameSettings $gameSettings): void
+    {
+        $this->gameSettingsRepository->update($gameSettings);
+        $this->addFlashMessage('Updated general game settings.');
+        $this->redirect('index');
+    }
+
+    /**
+     * Update game interactions
+     * @param GameJson $gameJson
+     */
+    public function updateGameInteractionsAction(GameJson $gameJson): void
+    {
+        $this->gameJsonRepository->update($gameJson);
+        $this->addFlashMessage('Updated interaction settings.');
+        $this->redirect('index');
+    }
+
+    /**
+     * Update game maps
+     * @param GameJson $gameMaps
+     */
+    public function updateGameMapsAction(GameJson $gameMaps): void
+    {
+        $this->gameJsonRepository->update($gameMaps);
+        $this->addFlashMessage('Updated game maps.');
+        $this->redirect('index');
+    }
+}</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>Since the game expects data in JSON format, all information is communicated as JSON strings via&nbsp;classic models with getter and setter methods. The respective JSON data records are identified via&nbsp;"title" in the object.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>namespace Rehme\Renerehme\Domain\Model;
+
+/*
+ * This file is part of the Rehme.Renerehme package.
+ */
+
+use Doctrine\ORM\Mapping as ORM;
+use Neos\Flow\Annotations as Flow;
+use Neos\Neos\Domain\Service;
+
+/**
+ * Class GameJson
+ * @Flow\Entity
+ */
+class GameJson
+{
+    const JSON_EMPTY = '{}';
+
+    /**
+     * Title
+     * @var string
+     * @Flow\Validate(type="NotEmpty")
+     */
+    protected $title = '';
+
+    /**
+     * JSON
+     * @var string
+     * @ORM\Column(type="text")
+     * @Flow\Validate(type="NotEmpty")
+     */
+    protected $json = self::JSON_EMPTY;
+
+    /**
+     * Returns the title
+     * @return string
+     */
+    public function getTitle() : string
+    {
+        return $this->title;
+    }
+
+    /**
+     * Sets the title
+     * @param string $title
+     */
+    public function setTitle(string $title) : void
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * Returns the JSON
+     * @return string
+     */
+    public function getJson() : string
+    {
+        return $this->json;
+    }
+
+    /**
+     * Sets the JSON
+     * @param string $json
+     */
+    public function setJson(string $json) : void
+    {
+        $this->json = $json;
+    }
+
+    /**
+     * Checks if JSON is empty
+     * @return boolean
+     */
+    public function jsonIsEmpty() : bool
+    {
+        return $this->json === self::JSON_EMPTY;
+    }
+}</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>By running a <em>create</em>&nbsp;command from the console, I can specify what information should be generated first. That was very helpful during my tests and for golive of all of these additional logic. So I wrote a command controller for it.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>namespace Rehme\Renerehme\Command;
+
+/*
+ * This file is part of the Rehme.Renerehme package.
+ */
+
+use Rehme\Renerehme\Domain\Repository\GameSettingsRepository;
+use Rehme\Renerehme\Domain\Repository\GameJsonRepository;
+use Rehme\Renerehme\Domain\Model\GameJson;
+use Rehme\Renerehme\Domain\Model\GameSettings;
+use Neos\Flow\Package\PackageManager;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Cli\CommandController;
+use Neos\Flow\Cli\Request;
+use Neos\Flow\Cli\Response;
+use Neos\Flow\Persistence\PersistenceManagerInterface;
+use Neos\Flow\Mvc\Routing\ObjectPathMappingRepository as ObjectPathMappingRepository;
+
+/**
+ * Game Command Controller
+ */
+class GameCommandController extends CommandController
+{
+
+    /**
+     * @Flow\Inject
+     * @var GameSettingsRepository
+     */
+    protected $gameSettingsRepository;
+
+    /**
+     * @Flow\Inject
+     * @var GameJsonRepository
+     */
+    protected $gameJsonRepository;
+
+    /**
+     * Create JSON entries
+     * @return void
+     */
+    public function createCommand(): void
+    {
+        // ask for creating game settings
+        $response = null;
+        while (!in_array($response, ['y', 'n', 'c'])) {
+            $response = $this->output->ask('<comment>Create GameSettings data? (y/n/c) </comment>');
+        }
+        // handle the response
+        switch ($response) {
+            case 'y':
+                // search for existing game settings
+                $removedGameSettings = 0;
+                $gameSettings = $this->gameSettingsRepository->findAll()->toArray();
+                foreach($gameSettings as $gameSetting) {
+                    // remove all existing game settings
+                    $this->gameSettingsRepository->remove($gameSetting);
+                    $removedGameSettings++;
+                }
+                // create game settings
+                $newGameSettings = new GameSettings();
+                $newGameSettings->setDebugMode(false);
+                $newGameSettings->setHeroSpeed(200);
+                $newGameSettings->setShowKeyboard(true);
+                $newGameSettings->setSound(true);
+                $this->gameSettingsRepository->add($newGameSettings);
+                $this->outputLine('Removed %s entries and created a new GameSettings entry.', [$removedGameSettings]);
+                break;
+            case 'n':
+                $this->outputLine('Nope, ok next.');
+                break;
+            case 'c':
+                $this->outputLine('Canceled.');
+                $this->quit(0);
+                break;
+        }
+        
+        // ask for creating json data
+        $response = null;
+        while (!in_array($response, ['y', 'n', 'c'])) {
+            $response = $this->output->ask('<comment>Create GameJson data? (y/n/c) </comment>');
+        }
+        // handle the response
+        switch ($response) {
+            case 'y':
+                // search for existing json entries
+                $removedGameJson = 0;
+                $gameJson = $this->gameJsonRepository->findAll()->toArray();
+                foreach($gameJson as $json) {
+                    // remove all existing json entries
+                    $this->gameJsonRepository->remove($json);
+                    $removedGameJson++;
+                }
+                // create game json entries
+                $settingTitles = array('interactions', 'quests', 'maps');
+                foreach($settingTitles as $title) {
+                    $newGameJson = new GameJson();
+                    $newGameJson->setTitle($title);
+                    $newGameJson->setJson('{}');
+                    $this->gameJsonRepository->add($newGameJson);
+                }
+                $this->outputLine('Removed %s entries and created new GameJson entries.', [$removedGameJson]);
+                break;
+            case 'n':
+                $this->outputLine('Nope. Done.');
+                break;
+            case 'c':
+                $this->outputLine('Canceled.');
+                $this->quit(0);
+                break;
+        }
+    }
+}</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>In Neos Flow we can define guidelines to ensure that our controller methods can only be executed (requested) through our specifications in the policy.yaml settings. To do this, I had to define some Roles and Privilege Targets for my controllers.&nbsp;The API controller can be addressed by the client through the following provisions. The game controller for the backend is protected by Neos authentication.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>privilegeTargets:
+  Neos\Neos\Security\Authorization\Privilege\ModulePrivilege:
+    'Rehme.Renerehme:GameBackendModule':
+      matcher: 'management/gamemodule'
+  Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'Rehme.Renerehme:Api':
+      matcher: 'method(Rehme\Renerehme\Controller\ApiController->.*Action())'
+
+roles:
+  'Neos.Neos:Editor':
+    privileges:
+      -
+        privilegeTarget: 'Rehme.Renerehme:GameBackendModule'
+        permission: GRANT
+
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Rehme.Renerehme:Api'
+        permission: GRANT</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>As a result of my refactoring, quests, interactions, maps and settings are now requested in the form of JSON strings on the client side through Javascript. In order for this to work, the data is obtained through Ajax requests. The API controller is addressed for this purpose.</p>
+
+<p>To build urls for api calls, i had to create routes. By defining routes, a request passes the router and ask for the correct package, controller and action.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>-
+  name: 'get interactions'
+  uriPattern: 'api/getgameinteractions.{@format}'
+  defaults:
+    '@package': 'Rehme.Renerehme'
+    '@controller': 'Api'
+    '@action': 'getGameInteractionJson'
+    '@format': 'json'
+
+-
+  name: 'get quests'
+  uriPattern: 'api/getgamequests.{@format}'
+  defaults:
+    '@package': 'Rehme.Renerehme'
+    '@controller': 'Api'
+    '@action': 'getGameQuestJson'
+    '@format': 'json'
+
+-
+  name: 'get maps'
+  uriPattern: 'api/getgamemaps.{@format}'
+  defaults:
+    '@package': 'Rehme.Renerehme'
+    '@controller': 'Api'
+    '@action': 'getGameMapsJson'
+    '@format': 'json'</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Let's go shortly&nbsp;into the javascript part where the logic for the game is implemented. The json&nbsp;data is requested&nbsp;in a loadJson function which is finally fired in Game.load(). To get the data when its necessary, im using a simple getJson function. The loader&nbsp;looks like this:</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>JsonLoader.loadJson = function (key) {
+    var loaderInstance = this;
+    var d = new Promise(function(resolve, reject) {
+        $.ajax({
+            url: 'api/getgame'+key+'.json',
+            type: 'POST',
+            data: {
+                key: 'value',
+            },
+            success: function (data) {
+                // example for load interactions
+                let jsonData = JSON.parse(data);
+                let jsonDataCollisionIds = [];
+                jsonData.forEach(function(obj) {
+                    jsonDataCollisionIds.push(obj.collisionId)
+                });
+                loaderInstance.jsonStrings['interactionIds'] = JSON.stringify(jsonDataCollisionIds);
+                (GAME_DEBUG) ? console.log(JSON.stringify(jsonDataCollisionIds)) : null;
+
+                loaderInstance.jsonStrings[key] = data;
+                resolve(data);
+            },
+            error: function (error) {
+                reject('Could not load json for key: ' + key);
+            },
+        })
+    }.bind(this));
+    return d;
+};
+
+Game.load = function () {
+    return [JsonLoader.loadJson('interactions')];
+};</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>One of the main functions of my game is to display blog articles and content pages from my website in the game. In order for this to be possible, the corresponding nodes must be read out from the neos CMS. To do this, I wrote the "getHtmlByIdentifier" action in my API controller.</p>
+
+<p>The logic is simple: I use a <strong>FlowQuery </strong>to search for the appropriate node with the UUID and render the HTML with <strong>FusionView</strong>.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>/**
+ * Get HTML from blog post
+ * @param string $identifier uuid
+ * @return string rendered html
+ */
+public function getHtmlByIdentifierAction(string $identifier): string
+{
+    // check for valid identifier
+    if (preg_match(UuidValidator::PATTERN_MATCH_UUID, $identifier) !== 0) {
+        // create the context
+        $context = $this->contextFactory->create(
+            array(
+                'workspaceName' => 'live',
+                'currentDateTime' => new Now(),
+                'dimensions' => array(),
+                'invisibleContentShown' => false,
+                'removedContentShown' => false,
+                'inaccessibleContentShown' => false
+            )
+        );
+
+        // try to find a node with the given identifier via FlowQuery
+        $query = new FlowQuery([$context->getCurrentSiteNode()]);
+        $documentNode = $query->find('#'.$identifier)->get(0);
+
+        if($documentNode) {
+            // check if the node is a Post or Page nodeType
+            $documentName = $documentNode->getNodeType()->getName();
+
+            if($documentName == 'Rehme.Renerehme:Post' || $documentName == 'Rehme.Renerehme:Page') {
+                // get the main path from child nodes
+                $childNodes = $documentNode->getChildNodes();
+                $mainPath = $childNodes[0];
+
+                // create a FusionView and assign the mainPath
+                $fusionView = new FusionView();
+                $fusionView->setControllerContext(new ControllerContext(
+                    $this->uriBuilder->getRequest(),
+                    new Response(),
+                    new Arguments(array()),
+                    $this->uriBuilder
+                ));
+                $fusionView->assign('value', $mainPath);
+                $fusionView->setFusionPath('<' . $mainPath->getNodeType() . '>');
+
+                // render raw html
+                return $fusionView->render();
+            }
+        }
+    }
+    return '';
+}</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>So that the action can be addressed via an AJAX request, an entry is again required in Routes.yaml</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>-
+  name: 'get rendered html'
+  uriPattern: 'api/getcontentbyid'
+  defaults:
+    '@package': 'Rehme.Renerehme'
+    '@controller': 'Api'
+    '@action': 'getHtmlByIdentifier'
+    '@format': ''</div>
+		</code>
+	</pre>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Finally, it should be said that I of course need a node type for the game in order to create the initial page element. Since I have now outsourced all settings to my own models, I no longer need NodeType properies.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+	<pre class="line-numbers">
+		<code class="language-php">
+			<div>'Rehme.Renerehme:Game':
+  superTypes:
+    'Rehme.Renerehme:Page': TRUE
+  ui:
+    label: 'Game'
+    inspector:
+      groups:
+        settings:
+          label: 'Game settings'
+          icon: 'icon-cogs'
+          position: last</div>
+		</code>
+	</pre>
+</div>
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Final words</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>By refactoring the JavaScript&nbsp;code, I was able to reduce the total script size&nbsp;from <strong>16,6kb</strong> to <strong>5,0kb</strong>.</p>
+
+<p>Thanks to the community, I can improve&nbsp;this game and make it better and better.</p>
+
+<p><strong>Nico Grienauer</strong>&nbsp;from the&nbsp;Drupal Austria Association&nbsp;e.g.&nbsp;gave me some helpfull feedback:</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>"<em>very nice! I&nbsp;think the communication system needs a bit of improvement. Maybe that you can move away when you have have hit return without having to wait/press return again. It happened to me that i had to go through texts more than once, because return startet it again."</em></p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>He was right. I didn't noticed that, so I completely rebuilt this logic. You can now cancel an interaction at any time by clicking the ESC button (on your device or on the ESC button displayed in the game).</p>
+
+<p>If you also have tips for improvement, feel free to contact me on twitter or email.</p>
+
+<p>Thanks for reading&nbsp;❤️</p>
+</div>
+</div></div>
+    </div>
+</div>
+
+<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Ongoing improvement</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p><em>In this section I will write down any improvements I have made in the future.</em></p>
+</div>
+</div></div>
+    </div>
+</div></div>
+		</section>
+
+		<section id="footer">
+			<div class="footer_top inner">
+				<div class="bg_image"></div>
+			</div>
+			<div class="footer_bottom">
+				<div class="parallax">
+					<div class="layer layer1"></div>
+					<div class="layer layer2"></div>
+					<div class="layer layer3"></div>
+				</div>
+			</div>
+			<div class="footer_scene">
+				<div class="inner">
+					<div class="bg_image"></div>
+					<a class="char" href="/world">
+						<img alt="easter egg" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<div class="speak">
+							<div class="boubble">
+								Enter my world!
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="inner">
+					<div class="neos-contentcollection">
+<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
+<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+</div>
+</div></div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-mxeokd24q0x32@live;language=de" src="https://renerehme.dev/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

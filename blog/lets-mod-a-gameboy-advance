@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="en"><!--
+	This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL.
+	Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.
+
+	More information and contribution opportunities at https://www.neos.io
+-->
+<head><meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		
+			<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "BlogPosting",
+					"headline": "Let&#039;s mod a Gameboy Advance",
+					"image": [
+						"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+					],
+					"author" :{
+						"@type": "Person",
+						"name":"Rene Rehme",
+						"email":"contact@renerehme.de"
+					},
+					"datePublished": "2020-12-21T00:00:00+01:00",
+					"dateModified": "2021-01-17T20:06:27+01:00",
+					"publisher" : {
+						"@type": "Organization",
+						"name":"Rene Rehme",
+						"url":"https:\/\/renerehme.de",
+						"logo":{
+							"@type":"ImageObject",
+							"url":"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+						}
+					}
+				}
+			</script>
+		
+	
+		<script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+    <title>Let's mod a Gameboy Advance - Blog - Rene Rehme</title><meta name="description" content="I have an IPS-V2 display installed in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://renerehme.dev/blog/lets-mod-a-gameboy-advance" />
+<link rel="alternate" hreflang="x-default" href="https://renerehme.dev/blog/lets-mod-a-gameboy-advance" /><link rel="alternate" hreflang="de" href="https://renerehme.dev/blog/lets-mod-a-gameboy-advance" />
+<meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Let's mod a Gameboy Advance" /><meta name="twitter:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="twitter:image" content="https://renerehme.dev/_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta name="twitter:url" content="https://renerehme.dev/blog/lets-mod-a-gameboy-advance" /><meta property="og:type" content="article" /><meta property="og:title" content="Let's mod a Gameboy Advance" /><meta property="og:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta property="og:image" content="https://renerehme.dev/_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="lets_mod_graph.jpg" /><meta property="og:url" content="https://renerehme.dev/blog/lets-mod-a-gameboy-advance" /></head><body class>
+	<div id="wrapper">
+		<div id="header">
+			<div class="stripes">
+				<span class="stripe el1"></span>
+				<span class="stripe el2"></span>
+				<span class="stripe el3"></span>
+			</div>
+            <div class="logo">
+				<img height="119" width="119" class="left" alt="logo left" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+            </div>
+            <div class="menu">
+                <nav class="rehme-renerehme-menu"><ul>
+
+
+<li class="">
+    <a href="/about-me">Über mich</a>
+</li>
+
+
+<li class="current">
+    <a href="/">Blog</a>
+</li>
+
+
+<li class="">
+    <a href="/contact">Kontakt</a>
+</li></ul></nav>
+            </div>
+		</div>
+
+		<section id="content">
+			<div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+	<div><h1 style="text-align:center">Let's mod a Gameboy Advance</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p style="text-align:center">I have an IPS-V2 display installed in my Gameboy Advance</p>
+</div>
+</div></div>
+    </div>
+</div>
+
+<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Did you play games on a Gameboy Advance as a child?</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div></div>
+</div><div class="neos-nodetypes-html">
+	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
+<style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p>As a child i loved to play with this console. I can’t forget the several hundred hours I sank into <span class="sparkling-test">Golden Sun</span> and <span class="sparkling-test">Golden Sun: The Lost Age</span>, one of my favourite fantasy role-playing game series these days. Unfortunately, this handheld had its weaknesses. One of the biggest was that you had to have direct sunlight to be able to play it because there was no backlight. In addition, the display is only a 240x160  screen, on which 32,768 colors can be displayed simultaneously in bitmap mode.</p></div></div>
+</div>
+
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+	<div><p>Nintendo has released the&nbsp;Game Boy Advance (GBA) in Year 2001. It is a 32-bit, handheld, cartridge-based game console. Did you know that this handheld has been sold 81.51&nbsp;million times worldwide?</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>After all these years, I thought it was time to dig up the old classics again. Sadly, I found that I was no longer used to playing with an unlit display - it wasn't the same feeling. Perhaps this is due to heavy use of smartphones and other backlit devices.&nbsp;So, i was searching for a LED-backlit LCD which i could use for the GBA.</p>
+
+<p>To my amazement, there are many replacement parts and mods available. I thought I'll&nbsp;give it a&nbsp;try.&nbsp;?&nbsp;I had to buy&nbsp;1x&nbsp;IPS V2 LCD, 1x Ribbon Cable (V2), 1x Acrylic fixing strip, 3 x Wires for brightness adjustment.</p>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+	<div><h3>Here you can see my frist try</h3>
+
+<h3>to install&nbsp;the new display:</h3>
+</div>
+</div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="https://renerehme.dev/_Resources/Persistent/a8c4095a153d79f01810ef4bbdfcee103cc1dd6d/IMG-20201113-WA0011.jpeg" width="3264" height="2448" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="https://renerehme.dev/_Resources/Persistent/7a34cd69984b7d3710555279d68a0feb68a36e14/IMG-20201113-WA0013.jpeg" width="3264" height="2448" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+<div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Comparing displays</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>The differences between a IPS-V2 display and the standard displays from Nintendo are&nbsp;gigantic. You get a whole new gaming experience.</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img title="comparing AGS-001 with IPS-V2" alt="comparing AGS-001 with IPS-V2" src="https://renerehme.dev/_Resources/Persistent/1449902d698438815718fbecbd40b5f310c7be70/Screenshot_20201116-193943-1440x1772.png" width="1440" height="1772" />
+
+			
+	
+
+
+	
+</figure>
+</div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>The result</h2>
+</div>
+</div><div class="neos-nodetypes-html">
+	<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div><p>I like the new backlit <span class="sparkling-test">IPS-V2 display</span>. It contains a 10-level brightness control. The display is slightly larger than the original, so I had to buy a special lens, which is fine for 3 euros. After my first try, I realized that it would be a lot cheaper to buy a whole replacement kit.</p>
+</div>
+</div>
+</div>
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Modding&nbsp;a GBA is really fun so I decided to do this again. I also started changing the color of the case. I think this will be really cool! I'll be updating this blog article soon - so be sure to check back again :)</p>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+	
+<figure>
+	
+
+
+		
+				
+	<img src="https://renerehme.dev/_Resources/Persistent/fb3e338d721bf5949fc771c0cff5c086ac0f6025/WhatsApp%20Image%202020-12-19%20at%2022.47.09-1600x1052.jpeg" width="1600" height="1052" />
+
+			
+	
+
+
+	
+</figure>
+</div></div>
+</div>
+</div>
+    </div>
+</div></div>
+		</section>
+
+		<section id="footer">
+			<div class="footer_top inner">
+				<div class="bg_image"></div>
+			</div>
+			<div class="footer_bottom">
+				<div class="parallax">
+					<div class="layer layer1"></div>
+					<div class="layer layer2"></div>
+					<div class="layer layer3"></div>
+				</div>
+			</div>
+			<div class="footer_scene">
+				<div class="inner">
+					<div class="bg_image"></div>
+					<a class="char" href="/world">
+						<img alt="easter egg" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<div class="speak">
+							<div class="boubble">
+								Enter my world!
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="inner">
+					<div class="neos-contentcollection">
+<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
+<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+</div>
+</div></div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-k1v8nf1ptvejw@live;language=de" src="https://renerehme.dev/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

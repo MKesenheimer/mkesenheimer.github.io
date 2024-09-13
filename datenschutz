@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><!--
+	This website is powered by Neos, the Open Source Content Application Platform licensed under the GNU/GPL.
+	Neos is based on Flow, a powerful PHP application framework licensed under the MIT license.
+
+	More information and contribution opportunities at https://www.neos.io
+-->
+<head><meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#202040">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		
+	
+		<script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+    <title>Datenschutz - Rene Rehme</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://renerehme.dev/datenschutz" />
+
+</head><body class>
+	<div id="wrapper">
+		<div id="header">
+			<div class="stripes">
+				<span class="stripe el1"></span>
+				<span class="stripe el2"></span>
+				<span class="stripe el3"></span>
+			</div>
+            <div class="logo">
+				<img height="119" width="119" class="left" alt="logo left" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+            </div>
+            <div class="menu">
+                <nav class="rehme-renerehme-menu"><ul>
+
+
+<li class="">
+    <a href="/about-me">Über mich</a>
+</li>
+
+
+<li class="">
+    <a href="/">Blog</a>
+</li>
+
+
+<li class="">
+    <a href="/contact">Kontakt</a>
+</li></ul></nav>
+            </div>
+		</div>
+
+		<section id="content">
+			<div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+	<div><h1 style="text-align:center">Datenschutz</h1>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+	<div><p style="text-align:center">Legal Disclosure</p>
+</div>
+</div></div>
+    </div>
+</div>
+
+<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+    <div class="inner container-fluid   ">
+        <div class="neos-contentcollection">
+
+<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+	<div><h2>Was von dir erfasst wird</h2>
+</div>
+</div>
+<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+	<div><p>Im Folgenden findest du eine kurze Zusammenfassung der Policy dieser Webseite:</p>
+
+<p>Bei jeder Anfrage an den Server werden im Rahmen der Server-Logfiles Informationen gespeichert, die den Browsertyp und die Browserversion, das verwendete Betriebssystem, die Referrer URL, den Hostnamen des zugreifenden Rechners sowie die Uhrzeit der Serveranfrage umfassen. Diese Informationen werden gemäß den branchenüblichen Standards gespeichert. Die Server-Logfiles werden für maximal 90 Tage aufbewahrt. Es werden keine Werbe- oder Tacking-Cookies für diese Webseite verwendet.</p>
+</div>
+</div></div>
+    </div>
+</div></div>
+		</section>
+
+		<section id="footer">
+			<div class="footer_top inner">
+				<div class="bg_image"></div>
+			</div>
+			<div class="footer_bottom">
+				<div class="parallax">
+					<div class="layer layer1"></div>
+					<div class="layer layer2"></div>
+					<div class="layer layer3"></div>
+				</div>
+			</div>
+			<div class="footer_scene">
+				<div class="inner">
+					<div class="bg_image"></div>
+					<a class="char" href="/world">
+						<img alt="easter egg" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<div class="speak">
+							<div class="boubble">
+								Enter my world!
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="inner">
+					<div class="neos-contentcollection">
+<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
+<a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
+</div>
+</div></div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script data-neos-node="/sites/rehme-renerehme/node-0klwmkmxzjdya@live;language=de" src="https://renerehme.dev/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
