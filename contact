@@ -18,11 +18,11 @@
 		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
 		
 	
-		<script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Kontakt - Matthias Kesenheimer</title><meta name="robots" content="index,follow" /><link rel="canonical" href="/index.html/contact" />
 <link rel="alternate" hreflang="x-default" href="/index.html/contact" /><link rel="alternate" hreflang="de" href="/index.html/contact" />
 </head><body class>
@@ -34,8 +34,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -126,7 +126,7 @@
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="/mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -147,4 +147,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-edo8ys1kleoq9@live;language=de" src="/mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-edo8ys1kleoq9@live;language=de" src="/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
