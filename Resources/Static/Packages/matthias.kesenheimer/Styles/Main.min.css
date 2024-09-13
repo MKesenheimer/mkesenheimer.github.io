@@ -486,7 +486,7 @@ html body #wrapper #header .logo .right {
     margin-left:2px
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul {
+html body #wrapper #header .menu .mkesenheimer-menu > ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -494,11 +494,11 @@ html body #wrapper #header .menu .rehme-renerehme-menu > ul {
     justify-content:center
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li {
+html body #wrapper #header .menu .mkesenheimer-menu > ul > li {
     padding:0 15px 0 15px
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a {
+html body #wrapper #header .menu .mkesenheimer-menu > ul > li > a {
     color: #e1d9ff;
     font-size: 16px;
     font-family: "Roboto Mono", monospace;
@@ -507,17 +507,17 @@ html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a {
     text-shadow:0px 0px 10px #202040
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:hover {
+html body #wrapper #header .menu .mkesenheimer-menu > ul > li > a:hover {
     color: white;
     padding-bottom: 2px;
     border-bottom:2px dashed
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:hover, html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:active, html body #wrapper #header .menu .rehme-renerehme-menu > ul > li > a:focus {
+html body #wrapper #header .menu .mkesenheimer-menu > ul > li > a:hover, html body #wrapper #header .menu .mkesenheimer-menu > ul > li > a:active, html body #wrapper #header .menu .mkesenheimer-menu > ul > li > a:focus {
     text-decoration:none
 }
 
-html body #wrapper #header .menu .rehme-renerehme-menu > ul > li.current a {
+html body #wrapper #header .menu .mkesenheimer-menu > ul > li.current a {
     color:#8282ff
 }
 
