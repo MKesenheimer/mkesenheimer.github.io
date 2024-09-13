@@ -567,7 +567,7 @@ html body #wrapper #footer .footer_bottom .parallax .layer {
 
 html body #wrapper #footer .footer_bottom .parallax .layer.layer1 {
     background-image: url("../Images/bottom_footer_layer01.png");
-    background-repeat: repeat-x repeat-y;
+    background-repeat: repeat-x;
     animation:movebg 70s infinite linear
 }
 
