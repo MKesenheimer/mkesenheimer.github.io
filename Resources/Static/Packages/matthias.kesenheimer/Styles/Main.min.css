@@ -562,12 +562,12 @@ html body #wrapper #footer .footer_bottom .parallax .layer {
     position: absolute;
     top: 0;
     width: 100%;
-    height:100%
+    height:241px
 }
 
 html body #wrapper #footer .footer_bottom .parallax .layer.layer1 {
     background-image: url("../Images/bottom_footer_layer01.png");
-    background-repeat: repeat-x;
+    background-repeat: repeat-x repeat-y;
     animation:movebg 70s infinite linear
 }
 
