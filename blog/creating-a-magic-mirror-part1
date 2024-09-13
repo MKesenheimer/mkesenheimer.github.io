@@ -45,11 +45,11 @@
 			</script>
 		
 	
-		<script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>Creating a Magic Mirror - Part 1 - Blog - Matthias Kesenheimer</title><meta name="description" content="This blog article is about creating a magic mirror with speech recognition." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/creating-a-magic-mirror-part1" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/creating-a-magic-mirror-part1" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/creating-a-magic-mirror-part1" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Creating a Magic Mirror - Part 1" /><meta name="twitter:description" content="This blog article is about creating a magic mirror with speech recognition" /><meta name="twitter:image" content="_Resources/Persistent/6b66b234d1589a2bf59222736e5087462f1aaba5/magic-mirror_speech_recognition.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/creating-a-magic-mirror-part1" /><meta property="og:type" content="article" /><meta property="og:title" content="Creating a Magic Mirror - Part 1" /><meta property="og:description" content="This blog article is about creating a magic mirror with speech recognition." /><meta property="og:image" content="_Resources/Persistent/6b66b234d1589a2bf59222736e5087462f1aaba5/magic-mirror_speech_recognition.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="magic-mirror_speech_recognition.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/creating-a-magic-mirror-part1" /></head><body class>
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -152,7 +152,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 
 		
 				
-	<img src="_Resources/Persistent/1b0d3985cac250924683c929ecf55b17e3b6b672/magic-mirror-raspberry-4.jpg" width="720" height="540" />
+	<img src="/_Resources/Persistent/1b0d3985cac250924683c929ecf55b17e3b6b672/magic-mirror-raspberry-4.jpg" width="720" height="540" />
 
 			
 	
@@ -189,7 +189,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 
 		
 				
-	<img src="_Resources/Persistent/2cc4735c927ea78c0ce11c5b7d5a8df609b2f9b3/magic-mirror-example-glass.jpg" width="720" height="441" />
+	<img src="/_Resources/Persistent/2cc4735c927ea78c0ce11c5b7d5a8df609b2f9b3/magic-mirror-example-glass.jpg" width="720" height="441" />
 
 			
 	
@@ -217,7 +217,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 
 		
 				
-	<img src="_Resources/Persistent/e193e544a318c6ad068fc1a5fe8cfa31c763a5c8/magic-mirror-final-glass.jpg" width="720" height="960" />
+	<img src="/_Resources/Persistent/e193e544a318c6ad068fc1a5fe8cfa31c763a5c8/magic-mirror-final-glass.jpg" width="720" height="960" />
 
 			
 	
@@ -234,7 +234,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 
 		
 				
-	<img src="_Resources/Persistent/11dadc387c6e7657a2132c5a02a7e4e51361bb2a/magic-mirror-final-display01.jpg" width="1200" height="1600" />
+	<img src="/_Resources/Persistent/11dadc387c6e7657a2132c5a02a7e4e51361bb2a/magic-mirror-final-display01.jpg" width="1200" height="1600" />
 
 			
 	
@@ -251,7 +251,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 
 		
 				
-	<img src="_Resources/Persistent/2a3986a8e7fe5dc259b667faa1761d94c6709b3c/magic-mirror-final-display02.jpg" width="720" height="960" />
+	<img src="/_Resources/Persistent/2a3986a8e7fe5dc259b667faa1761d94c6709b3c/magic-mirror-final-display02.jpg" width="720" height="960" />
 
 			
 	
@@ -301,7 +301,7 @@ The API has two parts: <strong>SpeechSynthesis</strong> (Text-to-Speech), and <s
 		
 				<a href="https://caniuse.com/speech-recognition">
 					
-	<img src="_Resources/Persistent/d37abd647b1745d4416cdcbdd134d91ab090be0c/webspeechapi-caniuse.jpg" width="1354" height="353" />
+	<img src="/_Resources/Persistent/d37abd647b1745d4416cdcbdd134d91ab090be0c/webspeechapi-caniuse.jpg" width="1354" height="353" />
 
 				</a>
 			
@@ -372,7 +372,7 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 
 		
 				
-	<img title="Web Spech API Test" alt="Web Spech API Test" src="_Resources/Persistent/3947477d4690077b034e6cf5772a1a1953e79279/magic-mirror-reech-test.gif" width="640" height="352" />
+	<img title="Web Spech API Test" alt="Web Spech API Test" src="/_Resources/Persistent/3947477d4690077b034e6cf5772a1a1953e79279/magic-mirror-reech-test.gif" width="640" height="352" />
 
 			
 	
@@ -406,7 +406,7 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -427,4 +427,4 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-649enqh8huzi6@live;language=de" src="_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-649enqh8huzi6@live;language=de" src="/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

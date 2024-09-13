@@ -45,11 +45,11 @@
 			</script>
 		
 	
-		<script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
-        <script src="_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+		<script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+        <script src="/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
     <title>How I created an action role-playing game (RPG)</title><meta name="description" content="I created an Action RPG on my website where the visitor can play and explore the website's content. Read interesting things that I faced while developing." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/how-i-created-a-action-role-playing-game" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/how-i-created-a-action-role-playing-game" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/how-i-created-a-action-role-playing-game" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="How I created an action role-playing game" /><meta name="twitter:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta name="twitter:image" content="_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/how-i-created-a-action-role-playing-game" /><meta property="og:type" content="article" /><meta property="og:title" content="How I created an action role-playing game" /><meta property="og:description" content="I created an Action RPG on my Neos website where the visitor can play and explore the website's content. In this article, I'll explain some interesting things that I faced while developing the game." /><meta property="og:image" content="_Resources/Persistent/8daf78495150d5032afa3d175f75aee6f0591fcf/openGraph_Renerehme_game.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_game.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/mkesenheimer.github.io/index.html/blog/how-i-created-a-action-role-playing-game" /></head><body class>
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="kesenheimer-matthias-menu"><ul>
@@ -140,7 +140,7 @@ Very cool! Now, this blog article is about the game development process. I'm sti
 
 		
 				
-	<img src="_Resources/Persistent/5c17204cf62c99eb3e9505d09f88301b8cd95ade/game_overview.jpg" width="1290" height="790" />
+	<img src="/_Resources/Persistent/5c17204cf62c99eb3e9505d09f88301b8cd95ade/game_overview.jpg" width="1290" height="790" />
 
 			
 	
@@ -171,7 +171,7 @@ You can compare this technique to a spritesheet known from CSS sprites by using 
 
 		
 				
-	<img src="_Resources/Persistent/d7ccbc6f2ff5ee7b1f186677bd46b8a110470888/tilemap_pattern.png" width="320" height="64" />
+	<img src="/_Resources/Persistent/d7ccbc6f2ff5ee7b1f186677bd46b8a110470888/tilemap_pattern.png" width="320" height="64" />
 
 			
 	
@@ -292,7 +292,7 @@ Management</h3>
 
 		
 				
-	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="_Resources/Persistent/965e9ffe92f808e35f0534d8672312a5eb23a1bd/backendmodule_01.jpg" width="1102" height="1237" />
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="/_Resources/Persistent/965e9ffe92f808e35f0534d8672312a5eb23a1bd/backendmodule_01.jpg" width="1102" height="1237" />
 
 			
 	
@@ -309,7 +309,7 @@ Management</h3>
 
 		
 				
-	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="_Resources/Persistent/cd60e4c7d364eb7e28295eb8a569405344412046/interactions.jpg" width="1049" height="2311" />
+	<img title="GBA IPS-V2 Mod" alt="GBA IPS-V2 Mod" src="/_Resources/Persistent/cd60e4c7d364eb7e28295eb8a569405344412046/interactions.jpg" width="1049" height="2311" />
 
 			
 	
@@ -925,7 +925,7 @@ public function getHtmlByIdentifierAction(string $identifier): string
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="/_Resources/Static/Packages/matthias.kesenheimer/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -946,4 +946,4 @@ public function getHtmlByIdentifierAction(string $identifier): string
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-mxeokd24q0x32@live;language=de" src="_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-mxeokd24q0x32@live;language=de" src="/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
