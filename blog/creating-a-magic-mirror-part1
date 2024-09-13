@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2021-04-07T19:11:36+02:00",
 					"dateModified": "2021-04-25T21:04:34+02:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -50,7 +50,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>Creating a Magic Mirror - Part 1 - Blog - Rene Rehme</title><meta name="description" content="This blog article is about creating a magic mirror with speech recognition." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" />
+    <title>Creating a Magic Mirror - Part 1 - Blog - Matthias Kesenheimer</title><meta name="description" content="This blog article is about creating a magic mirror with speech recognition." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Creating a Magic Mirror - Part 1" /><meta name="twitter:description" content="This blog article is about creating a magic mirror with speech recognition" /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/6b66b234d1589a2bf59222736e5087462f1aaba5/magic-mirror_speech_recognition.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" /><meta property="og:type" content="article" /><meta property="og:title" content="Creating a Magic Mirror - Part 1" /><meta property="og:description" content="This blog article is about creating a magic mirror with speech recognition." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/6b66b234d1589a2bf59222736e5087462f1aaba5/magic-mirror_speech_recognition.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="magic-mirror_speech_recognition.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/creating-a-magic-mirror-part1" /></head><body class>
 	<div id="wrapper">
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,41 +87,41 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">Creating a Magic Mirror</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">how I&nbsp;created a magic mirror&nbsp; with voice interaction</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Let's start a new project!</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>It's been a while since my last blog post. This is mainly because I invest a lot of time in work&nbsp;and the advancement of my game. But probably also because&nbsp;I'm working on a new project that I'm excited about. I would like to introduce that project in this blog article.</p>
 </div>
 </div><div class="neos-nodetypes-html">
 	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
 <style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>You've probably heard of a "<span class="sparkling-test">magic mirror</span>" or "smart mirror" before, haven't you?</p></div>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>For those unfamiliar with the term, here is a brief explanation:<br />
 <em>A smart mirror, also known as a magic mirror, displays the time, weather, calendar, news, and other custom things.&nbsp;The magic is created by placing a transparent mirror over a screen such as a tablet, monitor, or TV. The technology is mostly driven by a Raspberry Pi.</em></p>
 
@@ -144,7 +144,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -161,7 +161,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 	
 </figure>
 </div></div><div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p><strong>What did I&nbsp;buy to build a magic mirror?</strong></p>
 
 <p><em>- 1x Raspberry Pi 4 (Set)<br />
@@ -174,14 +174,14 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>The most important thing is that a&nbsp;smart mirror consists of a semi-transparent mirror glass (also called spy mirror or one-way mirror) through which light can pass from one side to a certain extent. The light from the screen behind is clearly visible on the front. In this way, the display can show information through the mirror from behind that can be seen by a user standing in front of the mirror.</p>
 
 <p>All black areas on the display and dark areas outside the display are perceived as a normal mirror on the front of the smart mirror.</p>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -198,18 +198,18 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>I ordered test glasses to see which one would fit best. In the end I decided on a semi-transparent mirror glass, <strong>4 mm</strong> with a <strong>transmission value of 8%</strong>.</p>
 </div>
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>When choosing the display, I paid attention to a correspondingly high brightness value (min. 250 cd/m²). The size of the display is 2560 x 1080 Pixel (<em>21:9</em>). The mirror glass has to be cut to the dimensions of the display.</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom0 neos-nodetypes-threecolumn">
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -226,7 +226,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 	
 </figure>
 </div></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -243,7 +243,7 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 	
 </figure>
 </div></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -262,37 +262,37 @@ That would be boring, no? I want to build and code a magic mirror completely mys
 </div></div>
 </div>
 <div class="neos-nodetypes-html">
-	<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Since I also wanted a case and heat sink as additional protection, I opted for a complete <span class="sparkling-test">Raspberry Pi 4</span> set. The hardware is complete. Let's start with the application!</p></div>
 </div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Speech Recognition</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>I want to build a mirror which is interacting with my voice. When I'm saying something,&nbsp;the application should do or show me something. I googled a lot about which technology I should use to realize a solid speech recognition. I found several solutions like: Amazon Alexa or Google Assistant integrations, Voice control based on Sphinx or Annyang.</p>
 </div>
 </div><div class="neos-nodetypes-html">
-	<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>But wait.. wasn't there an experimental native feature in our browser called <span class="sparkling-test">Web Speech API</span>?</p></div>
 </div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>The Web Speech API enables you to incorporate voice data into web apps.<br />
 The API has two parts: <strong>SpeechSynthesis</strong> (Text-to-Speech), and <strong>SpeechRecognition</strong> (Asynchronous Speech Recognition.)<br />
 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">MDN Web Docs</a>&nbsp;| <a target="_blank" rel="noopener" href="https://wicg.github.io/speech-api/">W3C Specifiaction</a>&nbsp;(Draft)</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>That's perfect. It uses Google's servers to perform the conversion. So, using the API sends an audio recording to a Google Server to perform the transcription. The fact that I am using a Chromium based browser on my system guarantees that I have browser compatibility support. The only difference between Chrome and Chromium seems&nbsp;that Chromium does not have Google voices and therefore will not work on machines without voices installed. I read that&nbsp;some chromium builds need the&nbsp;flag&nbsp;<strong>--enable-speech-dispatcher</strong>, too but I have to&nbsp;test it on my Raspberry.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -311,7 +311,7 @@ The API has two parts: <strong>SpeechSynthesis</strong> (Text-to-Speech), and <s
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In order for the mirror to be able to communicate with me, voice activation must always be on, so that speech can be recognized at all times.<br />
 But that's a problem. If I'm talking with someone in the same room, I don't want the mirror to react.<br />
 Amazon is solving this problem by activating the speech recognicing when saying the name "Alexa". I don't want to do it this way.</p>
@@ -324,7 +324,7 @@ Since the microphone activation is always on, I can convert the incoming audio s
 <p>What does that mean in detail? Have a look at my concept:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>------------------------------------------------------------------------            
@@ -359,12 +359,12 @@ onstart                                                       onend
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>This could be false positive in some cases (loud speaking, loud music etc.) but should be very rare if the sensitivity is configured good.&nbsp;Let's try that and create a canvas to visualize the audio stream.<br />
 Have a look at my following demo. I coded that the audio wave is changing it's color when the Web Speech API is fired.&nbsp;<em>Don't get confused, the following display is not the mirror. It's my notebook for testing.</em></p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -381,7 +381,7 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>By doing this I&nbsp;get a visual interaction when the&nbsp;voice detection is activated.&nbsp;The next part of this series of articles will mainly focus on creating the interface and how it's interacting with this technology. Keep checking my blog, it will be worth it.&nbsp;</p>
 
 <p>Thank you for reading!</p>
@@ -418,7 +418,7 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -427,4 +427,4 @@ Have a look at my following demo. I coded that the audio wave is changing it's c
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-649enqh8huzi6@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-649enqh8huzi6@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

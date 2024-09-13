@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2021-01-17T00:00:00+01:00",
 					"dateModified": "2024-01-01T16:08:07+01:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,52 +87,52 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">How I created an action role-playing game</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">Let's play neos! (<strong>Part 1 &amp;&nbsp;2</strong>)</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Did you notice that my website allows you to play an Action RPG? No? Then take a look at the footer.</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>When I started programming this blog,&nbsp;I thought about doing something special. So I started thinking about how to make this website more interesting for people. I asked myself: <em>How cool would it be to have an Easter egg where the visitor can play and explore the website's content in an Action RPG?</em><br />
 <br />
 Very cool! Now, this blog article is about the game development process. I'm still developing the game so I'll update&nbsp;this&nbsp;first part from time to time.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>I recorded a video for the&nbsp;"<a target="_blank" rel="noopener" href="https://www.meetup.com/de-DE/neos-cms-online/events/274408634/">Neos CMS Online Meetup V - Neos VI &amp; Flow VII</a>" showing the community the game in its early state. Some changes have been made since then. If you've already seen the video and found it interesting, you should read the article anyway :)</p>
 </div>
 </div><div class="neos-nodetypes-html">
 	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
 <style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p>In this article series I will explain how I create the game and how I implemented this game in the <span class="sparkling-test">Neos CMS</span>. This is the first part ?.</p></div></div>
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text"><div><p>In this article series I will explain how I create the game and how I implemented this game in the <span class="sparkling-test">Neos CMS</span>. This is the first part ?.</p></div></div>
 </div>
 <div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>This is the game</h2>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -151,7 +151,7 @@ Very cool! Now, this blog article is about the game development process. I'm sti
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Bevor I started&nbsp;I had to read some articles about how RPGs were made in the 90s. What I've learned is that most of these games are actually based on tilemaps. So, we&nbsp;can create the game world from small, regularly shaped images, which are known as tiles. This means that large image files containing whole-layer maps are not required, as they are created multiple times from&nbsp;image fragments.</p>
 
 <p>The most efficient way to store the tile images is with an atlas. These are all of the required tiles, combined into a single image file. When a tile is rendered in-game, it's only a small part of that larger image.<br />
@@ -159,11 +159,11 @@ You can compare this technique to a spritesheet known from CSS sprites by using 
 </div>
 </div><div class="row paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>The following picture&nbsp;shows a tile atlas with 10 x 2 tiles. Some of these tiles<strong>*</strong> are used as backgrounds, others as objects or overlays in several layers. Different layers automatically create perspectives. In the follwong interaction demo this tile atlas is used as example.</p>
 </div>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -180,17 +180,17 @@ You can compare this technique to a spritesheet known from CSS sprites by using 
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p><sub><strong>*</strong>Please note that some of these tiles are licenced. I bought them from&nbsp;<a target="_blank" rel="noopener" href="https://itch.io/game-assets">itch.io</a>. If you want, you can buy them there for your own use. Another great resource for tiles is&nbsp;<a target="_blank" rel="noopener" href="https://www.gamedevmarket.net/">GameDev Market</a>.</sub></p>
 </div>
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center"><strong>Layer Demo</strong>&nbsp;(Interactive):</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center"><sup>How is this interaction created? <a target="_blank" rel="noopener" href="https://codepen.io/renerehme/pen/vYXdXmJ">Check my CodePen</a>.</sup></p>
 </div>
 </div><div class="neos-nodetypes-html">
@@ -204,26 +204,26 @@ You can compare this technique to a spritesheet known from CSS sprites by using 
 <div class="tilemaps-controls"><button data-id="all">All</button> <button data-id="layer4">Ground</button> <button data-id="layer3">Objects</button> <button data-id="layer1">Overlays</button></div><div class="tilemaps-container"> <button class="tilemaps"> <div class="tilemap layer1"> <div> <div>Overlays</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id17"></div><div class="id18"></div><div class="id19"></div><div></div><div></div><div class="id9"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div class="tilemap layer2"> <div> <span></span> </div></div><div class="tilemap layer3"> <div> <div>Objects</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id20"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id11"></div><div class="id12"></div><div class="id13"></div><div></div><div></div><div class="id10"></div><div></div><div></div><div class="id14"></div><div class="id15"></div><div class="id16"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="id20"></div></div></div><div class="tilemap layer4"> <div> <div class="id1">Ground</div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id4"></div><div class="id6"></div><div class="id7"></div><div class="id6"></div><div class="id6"></div><div class="id8"></div><div class="id7"></div><div class="id6"></div><div class="id7"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id5"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id1"></div><div class="id1"></div><div class="id2"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div><div class="id3"></div><div class="id1"></div><div class="id1"></div><div class="id1"></div></div></div></button></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In my game I'm using scrolling tilemaps. I had performance issues on my first try as it was difficult to draw scrolling tile maps on a large viewport without lags. For rendering the game im using a canvas element. I was loading the whole map at once, so the problem was that too much data had to be loaded on every Frame when the canvas was rendering the view.&nbsp;There are, however, techniques that can be used to keep scrolling smoothly. The approach was&nbsp;to draw only visible tiles.&nbsp;This means that the tiles are&nbsp;rendered individually in a canvas element via the Canvas API if required, so that unnecessary tiles do not have to be redrawn with each frame.&nbsp;So if you have a 10x10 visible grid, you should load&nbsp;12x12 tiles to avoid a bleeding effect.</p>
 
 <p>It was important to me that the world looks&nbsp;right and intended because it&nbsp;sets the mood and journey that the player experiences. I installed a software named tiled for creating the worldmap. This makes it very easy to put tiles in a grid because you can see what you do. At the end there is an&nbsp;export function which is basicly an array with Ids for each layer.&nbsp;I&nbsp;really recommend a software like Tiled for&nbsp;that.&nbsp;</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>What is the logic behind all this?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>At first I have to say that my game&nbsp;is based on game developer technics I learned from mozilla dev articles, which helped me a lot.&nbsp;Some code snippets from there are still used in my code. There is no&nbsp;game engine or some kind of RPG lib&nbsp;used. This game is 100% based on native JavaScript and a bit of jQuery (I'll get rid of that soon).</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>To give you an overview of the basic structure (life cycle), you can take the following code as a guide to get an idea of ​​it:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>// necessary stuff to run the game
@@ -242,49 +242,49 @@ Game.render = function () { /* draw layers, render tile animations, draw the gri
 	</pre>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>Interested in Game Development? Useful tutorials and technique articles can be found in the&nbsp;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Games">MDN game development center</a>.&nbsp;If you want to know exactly how this game works, it is worth reading these articles.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Problems I faced</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Due to the responsive implementation, the canvas element always takes up 100% of the browser width and height. This means that, despite the technology described above, there are currently performance problems if the game has to load too many tiles (e.g. with a high screen resolution). In addition, animated tiles require additional performance as the sesctios&nbsp;are constantly changing. I still have to work&nbsp;? on this problem.&nbsp;</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Let's improve this by expanding hard-coded functionality.</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Neos is one of the best Content Application Platform I've worked with so far. And here you have a perfect example of how powerful this system is. I thought about making a few hard-coded passages from my game source code maintainable via Neos.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>You don't know what <a target="_blank" rel="noopener" href="https://neos.io">neos</a> is? Neos is a content management system. Some also call it an Content Application Platform. The underlying framework makes it possible to create individual extensions via (e.g.) own packages.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Well, there are many ways in which the system can be expanded. I'll show you mine. You can extend this CMS so easily that it is no problem to manage a game on it&nbsp;?</p>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-headline">
 	<div><h3>Neos Backend<br />
 Management</h3>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>I'll show you two screenshots of my extension&nbsp;in the neos backend. The next part is mainly about that backend module. As you can see there are already some general settings and a JSON builder for game interactions.&nbsp;</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -301,7 +301,7 @@ Management</h3>
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -323,20 +323,20 @@ Management</h3>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h3>Part 2</h3>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Let's create&nbsp;a backend modul&nbsp;</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Before we start this part, I need to briefly explain what I did and what has changed. Originally, much of the business logic in my game was hardcoded into JavaScript. This meant that when I changed the map, the interactions or settings, I always had to change and overwrite the hard-coded passages in the code. In the long run, it has always been my goal to configure and develop the game as well as possible using the Neos CMS. At least in the aforementioned points. I did this with this update. Here we go!</p>
 
 <p>Well, there are many ways in which the neos system can be expanded. We&nbsp;can extend this CMS so easily that it is no problem to manage a game on it&nbsp;?</p>
@@ -344,7 +344,7 @@ Management</h3>
 <p>First I configured a new submodule called <strong>gamemodule</strong>, which directly creates a new navigation entry in the neos backend navigation:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>Neos:
@@ -360,11 +360,11 @@ Management</h3>
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Next, I created an action controller and injected the repositories for the models I created for the game. Later, when I submit a form in the backend module, I can use the following update actions to update the delivered model object via the repository and trigger a flash message to get a response in the Neos backend:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>namespace Rehme\Renerehme\Controller;
@@ -441,11 +441,11 @@ class GameController extends ActionController
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Since the game expects data in JSON format, all information is communicated as JSON strings via&nbsp;classic models with getter and setter methods. The respective JSON data records are identified via&nbsp;"title" in the object.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>namespace Rehme\Renerehme\Domain\Model;
@@ -529,11 +529,11 @@ class GameJson
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>By running a <em>create</em>&nbsp;command from the console, I can specify what information should be generated first. That was very helpful during my tests and for golive of all of these additional logic. So I wrote a command controller for it.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>namespace Rehme\Renerehme\Command;
@@ -651,11 +651,11 @@ class GameCommandController extends CommandController
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In Neos Flow we can define guidelines to ensure that our controller methods can only be executed (requested) through our specifications in the policy.yaml settings. To do this, I had to define some Roles and Privilege Targets for my controllers.&nbsp;The API controller can be addressed by the client through the following provisions. The game controller for the backend is protected by Neos authentication.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>privilegeTargets:
@@ -681,13 +681,13 @@ roles:
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>As a result of my refactoring, quests, interactions, maps and settings are now requested in the form of JSON strings on the client side through Javascript. In order for this to work, the data is obtained through Ajax requests. The API controller is addressed for this purpose.</p>
 
 <p>To build urls for api calls, i had to create routes. By defining routes, a request passes the router and ask for the correct package, controller and action.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>-
@@ -719,11 +719,11 @@ roles:
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Let's go shortly&nbsp;into the javascript part where the logic for the game is implemented. The json&nbsp;data is requested&nbsp;in a loadJson function which is finally fired in Game.load(). To get the data when its necessary, im using a simple getJson function. The loader&nbsp;looks like this:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>JsonLoader.loadJson = function (key) {
@@ -762,13 +762,13 @@ Game.load = function () {
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>One of the main functions of my game is to display blog articles and content pages from my website in the game. In order for this to be possible, the corresponding nodes must be read out from the neos CMS. To do this, I wrote the "getHtmlByIdentifier" action in my API controller.</p>
 
 <p>The logic is simple: I use a <strong>FlowQuery </strong>to search for the appropriate node with the UUID and render the HTML with <strong>FusionView</strong>.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>/**
@@ -826,11 +826,11 @@ public function getHtmlByIdentifierAction(string $identifier): string
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>So that the action can be addressed via an AJAX request, an entry is again required in Routes.yaml</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>-
@@ -844,11 +844,11 @@ public function getHtmlByIdentifierAction(string $identifier): string
 		</code>
 	</pre>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Finally, it should be said that I of course need a node type for the game in order to create the initial page element. Since I have now outsourced all settings to my own models, I no longer need NodeType properies.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>'matthias.kesenheimer:Game':
@@ -866,11 +866,11 @@ public function getHtmlByIdentifierAction(string $identifier): string
 	</pre>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Final words</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>By refactoring the JavaScript&nbsp;code, I was able to reduce the total script size&nbsp;from <strong>16,6kb</strong> to <strong>5,0kb</strong>.</p>
 
 <p>Thanks to the community, I can improve&nbsp;this game and make it better and better.</p>
@@ -879,11 +879,11 @@ public function getHtmlByIdentifierAction(string $identifier): string
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>"<em>very nice! I&nbsp;think the communication system needs a bit of improvement. Maybe that you can move away when you have have hit return without having to wait/press return again. It happened to me that i had to go through texts more than once, because return startet it again."</em></p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>He was right. I didn't noticed that, so I completely rebuilt this logic. You can now cancel an interaction at any time by clicking the ESC button (on your device or on the ESC button displayed in the game).</p>
 
 <p>If you also have tips for improvement, feel free to contact me on twitter or email.</p>
@@ -894,15 +894,15 @@ public function getHtmlByIdentifierAction(string $identifier): string
     </div>
 </div>
 
-<div class="color-white paddingTop30 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop30 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Ongoing improvement</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><em>In this section I will write down any improvements I have made in the future.</em></p>
 </div>
 </div></div>
@@ -937,7 +937,7 @@ public function getHtmlByIdentifierAction(string $identifier): string
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -946,4 +946,4 @@ public function getHtmlByIdentifierAction(string $identifier): string
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-mxeokd24q0x32@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-mxeokd24q0x32@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

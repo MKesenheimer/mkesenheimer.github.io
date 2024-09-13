@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2020-12-21T00:00:00+01:00",
 					"dateModified": "2021-01-17T20:06:27+01:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -50,7 +50,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>Let's mod a Gameboy Advance - Blog - Rene Rehme</title><meta name="description" content="I have an IPS-V2 display installed in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" />
+    <title>Let's mod a Gameboy Advance - Blog - Matthias Kesenheimer</title><meta name="description" content="I have an IPS-V2 display installed in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Let's mod a Gameboy Advance" /><meta name="twitter:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" /><meta property="og:type" content="article" /><meta property="og:title" content="Let's mod a Gameboy Advance" /><meta property="og:description" content="I installed an IPS-V2 display in my Gameboy Advance. I am using 1x IPS V2 LCD, 1x Ribbon Cable (V2), 3 x Wires for brightness adjustment." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9b18b9dc242ea3885c905bb119469ade8e3c0f12/lets_mod_graph.jpg" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="lets_mod_graph.jpg" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/lets-mod-a-gameboy-advance" /></head><body class>
 	<div id="wrapper">
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,57 +87,57 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">Let's mod a Gameboy Advance</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">I have an IPS-V2 display installed in my Gameboy Advance</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Did you play games on a Gameboy Advance as a child?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div></div>
 </div><div class="neos-nodetypes-html">
 	<script>$(function(){function initSparkling(){let t=function(){$(".sparkling-test").each(function(){let t=$(this),a=t.find(".star");a.length>5&&a.each(function(t){0===t&&$(this).remove()}),t.append(n())});let a=Math.round(700*Math.random())+100;setTimeout(t,a)},n=function(){let t=Math.floor(20*Math.random())+10;return'<span class="star" style="top:'+(Math.floor(100*Math.random())-50)+"%; left:"+Math.floor(100*Math.random())+'%;"><svg width="'+t+'" height="'+t+'" viewBox="0 0 68 68" fill="none"><path d="M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z" fill="#8475F0" /></svg></span>'};t()}$(function(){initSparkling()});});</script>
 <style>@-webkit-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-moz-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-o-keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@keyframes comeInOut{0%{transform:scale(0)}50%{transform:scale(1)}100%{transform:scale(0)}}@-webkit-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-moz-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@-o-keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(180deg)}}.sparkling-test{position:relative;display:inline-block;z-index:0;font-weight:700;color:#8475F0}.sparkling-test>span{z-index:-1;position:absolute;display:block;animation:comeInOut 700ms forwards}.sparkling-test>span>svg{display:block;animation:spin 1000ms linear}</style>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text"><div><p>As a child i loved to play with this console. I can’t forget the several hundred hours I sank into <span class="sparkling-test">Golden Sun</span> and <span class="sparkling-test">Golden Sun: The Lost Age</span>, one of my favourite fantasy role-playing game series these days. Unfortunately, this handheld had its weaknesses. One of the biggest was that you had to have direct sunlight to be able to play it because there was no backlight. In addition, the display is only a 240x160  screen, on which 32,768 colors can be displayed simultaneously in bitmap mode.</p></div></div>
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text"><div><p>As a child i loved to play with this console. I can’t forget the several hundred hours I sank into <span class="sparkling-test">Golden Sun</span> and <span class="sparkling-test">Golden Sun: The Lost Age</span>, one of my favourite fantasy role-playing game series these days. Unfortunately, this handheld had its weaknesses. One of the biggest was that you had to have direct sunlight to be able to play it because there was no backlight. In addition, the display is only a 240x160  screen, on which 32,768 colors can be displayed simultaneously in bitmap mode.</p></div></div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>Nintendo has released the&nbsp;Game Boy Advance (GBA) in Year 2001. It is a 32-bit, handheld, cartridge-based game console. Did you know that this handheld has been sold 81.51&nbsp;million times worldwide?</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>After all these years, I thought it was time to dig up the old classics again. Sadly, I found that I was no longer used to playing with an unlit display - it wasn't the same feeling. Perhaps this is due to heavy use of smartphones and other backlit devices.&nbsp;So, i was searching for a LED-backlit LCD which i could use for the GBA.</p>
 
 <p>To my amazement, there are many replacement parts and mods available. I thought I'll&nbsp;give it a&nbsp;try.&nbsp;?&nbsp;I had to buy&nbsp;1x&nbsp;IPS V2 LCD, 1x Ribbon Cable (V2), 1x Acrylic fixing strip, 3 x Wires for brightness adjustment.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-headline">
 	<div><h3>Here you can see my frist try</h3>
 
 <h3>to install&nbsp;the new display:</h3>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -154,7 +154,7 @@
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -175,15 +175,15 @@
 <div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Comparing displays</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>The differences between a IPS-V2 display and the standard displays from Nintendo are&nbsp;gigantic. You get a whole new gaming experience.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -201,21 +201,21 @@
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>The result</h2>
 </div>
 </div><div class="neos-nodetypes-html">
-	<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+	<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>I like the new backlit <span class="sparkling-test">IPS-V2 display</span>. It contains a 10-level brightness control. The display is slightly larger than the original, so I had to buy a special lens, which is fine for 3 euros. After my first try, I realized that it would be a lot cheaper to buy a whole replacement kit.</p>
 </div>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Modding&nbsp;a GBA is really fun so I decided to do this again. I also started changing the color of the case. I think this will be really cool! I'll be updating this blog article soon - so be sure to check back again :)</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -265,7 +265,7 @@
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -274,4 +274,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-k1v8nf1ptvejw@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-k1v8nf1ptvejw@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

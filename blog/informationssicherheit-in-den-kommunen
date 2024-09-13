@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2022-10-26T11:34:51+02:00",
 					"dateModified": "2022-12-15T11:40:23+01:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -50,7 +50,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>IT-Sicherheit in deutschen Kommunen. Let's check vulnerabilities! - Blog - Rene Rehme</title><meta name="description" content="Informationssicherheit in den Kommunen - Wie sicher sind unsere Daten?" /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen" />
+    <title>IT-Sicherheit in deutschen Kommunen. Let's check vulnerabilities! - Blog - Matthias Kesenheimer</title><meta name="description" content="Informationssicherheit in den Kommunen - Wie sicher sind unsere Daten?" /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen" />
 <meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@renereh1" /><meta name="twitter:title" content="Informationssicherheit in den Kommunen" /><meta name="twitter:description" content="Wie sicher sind unsere Daten?" /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/9bc3b5871b47050a6f099b8cfb602da5ae305cfb/card-2000x1410.jpg" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/informationssicherheit-in-den-kommunen" /></head><body class>
 	<div id="wrapper">
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,34 +87,34 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">&nbsp;Informationssicherheit in den Kommunen</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">Wie sicher sind unsere Daten?</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Ich habe deutsche Kommunen auf Schwachstellen überprüft</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In diesem Artikel zeige ich auf, wie mit einfachsten Methoden Schwachstellen und Datenabflüsse bei deutschen Kommunen / Städten aufzudecken waren. Über 3 Monate hinweg habe ich Server / Applikationen überprüft und dabei so einiges gefunden. Darunter massive Datenabflüsse von E-Mails und Anhängen, persönliche Dokumente (z.B. Personalausweise, Anträge etc.), allg. Schriftverkehr mit Bürgern, Log-Files mit sensiblen Daten, Zugang zu diversen Datenbanken, Zugang zu Intranet-Plattformen und viele weitere Schwachstellen, die ich zum Teil (aktuell) gar nicht aufzeigen kann, weil das&nbsp;Responsible Disclosure in vielen Fällen noch im Gange ist oder noch nicht bearbeitet wurde.</p>
 </div>
 </div><div class="neos-nodetypes-html">
-	<div class="rehme-renerehme-warning">
+	<div class="kesenheimer-matthias-warning">
   <div style="border: 1px solid #b93737; background: #ffdfdf; padding: 17px; border-radius: 3px; color: #773939; border-left-width: 10px;">
 Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte mir Screenshots mit ggf. personenbezogenen Daten in zensierter oder unkenntlicher Fassung für dieses Writeup vor.
   </div>
@@ -122,16 +122,16 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Warum überhaupt das Ganze?</h1>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Zu den Hintergründen</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>In den Jahren 2021 und 2022 konnte man erschreckend viele Berichte über Ransomware oder allg. Hacker Angriffe auf Kommunen lesen. Dabei wurden nicht nur Daten durch Ransomware unbrauchbar, sondern auch massive Datenabflüsse festgestellt. Das passiert nicht nur in Deutschland, sondern europaweit. Da landen dann auch mal <a target="_blank" rel="noopener" href="https://www.nzz.ch/technologie/cyberangriff-auf-rolle-wie-hacker-die-gemeinde-durchschuettelten-ld.1687856">32 GB im Darknet</a>. Als Anwendungsentwickler habe ich mir die Frage gestellt, wie sicher die Web-Applikationen/Services unserer Gemeinden wirklich sind. Aber bevor ich darauf eingehe, sollten wir uns kurz noch die aktuelle Lage anschauen.</p>
 
 <p>Cybercrime-Schäden in Deutschland beliefen sich 2021 auf <strong>223,5 Mrd. Euro jährlich</strong> und sind damit mehr als doppelt so hoch wie noch 2019. Das geht aus dem vom 09. Mai 2022 durch das Bundeskriminalamt (BKA) veröffentlichten <a href=" https://www.bka.de/DE/Presse/Listenseite_Pressemitteilungen/2022/Presse2022/220509_PM_CybercrimeBLB.html">Bundeslagebild Cybercrime 2021</a> Bericht hervor.</p>
@@ -140,33 +140,33 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Geschädigte von Cyberkriminellen</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Geschädigte und somit auch Ziele solcher Attacken sind lauf dem Bericht vor allem die deutsche Wirtschaft und ab Mitte 2021 insbesondere auch die öffentliche Verwaltung (siehe Lagebild: Punkt 4.1). Tendenz steigend.</p>
 
 <p>Man sollte also eigentlich davon ausgehen können, dass sich in Sachen IT-Sicherheit einiges getan hat und ein besonderes Interesse darin besteht, zumindest die Basics einzuhalten.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Lasst uns mal sehen, wie sicher deutsche Kommunen tatsächlich sind.</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Während meiner Recherchen bin ich wie schon erwähnt auf diverse Schwachstellen gestoßen. Einige davon nicht wirklich nennenswert, andere hingegen fatal. So gut wie alle Schwachstellen waren auf die<a target="_blank" rel="noopener" href="https://owasp.org/www-project-top-ten/"> top 10 OWASP</a> Kategorien zurückzuführen.</p>
 
 <p>Es gibt stand Januar 2022 genau <strong>10.787</strong> Kommunen in Deutschland, davon <strong>2.054</strong> Städte. Überprüft habe ich etwa 10.200 TLD. Bei meiner Recherche fehlen also ein paar Kandidaten, da schlichtweg das Onlineangebot nicht auffindbar war oder nicht existiert.</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom0 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Ich möchte erwähnen, dass ich meinen Haupt-Datenbestand durch dieses <a target="_blank" rel="noopener" href="https://github.com/robbi5/german-gov-domains">GitHub repository</a> initial füllen konnte. Ein Dank an dieser Stelle an <a target="_blank" rel="noopener" href="https://twitter.com/robbi5">@robbi5</a>! Hat mir viel Recherche erspart und konnte damit Prozesse automatisieren.</p>
 </div>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -186,17 +186,17 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h3>Ok, los gehts.</h3>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Intranet</h1>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Ein besonderes Interesse während meiner Recherchen galt dem Intranet der Kommunen. Eigentlich bin ich davon ausgegangen, dass ein Großteil der Instanzen überhaupt nicht aufgerufen werden können. Dem war aber nicht so. In den meisten Fällen war der Zugriff auf das jeweilige Intranet möglich und wurde lediglich durch eine Loginmaske geschützt. Neben anderen sinnvollen Sicherheitsmechanismen sollte man meiner Meinung zumindest den Aufruf eines Intranets einschränken und lediglich über das interne Netzwerk zulassen oder für extern ein VPN Zugang schaffen - also allgemein den externen Zugriff nur über eine bestimmte IP erlauben.</p>
 
 <p>Ok, aber die Instanzen sind ja alle durch ein Authentifizierungsverfahren geschützt. Wie schafft man es also, Zugang zu einem Intranet zu bekommen? Es ist banaler als man annehmen würde.</p>
@@ -208,7 +208,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 <p>Bei den Instanzen eines Landkreises, einer Gemeinde und zwei weiteren Städten hatte ich damit tatsächlich Erfolg und Zugriff auf interne Informationen, Diskussionen, Zugangsdaten zu externen Diensten und vertraulichen Dokumenten (auch VS-NfD). Natürlich lehne ich mich rechtlich gesehen hiermit weit aus dem Fenster, meine aber durch meine Intention und das sofortige Melden die zuständigen Stellen nicht verärgert zu haben. Auch wurden die Zugänge zeitnah entfernt, sodass diese nicht ausgenutzt werden können.</p>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -226,7 +226,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </figure>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -243,7 +243,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div></div><div class="col-lg-4 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -262,7 +262,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -279,7 +279,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -299,18 +299,18 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>E-Mails</h1>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Auch habe ich mir die Mail-Server angeschaut. Dabei waren für mich vor allem online Webmailer interessant. Unter einem Webmailer versteht man eine Weboberfläche, über die man direkt mit einem Browser E-Mails einsehen, empfangen oder senden kann. Man benötigt also keinen E-Mail-Client, der auf einem Endgerät installiert und eingerichtet sein muss. Weit verbreitet ist die Software Horde oder Roundcube. Durch die breite Nutzung dieser Software, kann man davon ausgehen, dass diese durchaus sicher ist - sofern sie <strong>korrekt</strong> installiert und konfiguriert wurde.</p>
 
 <p>In der Dokumentation von Roundcube <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/wiki/Dev-Docs#important-files">ist zu lesen</a>, dass sensible Verzeichnisse entsprechend vor direktem Zugriff geschützt werden sollten. z.B. mithilfe einer <a target="_blank" rel="noopener" href="https://httpd.apache.org/docs/2.4/howto/htaccess.html">.htaccess</a>. Besonders sensible Verzeichnisse sind:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -327,13 +327,13 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Ihr ahnt vielleicht schon, wo uns das hinführt.</p>
 
 <p>Schweifen wir kurz ein wenig ab: Eine Martkanteil-Statistik von <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Nginx">ngnix</a> vs. <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Apache_HTTP_Server">apache</a> aus dem Jahr 2018 (ich habe auf die schnelle nichts Aktuelleres gefunden) zeigt einen deutlichen ngnix Nutzer Zuwachs.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -350,19 +350,19 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Es ist für die nicht so technisch versierten Leser jetzt wichtig zu wissen, dass ngnix eine .htaccess nicht unterstützt. Wenn man bei ngnix also nicht die direktiven entsprechend in eine&nbsp;nginx.conf überführt, haben die Regelungen, auch wenn sie zuvor über eine .htaccess definiert wurden, überhaupt keine Auswirkung.</p>
 
 <p>Ich habe mir also Gedanken darüber gemacht, ob Webserver, auf denen Roundcube installiert ist, nach einer Migration auf ngnix auch entsprechend konfiguriert wurden.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Eine Untersuchung der roundcube Instanzen, die von Kommunen eingesetzt wurden, war erschreckend und ließ mich fassungslos zurück.</p>
 
 <p>In den gefundenen ungeschützten Verzeichnissen konnte ich anhand der dort abgelegten Logfiles (<em>/logs</em>) den E-Mail-Verkehr nachvollziehen: <strong>Wer</strong> (also welches E-Mail-Postfach) hat <strong>wann</strong> eine E-Mail an <strong>wen</strong> (Empfänger-E-Mail-Adresse) verschickt.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -379,12 +379,12 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>In den meisten Fällen, wo das /logs Verzeichnis ungeschützt war, konnte ich auch auf das /temp Verzeichnis, indem z.B. Anhänge gespeichert werden, zugreifen. Im Browser wird einem das bei aktivem directory listing so angezeigt:</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -401,11 +401,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Ich habe mir also die Files alle mal gezogen um zu schauen was in diesem einen Fall so abliegt.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -422,7 +422,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -441,11 +441,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Unter den Files (einer einzigen Instanz!) konnte ich <strong>Personalausweise</strong>, <strong>Reisepässe</strong>, <strong>Krankenkarten</strong>, unterschiedlichste <strong>Anträge</strong>, <strong>Geburtsurkunden</strong>, <strong>Krankmeldungen</strong> und vieles mehr einsehen. Identitätsdiebstahl leichtgemacht.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -462,7 +462,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Das hier gezeigte ist bei weitem nicht alles. Es sei zudem angemerkt, dass ich lediglich einen kleinen Teil der eigentlich verschickten und empfangenen Anhänge einsehen konnte. Denn Roundcube speichert Anhänge im <em>/temp</em> Verzeichnis nur bei bestimmten Interaktionen des Users. Hierzu ein Auszug aus den <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/plugins/filesystem_attachments/filesystem_attachments.php#L5-L10">Source Files</a>:</p>
 
 <p><em>"This is a core plugin [...] includes <strong>storing attachments of messages</strong> <strong>currently being composed</strong>, writing attachments to disk <strong>when drafts with attachments are re-opened </strong>and writing attachments to disk for <strong>inline display in current html compositions</strong>. [...]"</em></p>
@@ -476,7 +476,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 <p>Puh, zum Glück kann wenigstens der eigentliche Inhalt einer Mail (also der E-Mail Body) nicht eingesehen werden. Zumindest, wenn <a target="_blank" rel="noopener" href="https://github.com/roundcube/roundcubemail/blob/master/config/defaults.inc.php#L112">imap_debug</a> nicht auf <em>true</em> gesetzt ist. Leider war das in zwei Fällen möglich:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -493,11 +493,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>Es ist sogar möglich, Zugriff auf ein ganzes Postfach zu erlangen. Denn es werden auch SQL Errors geloggt. Wenn in Roundcube eine Session in die Datenbank wandert, die aber schon existent ist, wird die query in der Log gespeichert. Wenn man nun das Logfile monitoren würde, könnte man so aktive Sessions abgreifen.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -514,15 +514,15 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>Der Identifier der Session kann manuell im Browser als Cookie hinterlegt werden, wodurch die aktive Session angesprochen und der Nutzer automatisch im Webmailer eingeloggt wäre. Habe ich natürlich nicht gemacht und ist nur Theorie.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Ja gut, solche Fehler können beim kleinen lokalen IT-Dienstleister schon mal passieren, könnte man sagen. Viele Kommunen haben sich dazu entschieden, auf big player zu setzen. z.B. DomainFactory. Die verwalten mehr als 1,3 Millionen Domainnamen, gehören zu den größten Webhosting-Unternehmen im deutschsprachigen Raum und sind seit 2013 GoDaddy zugehörig. Welchen Webmailer die anbieten?</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -539,11 +539,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Neeee. Das wäre jetzt zu krass. Oder? Guess what:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -560,23 +560,23 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>Bevor nun alle DomainFactory-Kunden Schnappatmung bekommen: Infrastruktur bedingt, betreibt die Firma mehrere Instanzen, wovon nur eine einzige vulnerable war. Die meisten Kunden sind also nicht betroffen.</p>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection"></div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Sonstiges</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Habt ihr schonmal eine Sperrmüllabholung online beantragt? Eine Neuanmeldung oder ein Eigentümerwechsel zur öffentlichen Müllabfuhr? Sensible Daten wurden z.B. von einer Kreisstadt in einem öffentlich abrufbaren Logfile gespeichert (Bild links). Dabei wurde wohl alles, was über das jeweilige Online-Formular verschickt wurde, nochmal separat abgespeichert. Auch eine Möglichkeit, die Einwohner einer Stadt zu erfassen.</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -593,11 +593,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Solche Log Files oder auch andere interessante Sachen findet man sehr oft anhand der <em>.DS_Store</em> Datei, welche von iOS im Finder automatisch erstellt wird. Diese beinhaltet z.B. Informationen über die im Ordner abgelegten Dateien und kann ausgelesen werden. Da das File hidden ist, bemerkt man oftmals überhaupt nicht, dass man die beim traditionellen File-Upload&nbsp; (FTP, SFTP etc.) auf ein Webserver mitnimmt.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -617,18 +617,18 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Datenbanken</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Vorab kann ich schonmal sagen, dass ich Einsicht in weit über 200.000 Datensätze mit personen bezogenem Kontext hatte.</p>
 
 <p>Es gibt verschiedene Wege, sich mit einer Datenbank zu verbinden. Beliebt sind Verwaltungssysteme, da die durch eine GUI einfach zu handhaben sind und keine CLI Kenntnisse erforderlich sind. Eine Datenbank-Verwaltungssoftware wird über den Browser aufgerufen und man erlangt DB Zugriff, wenn Host, User und Passwort bekannt sind. Das mag erstmal super sicher klingen, ist es aber nur bedingt. Der Host ist in den meisten Fällen <em>localhost</em>, da sich die Datenbanken fast immer auf demselben Server befinden, wo auch die Verwaltungssoftware installiert ist. Der User und das Passwort lassen sich z.B. durch andere Schwachstellen herausfinden. Bei einigen der von mir überprüften Servern wurden z.B. Credentials durch öffentlich zugängliche Backupdateien oder komischen Installer, die nicht gelöscht wurden, offengelegt.</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -645,7 +645,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -664,7 +664,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Bei so einem Fund ist so eine offen zugängliche Verwaltungsoberfläche das passende Schlüsselloch, denn idealerweise, lässt man - sofern nicht gewollt - den Verbindungsaufbau zu MySQL remote erst gar nicht zu. Bringt dann nur nichts, weil man sich direkt über das System Zugriff verschaffen kann.</p>
 
 <p>Es ist allgemein common practice den Zugang zu einer Datenbankverwaltung nicht öffentlich abrufbar zu machen oder zumindest diese durch weitere Sicherheitsmechanismen zu schützen. Meist erfolgt das durch eine benutzerdefinierte Zugriffskontrolle via htaccess (apache) oder in der (Virt)Host-Konfiguration der Domain, worüber sich ein effektiver Passwortschutz vorschalten lässt. Im besten Fall ist der Aufruf nur mit aktiver SCP Session möglich (kennt man z.B. von ISPConfig).</p>
@@ -673,7 +673,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -690,7 +690,7 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -709,11 +709,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Das geht aber noch krasser. z.B. das Generieren eines Backups der Datenbank in Echtzeit über einen simplen URL-Aufruf. Als ich die Seite das erste Mal aufgerufen habe, hatte ich mich schon gewundert, warum der Seitenaufbau so lange dauert. Ich bin davon ausgegangen, dass ich hier durch das Erreichen der max execution time in einem Error lande. Dem war nicht so und das warten hat sich gelohnt, denn was hier so lange gedauert hat, war das Packen von Dateien in Echtzeit im Hintergrund. Als Bonus bekommt man dann sogar noch das gesamte Filesystem on top. Wie kommt man auf solche Ideen?</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -730,11 +730,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Der absolute Overkill ist aber, wenn ein Hoster <strong>ALLE</strong> Datenbanken seiner Kunden über eine ungeschützte phpMyAdmin Instanz öffentlich zugänglich macht. Man musste nur den URL kennen, welchen ich z.B. in einem dump file einer Stadt gefunden und aufgerufen habe.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -751,11 +751,11 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Die Datenbanken sind von 1 bis 325 durchnummeriert. Jede einzelne davon einer Web-Applikation zugehörig. Ich hatte hierdurch Zugriff auf solch eine Masse an personen bezogenen Daten, dass ich bis heute nicht sicher sagen kann, wie viele Personen hiervon letztendlich betroffen sind. Selbst wenn ich wollte, hätte ich nicht die Zeit gehabt, das alles zu überprüfen. Auch mit dem Gedanken, diese Instanz so schnell wie möglich zu melden, habe ich irgendwann mit der Erfassung aufgehört. Aber natürlich habe ich mich ein wenig umgeschaut und scheiße, was man da alles finden konnte. Sogar Accounts mit bundestag.de E-Mail-Adressen. Immer auch etwas kritisch, wenn Passwörter teils Plaintext gespeichert werden.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -772,44 +772,44 @@ Abgeflossene Daten wurden nach der Ausforschung sicher vernichtet. Ich behalte m
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Oder interne Kommunikation zur Entwicklung und Fehlerbehebung irgendeiner Software mit und von dem IT-Dienstleister KDO aus einer Datenbank für eine Art CRM-System. Das war so spannend zu lesen, dass ich mir die öffentlichen IT-Dienstleister genauer anschauen musste.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p><strong>Nachtrag 11.08.2023</strong>: Der Hoster wurde einen Monat nach meinem Hinweis von der dogado group übernommen. Ein Schelm, wer Böses dabei denkt.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Öffentliche IT-Dienstleister für Kommunen</h1>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Kommen wir zu den öffentlichen IT-Dienstleistern. Um einen groben Überblick zu bekommen, welche Unternehmen hier maßgeblich mitspielen, habe ich mich bei der govdigital belesen. Die govdigital ist eine bundesweite Genossenschaft zur Integration von IT-Lösungen für Bund, Länder und Kommunen. Dort sind aktuell 23 Mitglieder aufgeführt, die Software herstellen oder allg. IT Dienstleistungen anbieten. Diese habe ich mir grob angeschaut, da deren Dienste weit verbreitet in Kommunen Anklang finden.</p>
 
 <p>Als ich mir das Themenfeld auf deren Webseite angeschaut habe, ist beim <u>Schlag</u>wort "Blockchain" beinahe die Faust im Bildschirm gelandet. Ich pflege (wie viele andere Personen aus meinem IT-Umfeld) gegenüber der Blockchain-Technologie eine äußerst kritische Haltung. Aber das ist ein Thema, um das es hier nicht gehen soll. Halten wir einfach fest, dass es eine scheiß Idee ist auf eine Blockchain-Technologie zu setzen - vor allem im öffentlichen Sektor.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Komm.ONE</h2>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>„Erstes Anliegen von Komm.ONE ist es, die <strong>digitale Souveränität</strong> der Kommunen zu stärken. Dies gelingt unserer Erfahrung nach vor allem über die Zusammenarbeit maßgeblicher Akteure. Innovative Netzwerke sind für uns deshalb der Weg, den wir konsequent verfolgen, um Know-How und Kompetenzen im Interesse der Kommunen in Baden-Württemberg weiter auf- und auszubauen“, erklärt William Schmitt, Vorstandsvorsitzender der Komm.ONE. Die Mitgliedschaft von Komm.ONE in der govdigital eG sei daher ein schlüssiger Schritt, mit dem das Unternehmen dazu beitrage, innovative Lösungen wie zum Beispiel die <strong>Blockchain-Technologie</strong> für den öffentlichen Sektor weiter zu entwickeln, so Schmitt weiter.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Also die digitale Souveränität ist in meinen Augen direkt zerbröselt, als ich bemerkte, dass die Komm.ONE Serverkonfigurationen <a target="_blank" rel="noopener" href="http://web.archive.org/web/20221010215120/https://cmstest.komm.one/server-info">öffentlich abrufbar</a> macht (Upsi: <a target="_blank" rel="noopener" href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 </a><a target="_blank" rel="noopener" href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:H/RL:O/RC:C">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N</a>). Warum das ein Problem ist? Nunja, als potenzieller Angreifer kann ich genau nachvollziehen, welche Module installiert oder welche Einstellungen getroffen wurden, um den Server abzusichern. z.B. auch ob und wie bestimmte Dateitypen interpretiert werden, welche vHost Einstellungen gegeben oder wie die Firewall-Einstellungen für <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/ModSecurity">Modsec</a> gesetzt sind.</p>
 
 <p>Ich fand es auch durchaus interessant, welche Kommunen gehostet werden. Idealerweise kann man das ohne großartige Recherchen anzustellen ganz einfach einsehen, da - warum auch immer (?) - das&nbsp; <em>/etc/passwd</em> file gedumpt wird [<a target="_blank" rel="noopener" href="https://web.archive.org/web/20221010220604/https://module.kivbf.de/test.php">1</a>, <a target="_blank" rel="noopener" href="https://web.archive.org/web/20221010220721/http://www.breitnau.de/test.php">2</a>]:</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-code">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-code">
 	<pre class="line-numbers">
 		<code class="language-php">
 			<div>testroot:x:0:0:root:/root:/bin/bash
@@ -996,11 +996,11 @@ _apt:x:108:65534::/nonexistent:/bin/false</div>
 	</pre>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>KDO</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Bei der KDO konnte ich auf drei unterschiedlichen Servern die Apache Server-Status Seite auffinden. Betroffen waren die Domains:</p>
 
 <p>https://<strong>collabora.kdo.de</strong>/server-status<br />
@@ -1010,7 +1010,7 @@ https://<strong>kupata.kdo.de</strong>/server-status</p>
 <p>Nachdem ich ein wenig mit den angezeigten Requests gespielt hatte, wurden zwei der Seiten&nbsp;wenige Stunden später vom Netz genommen - ohne dass ich diese überhaupt melden musste. Das ist wohl auch in den Logs aufgefallen. Monitoring FTW. Screenshots habe ich natürlich trotzdem gemacht, denn die Informationen, die durch die URL Parameter dort geleakt wurden, sind schon etwas brisanter. z.B. E-Mails, Tokens und UUIDs, die teils verwendet werden können, um Anfragen an deren Systeme zu schicken. Interessante Endpunkte, oder?</p>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -1030,26 +1030,26 @@ https://<strong>kupata.kdo.de</strong>/server-status</p>
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Softwareaktualisierungen</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Kommen wir zum Thema der Wartung von Serverkomponenten. Interessant dürfte sein, dass bei vielen Kommunen serverseitige Komponenten verwenden werden, die längst nicht mehr aktuell sind und schon seit Jahren keine Sicherheitsupdates mehr bekommen. Warum ich das sicher sagen kann?</p>
 </div>
 </div><div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Nun, durch eine Information Disclosure Schwachstelle (<a target="_blank" rel="noopener" href="https://cwe.mitre.org/data/definitions/200.html">CWE-200 </a><a target="_blank" rel="noopener" href="https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N">CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N</a>) konnte ich bei 60 der überprüften Server genau diese Informationen einsehen. Dabei handelt es sich um eine Datei, welche <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.phpinfo.php">eine Funktion</a> ausführt, die neben der verwendeten PHP Version auch weitere detaillierte Informationen über das System preisgibt, sofern sie existiert. Die hat eig. nichts in einer Produktivumgebung zu suchen.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>PHP ist eine Sprache, die zum Programmieren von Web-Applikationen verwendet wird. PHP muss als Software auf dem Webserver installiert sein, um eine PHP-Applikationen (z.B. ein CMS) auszuführen.</p>
 </div>
 </div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs- is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-headline">
 	<div><h2>Von Kommunen verwendete PHP-Binaries</h2>
 </div>
 </div><div class="neos-nodetypes-html">
@@ -1113,13 +1113,13 @@ const data = {
 </div>
 <div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Wie bei jeder Software, die aktiv weiterentwickelt wird, werden Support für Bug- und Security fixes bei älteren Versionen irgendwann eingestellt. Spätestens wenn Sicherheitslücken nicht mehr gepatched werden, wird es Zeit zu updaten.</p>
 
 <p>Stellt man nun die von Kommunen verwendeten PHP Versionen der aktuellen Release-Roadmap von PHP gegenüber, kann man stark annehmen, dass bei einer Hochrechnung auf wohl über der Hälfte aller Webserver (worauf Kommunen ihre Webapplikationen laufen lassen) veraltete PHP Binaries installiert sind und auch aktiv verwendet werden.</p>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -1136,22 +1136,22 @@ const data = {
 	
 </figure>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p><em>Quelle: <a target="_blank" rel="noopener" href="https://www.php.net/supported-versions.php">https://www.php.net/supported-versions.php</a></em></p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p>Um sich einen Überblick zu verschaffen, welche existenten Sicherheitslücken öffentlich bekannt sind, kann man sich <a target="_blank" rel="noopener" href="https://www.cvedetails.com/vulnerability-list.php?vendor_id=74&amp;product_id=128&amp;version_id=&amp;page=1&amp;hasexp=0&amp;opdos=0&amp;opec=0&amp;opov=0&amp;opcsrf=0&amp;opgpriv=0&amp;opsqli=0&amp;opxss=0&amp;opdirt=0&amp;opmemc=0&amp;ophttprs=0&amp;opbyp=0&amp;opfileinc=0&amp;opginf=0&amp;cvssscoremin=0&amp;cvssscoremax=0&amp;year=0&amp;month=0&amp;cweid=0&amp;order=3&amp;trc=644&amp;sha=d8a9f07b702ae6252893a7ef73f2f2812bbcbb8a">hier</a> mal durch die Einträge pagnieren.</p>
 </div>
 </div></div>
 </div>
 
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h1>Fazit</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Teilweise erschreckend, wie einfach man an vermeintlich geschützte Daten und Informationen gelangt.</p>
 
 <p>Meine Vorgehensweise zielte ursprünglich tatsächlich nur auf eine kleine Range an möglichen Schwachstellen ab. Also wenige Szenarien, die bei Web- und Mail-Server/Applikationen theoretisch möglich sind und direkt abgerufen werden können, ohne Sicherheitsvorkehrungen zu umgehen.</p>
@@ -1161,7 +1161,7 @@ const data = {
 <p>Viele der hier gezeigten Schwachstellen waren auf fehlerhafte Konfigurationen zurückzuführen. Einige davon existierten einfach nur aus Mangel und Nichtanwendung einfachster Standards. Es ist allgemein bekannt, dass IT-Fachkräfte in den Kommunen fehlen und Dienstleistungen extern eingekauft werden (müssen). Um so wichtiger wäre es zukünftig IT-Kompetenzen intern aufzubauen, damit Systeme auch kontrollierbar in eigener Hand bleiben.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Auch wir als Bürger sollten immer ein Auge darauf haben, wem wir unsere Daten anvertrauen. Klar ist eine Gemeinde, ein größerer Dienstleister oder der Mailverkehr mit staatlichen Akteuren vertrauenswürdig und man sollte annehmen, dass mit unseren persönlichen Daten entsprechen umgegangen wird. Wie man aber sieht, sind zivilgesellschaftliche Recherchen ab und an notwendig, um Schwachstellen und Probleme öffentlich aufzuzeigen und die zuständigen Stellen dahingehend zu sensibilisieren. Und wenn dies auch nur marginal dazu beiträgt, dass unsere Daten in Zukunft besser geschützt werden, dann hat es sich schon gelohnt.</p>
 
 <p>Mein persönlicher Appell an euch: Versendet nicht euren Personalausweis, Reisepass oder sonstige Ausweisdokumente per E-Mail oder Onlineformular. Bleibt von eurer Seite datensparsam.</p>
@@ -1206,7 +1206,7 @@ const data = {
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -1215,4 +1215,4 @@ const data = {
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-flxn3v5evnisk@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-flxn3v5evnisk@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

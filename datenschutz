@@ -23,7 +23,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>Datenschutz - Rene Rehme</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/datenschutz" />
+    <title>Datenschutz - Matthias Kesenheimer</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/datenschutz" />
 
 </head><body class>
 	<div id="wrapper">
@@ -38,7 +38,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -60,30 +60,30 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">Datenschutz</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">Legal Disclosure</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop30 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Was von dir erfasst wird</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-text">
 	<div><p>Im Folgenden findest du eine kurze Zusammenfassung der Policy dieser Webseite:</p>
 
 <p>Bei jeder Anfrage an den Server werden im Rahmen der Server-Logfiles Informationen gespeichert, die den Browsertyp und die Browserversion, das verwendete Betriebssystem, die Referrer URL, den Hostnamen des zugreifenden Rechners sowie die Uhrzeit der Serveranfrage umfassen. Diese Informationen werden gemäß den branchenüblichen Standards gespeichert. Die Server-Logfiles werden für maximal 90 Tage aufbewahrt. Es werden keine Werbe- oder Tacking-Cookies für diese Webseite verwendet.</p>
@@ -120,7 +120,7 @@
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -129,4 +129,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-0klwmkmxzjdya@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-0klwmkmxzjdya@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>

@@ -27,14 +27,14 @@
 					],
 					"author" :{
 						"@type": "Person",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"email":"contact@renerehme.de"
 					},
 					"datePublished": "2021-07-31T10:07:34+02:00",
 					"dateModified": "2021-10-24T21:07:21+02:00",
 					"publisher" : {
 						"@type": "Organization",
-						"name":"Rene Rehme",
+						"name":"Matthias Kesenheimer",
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
@@ -50,7 +50,7 @@
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
         <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>Why XSS is dangerous (a showcase) - Blog - Rene Rehme</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" />
+    <title>Why XSS is dangerous (a showcase) - Blog - Matthias Kesenheimer</title><meta name="description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" />
 <link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" />
 <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@ReneReh1" /><meta name="twitter:title" content="Why XSS is dangerous (a showcase)" /><meta name="twitter:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta name="twitter:image" content="https://mkesenheimer.github.io/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta name="twitter:url" content="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /><meta property="og:type" content="article" /><meta property="og:title" content="Why XSS is dangerous (a showcase)" /><meta property="og:description" content="In this blog article I will demonstrate how dangerous Cross-Site Scripting can be and how to prevent XSS." /><meta property="og:image" content="https://mkesenheimer.github.io/_Resources/Persistent/5f3faef63e392a833787aef733ad9b8593d5244b/openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="openGraph_Renerehme_why-xss-is-dangerous-a-showcase.jpg.png" /><meta property="og:url" content="https://mkesenheimer.github.io/blog/why-xss-is-dangerous-a-showcase" /></head><body class>
 	<div id="wrapper">
@@ -65,7 +65,7 @@
 				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/matthias.kesenheimer/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
-                <nav class="rehme-renerehme-menu"><ul>
+                <nav class="kesenheimer-matthias-menu"><ul>
 
 
 <li class="">
@@ -87,25 +87,25 @@
 		<section id="content">
 			<div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-container">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-headline">
 	<div><h1 style="text-align:center">Why XSS is dangerous&nbsp;(a showcase)</h1>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-text">
 	<div><p style="text-align:center">In this blog article I will demonstrate how dangerous Cross-Site Scripting can be.</p>
 </div>
 </div></div>
     </div>
 </div>
 
-<div class="color-white paddingTop0 paddingBottom0 rehme-renerehme-container">
+<div class="color-white paddingTop0 paddingBottom0 kesenheimer-matthias-container">
     <div class="inner container-fluid   ">
         <div class="neos-contentcollection"><div class="neos-nodetypes-html">
-	<div class="paddingTop30 paddingBottom15 rehme-renerehme-warning">
+	<div class="paddingTop30 paddingBottom15 kesenheimer-matthias-warning">
   <div style="border: 1px solid #b93737; background: #ffdfdf; padding: 17px; border-radius: 3px; color: #773939; border-left-width: 10px;">
 	<b>Important Notice:</b> In this article a XSS vulnerability is demonstrated on a production context application. The shown exploit was <u>reported</u> on 18.07.2021. I contacted the platform administrators multiple times and through multiple channels but received no response. After waiting months I decided to publish the full article because the vulnerability has now been fixed.
   </div>
@@ -113,25 +113,25 @@
 </div>
 
 
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>What is XSS?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>XSS stands for Cross-Site Scripting and is a web-based vulnerability in which an attacker can inject malicious scripts in a target application.&nbsp;There are different types of such attacks.&nbsp;This article covers a&nbsp;<a target="_blank" rel="noopener" href="https://owasp.org/www-community/attacks/xss/#stored-xss-attacks">type-I XSS</a>.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>Did you know that&nbsp;Cross-Site Scripting carried out on websites accounted for roughly <strong>84% of all security vulnerabilities</strong> documented by Symantec?</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>What is this blog article about?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Basically a process about how I discovered a XSS vulnerability on <a target="_blank" rel="noopener" href="https://semicolon.dev/">Semicolon.dev</a>&nbsp;and exploited it.</p>
 
 <p>To be fair: The application seems to be under heavy development. It could be that sooner or later the vulnerability I found would have been found by the developers themselves.</p>
@@ -142,24 +142,24 @@
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>What is this blog article NOT about?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Blame, or disregard the work of other developers. It is important to understand that XSS is (unfortunately) very common. Such vulnerabilities have even been <a target="_blank" rel="noopener" href="https://blog.twitter.com/official/en_us/a/2010/all-about-the-onmouseover-incident.html">found&nbsp;on Twitter</a>&nbsp;and&nbsp;<a target="_blank" rel="noopener" href="https://www.acunetix.com/blog/web-security-zone/mutation-xss-in-google-search/">google</a>. Numerous such vulnerabilities were found. The most of them has been fixed before attacker could maliciously exploit them and compromise&nbsp;systems.&nbsp;</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Let's start with a&nbsp;proof of concept.</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>Imagine a Twitter-like social media platform. Each account has its own public profile, which can only be viewed by other registered users. We have to register 2 accounts. An attacker (<strong>X</strong>) and a victim account (<strong>Y</strong>). <strong>X</strong>&nbsp;will store malicious code on his public profile. As soon as <strong>Y</strong>&nbsp;visits <strong>X</strong>'s public profile, the malicious code is executed. In this case, the malicious code ensures that <strong>Y</strong>&nbsp;sends a tweet which is defined by <strong>X</strong>.</p>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -177,11 +177,11 @@
 </figure>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>How I started.</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>At first I tried to send some XSS polyglots inside the given inputs to see how the server responds. Basically a try to bypass restrictions. In case of semicolum.dev all inputs where validated with JavaScript. The validated data was send trough an&nbsp;API to the server. So, I tried&nbsp;to send raw data directly to the endpoint to skip the client-side validation stuff.</p>
 
 <p>With a little trial and error, I was&nbsp;able to register an user through API calls and verify an account without even using the application.&nbsp;This is not dangerous at first, but it can be abused in this way because the client side validation is bypassed and it seems that input validation and data sanitization were not applied on the backend.</p>
@@ -190,11 +190,11 @@
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>The vulnerability</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>I was able to execute code on the user&nbsp;profile page. The vulnerability was found in the output of "location" because the output was not escaped.</p>
 
 <p>In the following section, I'll&nbsp;take an devastating example (like shown in the video) of a possible form of attack.</p>
@@ -203,17 +203,17 @@
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom30 rehme-renerehme-quote">
+<div class="paddingTop0 paddingBottom30 kesenheimer-matthias-quote">
 	<div><p>Please be assured that the exploit was only used for demo purposes and was then <strong>immediately removed</strong> from the system. <strong>No real accounts were&nbsp;affected</strong> by this attack.</p>
 </div>
 </div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>The attack</h2>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -232,7 +232,7 @@
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>As you can see in the screenshot above, I used the&nbsp;API as endpoint for the attack (again).&nbsp;I was able to bypass the client-based validation and send the payload in JSON format directly and unfiltered to the server via POST request (again).</p>
 
 <p>Now, in this case, I chose the malicious code as the value for the <strong><em>location</em></strong>&nbsp;key because there was no html entity encoding on the users account page and the malicious code could be interpreted and executed by the browser.</p>
@@ -244,11 +244,11 @@
 </div><div class="row img-border_r4 paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>Well, we don't need to know the token but how to get it.</h2>
 </div>
 </div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 is-page neos-contentcollection">
-<div class="paddingTop0 paddingBottom0 rehme-renerehme-image">
+<div class="paddingTop0 paddingBottom0 kesenheimer-matthias-image">
 	
 <figure>
 	
@@ -267,18 +267,18 @@
 </div></div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>When a user is logged in, a token is stored in&nbsp;a&nbsp;storage&nbsp;object which can be used to access the current origin's local storage space.&nbsp;The screenshot shows that&nbsp;the token from the active user&nbsp;can be called from that object and is used in the payload as token value.</p>
 
 <p>Because of such attacks, there is a lot of advice to avoid storing tokens in LocalStorage. The problem is not just stealing data from LocalStorage. As you can see, a&nbsp;successful XSS attack gives the attacker almost full control over the application code. Any action enabled through the API could be used on a victim.</p>
 </div>
 </div>
 
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-headline">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-headline">
 	<div><h2>How to prevent such attacks?</h2>
 </div>
 </div>
-<div class="paddingTop0 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop0 paddingBottom15 kesenheimer-matthias-text">
 	<div><p>We as developers can follow good&nbsp;practices to prevent most of XSS-Attacks.&nbsp;So do use good&nbsp;practises!<br />
 Keep focus on preventing XSS vulnerabilities!</p>
 
@@ -320,7 +320,7 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 			<div class="copy">
 				<div class="inner">
 					<div class="neos-contentcollection">
-<div class="paddingTop15 paddingBottom15 rehme-renerehme-text">
+<div class="paddingTop15 paddingBottom15 kesenheimer-matthias-text">
 	<div><p style="text-align:center">This website is powered by&nbsp;<a target="_blank" rel="noopener" href="https://neos.io">Neos</a><br />
 <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
 </div>
@@ -329,4 +329,4 @@ Check out this for detailed information:&nbsp;<a target="_blank" rel="noopener" 
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-ypkaffjt1p20z@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/kesenheimer-matthias/node-auh0tef0k5fuq/node-ypkaffjt1p20z@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
