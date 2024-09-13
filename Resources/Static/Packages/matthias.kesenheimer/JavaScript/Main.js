@@ -46,100 +46,23 @@ $(function() {
     });
 
     var windowWidth = $(window).width();
-    var bodyHeight = $('#wrapper').height();
-    //buddy();
-    logo();
-    stars(windowWidth, bodyHeight);
-    egg();
+    //var bodyHeight = $('#wrapper').height();
+    var windowHeight = $(window).height();
+    stars(windowWidth, windowHeight);
     // init sparkling stars
     initSparkling();
-    // contact form
-    sendContactForm();
 
-    /* ### functions which should not load in backend ### */
-    if (!$("body").hasClass("neos-backend")) {
-
-    }
-
-    function logo() {
-        var logoLeft = anime({
-            targets: '.logo .left',
-            delay: 500,
-            translateY: 40,
-            duration: 800,
-            opacity: 100
-        });
-
-        var logoRight = anime({
-            targets: '.logo .right',
-            delay: 500,
-            translateY: -40,
-            duration: 800,
-            opacity: 100
-        });
-
-        var rotate = anime({
-            targets: '.logo',
-            delay: 400,
-            duration: 300,
-            rotate: 45,
-            easing: 'linear'
-        });
-    }
-
-    function stars(windowWidth, bodyHeight) {
+    function stars(windowWidth, windowHeight) {
         var mathstar = 7;
         if(windowWidth < 600) {
             mathstar = 10;
         }
-        var maxStars = Math.floor(bodyHeight / mathstar);
+        var maxStars = Math.floor(windowHeight / mathstar);
         for(var i = 0; i < maxStars; i++) {
-            var top = Math.random() * (bodyHeight + 50) - 50;
+            var top = Math.random() * (windowHeight + 50) - 50;
             var left = Math.random() * (windowWidth + 50) - 50;
             $("body").append('<div class="star'+(Math.floor(Math.random() * 3) + 1)+'" style="top:' + top + 'px; left:' + left + 'px;"></div>');
         }
-    }
-
-    function sendContactForm() {
-        let form = $('.contact-form');
-        form.submit(function(e) {
-            //prevent Default functionality
-            e.preventDefault();
-            // handle csrfToken
-            var token =  $('input[name="csrfToken"]').attr('value');
-            // send data
-            $.ajax({
-                url: "/api/sendmail",
-                type: 'post',
-                data: form.serialize(),
-                method : 'POST',
-                headers: {
-                    'X-CSRF-Token': token
-                },
-                beforeSend: function() {
-                    form.find('.btn-send').prop('disabled', true);
-                },
-                success: function(data) {
-                    var dataObject = JSON.parse(data);
-                    if (dataObject.error === true) {
-                        alert(dataObject.message);
-                    } else {
-                        $('.contact-form').hide();
-                        var htmlOutput = '<div class="message success" style="\n' +
-                            '    background: #343560;\n' +
-                            '    padding: 30px;\n' +
-                            '    text-align: center;\n' +
-                            '    font-size: 25px;\n' +
-                            '    border-radius: 4px;\n' +
-                            '                                    "><span style="\n' +
-                            '    display: block;\n' +
-                            '    font-size: 35px;\n' +
-                            '">💌</span>'+dataObject.message+'</div>';
-                        $('.controls').append(htmlOutput);
-                    }
-                }
-            });
-        });
     }
 
     $("a[href^=http]").each(function(){
