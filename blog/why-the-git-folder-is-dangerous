@@ -14,8 +14,8 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#202040">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
-		<link rel="stylesheet" media="all" href="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Styles/prism.css" />
+		<link rel="stylesheet" media="all" href="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Styles/Main.min.css?v=1.3.2" />
 		
 			<script type="application/ld+json">
 				{
@@ -23,7 +23,7 @@
 					"@type": "BlogPosting",
 					"headline": "Why the .git folder is dangerous (a showcase)",
 					"image": [
-						"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+						"https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
 					],
 					"author" :{
 						"@type": "Person",
@@ -38,20 +38,20 @@
 						"url":"https:\/\/renerehme.de",
 						"logo":{
 							"@type":"ImageObject",
-							"url":"https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
+							"url":"https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png"
 						}
 					}
 				}
 			</script>
 		
 	
-		<script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
-        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
-        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
-        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
-        <script src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
-    <title>Why the .git folder is dangerous (a showcase) - Blog - Rene Rehme</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://renerehme.dev/blog/why-the-git-folder-is-dangerous" />
-<link rel="alternate" hreflang="x-default" href="https://renerehme.dev/blog/why-the-git-folder-is-dangerous" /><link rel="alternate" hreflang="de" href="https://renerehme.dev/blog/why-the-git-folder-is-dangerous" />
+		<script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/jQuery.js"></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/anime.min.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/prism.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Plugins/chart.js" defer></script>
+        <script src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/JavaScript/Main.js?v=1.2.1" defer></script>
+    <title>Why the .git folder is dangerous (a showcase) - Blog - Rene Rehme</title><meta name="robots" content="index,follow" /><link rel="canonical" href="https://mkesenheimer.github.io/blog/why-the-git-folder-is-dangerous" />
+<link rel="alternate" hreflang="x-default" href="https://mkesenheimer.github.io/blog/why-the-git-folder-is-dangerous" /><link rel="alternate" hreflang="de" href="https://mkesenheimer.github.io/blog/why-the-git-folder-is-dangerous" />
 </head><body class>
 	<div id="wrapper">
 		<div id="header">
@@ -61,8 +61,8 @@
 				<span class="stripe el3"></span>
 			</div>
             <div class="logo">
-				<img height="119" width="119" class="left" alt="logo left" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
-				<img height="119" width="119" class="right" alt="logo right" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
+				<img height="119" width="119" class="left" alt="logo left" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-left.svg">
+				<img height="119" width="119" class="right" alt="logo right" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/Brand/r-right.svg">
             </div>
             <div class="menu">
                 <nav class="rehme-renerehme-menu"><ul>
@@ -167,7 +167,7 @@
 
 		
 				
-	<img title="Index of /.git" alt="Index of /.git" src="https://renerehme.dev/_Resources/Persistent/5c29b2c8347e340c1d90aba2c4df9a89dfe435c8/git-folder-647x541.png" width="647" height="541" />
+	<img title="Index of /.git" alt="Index of /.git" src="https://mkesenheimer.github.io/_Resources/Persistent/5c29b2c8347e340c1d90aba2c4df9a89dfe435c8/git-folder-647x541.png" width="647" height="541" />
 
 			
 	
@@ -189,7 +189,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="https://renerehme.dev/_Resources/Persistent/d2dd32a11a9b8519f16b63749183ab3fd8c3eff2/expose_gittools.png" width="1226" height="292" />
+	<img title="censored data" alt="censored data" src="https://mkesenheimer.github.io/_Resources/Persistent/d2dd32a11a9b8519f16b63749183ab3fd8c3eff2/expose_gittools.png" width="1226" height="292" />
 
 			
 	
@@ -218,7 +218,7 @@
 
 		
 				
-	<img title="source code" alt="source code" src="https://renerehme.dev/_Resources/Persistent/ad4f3bdd5ee5038377898bd004ede6b2ef2aeee6/creds-789x94.png" width="789" height="94" />
+	<img title="source code" alt="source code" src="https://mkesenheimer.github.io/_Resources/Persistent/ad4f3bdd5ee5038377898bd004ede6b2ef2aeee6/creds-789x94.png" width="789" height="94" />
 
 			
 	
@@ -242,7 +242,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="https://renerehme.dev/_Resources/Persistent/8bb8de3e9089fa37127a71adffee6f3aff648aeb/customer.png" width="1859" height="509" />
+	<img title="censored data" alt="censored data" src="https://mkesenheimer.github.io/_Resources/Persistent/8bb8de3e9089fa37127a71adffee6f3aff648aeb/customer.png" width="1859" height="509" />
 
 			
 	
@@ -275,7 +275,7 @@
 
 		
 				
-	<img title="censored data" alt="censored data" src="https://renerehme.dev/_Resources/Persistent/083ce1f88891a682aafaebf26ddd4587e12c5649/database-828x109.png" width="828" height="109" />
+	<img title="censored data" alt="censored data" src="https://mkesenheimer.github.io/_Resources/Persistent/083ce1f88891a682aafaebf26ddd4587e12c5649/database-828x109.png" width="828" height="109" />
 
 			
 	
@@ -337,7 +337,7 @@
 
 		
 				
-	<img title="shoot the messenger" alt="shoot the messenger" src="https://renerehme.dev/_Resources/Persistent/861b79699bf1569bc0639ee19162efff16049e08/iRT.gif" width="250" height="275" />
+	<img title="shoot the messenger" alt="shoot the messenger" src="https://mkesenheimer.github.io/_Resources/Persistent/861b79699bf1569bc0639ee19162efff16049e08/iRT.gif" width="250" height="275" />
 
 			
 	
@@ -375,7 +375,7 @@
 				<div class="inner">
 					<div class="bg_image"></div>
 					<a class="char" href="/world">
-						<img alt="easter egg" src="https://renerehme.dev/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
+						<img alt="easter egg" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Rehme.Renerehme/Images/easter_egg.png" width="54" height="79">
 						<div class="speak">
 							<div class="boubble">
 								Enter my world!
@@ -396,4 +396,4 @@
 			</div>
 		</section>
 	</div>
-<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-16lrgl89esk1g@live;language=de" src="https://renerehme.dev/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
+<script data-neos-node="/sites/rehme-renerehme/node-auh0tef0k5fuq/node-16lrgl89esk1g@live;language=de" src="https://mkesenheimer.github.io/_Resources/Static/Packages/Neos.Neos/JavaScript/LastVisitedNode.js" async></script></body></html>
