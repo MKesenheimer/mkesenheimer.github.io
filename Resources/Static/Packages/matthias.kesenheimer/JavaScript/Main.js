@@ -47,7 +47,7 @@ $(function() {
 
     var windowWidth = $(window).width();
     //var bodyHeight = $('#wrapper').height();
-    var windowHeight = $(window).height();
+    var windowHeight = $('body').height();
     stars(windowWidth, windowHeight);
     // init sparkling stars
     initSparkling();
