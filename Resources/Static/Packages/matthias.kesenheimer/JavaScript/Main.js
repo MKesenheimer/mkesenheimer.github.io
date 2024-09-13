@@ -1,6 +1,3 @@
-(function(e){"use strict";function r(t,n){this.opts=e.extend({handleKeys:!0,scrollEventKeys:[32,33,34,35,36,37,38,39,40]},n);this.$container=t;this.$document=e(document);this.lockToScrollPos=[0,0];this.disable()}var t,n;n=r.prototype;n.disable=function(){var e=this;e.lockToScrollPos=[e.$container.scrollLeft(),e.$container.scrollTop()];e.$container.on("mousewheel.disablescroll DOMMouseScroll.disablescroll touchmove.disablescroll",e._handleWheel);e.$container.on("scroll.disablescroll",function(){e._handleScrollbar.call(e)});e.opts.handleKeys&&e.$document.on("keydown.disablescroll",function(t){e._handleKeydown.call(e,t)})};n.undo=function(){var e=this;e.$container.off(".disablescroll");e.opts.handleKeys&&e.$document.off(".disablescroll")};n._handleWheel=function(e){e.preventDefault()};n._handleScrollbar=function(){this.$container.scrollLeft(this.lockToScrollPos[0]);this.$container.scrollTop(this.lockToScrollPos[1])};n._handleKeydown=function(e){for(var t=0;t<this.opts.scrollEventKeys.length;t++)if(e.keyCode===this.opts.scrollEventKeys[t]){e.preventDefault();return}};e.fn.disablescroll=function(e){!t&&(typeof e=="object"||!e)?t=new r(this,e):t&&t[e]&&t[e].call(t)};window.UserScrollDisabler=r})(jQuery);
-function Egg(){this.eggs=[],this.hooks=[],this.kps=[],this.activeEgg="",this.ignoredKeys=[16],arguments.length&&this.AddCode.apply(this,arguments)}Egg.prototype.__execute=function(t){return"function"==typeof t&&t.call(this)},Egg.prototype.__toCharCodes=function(t){var e={slash:191,up:38,down:40,left:37,right:39,enter:13,space:32,ctrl:17,alt:18,tab:9,esc:27},o=Object.keys(e);return"string"==typeof t&&(t=t.split(",").map(function(t){return t.trim()})),t.map(function(t){return t===parseInt(t,10)?t:-1<o.indexOf(t)?e[t]:t.charCodeAt(0)}).join(",")},Egg.prototype.AddCode=function(t,e,o){return this.eggs.push({keys:this.__toCharCodes(t),fn:e,metadata:o}),this},Egg.prototype.AddHook=function(t){return this.hooks.push(t),this},Egg.prototype.handleEvent=function(t){var e=t.which,o=65<=e&&e<=90;if(!("keydown"!==t.type||t.metaKey||t.ctrlKey||t.altKey||t.shiftKey)){var i=t.target.tagName;if(("HTML"===i||"BODY"===i)&&o)return void t.preventDefault()}"keyup"===t.type&&0<this.eggs.length&&(o&&(t.shiftKey||(e+=32)),-1===this.ignoredKeys.indexOf(e)&&this.kps.push(e),this.eggs.forEach(function(t,e){0<=this.kps.toString().indexOf(t.keys)&&(this.kps=[],this.activeEgg=t,this.__execute(t.fn,this),this.hooks.forEach(this.__execute,this),this.activeEgg="")},this))},Egg.prototype.Listen=function(){return void 0!==document.addEventListener&&(document.addEventListener("keydown",this,!1),document.addEventListener("keyup",this,!1)),this},Egg.prototype.listen=Egg.prototype.Listen,Egg.prototype.addCode=Egg.prototype.AddCode,Egg.prototype.addHook=Egg.prototype.AddHook;
-
 function initSparkling() {
     // settings
     const color = "#8475F0";
@@ -143,13 +140,6 @@ $(function() {
                 }
             });
         });
-    }
-
-    function egg() {
-        console.log('%cHuh? '+'%c↑ ↓ ← ← →', 'color: black;', 'color: #e63312;');
-        var egg = new Egg("up,down,left,left,right", function() {
-            window.location.href = 'https://renerehme.de/world';
-        }).listen();
     }
 
     $("a[href^=http]").each(function(){
