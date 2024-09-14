@@ -81,9 +81,8 @@
 
                                     <!-- featured post -->
                                     <div class="post featured">
-                                        <div class="image">
-                                            <img width="60" height="60" alt="icon"
-                                                src="/Resources/Static/Packages/matthias.kesenheimer/Images/Icons/document-error-flat/document-error-flat.svg" />
+                                        <div class="image-cropper">
+                                            <img src="/Resources/Persistent/cimg1979.jpg" class="image-cropper__image">
                                         </div>
                                         <a href="/empty.html">
                                             <h2 class="title" style="margin-top: 0; margin-bottom: 2px; font-size: 26px; font-weight: 400; color: #5f5f8c;">
@@ -139,13 +138,21 @@
             </div>
         </section>
 
-        <script>
-            $(document).ready(function () {
-                //adds menu.html content into any "#menu" element
-                $('#footer').load('footer.html');
-            });
-        </script>
-        <div id="#footer"></div>
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

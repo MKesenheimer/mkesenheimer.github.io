@@ -681,3 +681,33 @@ html body .sparkling > span > svg {
     display: block;
     animation: spin 1000ms linear
 }
+
+html body .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+html body img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+html body .image-cropper {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+html body .image-cropper__image {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    min-width: 100%;
+}
