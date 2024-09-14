@@ -47,12 +47,12 @@
                         <div class="neos-contentcollection">
                             <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
                                 <div>
-                                    <h1 style="text-align: center">Mini-Oszilloskop</h1>
+                                    <h1 style="text-align: center">PicoGlitcher PCB</h1>
                                 </div>
                             </div>
                             <div class="paddingTop0 paddingBottom0 kesenheimer-text">
                                 <div>
-                                    <p style="text-align:center">Noch ein megaschnelles Oszilloskop</p>
+                                    <p style="text-align:center">A dirt chip fault-injection device</p>
                                 </div>
                             </div>
                         </div>
@@ -67,29 +67,19 @@
                                 <div class="paddingTop30 paddingBottom15 kesenheimer-text">
                                     <div>
                                         <p>
-                                            Mit diesem kleinen Oszillisokop kann man sich langsame Signalverläufe zwischen 0 und 5V anschauen.
-                                            Die Abtastrate ist wie zu erwarten nicht sehr groß (~3kSa/s), aber immerhin reicht die Rate aus, um Audiosignale wunderschön wiedergeben zu können.
+                                            This project is intended to make fault injection attacks against microcontrollers accessible for hobbyists and to introduce the topic of voltage glitching.
+                                            The software offers an easy entry point to carry out your own attacks against microcontrollers, SoCs and CPUs.
+                                            With the provided and easy to use functions and classes, fault injection projects can be realized quickly.
                                         </p>
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2017/01/cimg1979.jpg" width="3264" height="2448" />
+                                                <img title="" alt="" src="/Resources/Persistent/2024/09/finished.jpg" width="3264" height="2448" />
                                             </figure>
                                         </div>
                                         <p>
-                                            Herzstück des Mini-Oszilloskops ist ein Arduino Nano V3 mit einem ATmega328P.
-                                            Den Signalverlauf kann man sich auf einem kleinen LCD-Bildschirm (Nokia5110) anschauen.
-                                            Ein Software-Trigger aus einem Ringpuffer erkennt steigende Flanken und sortiert den Anfang des Signals immer an die gleiche Stelle.
-                                            Wahlweise kann auch eine kontinuierliche Signaldarstellung gewählt werden. Mit einem Poti lässt sich die Zeitachse einstellen, d.h. Signalverläufe mit gleicher Frequenz können gestreckt oder gestaucht werden (Zoomfunktion).
-                                            Die Anpassung der y-Achse (Spannungsachse) geschieht automatisch, es wurde ein Auto Range implementiert.
-                                        </p>
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2017/01/cimg1973.jpg" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-                                        <p>
-                                            Den Schaltplan gibt es dieses Mal als Breadboard-Version, erstellt mit der <a href="http://fritzing.org">Fritzing</a>-Software.
-                                            Alle Unterlagen zu diesem Projekt sind wie immer auf meiner <a href="https://github.com/MKesenheimer/Mini_Oszi">Github</a>-Seite zu finden.
+                                            Voltage glitching attacks are usually done with expensive hardware such as the ChipWhisperer Pro or Husky.
+                                            However, for most of the attacks a Raspberry Pi Pico and a few other components are required.
+                                            In order to achieve the best results, a circuit board was developed to combine the best of both worlds: cheap, easy to use and powerful.
                                         </p>
                                     </div>
                                 </div>
