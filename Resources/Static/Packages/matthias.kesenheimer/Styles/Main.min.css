@@ -467,7 +467,7 @@ html body #wrapper #footer .copy {
     padding: 0;
     width: 100%;
     top: 50px;
-    bottom: 0px;
+    /* bottom: 0px;*/
     background: #001b23
 }
 
