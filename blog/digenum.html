@@ -81,7 +81,31 @@
                                             </pre>
                                         </div>
 
-                                        
+                                        <p>The command <code>dig</code> (domain information groper) is a program that can be used to query information from DNS servers. In this case, the cache of the router is queried. To query multiple web pages, a word list with the most common web pages can be used which are then passed to this command.</p>
+
+                                        <p>I developed a convenient tool that does just that. It queries the router's cache using the dig command and determines which web pages were visited. Either a single web page to be checked can be passed to the script</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers">
+                                                <code class="bash">
+                                                    <div>digenum.sh -ip 192.168.2.1 -u google.com</div>
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>
+                                            or a word list can be passed:
+                                        </p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers">
+                                                <code class="bash">
+                                                    <div>digenum.sh -ip 192.168.2.1 -w wordlist.txt</div>
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>In either case the script determines if an IP address was cached by the router and presents the result in a clear way. The tool can be found on my github repository: <a rel="noreferrer noopener" href="https://github.com/MKesenheimer/digenum" target="_blank">https://github.com/MKesenheimer/digenum</a></p>
                                     </div>
                                 </div>
                             </div>
