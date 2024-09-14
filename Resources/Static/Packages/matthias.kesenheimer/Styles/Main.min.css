@@ -364,8 +364,7 @@ html body .kesenheimer-quote div p a:hover {
 html body .kesenheimer-container {
     position: relative;
     padding-left: 15px;
-    padding-right: 15px;
-    top: 100px
+    padding-right: 15px
 }
 
 html body .kesenheimer-container.color-white .kesenheimer-text {
@@ -400,14 +399,7 @@ html body .kesenheimer-container .rotate45:after {
 }
 
 html body #wrapper #header {
-    /* absolute footer position */
-    margin-bottom: 30px;
-    /* fixed footer position */
-    /*position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    background: #001b23;*/
+    margin-bottom: 30px
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul {
@@ -471,19 +463,12 @@ html body #wrapper #footer .footer_bottom .parallax .layer {
 }
 
 html body #wrapper #footer .copy {
-    /* absolute footer position */
     position: absolute;
     padding: 0;
     width: 100%;
     top: 50px;
     bottom: 0px;
     background: #001b23
-    /* fixed footer position */
-    /*position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    background: #001b23;*/
 }
 
 html body #wrapper #footer .copy .kesenheimer-text {
