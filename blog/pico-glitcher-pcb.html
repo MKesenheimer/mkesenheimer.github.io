@@ -134,8 +134,26 @@
                                             A built-in level shifter translates between the fixed voltages of the Raspberry Pi Pico and the voltage levels of the target board.
                                         </p>
                                         <p>
-                                            
+                                            Glitches must be placed very precisely.
+                                            The PicoGlitcher is able to trigger on various external events.
+                                            For example, a rising or falling edge could be used to start the timers.
+                                            Additionally, the PicoGlitcher can sniff on a UART communication and trigger if a specific word is sent.
                                         </p>
+                                        <p>
+                                            To summarize:
+                                        </p>
+                                        <ul>
+                                            <li>The PicoGlitcher is cheap (less than 30€) in comparison to professional equipment</li>
+                                            <li>Various trigger capabilities: Rising or falling edge trigger, UART trigger, etc.</li>
+                                            <li>Level shifters to trigger on signals with different voltage level.</li>
+                                            <li>Low and high power crowbar mosfets to switch up to 66 amps.</li>
+                                            <li>SMA connectors for the glitch output and ADC input.</li>
+                                            <li>Trigger Sampling rate up to 125MHz, meaning a glitching resolution under 10ns.</li>
+                                            <li>A software-controllable voltage output. This can be used to supply the target and to switch it on and off if hard errors occur.</li>
+                                            <li>Voltage outputs from 1.8V, 3.3V to 5V.</li>
+                                            <li>Fully customizable and easy to understand software: main language is Python and MicroPython</li>
+                                        </ul>
+                                        <p></p>  
                                     </div>
                                 </div>
                             </div>
