@@ -114,6 +114,28 @@
                                         <p><strong>
                                             Existing hardware
                                         </strong></p>
+                                        <p>
+                                            Usually these attacks are carried out by expensive hardware such as the&nbsp;<a href="https://rtfm.newae.com/Capture/ChipWhisperer-Pro/">ChipWhisperer Pro</a>, the&nbsp;<a href="https://rtfm.newae.com/Capture/ChipWhisperer-Husky/">ChipWhisperer Husky</a>, or the devices from&nbsp;<a href="https://getquote.riscure.com/en/quote/2101114/vc-glitcher.htm">Riscure</a>.
+                                            As these devices are typically very expensive (several hundred Euros), they are not accessible for the hobby hacker. The ChipWhisperer Husky is even more inaccessible for hobby hackers since it has long shipping times up to several weeks.
+                                        </p>
+                                        <p><strong>
+                                            The PicoGlitcher
+                                        </strong></p>
+                                        <p>
+                                            It turns out, however, that voltage glitching attacks can easily be performed with cheap and available hardware like the Rapberry Pi Pico and some other components.
+                                            The sampling rate of the Raspberry Pi Pico is fast enough to enable attacks against most common microcontrollers like the ESP32 or STM32 processors.
+                                            To gain more insight into voltage glitching attacks and using only cheap components, the PicoGlitcher was born.
+                                        </p>
+                                        <p>
+                                            The hardware required for the PicoGlitcher involves, of course, a Raspberry Pi Pico and additional components for precise voltage control and monitoring.
+                                            Specifically, it includes a power supply capable of switching the target on and off, and crowbar transistors that can switch up to 66 amps.
+                                            The design of the voltage glitching stage of the PicoGlitcher is exactly the same as found in the ChipWhisperer Pro.
+                                            Furthermore, the board provides several different voltages to supply all kinds of different target boards.
+                                            A built-in level shifter translates between the fixed voltages of the Raspberry Pi Pico and the voltage levels of the target board.
+                                        </p>
+                                        <p>
+                                            
+                                        </p>
                                     </div>
                                 </div>
                             </div>
