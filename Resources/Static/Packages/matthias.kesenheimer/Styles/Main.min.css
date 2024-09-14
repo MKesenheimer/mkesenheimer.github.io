@@ -1,36 +1,4 @@
 @import url(Bootstrap.css);
-@-webkit-keyframes logo {
-    0% {
-        top: -150px;
-        opacity:0
-    }
-
-    100% {
-        top: 31px;
-        opacity:100
-    }
-}
-
-@-webkit-keyframes buddy {
-    0% {
-        top: 0;
-        left:0
-    }
-
-    10% {
-        left:30px
-    }
-
-    50% {
-        left: 100px;
-        top:20px
-    }
-
-    100% {
-        left: 500px;
-        top:100px
-    }
-}
 
 @keyframes movebg {
     from {
@@ -680,21 +648,6 @@ html body .sparkling > span {
 html body .sparkling > span > svg {
     display: block;
     animation: spin 1000ms linear
-}
-
-html body .image-cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-html body img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
 }
 
 html body .image-cropper {
