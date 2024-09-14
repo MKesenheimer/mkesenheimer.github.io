@@ -244,6 +244,14 @@ html body .kesenheimer-blogoverview .blog_posts .post a h2 {
     color:#5f5f8c
 }
 
+html body .kesenheimer-blogoverview .blog_posts .post.title {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #5f5f8c
+}
+
 html body .kesenheimer-blogoverview .blog_posts .post.featured {
     position: relative;
     padding: 11px 11px 11px 15px;
