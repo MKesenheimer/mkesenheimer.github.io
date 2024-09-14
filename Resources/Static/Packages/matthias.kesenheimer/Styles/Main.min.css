@@ -463,12 +463,18 @@ html body #wrapper #footer .footer_bottom .parallax .layer {
 }
 
 html body #wrapper #footer .copy {
-    position: absolute;
+    /*position: absolute;
     padding: 0;
     width: 100%;
-    /* top: 50px; */
+    top: 50px;
     bottom: 0px;
-    background: #001b23
+    background: #001b23*/
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #001b23;
 }
 
 html body #wrapper #footer .copy .kesenheimer-text {
