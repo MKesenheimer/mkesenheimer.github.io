@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script>
-$(document).ready(function () {
-    //adds menu.html content into any "#menu" element
-    $('#header').load('header.html');
-});
-</script>
-<div id="#header"></div>
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="index.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <link rel="alternate" hreflang="de" href="index.html" />
+</head>
 
 <body class>
     <div id="wrapper">
@@ -86,6 +105,7 @@ $(document).ready(function () {
                                             </h2>
                                             <div class="date">June 3, 2022</div>
                                         </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -119,21 +139,13 @@ $(document).ready(function () {
             </div>
         </section>
 
-        <section id="footer">
-            <div class="copy">
-                <div class="inner">
-                    <div class="neos-contentcollection">
-                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
-                            <div>
-                                <p style="text-align:center">
-                                    <a href="/impressum.html">Impressum</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <script>
+            $(document).ready(function () {
+                //adds menu.html content into any "#menu" element
+                $('#footer').load('footer.html');
+            });
+        </script>
+        <div id="#footer"></div>
     </div>
 </body>
 </html>
