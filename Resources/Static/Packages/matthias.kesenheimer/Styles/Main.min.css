@@ -364,7 +364,8 @@ html body .kesenheimer-quote div p a:hover {
 html body .kesenheimer-container {
     position: relative;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    top: 100px
 }
 
 html body .kesenheimer-container.color-white .kesenheimer-text {
