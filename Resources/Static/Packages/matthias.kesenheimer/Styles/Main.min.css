@@ -98,17 +98,17 @@ html body a, html body abbr, html body address, html body area, html body articl
 }
 
 html body code > div {
-    margin-top: -19px
+    margin-top:-19px
 }
 
 html body pre {
     display: inline;
-    padding: 3px
+    padding:3px
 }
 
 html body menu-ul {
     list-style-type: none;
-    padding: 0
+    padding:0
 }
 
 html body .controls label {
@@ -117,14 +117,14 @@ html body .controls label {
 
 html body .controls input, html body .controls textarea {
     font-size: 16px;
-    padding: 20px
+    padding:20px
 }
 
 html body .controls .btn-success {
     color: white;
     background: #252554;
     border: 0;
-    padding: 10px 20px
+    padding:10px 20px
 }
 
 html body .controls .btn-success:hover {
@@ -137,7 +137,7 @@ html body .star1 {
     width: 4px;
     height: 4px;
     z-index: -1;
-    transform: rotate(45deg)
+    transform:rotate(45deg)
 }
 
 html body .star2 {
@@ -146,7 +146,7 @@ html body .star2 {
     width: 2px;
     height: 2px;
     z-index: -1;
-    transform: rotate(45deg)
+    transform:rotate(45deg)
 }
 
 html body .star3 {
@@ -155,7 +155,7 @@ html body .star3 {
     width: 2px;
     height: 2px;
     z-index: -1;
-    transform: rotate(45deg)
+    transform:rotate(45deg)
 }
 
 html body .star4 {
@@ -164,12 +164,12 @@ html body .star4 {
     width: 1px;
     height: 1px;
     z-index: -1;
-    transform: rotate(45deg)
+    transform:rotate(45deg)
 }
 
 html body .kesenheimer-image figure img {
     max-width: 100%;
-    height: auto
+    height:auto
 }
 
 html body .kesenheimer-headline > div > h1 {
@@ -181,7 +181,7 @@ html body .kesenheimer-headline > div > h1 {
     background: -moz-linear-gradient(right, #f53b3b, #bd503d);
     background: linear-gradient(to right, #f53b3b, #bd503d);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color:transparent
 }
 
 html body .kesenheimer-headline > div > h2 {
@@ -191,7 +191,7 @@ html body .kesenheimer-headline > div > h2 {
     font-weight: 300;
     background: #5f5f8c;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color:transparent
 }
 
 html body .kesenheimer-headline > div > h3 {
@@ -204,11 +204,11 @@ html body .kesenheimer-headline > div > h3 {
     transform: skew(0, -2deg);
     font-family: "Gochi Hand", cursive;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color:transparent
 }
 
 html body .kesenheimer-text {
-    color: #e1d9ff
+    color:#e1d9ff
 }
 
 html body .kesenheimer-code pre {
@@ -217,23 +217,23 @@ html body .kesenheimer-code pre {
     margin: 0;
     border: 0;
     line-height: 20px;
-    display: flex
+    display:flex
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post {
     display: flex;
     align-items: center;
-    padding: 11px 0px
+    padding:11px 0px
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post .image > img {
     width: 60px;
     margin-right: 15px;
-    filter: grayscale(50%)
+    filter:grayscale(50%)
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post a {
-    text-decoration: none
+    text-decoration:none
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post a h2 {
@@ -241,20 +241,15 @@ html body .kesenheimer-blogoverview .blog_posts .post a h2 {
     margin-bottom: 2px;
     font-size: 26px;
     font-weight: 400;
-    color: #5f5f8c
+    color:#5f5f8c
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post-title {
     margin-top: 0;
     margin-bottom: 2px;
-    margin-left: 20px;
     font-size: 26px;
     font-weight: 400;
-    color:  #5f5f8c
-}
-
-html body .kesenheimer-blogoverview .blog_posts .post-date {
-    margin-left: 20px;
+    color: #5f5f8c
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured {
@@ -263,7 +258,7 @@ html body .kesenheimer-blogoverview .blog_posts .post.featured {
     background: #e9f0ff;
     border-radius: 4px;
     border: 3px dashed #d5e3ff;
-    margin-bottom: 11px
+    margin-bottom:11px
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured:after {
@@ -276,11 +271,11 @@ html body .kesenheimer-blogoverview .blog_posts .post.featured:after {
     line-height: 29px;
     content: 'pinned';
     white-space: pre-wrap;
-    transform: rotate(-7deg)
+    transform:rotate(-7deg)
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured .image > img {
-    margin: 11px 15px 0px 0
+    margin:11px 15px 0px 0
 }
 
 html body .kesenheimer-quote {
@@ -294,12 +289,12 @@ html body .kesenheimer-quote div {
     background: -webkit-linear-gradient(to right, #f53b3b, #bd503d);
     background: linear-gradient(to right, #f53b3b, #bd503d);
     padding: 14px 16px 14px 22px;
-    border-radius: 3px
+    border-radius:3px
 }
 
 @media only screen and (max-width: 767px) {
     html body .kesenheimer-quote div {
-        margin: 10px 0 0 0
+        margin:10px 0 0 0
     }
 }
 
@@ -312,7 +307,7 @@ html body .kesenheimer-quote div:before {
     font-size: 40px;
     line-height: 27px;
     content: '<!--';
-    white-space: pre-wrap
+    white-space:pre-wrap
 }
 
 @media only screen and (max-width: 767px) {
@@ -320,7 +315,7 @@ html body .kesenheimer-quote div:before {
         left: -10px;
         top: -23px;
         font-size: 22px;
-        transform: rotate(-9deg)
+        transform:rotate(-9deg)
     }
 }
 
@@ -333,7 +328,7 @@ html body .kesenheimer-quote div:after {
     font-size: 33px;
     line-height: 27px;
     content: '-->';
-    white-space: pre-wrap
+    white-space:pre-wrap
 }
 
 @media only screen and (max-width: 767px) {
@@ -341,49 +336,49 @@ html body .kesenheimer-quote div:after {
         left: 10px;
         top: -21px;
         font-size: 19px;
-        transform: rotate(-9deg)
+        transform:rotate(-9deg)
     }
 }
 
 html body .kesenheimer-quote div p {
     margin: 0;
     font-size: 14px;
-    color: white
+    color:white
 }
 
 html body .kesenheimer-quote div p a {
     color: #cdccff;
     border-bottom: 2px dashed #cdccff;
-    text-decoration: none
+    text-decoration:none
 }
 
 html body .kesenheimer-quote div p a:hover {
-    border-bottom: 2px dashed white
+    border-bottom:2px dashed white
 }
 
 html body .kesenheimer-container {
     position: relative;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right:15px
 }
 
 html body .kesenheimer-container.color-white .kesenheimer-text {
-    color: #252554
+    color:#252554
 }
 
 html body .kesenheimer-container.color-white .kesenheimer-text sub {
     line-height: 19px !important;
     font-size: 12px;
-    display: block
+    display:block
 }
 
 html body .kesenheimer-container.color-white .kesenheimer-headline div h1 {
-    color: #bd503d
+    color:#bd503d
 }
 
 html body .kesenheimer-container.color-white .inner {
     border-radius: 3px;
-    background-color: white
+    background-color:white
 }
 
 html body .kesenheimer-container .rotate45:after {
@@ -399,7 +394,7 @@ html body .kesenheimer-container .rotate45:after {
 }
 
 html body #wrapper #header {
-    margin-bottom: 30px
+    margin-bottom:30px
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul {
@@ -407,11 +402,11 @@ html body #wrapper #header .menu .kesenheimer-menu > menu-ul {
     margin: 0;
     display: flex;
     list-style-type: none;
-    justify-content: center
+    justify-content:center
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li {
-    padding: 0 15px 0 15px
+    padding:0 15px 0 15px
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a {
@@ -420,39 +415,39 @@ html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a {
     font-family: "Roboto Mono", monospace;
     letter-spacing: 1.3px;
     text-transform: uppercase;
-    text-shadow: 0px 0px 10px #002241
+    text-shadow:0px 0px 10px #002241
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a:hover {
     color: white;
     padding-bottom: 2px;
-    border-bottom: 2px dashed
+    border-bottom:2px dashed
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a:hover, html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a:active, html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a:focus {
-    text-decoration: none
+    text-decoration:none
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li.current a {
-    color: #bd503d
+    color:#bd503d
 }
 
 html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
-    position: relative
+    position:relative
 }
 
 @media only screen and (max-width: 479px) {
     html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner:before {
-        left: 0
+        left:0
     }
 }
 
 html body #wrapper #footer {
-    position: relative
+    position:relative
 }
 
 html body #wrapper #footer .footer_bottom .parallax {
-    position: relative
+    position:relative
 }
 
 html body #wrapper #footer .footer_bottom .parallax .layer {
@@ -466,47 +461,46 @@ html body #wrapper #footer .copy {
     position: absolute;
     padding: 0;
     width: 100%;
-    /* top: 50px; */
-    bottom: 0px;
-    background: #001b23
+    top: 50px;
+    background:#001b23
 }
 
 html body #wrapper #footer .copy .kesenheimer-text {
-    color: #344b3e
+    color:#344b3e
 }
 
 html body #wrapper #footer .copy .kesenheimer-text a {
-    color: #617277
+    color:#617277
 }
 
 html body .img-border_r4 img {
-    border-radius: 4px
+    border-radius:4px
 }
 
 html body .inner {
     width: 100%;
     max-width: 767px;
     margin: 0 auto;
-    padding: 0 30px
+    padding:0 30px
 }
 
 @media only screen and (max-width: 767px) {
     html body .inner {
-        padding: 0 15px
+        padding:0 15px
     }
 }
 
 html body .no-pad {
     padding-left: 0;
-    padding-right: 0
+    padding-right:0
 }
 
 html body .paddingTop0 {
-    padding-top: 0
+    padding-top:0
 }
 
 html body .paddingTop15 {
-    padding-top: 15px
+    padding-top:15px
 }
 
 html body .paddingTop30 {
@@ -514,31 +508,31 @@ html body .paddingTop30 {
 }
 
 html body .paddingTop60 {
-    padding-top: 60px
+    padding-top:60px
 }
 
 html body .paddingTop90 {
-    padding-top: 90px
+    padding-top:90px
 }
 
 html body .paddingBottom0 {
-    padding-bottom: 0
+    padding-bottom:0
 }
 
 html body .paddingBottom15 {
-    padding-bottom: 15px
+    padding-bottom:15px
 }
 
 html body .paddingBottom30 {
-    padding-bottom: 30px
+    padding-bottom:30px
 }
 
 html body .paddingBottom60 {
-    padding-bottom: 60px
+    padding-bottom:60px
 }
 
 html body .paddingBottom90 {
-    padding-bottom: 90px
+    padding-bottom:90px
 }
 
 @-webkit-keyframes comeInOut {
@@ -642,14 +636,14 @@ html body .sparkling {
     display: inline-block;
     z-index: 0;
     font-weight: bold;
-    color: #8475F0
+    color:#8475F0
 }
 
 html body .sparkling > span {
     z-index: -1;
     position: absolute;
     display: block;
-    animation: comeInOut 700ms forwards
+    animation:comeInOut 700ms forwards
 }
 
 html body .sparkling > span > svg {
