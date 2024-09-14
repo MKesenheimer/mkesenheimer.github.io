@@ -399,7 +399,12 @@ html body .kesenheimer-container .rotate45:after {
 }
 
 html body #wrapper #header {
-    margin-bottom: 30px
+    /*margin-bottom: 30px;*/
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: #001b23;
 }
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul {
