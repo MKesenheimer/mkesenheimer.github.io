@@ -361,44 +361,6 @@ html body .kesenheimer-quote div p a:hover {
     border-bottom: 2px dashed white
 }
 
-html body .kesenheimer-container {
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    top: 100px
-}
-
-html body .kesenheimer-container.color-white .kesenheimer-text {
-    color: #252554
-}
-
-html body .kesenheimer-container.color-white .kesenheimer-text sub {
-    line-height: 19px !important;
-    font-size: 12px;
-    display: block
-}
-
-html body .kesenheimer-container.color-white .kesenheimer-headline div h1 {
-    color: #bd503d
-}
-
-html body .kesenheimer-container.color-white .inner {
-    border-radius: 3px;
-    background-color: white
-}
-
-html body .kesenheimer-container .rotate45:after {
-    position: absolute;
-    content: " ";
-    display: block;
-    left: 0;
-    bottom: -20px;
-    width: 100%;
-    border-style: solid;
-    border-width: 0 100vw 20px 0;
-    border-color:transparent rgba(0, 0, 0, 0.4) transparent transparent
-}
-
 html body #wrapper #header {
     /*margin-bottom: 30px;*/
     position: fixed;
@@ -441,6 +403,45 @@ html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li > a:hover, htm
 
 html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li.current a {
     color: #bd503d
+}
+
+html body .kesenheimer-container {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*top: 100px*/
+    margin-top: 100px
+}
+
+html body .kesenheimer-container.color-white .kesenheimer-text {
+    color: #252554
+}
+
+html body .kesenheimer-container.color-white .kesenheimer-text sub {
+    line-height: 19px !important;
+    font-size: 12px;
+    display: block
+}
+
+html body .kesenheimer-container.color-white .kesenheimer-headline div h1 {
+    color: #bd503d
+}
+
+html body .kesenheimer-container.color-white .inner {
+    border-radius: 3px;
+    background-color: white
+}
+
+html body .kesenheimer-container .rotate45:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 100vw 20px 0;
+    border-color:transparent rgba(0, 0, 0, 0.4) transparent transparent
 }
 
 html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
