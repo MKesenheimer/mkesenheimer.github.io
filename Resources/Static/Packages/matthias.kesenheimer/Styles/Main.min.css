@@ -98,17 +98,17 @@ html body a, html body abbr, html body address, html body area, html body articl
 }
 
 html body code > div {
-    margin-top:-19px
+    margin-top: -19px
 }
 
 html body pre {
     display: inline;
-    padding:3px
+    padding: 3px
 }
 
 html body menu-ul {
     list-style-type: none;
-    padding:0
+    padding: 0
 }
 
 html body .controls label {
@@ -117,14 +117,14 @@ html body .controls label {
 
 html body .controls input, html body .controls textarea {
     font-size: 16px;
-    padding:20px
+    padding: 20px
 }
 
 html body .controls .btn-success {
     color: white;
     background: #252554;
     border: 0;
-    padding:10px 20px
+    padding: 10px 20px
 }
 
 html body .controls .btn-success:hover {
@@ -137,7 +137,7 @@ html body .star1 {
     width: 4px;
     height: 4px;
     z-index: -1;
-    transform:rotate(45deg)
+    transform: rotate(45deg)
 }
 
 html body .star2 {
@@ -146,7 +146,7 @@ html body .star2 {
     width: 2px;
     height: 2px;
     z-index: -1;
-    transform:rotate(45deg)
+    transform: rotate(45deg)
 }
 
 html body .star3 {
@@ -155,7 +155,7 @@ html body .star3 {
     width: 2px;
     height: 2px;
     z-index: -1;
-    transform:rotate(45deg)
+    transform: rotate(45deg)
 }
 
 html body .star4 {
@@ -164,12 +164,12 @@ html body .star4 {
     width: 1px;
     height: 1px;
     z-index: -1;
-    transform:rotate(45deg)
+    transform: rotate(45deg)
 }
 
 html body .kesenheimer-image figure img {
     max-width: 100%;
-    height:auto
+    height: auto
 }
 
 html body .kesenheimer-headline > div > h1 {
@@ -181,7 +181,7 @@ html body .kesenheimer-headline > div > h1 {
     background: -moz-linear-gradient(right, #f53b3b, #bd503d);
     background: linear-gradient(to right, #f53b3b, #bd503d);
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent
+    -webkit-text-fill-color: transparent
 }
 
 html body .kesenheimer-headline > div > h2 {
@@ -191,7 +191,7 @@ html body .kesenheimer-headline > div > h2 {
     font-weight: 300;
     background: #5f5f8c;
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent
+    -webkit-text-fill-color: transparent
 }
 
 html body .kesenheimer-headline > div > h3 {
@@ -204,11 +204,11 @@ html body .kesenheimer-headline > div > h3 {
     transform: skew(0, -2deg);
     font-family: "Gochi Hand", cursive;
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent
+    -webkit-text-fill-color: transparent
 }
 
 html body .kesenheimer-text {
-    color:#e1d9ff
+    color: #e1d9ff
 }
 
 html body .kesenheimer-code pre {
@@ -217,23 +217,23 @@ html body .kesenheimer-code pre {
     margin: 0;
     border: 0;
     line-height: 20px;
-    display:flex
+    display: flex
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post {
     display: flex;
     align-items: center;
-    padding:11px 0px
+    padding: 11px 0px
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post .image > img {
     width: 60px;
     margin-right: 15px;
-    filter:grayscale(50%)
+    filter: grayscale(50%)
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post a {
-    text-decoration:none
+    text-decoration: none
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post a h2 {
@@ -241,15 +241,16 @@ html body .kesenheimer-blogoverview .blog_posts .post a h2 {
     margin-bottom: 2px;
     font-size: 26px;
     font-weight: 400;
-    color:#5f5f8c
+    color: #5f5f8c
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post-title {
     margin-top: 0;
     margin-bottom: 2px;
+    margin-left: 2px;
     font-size: 26px;
     font-weight: 400;
-    color: #5f5f8c
+    color:  #5f5f8c
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured {
@@ -258,7 +259,7 @@ html body .kesenheimer-blogoverview .blog_posts .post.featured {
     background: #e9f0ff;
     border-radius: 4px;
     border: 3px dashed #d5e3ff;
-    margin-bottom:11px
+    margin-bottom: 11px
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured:after {
@@ -271,11 +272,11 @@ html body .kesenheimer-blogoverview .blog_posts .post.featured:after {
     line-height: 29px;
     content: 'pinned';
     white-space: pre-wrap;
-    transform:rotate(-7deg)
+    transform: rotate(-7deg)
 }
 
 html body .kesenheimer-blogoverview .blog_posts .post.featured .image > img {
-    margin:11px 15px 0px 0
+    margin: 11px 15px 0px 0
 }
 
 html body .kesenheimer-quote {
