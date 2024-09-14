@@ -253,10 +253,6 @@ html body .kesenheimer-blogoverview .blog_posts .post-title {
     color:  #5f5f8c
 }
 
-html body .kesenheimer-blogoverview .blog_posts .post-date {
-    margin-left: 20px;
-}
-
 html body .kesenheimer-blogoverview .blog_posts .post.featured {
     position: relative;
     padding: 11px 11px 11px 15px;
@@ -467,7 +463,6 @@ html body #wrapper #footer .copy {
     padding: 0;
     width: 100%;
     top: 50px;
-    bottom: 0px;
     background: #001b23
 }
 
