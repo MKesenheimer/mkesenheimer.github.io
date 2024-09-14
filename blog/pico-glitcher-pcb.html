@@ -47,12 +47,12 @@
                         <div class="neos-contentcollection">
                             <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
                                 <div>
-                                    <h1 style="text-align: center">Blog</h1>
+                                    <h1 style="text-align: center">Mini-Oszilloskop</h1>
                                 </div>
                             </div>
                             <div class="paddingTop0 paddingBottom0 kesenheimer-text">
                                 <div>
-                                    <p style="text-align:center">IT-Security, Elektronik, Hardware-Hacking...</p>
+                                    <p style="text-align:center">Noch ein megaschnelles Oszilloskop</p>
                                 </div>
                             </div>
                         </div>
@@ -62,63 +62,34 @@
                 <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
                     <div class="inner container-fluid">
                         <div class="neos-contentcollection">
-
-                            <!-- Zitat -->
-                            <div class="paddingTop30 paddingBottom30 kesenheimer-quote">
-                                <div>
-                                    <p>
-                                        Zitat
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Blogoverview -->
-                            <div class="paddingTop0 paddingBottom30 kesenheimer-blogoverview">
-                                <div class="blog_posts">
-
-                                    <!-- featured post -->
-                                    <div class="post featured">
-                                        <div class="image">
-                                            <img width="60" height="60" alt="icon"
-                                                src="/Resources/Persistent/2024/09/finished.jpg" />
-                                        </div>
-                                        <a href="/pico-glitcher-pcb.html">
-                                            <h2 class="title" style="margin-top: 0; margin-bottom: 2px; font-size: 26px; font-weight: 400; color: #5f5f8c;">
-                                                Pico Glitcher PCB
-                                            </h2>
-                                            <div class="date">September 13, 2024</div>
-                                        </a>
-                                    </div>
-
-                                    <!-- post -->
-                                    <div class="post">
-                                        <div class="image-cropper">
-                                            <img src="/Resources/Persistent/2017/01/cimg1979.jpg" class="image-cropper__image">
-                                        </div>
-                                        <a href="/blog/mini-oszilloskop.html">
-                                            <h2 class="title" style="margin-top: 0; margin-bottom: 2px; font-size: 26px; font-weight: 400; color: #5f5f8c;">
-                                                Mini Oszilloskop
-                                            </h2>
-                                            <div class="date">January 5, 2017</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Heading -->
-                            <div class="paddingTop30 paddingBottom15 kesenheimer-headline">
-                                <div>
-                                    <h1>Heading H1</h1>
-                                </div>
-                            </div>
-
                             <!-- Text -->
                             <div class="neos-nodetypes-html">
-                                <div class="paddingTop0 paddingBottom15 kesenheimer-text">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
                                     <div>
                                         <p>
-                                            Text
-                                            <br><br>
+                                            Mit diesem kleinen Oszillisokop kann man sich langsame Signalverläufe zwischen 0 und 5V anschauen.
+                                            Die Abtastrate ist wie zu erwarten nicht sehr groß (~3kSa/s), aber immerhin reicht die Rate aus, um Audiosignale wunderschön wiedergeben zu können.
+                                        </p>
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/01/cimg1979.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                        <p>
+                                            Herzstück des Mini-Oszilloskops ist ein Arduino Nano V3 mit einem ATmega328P.
+                                            Den Signalverlauf kann man sich auf einem kleinen LCD-Bildschirm (Nokia5110) anschauen.
+                                            Ein Software-Trigger aus einem Ringpuffer erkennt steigende Flanken und sortiert den Anfang des Signals immer an die gleiche Stelle.
+                                            Wahlweise kann auch eine kontinuierliche Signaldarstellung gewählt werden. Mit einem Poti lässt sich die Zeitachse einstellen, d.h. Signalverläufe mit gleicher Frequenz können gestreckt oder gestaucht werden (Zoomfunktion).
+                                            Die Anpassung der y-Achse (Spannungsachse) geschieht automatisch, es wurde ein Auto Range implementiert.
+                                        </p>
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/01/cimg1973.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                        <p>
+                                            Den Schaltplan gibt es dieses Mal als Breadboard-Version, erstellt mit der <a href="http://fritzing.org">Fritzing</a>-Software.
+                                            Alle Unterlagen zu diesem Projekt sind wie immer auf meiner <a href="https://github.com/MKesenheimer/Mini_Oszi">Github</a>-Seite zu finden.
                                         </p>
                                     </div>
                                 </div>
