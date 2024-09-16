@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Die perfekte Wurfmaschine</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Die Planung eines perfekten mittelalterlichen Beschleunigers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Mein Physik Studium hat mich einiges gelehrt - vor allem wie man tolle, große Beschleuniger baut. So verrückt es auch klingen mag, im dritten Semester lernt man dazu das mathematische Werkzeug wie man die perfekte mittelalterliche Wurfmaschine baut.</p>
+
+                                        <p>Ein Trebuchet, von lat. trabatium, auch Blide oder Tribock genannt, ist eine altertümliche Belagerungsmaschine, die im vierten bis dritten Jahrhundert vor Christus erstmals in China als Zugblide auftrat. Bei einer Zugblide wird das Geschoss nicht mit einem am Hebel angebrachten Gegengewicht beschleunigt, sondern die nötige Kraft, um das Geschoss auf hohe Geschwindigkeiten zu bekommen, wird von Personen geliefert, die den kurzen Hebelarm an Seilen nach unten ziehen. Im sechsten Jahrhundert brachten Kreuzfahrer und Händler die Zugblide in den Mittelmeerraum.</p>
+
+                                        <p>Erst ab dem 12. Jahrhundert kamen verbesserte Maschinen mit pendelndem Gegengewicht in Westeuropa als Belagerungswaffen zum Einsatz und konnten sich sogar später einige Zeit lang gegen Schießpulver behaupten. Das Trebuchet mit Gegengewicht hatte den großen Vorteil, dass schwerere Geschosse mit gleichbleibender Kraft beschleunigt werden konnten, weshalb das Ergebnis präziser und nicht mehr von der variierenden Zugleistung der Personen abhing.</p>
+
+                                        <p>Originale Pläne oder Maßangaben von mittelalterlichen Wurfmaschinen sind leider verschollen, weshalb man heute die Maße von Trebuchets meist aus Gemälden rekonstruieren oder sich mit plausiblen Annahmen abfinden muss.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="Trebuchet aus Konrad Kyesers Bellifortis-Handschrift Ms. Thott. 290.2º von 1459" alt="" src="/Resources/Persistent/2017/07/trebuchet.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Um eine solche plausible Annahme soll es hier gehen. Es soll versucht werden mit einem einfachen physikalischen Modell Differentialgleichungen abzuleiten, die über ein Optimierungsverfahren auf die optimalen Maße eines Trebuchets führen. Vorweg: Das Modell funktioniert erstaunlich gut und liefert Verhältnisse von Maßen, die mit denen aus alten Abbildungen gut übereinstimmen. Das Modell soll später dazu dienen, ein optimales Trebuchet nach einer Bauweise aus dem 12. Jahrhundert zu rekonstruieren. Die reale Wurfweite des Nachbaus soll das Modell auf Richtigkeit überprüfen und klären, ob es sich tatsächlich um eine geeignete Konstruktion aus dem frühen Mittelalter handelt.</p>
+
+                                        <p>Alle Rechnungen wurden mit Mathematica durchgeführt. Wer sich selbst auf die Suche nach dem optimalen Trebuchet begeben möchte oder meine Maße dazu benutzen möchte, eine eigene Wurfmaschine nachzubauen, kann den Quellcode und die Maßangaben <a href="https://github.com/MKesenheimer/Trebuchet">hier</a> herunterladen. Doch bevor ich auf meine Konstruktion näher eingehe, möchte ich die Funktionsweise eines Trebuchets erklären.</p>
+
+                                        <p>Folgende Maße sind für die Simulation eines Trebuchets wichtig:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/winkel_und_abmessungen.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                        
+                                        <p>Der Winkel Phi wird zwischen Vertikale und der Aufhängung h des Gegengewichts M gemessen. L1 und L2 sind die jeweiligen Abmessungen des Wurfarms bis zum Drehpunkt. Zwischen der Horizontalen und dem Wurfarm befindet sich der Winkel Theta. Der Winkel Psi misst die Auslenkung zwischen der Horizontalen und der Wurfschlinge mit der Länge r. Das Geschoss hat die Masse m. Außerdem wird das Trägheitsmoment des Wurfarms mit I parametrisiert. Als erste Näherung kann hier das Trägheitsmoment einer langen Stange (1/12 µ (L1+L2)^2) verwendet werden, wobei µ die Masse des Wurfarms ist. In der Simulation wird ein Trägheitsmoment eines optimierten Wurfarms verwendet, d.h. der Wurfarm ist unten dick und läuft zum Ende hin spitz zu. So wird gewährleistet, dass die längere Strecke L2 weniger zum Trägheitsmoment beiträgt.</p>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Wurfabfolge</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/schematic_1.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                        
+                                        <p>Im ersten Schritt befindet sich das Geschoss auf dem Boden und das Gegengewicht am höchsten Punkt. Die Geschwindigkeit des Geschosses und des Gegengewichts ist null, die ganze Energie der Anordnung ist in der potentiellen Energie des Gegengewichts gespeichert.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/schematic_14.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Nachdem das Gegengewicht losgelassen wird, fällt es aufgrund der Erdanziehung senkrecht nach unten. Der Wurfarm folgt der Bewegung des Gegengewichts und beschleunigt das Geschoss. Anfangs wird das Geschoss von der Schlinge auf dem Boden gezogen, bis es nach einer gewissen Zeit den Boden verlässt und sich auch in die vertikale Richtung bewegen kann. Es stellt sich heraus, dass das Ziehen des Geschosses auf dem Boden einen erheblichen Beitrag zur Wurfweite liefert. Der Boden verringert den Radius der Trajektorie am Anfang, weshalb das Geschoss einen kleineren Beitrag zum Trägheitsmoment erzeugt.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/schematic_25.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Abwurfphase: Das Gegengewicht hat nahezu seinen tiefsten Punkt und das Geschoss hat die höchste Geschwindigkeit erreicht. In dieser Phase tritt ein interessantes Phänomen auf, das sogenannte "Pumpen": Beim Pumpen erhöht sich die Geschossgeschwindigkeit durch die besondere Geometrie des Trebuchets schlagartig (siehe Diagramm zur Geschossgeschwindigkeit v(t)). Das ist auch der Grund warum ein Trebuchet als Wurfmaschine so effektiv ist. Die nachfolgende Animation verdeutlicht den Pumpeffekt.</p>
+
+                                        <p>Die folgende Animation wurde mit Mathematica für die plausiblen Abmessungen eines realen Trebuchets erstellt. Alle Unterlagen lassen sich <a href="https://github.com/MKesenheimer/Trebuchet">hier</a> herunterladen.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/animation.gif" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Geschossgeschwindigkeit in Abhängigkeit der Zeit. Man sieht deutlich, dass sich die Geschwindigkeit vor dem Abwurf schlagartig erhöht (rote Linie). Die erste Spitze vor dem globalen Maximum ist dem Pumpeffekt des Trebuchets geschuldet.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/geschossgeschwindigkeit_t.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Mit dem verlinkten Mathematica Skript können durch ein Optimierungsverfahren alle relevanten Parameter, d.h. die optimale Länge der Aufhängung des Gegengewichts, die Wurfarm- und Schlingenlänge in Abhängigkeit der Massen berechnet werden. Dazu wird eine Lagrangefunktion aufgestellt, die den Zusammenhang aller physikalisch relevanten Größen beschreibt. Über die Euler-Lagrange-Gleichung werden die gekoppelten Differentialgleichungen von Theta, Psi und Phi berechnet, die anschließend mit Randbedingungen numerisch gelöst werden. Durch Variation der verschiedenen Parametern kann die Wurfweite berechnet werden. Die Wurfweite wird dann in Abhängigkeit aller Parameter maximiert.</p>
+
+                                        <p>Zusammenfassend hier die weniger interessanten Diagramme zur maximalen Wurfweite und zu den komplizierten Winkelfunktionen. Die maximale Wurfweite mit einem Gegengewicht von 50kg und einem Geschossgewicht von 0.5kg beträgt etwa 100m.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/wurfweite_t.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/psi_t.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/theta_t.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/geschossgeschwindigkeit_t.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Mit den optimierten Parametern konnten daraufhin Zeichnungen in AutoCAD erstellt werden. Diese Zeichnungen sollen später dazu dienen das Trebuchet aus Holz nachzubauen und die Wurfweite mit den Rechnungen zu vergleichen.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2017/07/trebuchet_3d.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
