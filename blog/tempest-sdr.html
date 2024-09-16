@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Tempest SDR</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Monitore ausspionieren über Funkwellen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Wie vermutlich jeder weiß, senden Elektrogeräte beim Betrieb hochfrequente, elektromagnetische Strahlung ab (landläufig auch als "Elektrosmog" bekannt). Insbesondere Bildschirme und die Abstrahlung ihrer elektromagnetischen Störstrahlung sind hier sehr interessant, da man aus der Modulation der abgestrahlten Strahlung unter Umständen Informationen darüber gewinnen kann, was auf dem Bildschirm gerade angezeigt wird.</p>
+
+                                        <p>Dieser Angriff ist als TempestSDR bekannt. Tempest war in Zeiten des kalten Kriegs der Deckname von elektromagnetischen Abhörverfahren. Eine gute Übersicht wurde außerdem auf <a href="https://www.rtl-sdr.com/tempestsdr-a-sdr-tool-for-eavesdropping-on-computer-screens-via-unintentionally-radiated-rf/">rtl-sdr.com</a> zusammengestellt. Hier wird erklärt, was alles benötigt wird und wie man die Software installiert.</p>
+
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Setup</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>Es wird folgende Soft- und Hardware benötigt:</p>
+
+                                        <ul>
+                                            <li>SDR-Device, Software-Defined-Radio zum Beispiel: <a href="https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/">RTL-SDR</a>, Airspy, SDRplay oder HackRF</li>
+                                            <li><a href="https://www.gnuradio.org/">gnuRadio</a> und <a href="https://github.com/git-artes/gr-tempest">gr-tempest</a> plugin</li>
+                                            <li><a href="https://airspy.com/download/">SDR#</a>, um die richtige Frequenz zu finden</li>
+                                            <li><a href="https://github.com/martinmarinov/TempestSDR">TempestSDR</a>, bzw.</li>
+                                            <li><a href="https://raw.github.com/martinmarinov/TempestSDR/master/Release/JavaGUI/JTempestSDR.jar">JTempestSDR</a> (vorkompiliert)</li>
+                                        </ul>
+
+                                        <p>Für die Demo wird vor allem auf folgende Software zurückgegriffen, weil sie einfach zu bedienen ist und relativ zuverlässig funktioniert:</p>
+
+                                        <ul>
+                                            <li>vorkompilierte <a href="https://github.com/eried/Research/tree/master/HackRF/TempestSDR">Java Executable</a></li>
+                                            <li><a href="http://www.hdsdr.de/hardware.html">RTL-SDR Windows Treiber</a></li>
+                                        </ul>
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QjqpKtGNbQo?si=Ll4BkfM6NRL4u-8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Vorgehen</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>Zuerst muss eine Frequenz der abgestrahlten Störstrahlund des Monitors mit einem Spektrumanalysator (z.B. <a href="https://airspy.com/download/">SDR#</a> oder mit dem Programm <a href="https://gqrx.dk">gqrx</a>) gesucht werden. Dazu wird ein kontrastreiches Muster oder ein animiertes Bild auf dem Monitor angezeigt.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/09/tempest_animation.gif" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Die Störstrahlung des Bildschirms macht sich im Spektrum durch einen "Gartenzaun" bemerkbar, also durch eine Reihe von Spitzen, die nahe beieinander liegen.</p>
+
+                                        <p>Um das bestmögliche Ergebnis zu erhalten, wählt man die Frequenzspitze mit dem größten Signal-zu-Rausch-Verhältnis. Üblicherweise findet man eine brauchbare Frequenz im Bereich zwischen 100 und 400MHz.</p>
+
+                                        <p>Nachdem die Frequenz der Störstrahlung des Monitors festgestellt wurde, kann die Software JTempestSDR gestartet und der externe SDR-Dongle gewählt werden (ExtIO). Danach wird die Frequenz der Störstrahlung eingetragen und der Abhörvorgang gestartet. Mit ein bisschen Glück funktioniert der Automatikmodus und das Bild des Monitors wird sofort angezeigt. Andernfalls muss mit den Einstellungen so lange gespielt werden, bis ein brauchbares Bild angezeigt wird. Hilfreich sind hierfür die Diagramme im unteren Bereich der Anwendung (Frequenz und Autokorrelation). Die Autokorrelation gibt an, mit welchen Bildschirmeinstellungen (Wiederholrate und Auflösung) ein gutes Ergebnis zu erwarten ist. Durch Klicken auf einen Kanal der Autokorrelation werden die Bildschirmeinstellungen übernommen. Ggf. muss noch mal von Hand nachjustiert werden.</p>
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8PHe1Qta4-Q?si=hjHZPAkvN0Q_SdkG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop30 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                        <div>
+                                            <h1>Month day year: Update</h1>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!-- text goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
