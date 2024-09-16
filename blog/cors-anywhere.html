@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">CORS anywhere</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">A proof-of-concept</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Who hasn't felt the same way? You want to access a web service API and display the scraped data on your own web page, but your browser doesn't allow it. The security feature CORS (<a href="https://developer.mozilla.org/de/docs/Web/HTTP/CORS" target="_blank" rel="noreferrer noopener">cross-origin resource sharing</a>) makes it impossible if the webservice does not include the respective headers. Isn't it there a way around it?</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2021/04/cors.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Since CORS is only a security feature that is checked on the client-side browser, it can be bypassed very easily. For example, by installing the browser plugin <a rel="noreferrer noopener" href="https://addons.mozilla.org/de/firefox/addon/access-control-allow-origin/" target="_blank">Allow CORS</a>. This plugin includes the CORS headers to all responses to the browser, thus enabling the browser to happily display and include all cross-origin resources. However, this is not very elegant since every user who wants to use the website has to install this plugin. Another way around is to route the requests of the website through a proxy that sets the relevant CORS headers in the response of the webservice. In doing so, the proxy can be configured once and for all users. Clients do not have to install a plugin which would leverage already good security features of the browser.</p>
+
+                                        <p>Such a proxy is for example <a rel="noreferrer noopener" href="https://github.com/Rob--W/cors-anywhere" target="_blank">cors-anywhere</a> by Rob--W. Robs proxy is well documented and he included several examples of how to install and use the CORS proxy. I wanted to try his proxy and set up a small system with a webservice, two webapps (one without the proxy, the other with CORS proxy) a DNS server for name resolution and the CORS proxy server itself.</p>
+
+                                        <p>This system may seem complicated at first glance, however it reflects a natural setup: A webapp that wants to include resources from a webservice which is hosted on another domain. If all server would run on the local host, there wouldn't be a problem - hence the DNS server is necessary to give different names to the systems. Only the use of different host names causes the browser not to include different resources without problems.</p>
+
+                                        <p>The systems are simulated with <a rel="noreferrer noopener" href="https://www.docker.com" target="_blank">docker</a> containers. Docker container are small, encapsulated systems, similar to virtual machines. The only difference is that they are much smaller and more resource-efficient. Setup and usage of the container is extremely easy. However, knowledge with the command line is an advantage. A writeup how to initialise the docker container is available <a rel="noreferrer noopener" href="https://github.com/MKesenheimer/CORS-anywhere-PoC" target="_blank">here</a>.</p>
+
+                                        <p>If everything is set up, the system should look something like this (is it just me, or does this look like the millennium falcon?):</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2021/04/layout-1.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Without the CORS-proxy, the client could not access the data from the host "nagoya-foundation.com" since the CORS restrictions deny sharing the resources to a web-app that runs on another host ("tokyo-foundation.com"). However, with the CORS-proxy, the respective CORS headers are set, allowing the browser to include the resources.</p>
+
+                                        <p>Whoever wants to play with networks, docker container and web-apps should definitely try to recreate this setup. Learning about docker container, JavaScript programming and CORS was extremely fun and comes in handy for the next security assessment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
