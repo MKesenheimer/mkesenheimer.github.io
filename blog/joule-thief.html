@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Joule Thief</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Eine Saftpresse für alte Batterien</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Wer kennt das nicht? Kaum wurden die Batterien der Taschenlampe, des MP3-Players (haha, wer hat überhaupt noch so etwas?) oder der Fernbedienung durch neue ersetzt, geben diese bereits den Geist auf. Es scheint als hätten die Batterien eine Halbwertszeit eines kurzlebigen Isotops von wenigen Minuten. In Zeiten der Wegwerfgesellschaft denkt man sich natürlich nicht viel dabei, geht zum nächsten Supermarkt und kauft sich neue Batterien.</p>
+
+                                        <p>Aber was tun mit den alten Batterien? Sind diese tatsächlich ganz aufgebraucht, oder lässt sich nicht doch noch der letzte Rest an elektrischer Energie aus ihnen pressen? Sind diese Batterien so leer, wie es die tote Taschenlampe erscheinen lässt?</p>
+
+                                        <p>Wie man aus alten Batterien das letzte Bisschen an elektrischer Energie herauskitzeln kann, erkläre ich hier mit einer simplen Schaltung. Der Name dieser Schaltung ist so einfach wie einfallsreich: Joule-Thief, Joule-Ringer, Joule-Dieb, Energiedieb...</p>
+
+                                        <p>Was steckt hinter dem Namen? Der Energiedieb ist ein einfacher Sperrschwinger, der auf der Sättigung eines Ferrit-Ringkerns beruht. Die Schaltung besteht lediglich aus vier Bauteilen, zuzüglich einer "leeren" Batterie:</p>
+
+                                        <ul>
+                                            <li>ein kleiner Ferrit-Ringkern (kann zum Beispiel aus einer alten Energiespaarlampe ausgebaut werden*)</li>
+                                            <li>ein Allzweck bipolarer NPN-Transistor, zum Beispiel BC548B, 2N3904 etc.</li>
+                                            <li>ein Widerstand mit 1kΩ</li>
+                                            <li>eine LED mit beliebiger Farbe</li>
+                                            <li>isolierter, dünner Draht für die Spule und für die elektrischen Verbindungen</li>
+                                        </ul>
+
+                                        <p>* Achtung beim Ausbeuten von Bauteilen aus Energiesparlampen: Die Leuchtstoffröhre enthält eine kleine Menge Quecksilber und sollte deshalb nicht aufgebrochen werden. Falls doch mal eine Röhre kaputt gehen sollte – Fenster öffnen und keine Panik.
+                                        </p>
+
+                                        <p>Die Schaltung ist mit diesen wenigen Bauteilen denkbar einfach:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/11/joule_thief.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Die einzige Sache, bei der man ein bisschen aufpassen muss, ist das Wickeln der Spule. Die Polarität des Transformators TR1, oder wie die Anschlüsse mit dem Rest der Schaltung verbunden werden, spielt eine große Rolle und entscheidet darüber, ob der Energiedieb funktioniert oder nicht. Man beginnt mit zwei verschiedenfarbigen Adern dünnen Drahts und verdrillt ein Ende, sodass die beiden Drahtstücke beim Wickeln des Transformators zusammenhalten. Dieses Ende wird nun zehnmal durch den Ferrit-Ringkern gefädelt. Die Wicklungen sollten so gleichmäßig wie möglich und ohne sich zu kreuzen auf den Ferrit-Kern aufgebracht werden.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2014/07/cimg3592.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Danach werden die verdrillten Enden wieder voneinander gelöst, diese dürfen nicht miteinander verlötet werden. Man sucht sich stattdessen zwei Enden von unterschiedlicher Seite der Spule und verlötet diese beiden. Es bleiben also insgesamt drei Anschlüsse übrig - die beiden verlöteten Drähte werden mit der positiven Seite der Batterie verbunden, die beiden anderen Drähte werden mit dem Widerstand und mit dem Transistor verbunden. Falls nach Fertigstellen der Schaltung die LED noch nicht leuchten sollte, tauscht man einfach die Drähte der Spule am Widerstand und Transistor und versucht erneut.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2014/07/cimg3590.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Fehlerbehebung</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>Mögliche Fehlerquellen können sein:</p>
+
+                                        <ul>
+                                            <li>Anschlüsse des Ringkern-Transformators TR1 vertauscht. Beliebig vertauschen und neu versuchen.</li>
+                                            <li>Ringkern zu groß, so dass sich das Magnetfeld nicht ausreichend aufbauen kann.</li>
+                                            <li>Kein passender Kleinsignal-Transistor verwendet.</li>
+                                            <li>Verwendeter Draht zu dick.</li>
+                                        </ul>
+
+                                        <p>Falls alles korrekt aufgebaut wurde, hat man nun einen kleinen Spannungsbooster, den man zum Beispiel als Taschenlampe mit alten Batterien betreiben kann.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
