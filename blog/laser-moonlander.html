@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Laser Moonlander</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Moonlander game on a show laser system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>I am a big fan of laser shows. Good music, bright light, vibrant colors. And then there's the technology: lasers, electronics, programming. All this became second nature to me. This virus already infected me during my early school days...</p>
+
+                                        <p>But I don't want to talk about laser shows directly. I want to write about a little mini-game I started to develop several years ago. It's a physics game where the Apollo Lunar Module has to be landed on the lunar surface by rotation and skillfully controlling the main engine. If the player lands too fast, the lander breaks apart and the game is over. The game is (like so many of my programming projects) programmed with the <a rel="noreferrer noopener" href="https://www.libsdl.org" target="_blank">SDL library</a>. It is very minimalistic. The displayed objects consist of dots and lines only. Perfect for a show laser system.</p>
+
+                                        <p>I am controlling my show laser systems, which I also want to report about later, with a digital to analog converter via USB. This output card is <a href="http://www.lichtbastler.de/lumax/" target="_blank" rel="noreferrer noopener">commercially available</a> and can be addressed by any common laser show software. However, there is a catch. The driver, with which the output card can be addressed, is available in the newest version only for Windows. In addition, the software is closed-source, what bothers me a little.</p>
+
+                                        <p>Since I like to work with macOS, I had to somehow reverse engineer the software for controlling the output card and get it to work under macOS. Reverse engineering is a very time consuming process, even if it's a very small program that doesn't have any major protections like obfuscation, etc. In the end I managed to rebuild the Windows driver in large parts for Unix and Linux. However, I do not want to publish the source code for the time being for obvious reasons.</p>
+
+                                        <p>In the following video one can more or less see how my show laser system renders the game. However, the lasers are so bright that the camera is mercilessly overdriven. In reality it looks better.</p>
+
+                                        <iframe width="707" height="398" src="https://www.youtube.com/embed/pO6lngmvjho?si=x-yDPUXWnYvyIXSb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                        <p>The game can be downloaded from <a rel="noreferrer noopener" href="https://github.com/MKesenheimer/Moonlander" target="_blank">https://github.com/MKesenheimer/Moonlander</a>. The macOS and Linux drivers in the compiled version can also be found under this link.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/12/img_4071.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/12/img_4072.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/12/img_4073.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/12/img_4074.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2020/12/img_4076.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>If anyone is also looking for a housing for the Lumax Light Interface, they can download the 3D model <a rel="noreferrer noopener" href="https://www.thingiverse.com/thing:4702694" target="_blank">here</a> and print it out with a 3D printer.</p>
+
+                                        <iframe width="707" height="398" src="https://www.youtube.com/embed/KKoNksh0dqQ?si=n1__VlBPv-3Fgd5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop30 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                        <div>
+                                            <h1>Month day year: Update</h1>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!-- text goes here -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
