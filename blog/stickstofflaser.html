@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Selbstbau Stickstofflaser</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Warum Stickstoff in Luft ziemlich nützlich sein kann…</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Im Folgenden stelle ich einen kleinen selbstgebauten, longitudinalen Stickstofflaser vor.</p>
+
+                                        <p>Der Laser entstand in mehreren Arbeitsphasen von 2007 bis 2011. Die lange Bauzeit kommt daher, dass von Anfang an nicht alle Teile vorhanden waren und dass einige Materialien und Bauelemente zuerst auf ihre Tauglichkeit geprüft und gegebenenfalls durch andere ersetzt werden mussten. Zum Beispiel hatte ich am Anfang der Bauphase keine richtige Vakuumpumpe, die den nötigen Druck (~10mBar) zum Betrieb des Lasers bereitstellte. Erst mit dem Kauf einer zweistufigen Drehschieberpumpe von Edwards wurde der Laserbetrieb möglich.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2012/07/big-scary-laser.gif" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Meine Hochspannungsquelle habe ich aus mehreren Teilen, die von einem alten Fernsehgerät stammen, zusammengebaut. Die Leistung dieser Quelle ist trotz Eigenbau beachtlich. Die HV-Quelle liefert 20kV bei mehreren µA Strom - man spürt es deutlich, wenn man mal dummerweise an den Draht fasst.Kondensatoren habe ich mir bei ebay zusammengesucht. Es sind zwei Doorknob-Kondensatoren mit einer jeweiligen Kapazität von 920pF und einer Spannungsfestigkeit von 40kV. Die Drossel ist eine einfache Ringspule mit zwölf Windungen aus isoliertem Kupferdraht auf einem Ferritkern.</p>
+
+                                        <p>Die Beschaltung des Lasers ist eine einfache LC Inversionsschaltung, die einen gepulsten Strom durch die Laserkapillare bereitstellt. Da ein Stickstofflaser ein Drei-Niveau-Laser ist, kann er nur gepulst und nicht kontinuierlich betrieben werden. der Laser funktioniert daher nur im Pulsbetrieb. Ein kontinuierlicher Ausgangsstrahl ist nicht möglich.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="LC Inversionsschaltung" alt="" src="/Resources/Persistent/2012/07/laser1.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Die Inversionsschaltung funktioniert folgendermaßen: Zuerst werden beide Kondensatoren über die Hochspannungsquelle mit 20kV parallel geladen. Ist dann die Überschlagsspannung der Funkenstrecke erreicht, so entlädt sich nur ein Kondensator über die Funkenstrecke, der andere Kondensator behält seine Ladung, da in der kurzen Zeit durch die Drossel kein Strom fließen kann. Der Kondensator, der sich über die Funkenstrecke entladen hat, bildet mit der Funkenstrecke einen LC-Schwingkreis und invertiert innerhalb einer halben Periode seine Spannung. An den Enden der Laserröhre liegt nun eine Spannung von 40kV, die sich schlagartig über die abgepumpte Laserröhre entlädt. Das Stickstoffgas wird daraufhin elektronisch angeregt und kann so das laseraktive Medium bilden.</p>
+
+                                        <p>Der Resonator ist aus einem 100% und einem halbdurchlässigen Spiegel aufgebaut, sie werden von den Aluminiumplatten mechanisch stabil gehalten. Im Resonator bildet sich eine stehende Welle aus, die nach dem Auskoppeln zur typischen Laserstrahlung führt.</p>
+
+                                        <p>Der Betrieb des Lasers kann mit ganz normaler Luft erfolgen. Luft enthält genügend Stickstoff um den Laser mit „Brennstoff“ zu versorgen. (Brennstoff ist eigentlich der falsche Begriff, es wird kein Stickstoff chemisch verbraucht. Nach dem Laserprozess liegt das Stickstoffgas wie am Anfang vor). Für den Betrieb wird mit der Vakuumpumpe der nötige Druck in der Röhre erzeugt, alles weitere ist Aufgabe der Schaltung.</p>
+
+                                        <p>Ein Video von meinem fertigen Laser findet ihr hier:</p>
+
+                                        <iframe width="707" height="398" src="https://www.youtube.com/embed/iI1X1b5zRfo?si=ZyTrHFAsaDOnNmn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                        <p>Und ein paar Bilder vom Laser im Betrieb gibt es auch noch.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2012/06/img_3567.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2012/06/img_3570.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2012/06/img_3576.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2012/06/img_3578.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
