@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/empty.html">Leer</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">LED Display</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Die Trägheit des Auges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <p>Ich hatte gerade einen AtTiny2313 und ein paar LEDs auf dem Schreibtisch liegen und wollte damit etwas einfaches basteln. Ein LED-Lauflicht? Nein, zu einfach und irgendwie sinnlos. Ein LED-Display? Wohl kaum, dafür hatte ich zu wenige LEDs. Moment, wie wäre es mit einem Display, das nur aus acht LEDs besteht und trotzdem Text anzeigen kann?</p>
+
+                                        <p>Ja, richtig gelesen. So ein Display funktioniert tatsächlich und hängt mit der Trägheit des Auges zusammen. Der Trick dabei ist, dass die LEDs bewegt werden und nicht wie bei einem gewöhnlichen Display still stehen. Dadurch, dass unsere Augen und unser Gehirn eine gewisse Zeit brauchen, um die Signale zu verarbeiten, wird eine <a href="https://de.wikipedia.org/wiki/Nachbildwirkung" target="_blank">Nachbildwirkung</a> erzeugt. Dieser Nachbildwirkung haben wir es zu verdanken, dass wir überhaupt fernsehen und uns einen Film im Kino anschauen können - das Fernsehen beruht auf genau dem gleichen Effekt. Durch die schnelle Bewegung der LED-Zeile verschmelzen die einzelnen Bilder zu einem durchgehenden Bild und man kann einen Text in der Luft erkennen. Noch eindrucksvoller wird dieser Effekt, wenn man von der LED-Zeile ein Foto mit Langzeitbelichtung macht.</p>
+
+                                        <p>Die Schaltung ist sehr simpel. Ein Mikrokontroller (hier ein Atmel Tiny2313) wird von einer 3V Knopfzelle versorgt und steuert die acht LEDs an. Außerdem sind zwei Anschlüsse für die serielle Kommunikation mit dem PC und für die ISP-Programmierung vorhanden. Der Mikrokontroller wurde so konfiguriert, dass er den internen RC-Oszillator ohne Prescaler mit 8MHz benutzt. Programmiert werden kann diese Schaltung mit jedem gewöhnlichen ISP-Adapter (z.B. <a href="http://www.fischl.de/usbasp/" target="_blank">USBasp</a>), zur Not auch mit einem <a href="http://www.ernstc.dk/arduino/2313.htm" target="_blank">Arduino</a>.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/10/pov_schematic.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/10/cimg8640.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/10/cimg8637.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Zu finden sind alle Designunterlagen auf meinem <a href="https://github.com/MKesenheimer/Persistence_of_Vision" target="_blank">Github-Repository</a>. Der C-Code wurde so einfach wie möglich gehalten, es ist daher auch noch keine serielle Kommunikation zum PC implementiert. In der Datei <a href="https://github.com/MKesenheimer/Persistence_of_Vision/blob/master/firmware/pattern.h" target="_blank">pattern.h</a> lassen sich auf sehr einfache Weise neue Zeichen definieren, die dann in <a href="https://github.com/MKesenheimer/Persistence_of_Vision/blob/master/firmware/main.c" target="_blank">main.c</a> aufgerufen werden können. Die Variable sentence[] enthält den Text, den man sich anzeigen lassen möchte.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/10/cimg8524.jpg" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2015/10/science.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
