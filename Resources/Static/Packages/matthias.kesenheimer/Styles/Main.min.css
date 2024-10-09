@@ -211,6 +211,14 @@ html body .kesenheimer-text {
     color: #e1d9ff
 }
 
+html body .kesenheimer-warning {
+    border: 1px solid #b93737;
+    background: #ffdfdf;
+    padding: 17px; border-radius: 3px;
+    color: #773939;
+    border-left-width: 10px;
+}
+
 html body .kesenheimer-code pre {
     background: white;
     padding: 0;
