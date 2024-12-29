@@ -191,21 +191,6 @@
                                                 <img title="" alt="" src="/Resources/Persistent/2024/12/successful-dump.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
-
-                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
-                                            <div>
-                                                <h2>Things that can and will go wrong</h2>
-                                            </div>
-
-                                            <p>
-                                                <em>Problem 1: Flash is sometimes completely erased</em>
-                                            </p>
-
-                                            <p>
-                                                In addition to the memory read command, the bootloader also offers the memory erase command. If this function is accidentally triggered by a glitch, the entire flash content of the microcontroller is erased. This can happen up to once every 100,000 attempts. Interesting data (such as the firmware) is of course lost in that case.
-                                            </p>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -214,6 +199,48 @@
                                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop30 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <!-- Text -->
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                        <div>
+                                            <h2>Things that can and will go wrong</h2>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        <em>Problem 1: Flash is sometimes completely erased</em>
+                                    </p>
+
+                                    <p>
+                                        In addition to the memory read command, the bootloader also offers the memory erase command. If this function is accidentally triggered by a glitch, the entire flash content of the microcontroller is erased. This can happen up to once every 100,000 attempts. Interesting data (such as the firmware) is of course lost in that case.
+                                    </p>
+
+                                    <p>
+                                        <em>Problem 2: PCROP protection</em>
+                                    </p>
+
+                                    <p>
+                                        It can also happen that the SPRMOD bit is set in the event of a glitch. This bit causes the bytes returned by the bootloader when reading the flash contents to be masked with 0x00. This means that the bootloader is in the correct path of the read memory routine due to the glitch, but any response from the bootloader will be replaced with a zero by a downstream instance in the microcontroller.
+                                    </p>
+
+                                    <p>
+                                        If the PCROP bit is set by mistake, the glitching process must be aborted and the entire flash reprogrammed. Interesting data (e.g. firmware) will be lost.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
                         </div>
                     </div>
                 </div>
