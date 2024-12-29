@@ -80,6 +80,12 @@
                                             STM32 processors utilize a readout protection (RDP) that is divided into three stages. RDP level 1 (RDP-1) is the first level that restricts access to the microcontroller. With RDP-0 selected, no protection is active, i.e. the flash content of the microcontroller can be read out and the debug functions can be accessed. With RDP-1, the readout protection is active for the program flash, but the RAM of the microcontroller can still be accessed for debugging purposes. With RDP-2 selected, the microcontroller is completely closed. It is possible to switch from RDP-1 to RDP-0, but the program flash will be deleted. Switching from RDP-2 to RDP-1 is not supported by the microcontroller. The level of the readout protection can, for example, be set or read via the <a href="https://www.st.com/en/development-tools/stm32cubeprog.html">STM32CubeProgrammer</a>.
                                         </p>
 
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2024/12/rdp1.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
                                         <p>
                                             Due to the special values of the option bytes and the fact that the register values are redundant, a glitching attack is correspondingly unlikely. Switching from RDP-2 to RDP-1 is more likely, as only one bit (and the complementary bit in the redundant register) needs to be changed to activate RDP-1. The change from RDP-1 to RDP-2 is very unlikely since exactly the value 0xAA and the value 0x55 in the complementary register must be hit.
                                         </p>
@@ -123,6 +129,10 @@
                                         </div>
 
                                         <p>
+                                            Additionally, an oscilloscope is connected to the TX line and the 'VCAP' pin (glitch line).
+                                        </p>
+
+                                        <p>
                                             A simple test program was flashed onto the microcontroller. The sole purpose of this programme was to demonstrate a successful glitch.
                                         </p>
 
@@ -133,7 +143,27 @@
                                         </div>
 
                                         <p>
+                                            The bootloader of the STM32 processors offers a specific option for reading out the program flash. The bootloader mode is activated when the 'BOOT0' pin is connected to VCC. This can be done by pressing the 'BOOT0' switch on the Black Pill board, or by shorting the 'BOOT0' pin to VCC.
+                                        </p>
 
+                                        <p>
+                                            To read the program memory, a series of commands must be sent to the processor in bootloader mode via UART, which instruct the processor to return parts of the flash memory (see <a href="https://www.st.com/resource/en/application_note/an3155-usart-protocol-used-in-the-stm32-bootloader-stmicroelectronics.pdf">STMicroelectronics: USART protocol used in the STM32 bootloader</a>). Among other things, the 'read memory' command is sent to the processor via UART, i.e. the byte 0x11. The glitcher is configured in such a way that it triggers as soon as byte 0x11 is recognized on the TX line. As the transmission of a  second checksum byte requires additional 80µs, the interesting range begins at a 'delay' of 80,000ns and ends as soon as the bootloader sends the acknowledgement approximately 20-40µs later. In practice, it turns out that a range from 95,000ns to 125,000ns must be scanned. The duration of the glitch is selected just short enough so that the microcontroller is not reset ('brown-out') and long enough so that the glitch also has an effect. A 'length' of 25 to 35ns turns out to be good.
+                                        </p>
+
+                                        <p>
+                                            The script to perform the glitch can be found in the <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/stm32f40x-glitching/stm32f4-glitching.py">fault-injection-library</a> and is typically run with the command:
+                                        </p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+                                                    <div>python stm32f4-glitching.py --target /dev/tty.usbserial-A50285BI --rpico /dev/tty.usbmodem11101 --power /dev/tty.usbserial-10 --delay 95_000 125_000 --length 25 35</div>
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>
+                                            In the following figure, the glitch is barely visible after the bytes 0x11 and 0xee are sent via UART.
                                         </p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
@@ -142,11 +172,19 @@
                                             </figure>
                                         </div>
 
+                                        <p>
+                                            A successful glitching campaign can be seen in the following figure. Successful glitches were found around the parameter point (104,000ns, 33ns), for example.
+                                        </p>
+
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2024/12/parameterspace-attempt-2.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p>
+                                            A status message is printed with the memory content if a successful glitch was found.
+                                        </p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -157,7 +195,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
                                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
