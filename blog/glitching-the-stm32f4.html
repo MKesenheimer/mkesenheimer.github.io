@@ -87,7 +87,7 @@
                                         </div>
 
                                         <p>
-                                            Due to the special values of the option bytes and the fact that the register values are redundant, a glitching attack is correspondingly unlikely. Switching from RDP-2 to RDP-1 is more likely, as only one bit (and the complementary bit in the redundant register) needs to be changed to activate RDP-1. The change from RDP-1 to RDP-2 is very unlikely since exactly the value 0xAA and the value 0x55 in the complementary register must be hit.
+                                            Due to the special values of the option bytes and the fact that the register values are redundant, a glitching attack is correspondingly unlikely. Switching from RDP-2 to RDP-1 is more likely, as only one bit (and the complementary bit in the redundant register) needs to be changed to activate RDP-1. The change from RDP-1 to RDP-0 is very unlikely since exactly the value 0xAA and the value 0x55 in the complementary register must be hit.
                                         </p>
 
                                         <p>
@@ -190,6 +190,20 @@
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2024/12/successful-dump.png" width="3264" height="2448" />
                                             </figure>
+                                        </div>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Things that can and will go wrong</h2>
+                                            </div>
+
+                                            <p>
+                                                <em>Problem 1: Flash is sometimes completely erased</em>
+                                            </p>
+
+                                            <p>
+                                                In addition to the memory read command, the bootloader also offers the memory erase command. If this function is accidentally triggered by a glitch, the entire flash content of the microcontroller is erased. This can happen up to once every 100,000 attempts. Interesting data (such as the firmware) is of course lost in that case.
+                                            </p>
                                         </div>
                                         
                                     </div>
