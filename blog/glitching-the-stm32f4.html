@@ -62,12 +62,13 @@
                             <div class="neos-nodetypes-html">
                                 <div class="paddingTop30 paddingBottom15 kesenheimer-text">
                                     <div>
+                                        <p>
+                                            STMicroelectronics offers a wide range of STM32 microcontrollers, based on ARM Cortex-M cores, catering to various performance and power requirements. These microcontrollers are integral in applications across industrial automation, consumer electronics, automotive systems, and IoT devices, providing efficient processing, connectivity, and real-time control. Since they are widely used, these microcontrollers are a interesting target for hardware attacks.
+                                        </p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2024/12/power_supply_scheme.png" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
+                                        <p>
+                                            A processor from the ST32F4 series was chosen as a target, specifically the STM Black Pill board with the STM32F401 microcontroller which is based on the Arm® Cortex®-M4 architecture. The Black Pill board contains all necessary components for operation.
+                                        </p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -75,11 +76,45 @@
                                             </figure>
                                         </div>
 
+                                        <p>
+                                            STM32 processors utilize a readout protection (RDP) that is divided into three stages. RDP level 1 (RDP-1) is the first level that restricts access to the microcontroller. With RDP-0 selected, no protection is active, i.e. the flash content of the microcontroller can be read out and the debug functions can be accessed. With RDP-1, the readout protection is active for the program flash, but the RAM of the microcontroller can still be accessed for debugging purposes. With RDP-2 selected, the microcontroller is completely closed. It is possible to switch from RDP-1 to RDP-0, but the program flash will be deleted. Switching from RDP-2 to RDP-1 is not supported by the microcontroller. The level of the readout protection can, for example, be set or read via the <a href="https://www.st.com/en/development-tools/stm32cubeprog.html">STM32CubeProgrammer</a>.
+                                        </p>
+
+                                        <p>
+                                            Due to the special values of the option bytes and the fact that the register values are redundant, a glitching attack is correspondingly unlikely. Switching from RDP-2 to RDP-1 is more likely, as only one bit (and the complementary bit in the redundant register) needs to be changed to activate RDP-1. The change from RDP-1 to RDP-2 is very unlikely since exactly the value 0xAA and the value 0x55 in the complementary register must be hit.
+                                        </p>
+
+                                        <p>
+                                            The glitch is inserted at one of the voltage regulator capacitors ('VCAP' pin). In order to achieve good results, the capacitor have to be removed from the board.
+                                        </p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2024/12/power_supply_scheme.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>
+                                            The following setup was selected to glitch the microcontroller.
+                                        </p>
+
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2024/12/stm32f40-glitching_bb.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p>
+                                            The colors of the connections encode these signals:
+                                        </p>
+                                        <ul>
+                                            <li>red: Voltage supply of the Black Pill board (5V)</li>
+                                            <li>purple: 1.8V voltage supply to the 'VCAP' pin decoupled with a 10 Ohms resistor and glitch input. The 1.8V voltage supply via the resistor is needed to get a stable voltage on the 'VCAP' pin.</li>
+                                            <li>yellow: TX line to the STM32 microcontroller.</li>
+                                            <li>orange. RX line to the STM32 microcontroller.</li>
+                                            <li>also yellow: Trigger line, connected to the TX line to the STM32 microcontroller. If 0x11 (memory read command) is transmitted, the trigger is set.</li>
+                                            <li>geen: Reset line to reset the microcontroller.</li>
+                                        </ul>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -87,11 +122,19 @@
                                             </figure>
                                         </div>
 
+                                        <p>
+                                            A simple test program was flashed onto the microcontroller. The sole purpose of this programme was to demonstrate a successful glitch.
+                                        </p>
+
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2024/12/programmed_flash.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p>
+
+                                        </p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
