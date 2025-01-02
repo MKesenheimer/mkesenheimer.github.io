@@ -112,9 +112,9 @@
                                             </div>
                                         </div>
 
-                                        <p>Multiplexing is a technique to quickly switch between different supply voltage levels of the microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the microcontroller. A fundamental difference is that with the multiplexing fault injection method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
+                                        <p>Multiplexing is a technique to quickly switch between different supply voltage levels of the microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the microcontroller. A fundamental difference is that with the multiplexing-fault-injection method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
 
-                                        <p>With the second hardware revision of the Pico Glitcher, it is possible to create different voltage profiles and apply them to the supply voltage of the target. This is made possible by the introduction of the multiplexing stage, section customizing your Pico Glitcher. The multiplexing stage also allows the target to be supplied with power entirely via this multiplexing stage. It is therefore not necessary to additionally supply the target with voltage via the 'VTARGET' output.</p>
+                                        <p>With the second hardware revision of the Pico Glitcher, it is possible to create different voltage profiles and apply them to the supply voltage of the target. This is made possible by the introduction of the multiplexing stage. The multiplexing stage also allows the target to be supplied with power. It is therefore not necessary to additionally supply the target with voltage via the 'VTARGET' output.</p>
 
                                         <p>The following setup can be used to test the multiplexing stage of the Pico Glitcher v2:</p>
 
@@ -125,13 +125,11 @@
                                             </figure>
                                         </div>
 
-                                        <p>Note that the power supply is optional and can be used to generate a third, intermediate voltage. Without the additional power supply, the multiplexing stage of the Pico Glitcher can switch between 3.3V, 1.8V and 0V. See <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/example/pico-glitcher.py">fault-injection-library/example/pico-glitcher.py</a> for a complete test script.</p>
+                                        <p>Note that the power supply is optional and can be used to generate a third, intermediate voltage. Without the additional power supply, the multiplexing stage of the Pico Glitcher can switch between 3.3V, 1.8V and 0V. See <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/example/pico-glitcher.py">fault-injection-library/example/pico-glitcher.py</a> for a complete test script and <a href="https://fault-injection-library.readthedocs.io/en/latest/multiplexing/#using-the-multiplexing-stage">fault-injection-library.readthedocs.io</a> for a detailed overview on how to setup and use the multiplexing stage.</p>
 
-                                        <p>See <a href="https://fault-injection-library.readthedocs.io/en/latest/multiplexing/#using-the-multiplexing-stage">Using the multiplexing stage</a> for a detailed overview on how to setup and use the multiplexing stage.</p>
+                                        <p>The software for controlling the multiplexing stage is extremely flexible and a vast number of voltage profiles with countless parameterizations can be generated. Up to four different voltage steps can be parametrized and utilized with the general multiplexing configuration similar to</p>
 
-                                        <p>The software for controlling the multiplexing stage is extremely flexible and a vast number of voltage profiles with countless parameterizations can be generated. Up to four different voltage steps can be paramtrized and utilized with the general multiplexing configuration similar to</p>
-
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom0 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
                                                     <div>mul_config = {"t1": t1, "v1": "GND", "t2": t2, "v2": "1.8", "t3": t3, "v3": "VCC", "t4": t4, "v4": "3.3"}</div>
@@ -139,7 +137,7 @@
                                             </pre>
                                         </div>
 
-                                        <p>where VCC is a user-supplied voltage level by the VIN input.Below are some examples of voltage traces that can be applied to the target.</p>
+                                        <p>where VCC is a user-supplied voltage level by the VIN input. Below are some examples of voltage traces that can be applied to the target.</p>
 
                                         <p><ul>
                                             <li>1.8V voltage step, custom voltage of 0.95V, followed by a pull to GND:</li>
@@ -174,7 +172,7 @@
                                             </figure>
                                         </div>
 
-                                        <p>In order to switch quickly between different voltage levels, the chip 'TS3A4751' from Texas Instruments is used. This chip is a 4-channel analog switch in SPST (single-pull-single-through) configuration. To make the analog switch easier to control and to reduce the signal lines to the analog switch, a digital demultiplexer is used ('SN74LVC1G139DCUT'). Since the voltage levels are reversed after the demultiplexer, a 4-channel not-gate is used to reverse the voltage levels.</p>
+                                        <p>In order to switch quickly between different voltage levels, the chip 'TS3A4751' from Texas Instruments is used. This chip is a 4-channel analog switch in SPST (single-pull-single-through) configuration. To make the analog switch easier to control and to reduce the signal lines from the Raspberry Pi Pico to the analog switch, a digital demultiplexer is used ('SN74LVC1G139DCUT'). Since the voltage levels are reversed after the demultiplexer, a 4-channel not-gate is used to reverse the voltage levels.</p>
 
                                         <!-- Multiplexing schematics -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
