@@ -83,7 +83,7 @@
                                             </div>
                                         </div>
 
-                                        <p>Compared to hardware <a href="https://fault-injection-library.readthedocs.io/en/latest/overview/#what-is-the-pico-glitcher-v1">revision 1</a>, several new features have been added in revision 2. However, the basic usage is the same and the scripts for version 1 will also (likely) work for version 2</p>
+                                        <p>Compared to hardware <a href="https://fault-injection-library.readthedocs.io/en/latest/overview/#what-is-the-pico-glitcher-v1">revision 1</a>, several new features have been added in revision 2. However, the basic usage is the same and the scripts for version 1 will also (likely) work for version 2.</p>
                                         
                                         <!-- front image -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
@@ -125,12 +125,36 @@
                                             </figure>
                                         </div>
 
+                                        <p>Note that the power supply is optional and can be used to generate a third, intermediate voltage. Without the additional power supply, the multiplexing stage of the Pico Glitcher can switch between 3.3V, 1.8V and 0V. See <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/example/pico-glitcher.py">fault-injection-library/example/pico-glitcher.py</a> for a complete test script.</p>
+
+                                        <p>See <a href="https://fault-injection-library.readthedocs.io/en/latest/multiplexing/#using-the-multiplexing-stage">Using the multiplexing stage</a> for a detailed overview on how to setup and use the multiplexing stage.</p>
+
+                                        <p>The software for controlling the multiplexing stage is extremely flexible and a vast number of voltage profiles with countless parameterizations can be generated. Up to four different voltage steps can be paramtrized and utilized with the general multiplexing configuration similar to</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+                                                    <div>mul_config = {"t1": t1, "v1": "GND", "t2": t2, "v2": "1.8", "t3": t3, "v3": "VCC", "t4": t4, "v4": "3.3"}</div>
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>where VCC is a user-supplied voltage level by the VIN input.Below are some examples of voltage traces that can be applied to the target.</p>
+
+                                        <p><ul>
+                                            <li>1.8V voltage step, custom voltage of 0.95V, followed by a pull to GND:</li>
+                                        </ul></p>
+
                                         <!-- Multiplexing annotated voltage trace -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/01/ps_1000ns_annotated.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p><ul>
+                                            <li>The same pulse, but a factor 10 shorter:</li>
+                                        </ul></p>
 
                                         <!-- Multiplexing 100ns pulse -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
@@ -139,12 +163,18 @@
                                             </figure>
                                         </div>
 
+                                        <p><ul>
+                                            <li>Double glitch (one to GND, the other to 1.8V), separated by 400ns:</li>
+                                        </ul></p>
+
                                         <!-- Multiplexing double glitch -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/01/double-crowbar-glitch.bmp" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p>In order to switch quickly between different voltage levels, the chip 'TS3A4751' from Texas Instruments is used. This chip is a 4-channel analog switch in SPST (single-pull-single-through) configuration. To make the analog switch easier to control and to reduce the signal lines to the analog switch, a digital demultiplexer is used ('SN74LVC1G139DCUT'). Since the voltage levels are reversed after the demultiplexer, a 4-channel not-gate is used to reverse the voltage levels.</p>
 
                                         <!-- Multiplexing schematics -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
@@ -153,6 +183,8 @@
                                             </figure>
                                         </div>
 
+                                        <p>This setup seems rather complicated to switch between four different voltage levels. However, the choice of analogue switches is not exactly extensive or does not match the requirements of a fast-switching fault-injection device. The required properties of the analogue switch are as follows:</p>
+
                                         <!-- Section Schmitt Trigger inputs-->
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
                                             <div>
@@ -160,12 +192,23 @@
                                             </div>
                                         </div>
 
+                                        <p><ul>
+                                            <li>Fast switching: less than 5ns switching time.</li>
+                                            <li>Number of channels: four channels for flexible switching between as many voltage levels as possible.</li>
+                                            <li>Low resistance: to avoid switching losses, a low resistance of 1Ω or less is required.</li>
+                                            <li>High output current: a high continuous current of at least 100mA is needed to keep the device powered even for a long time. This maximum current should be suitable for most microcontrollers.</li>
+                                        </ul></p>
+
+                                        <p>All these requirements are met by the 'TS3A4751', even if the choice of this chip has made controlling it a little more complicated.</p>
+
                                         <!-- Schmitt Trigger schematic -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/01/schmitt-trigger-input-test.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        
 
                                     </div>
                                 </div>
