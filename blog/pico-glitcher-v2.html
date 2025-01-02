@@ -185,13 +185,6 @@
 
                                         <p>This setup seems rather complicated to switch between four different voltage levels. However, the choice of analogue switches is not exactly extensive or does not match the requirements of a fast-switching fault-injection device. The required properties of the analogue switch are as follows:</p>
 
-                                        <!-- Section Schmitt Trigger inputs-->
-                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
-                                            <div>
-                                                <h2>Schmitt Trigger inputs</h2>
-                                            </div>
-                                        </div>
-
                                         <p><ul>
                                             <li>Fast switching: less than 5ns switching time.</li>
                                             <li>Number of channels: four channels for flexible switching between as many voltage levels as possible.</li>
@@ -201,6 +194,15 @@
 
                                         <p>All these requirements are met by the 'TS3A4751', even if the choice of this chip has made controlling it a little more complicated.</p>
 
+                                        <!-- Section Schmitt Trigger inputs-->
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Schmitt Trigger inputs</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>The trigger inputs EXT1 and EXT2 are particularly useful for noisy logic signals, as the noise can be easily suppressed by the adjustable Schmitt Trigger. If, for example, the signal oscillates or is disturbed in any other way, this disturbances can be cut off by selecting a suitable threshold.</p>
+
                                         <!-- Schmitt Trigger schematic -->
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -208,8 +210,9 @@
                                             </figure>
                                         </div>
 
-                                        
+                                        <p>Use the potentiometer labeled THR to adjust the threshold of the Schmitt Trigger. The threshold is lowered by turning the potentiometer to the left.</p>
 
+                                        <p>The potentiometer ATN can be used for an additionally signal reduction, if necessary. Turning the potentiometer all the way to the right disables attenuation and uses the full signal range.</p>
                                     </div>
                                 </div>
                             </div>
