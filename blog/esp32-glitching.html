@@ -47,7 +47,7 @@
                         <div class="neos-contentcollection">
                             <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
                                 <div>
-                                    <h1 style="text-align: center">Feature Deep-Dive: Voltage Multiplexing</h1>
+                                    <h1 style="text-align: center">Feature Deep-Dive: Voltage Multiplexing and Parameter Optimization</h1>
                                 </div>
                                 <div class="paddingTop0 paddingBottom0 kesenheimer-text">
                                     <div>
@@ -87,7 +87,13 @@
 
                                         <p>By using the multiplexing method, the possible parameter combinations can increase exponentially, which makes the search for suitable parameters more difficult. Of course, one can also keep multiple parameters constant and only vary one specific parameter. Another option is to vary all parameters and apply a genetic algorithm to the search space to find suitable parameters.</p>
 
-                                        <p>In the following, we will investigate how the multiplexing method can be optimized for an attack against the ESP32v1.3 processor using a genetic algorithm.</p>
+                                        <p>In the following, we will investigate how the multiplexing method can be optimized for an attack against the ESP32v1.3 processor using a genetic algorithm. But of course the multiplexing method can also be used without the genetic algorithm.</p>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Recap: Voltage Multiplexing</h2>
+                                            </div>
+                                        </div>
 
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
                                             <div>
@@ -104,7 +110,7 @@
 
                                         <p>To integrate the genetic algorithm, the OptimisationController class must be imported:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
                                                     <div>from findus import OptimizationController</div>
