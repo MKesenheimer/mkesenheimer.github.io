@@ -85,6 +85,8 @@
 
                                         <p>As previously covered <a href="/blog/pico-glitcher-v2.html">here</a> voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
 
+                                        <p>By using the multiplexing method, the possible parameter combinations can increase exponentially, which makes the search for suitable parameters more difficult. Of course, one can also keep multiple parameters constant and only vary one specific parameter. Another option is to vary all parameters and apply a genetic algorithm to the search space to find suitable parameters.</p>
+
                                         <p>In the following, we will investigate how the multiplexing method can be optimized for an attack against the ESP32v1.3 processor using a genetic algorithm.</p>
 
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
@@ -98,7 +100,17 @@
                                         <p>The advantages are, that genetic algorithms can handle complex, nonlinear, and multidimensional problems and do not require gradient information.
                                         A genetic algorithm explores a wide parameter space, reducing the risk of getting stuck in local optima.</p>
 
-                                        <p></p>
+                                        <p>A genetic algorithm was implemented in the <a href="https://github.com/MKesenheimer/fault-injection-library">fault-injection-library</a> to search for an optimal parameter set. The algorithm is easy to use and can be easily integrated into an already developed glitching script.</p>
+
+                                        <p>To integrate the genetic algorithm, the OptimisationController class must be imported:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+                                                    <div>from findus import OptimizationController</div>
+                                                </code>
+                                            </pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
