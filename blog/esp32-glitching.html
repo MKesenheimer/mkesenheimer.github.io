@@ -105,7 +105,7 @@
 
                                         <p>Initializing the multiplexing stage is as easy as setting up the crowbar stage. First the Glitcher is initialized. With the optional step 'glitcher.change_config_and_reset("mux_vinit", "1.8")' a diffferent initial voltage is set. Then the Glitcher is instructed to use a rising-edge trigger. The last step enables the multiplexing stage:</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">from findus import PicoGlitcher
 
@@ -125,7 +125,7 @@ glitcher.set_multiplexing()</code>
 
                                         <p>During glitching, the parameters of the voltage trace can be adapted via the following command:</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">mul_config = {"t1": 100, "v1": "1.8", "t2": length, "v2": "VCC", "t3": 50, "v3": "GND"}
 glitcher.arm_multiplexing(delay, mul_config)</code>
@@ -147,7 +147,7 @@ glitcher.arm_multiplexing(delay, mul_config)</code>
 
                                         <p>To integrate the genetic algorithm, the 'OptimizationController' class must be imported:</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">from findus import OptimizationController</code>
                                             </pre>
@@ -155,7 +155,7 @@ glitcher.arm_multiplexing(delay, mul_config)</code>
 
                                         <p>After initializing the glitcher, the parameter space must be defined. This is done by defining the parameter space boundaries, and the corresponding divisions into bins. If for example, the parameter space is three-dimensional (glitch 'delay' and 'length' parameter and an additional time parameter 't1' for an intermediate voltage step), the parameter space would look like this:</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php"># Genetic Algorithm to search for the best performing bin
 boundaries = [(s_delay, e_delay), (s_t1, e_t1), (s_length, e_length)]
@@ -176,7 +176,7 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
 
                                         <p>In the while-loop before the experiment is performed, the best performing bins can be monitored from time to time. The next parameter set is pulled with the command `opt.step()`. Also the glitch outcome must be classified and fed into the genetic algorithm again.</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php"># get the next parameter set
 delay, t1, length = opt.step()
@@ -196,7 +196,7 @@ opt.add_experiment(weight, delay, t1, length)</code>
 
                                         <p>Since the genetic algorithm needs to classify the outcome of each bin with a numerical value (the so-called weight), a classify-method with additional weight factors must be implemented. These weights are fed into the genetic algorithm.</p>
 
-                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">def classify(self, response):
 if b'read-out protection enabled\r\n' in response:
