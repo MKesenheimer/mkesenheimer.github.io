@@ -83,7 +83,22 @@
                                             </div>
                                         </div>
 
-                                       
+                                        <p>As previously covered <a href="/blog/pico-glitcher-v2.html">here</a> voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
+
+                                        <p>In the following, we will investigate how the multiplexing method can be optimized for an attack against the ESP32v1.3 processor using a genetic algorithm.</p>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Genetic Algorithm</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>A genetic algorithm is an optimization and search technique inspired by the principles of natural selection and evolution. It is commonly used to solve complex problems where traditional optimization methods are ineffective.</p>
+
+                                        <p>The advantages are, that genetic algorithms can handle complex, nonlinear, and multidimensional problems and do not require gradient information.
+                                        A genetic algorithm explores a wide parameter space, reducing the risk of getting stuck in local optima.</p>
+
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
