@@ -97,7 +97,7 @@
 
                                         <p>A genetic algorithm is an optimization and search technique inspired by the principles of natural selection and evolution. It is commonly used to solve complex problems where traditional optimization methods are ineffective.</p>
 
-                                        <p>The advantages are, that genetic algorithms can handle complex, nonlinear, and multidimensional problems and do not require gradient information.
+                                        <p>The advantages are that genetic algorithms can handle complex, nonlinear, and multidimensional problems and do not require gradient information.
                                         A genetic algorithm explores a wide parameter space, reducing the risk of getting stuck in local optima.</p>
 
                                         <p>A genetic algorithm was implemented in the <a href="https://github.com/MKesenheimer/fault-injection-library">fault-injection-library</a> to search for an optimal parameter set. The algorithm is easy to use and can be easily integrated into an already developed glitching script.</p>
@@ -118,10 +118,10 @@
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
                                                     <div>
-                                                        # Genetic Algorithm to search for the best performing bin
-                                                        boundaries = [(s_delay, e_delay), (s_t1, e_t1), (s_length, e_length)]
-                                                        divisions = [10, 10, 5]
-                                                        opt = OptimizationController(parameter_boundaries=boundaries, parameter_divisions=divisions, number_of_individuals=10, length_of_genom=20, malus_factor_for_equal_bins=1)
+# Genetic Algorithm to search for the best performing bin
+boundaries = [(s_delay, e_delay), (s_t1, e_t1), (s_length, e_length)]
+divisions = [10, 10, 5]
+opt = OptimizationController(parameter_boundaries=boundaries, parameter_divisions=divisions, number_of_individuals=10, length_of_genom=20, malus_factor_for_equal_bins=1)
                                                     </div>
                                                 </code>
                                             </pre>
