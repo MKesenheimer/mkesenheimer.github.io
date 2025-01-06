@@ -125,6 +125,17 @@ glitcher.set_multiplexing()</div>
                                             </pre>
                                         </div>
 
+                                        <p>During glitching, the parameters of the voltage trace can be adapted via the following command:</p>
+
+                                        <div class="paddingTop0 paddingBottom10 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+                                                    <div>mul_config = {"t1": 100, "v1": "1.8", "t2": length, "v2": "VCC", "t3": 50, "v3": "GND"}
+glitcher.arm_multiplexing(delay, mul_config)</div>
+                                                </code>
+                                            </pre>
+                                        </div>
+
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
                                             <div>
                                                 <h2>Genetic Algorithm</h2>
