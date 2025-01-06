@@ -229,9 +229,11 @@ return color, weight</code>
                                             </figure>
                                         </div>
 
-                                        <p>In this case, the ESP32 was flashed with a simple program that increments a variable in a loop (similar to the program used for the <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/rp2040-glitching/rpi-program/main.cpp">glitching attack on the rp2040</a>). While this test variable is incremented, a GPIO pin is enabled and the glitch is set while this pin is high.</p>
+                                        <p>In this case, the ESP32 was flashed with a simple program that increments a control variable in a loop (similar to the program used for the <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/rp2040-glitching/rpi-program/main.cpp">glitching attack on the rp2040</a>). While this control variable is incremented, a GPIO pin is enabled and the glitch is set while this pin is high.</p>
 
-                                        <p>The result is that the variable is incorrectly incremented and subsequently the variable does not contain the expected result. The correctness of the variable can be checked by sending the variable to the attacker computer via UART.</p>
+                                        <p>The result is that the control variable is incorrectly incremented and subsequently the variable does not contain the expected result. The correctness of the variable can be checked by sending the control variable to the attacker computer via UART.</p>
+
+                                        <p>As can be seen in the previous figure, the control variable is incremented incorrectly every 5000 experiments. What can also be seen is that some areas of the parameter space contain "gaps". The genetic algorithm obviously observed fewer successes here, which is why fewer points were thrown into these areas.</p>
                                     </div>
                                 </div>
                             </div>
