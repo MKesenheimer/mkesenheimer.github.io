@@ -107,8 +107,7 @@
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div>from findus import PicoGlitcher
+                                                <code class="language-php">from findus import PicoGlitcher
 
 glitcher = PicoGlitcher()
 glitcher.init(port='/dev/ttyACM0')
@@ -120,8 +119,7 @@ glitcher.init(port='/dev/ttyACM0')
                                                         
 glitcher.rising_edge_trigger()
                                                         
-glitcher.set_multiplexing()</div>
-                                                </code>
+glitcher.set_multiplexing()</code>
                                             </pre>
                                         </div>
 
@@ -129,10 +127,8 @@ glitcher.set_multiplexing()</div>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div>mul_config = {"t1": 100, "v1": "1.8", "t2": length, "v2": "VCC", "t3": 50, "v3": "GND"}
-glitcher.arm_multiplexing(delay, mul_config)</div>
-                                                </code>
+                                                <code class="language-php">mul_config = {"t1": 100, "v1": "1.8", "t2": length, "v2": "VCC", "t3": 50, "v3": "GND"}
+glitcher.arm_multiplexing(delay, mul_config)</code>
                                             </pre>
                                         </div>
 
@@ -153,9 +149,7 @@ glitcher.arm_multiplexing(delay, mul_config)</div>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div>from findus import OptimizationController</div>
-                                                </code>
+                                                <code class="language-php">from findus import OptimizationController</code>
                                             </pre>
                                         </div>
 
@@ -163,12 +157,10 @@ glitcher.arm_multiplexing(delay, mul_config)</div>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div># Genetic Algorithm to search for the best performing bin
+                                                <code class="language-php"># Genetic Algorithm to search for the best performing bin
 boundaries = [(s_delay, e_delay), (s_t1, e_t1), (s_length, e_length)]
 divisions = [10, 10, 5]
-opt = OptimizationController(parameter_boundaries=boundaries, parameter_divisions=divisions, number_of_individuals=10, length_of_genom=20, malus_factor_for_equal_bins=1)</div>
-                                                </code>
+opt = OptimizationController(parameter_boundaries=boundaries, parameter_divisions=divisions, number_of_individuals=10, length_of_genom=20, malus_factor_for_equal_bins=1)</code>
                                             </pre>
                                         </div>
 
@@ -206,8 +198,7 @@ opt.add_experiment(weight, delay, t1, length)</code>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div>def classify(self, response):
+                                                <code class="language-php">def classify(self, response):
 if b'read-out protection enabled\r\n' in response:
     color, weight = 'G', 0
 elif b'' == response:
@@ -220,10 +211,24 @@ elif b'Timeout' in response:
     color, weight = 'Y', -1
 else:
     color, weight = 'R', 2
-return color, weight</div>
-                                                </code>
+return color, weight</code>
                                             </pre>
                                         </div>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Results</h2>
+                                            </div>
+                                        </div>
+
+                                        <p></p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/01/esp32-glitching.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
