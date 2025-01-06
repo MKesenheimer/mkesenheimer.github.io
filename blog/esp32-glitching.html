@@ -149,7 +149,7 @@ glitcher.arm_multiplexing(delay, mul_config)</div>
 
                                         <p>A genetic algorithm was implemented in the <a href="https://github.com/MKesenheimer/fault-injection-library">fault-injection-library</a> to search for an optimal parameter set. The algorithm is easy to use and can be easily integrated into an already developed glitching script.</p>
 
-                                        <p>To integrate the genetic algorithm, the OptimisationController class must be imported:</p>
+                                        <p>To integrate the genetic algorithm, the 'OptimizationController' class must be imported:</p>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
@@ -172,7 +172,7 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
                                             </pre>
                                         </div>
 
-                                        <p>The 'delay' and 't1' intervals are divided into 10 bins, whereas the 'length' interval is divided into 5 bins, which sums up to 500 total bins. These 500 bins are used for the parameter search and the optimum parameters are determined on the basis of this binning. The number of bins can be increased, which increases the search time but improves accuracy.</p>
+                                        <p>The 'delay' and 't1' intervals are divided into 10 bins, whereas the 'length' interval is divided into 5 bins, which sums up to a total of 500 bins. These 500 bins are used for the parameter search and the optimum parameters are determined on the basis of this binning. The number of bins can be increased, which increases the search time but improves accuracy.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -180,12 +180,13 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
                                             </figure>
                                         </div>
 
+                                        <p>The 'OptimizationController' object is also constructed with 10 individuals and a genom length of 20, meaning that 10 individuals compete for survival, with each individual observing 20 parameter space bins simultaneously. The malus factor 'malus_factor_for_equal_bins = 1' is used to penalize individuals that look into same bins only.</p>
+
                                         <p>In the while-loop before the experiment is performed, the best performing bins can be monitored from time to time. The next parameter set is pulled with the command `opt.step()`. Also the glitch outcome must be classified and fed into the genetic algorithm again.</p>
 
                                         <div class="paddingTop0 paddingBottom10 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">
-                                                    <div># get the next parameter set
+                                                <code class="language-php"># get the next parameter set
 delay, t1, length = opt.step()
 if experiment_id % 100 == 0:
     opt.print_best_performing_bins()
@@ -197,8 +198,7 @@ if experiment_id % 100 == 0:
 color, weight = glitcher.classify(response)
 
 # add experiment to parameterspace of genetic algorithm
-opt.add_experiment(weight, delay, t1, length)</div>
-                                                </code>
+opt.add_experiment(weight, delay, t1, length)</code>
                                             </pre>
                                         </div>
 
