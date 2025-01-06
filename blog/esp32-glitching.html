@@ -83,7 +83,7 @@
                                             </div>
                                         </div>
 
-                                        <p>As previously covered <a href="/blog/pico-glitcher-v2.html">here</a> voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
+                                        <p>As previously covered <a href="/blog/pico-glitcher-v2.html">here</a>, voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
 
                                         <p>By using the multiplexing method, the possible parameter combinations can increase exponentially, which makes the search for suitable parameters more difficult. Of course, one can also keep multiple parameters constant and only vary one specific parameter. Another option is to vary all parameters and apply a genetic algorithm to the search space to find suitable parameters.</p>
 
@@ -103,7 +103,7 @@
                                             </figure>
                                         </div>
 
-                                        <p>Initializing the multiplexing stage is as easy as setting up the crowbar stage. First the Glitcher is initialized. With the optional step 'glitcher.change_config_and_reset("mux_vinit", "1.8")' a diffferent initial voltage is set. Then the Glitcher is instructed to use a rising-edge trigger. The last step enables the multiplexing stage:</p>
+                                        <p>Initializing the multiplexing stage is as easy as setting up the crowbar stage. First the Glitcher is initialized. With the optional step 'glitcher.change_config_and_reset("mux_vinit", "1.8")' a diffferent initial voltage can be set. Then the Glitcher is instructed to use a rising-edge trigger. The last step enables the multiplexing stage:</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
@@ -174,7 +174,7 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
 
                                         <p>The 'OptimizationController' object is also constructed with 10 individuals and a genom length of 20, meaning that 10 individuals compete for survival, with each individual observing 20 parameter space bins simultaneously. The malus factor 'malus_factor_for_equal_bins = 1' is used to penalize individuals that look into same bins only.</p>
 
-                                        <p>In the while-loop before the experiment is performed, the best performing bins can be monitored from time to time. The next parameter set is pulled with the command `opt.step()`. Also the glitch outcome must be classified and fed into the genetic algorithm again.</p>
+                                        <p>In the while-loop before the experiment is performed, the best performing bins can be monitored from time to time. The next parameter set is pulled with the command 'opt.step()'. Also the glitch outcome must be classified and fed into the genetic algorithm again.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
