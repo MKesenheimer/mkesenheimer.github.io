@@ -112,7 +112,7 @@
                                             </pre>
                                         </div>
 
-                                        <p>After initializing the glitcher, the parameter space must be defined. This is done by defining the parameter space boundaries, and the corresponding divisions into bins. If for example, the parameter space is three-dimensional (glitch delay and length parameter and an additional time parameter for an intermediate voltage step), the parameter space would look like this:</p>
+                                        <p>After initializing the glitcher, the parameter space must be defined. This is done by defining the parameter space boundaries, and the corresponding divisions into bins. If for example, the parameter space is three-dimensional (glitch 'delay' and 'length' parameter and an additional time parameter 't1' for an intermediate voltage step), the parameter space would look like this:</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
@@ -124,6 +124,8 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
                                                 </code>
                                             </pre>
                                         </div>
+
+                                        <p>The 'delay' and 't1' intervals are divided into 10 bins, whereas the 'length' interval is divided into 5 bins, which sums up to 500 total bins. These 500 bins are used for the parameter search and the optimum parameters are determined on the basis of this binning. The number of bins can be increased, which increases the search time but improves accuracy.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
