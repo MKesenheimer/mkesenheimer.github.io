@@ -132,6 +132,28 @@ opt = OptimizationController(parameter_boundaries=boundaries, parameter_division
                                                 <img title="" alt="" src="/Resources/Persistent/2025/01/glitch-parameter.bmp" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <p>In the while-loop before the experiment is performed, the best performing bins can be monitored from time to time. The next parameter set is pulled with the command `opt.step()`. Also the glitch outcome must be classified and fed into the genetic algorithm again.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+                                                    <div># get the next parameter set
+delay, t1, length = opt.step()
+if experiment_id % 100 == 0:
+    opt.print_best_performing_bins()
+
+# perform arming, triggering, read response
+[...]
+
+# classify response
+color, weight = glitcher.classify(response)
+
+# add experiment to parameterspace of genetic algorithm
+opt.add_experiment(weight, delay, t1, length)</div>
+                                                </code>
+                                            </pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
