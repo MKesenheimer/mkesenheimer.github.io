@@ -76,7 +76,15 @@
                                             </div>
                                         </div>
 
-                                        <p></p>
+                                        <p>As you might have guessed by now, I'm a big fan of the Raspberry Pico microcontrollers. These microcontrollers are very easy to program (for example via Micropython), and still manage to be very powerful (see <a href="https://github.com/MKesenheimer/fault-injection-library">findus and the Pico Glitcher</a>).  Early on, I wondered whether this series of microcontrollers could be glitched. Besides, wouldn't it be damn cool to glitch the Raspberry Pico with a Raspberry Pico?</p>
+
+                                        <p>The question was answered for me at the end of 2024 by Aedan Cullen, who gave a very interesting talk at 38C3. You should definitely watch his video on how to attack the rp2350. He goes into remarkable technical depth in this video (<a href="https://media.ccc.de/v/38c3-hacking-the-rp2350">link to the video</a>). In summary, he presented his research on fault injection of the rp2350.</p>
+
+                                        <p>The question of whether the rp2350 is vulnerable should be answered in a competition. The Raspberry Foundation offered a bounty of $10,000 for those who could find a vulnerability in the boot mechanism (<a href="https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/">https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/</a>). The results of this challenge can be found at <a href="https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/">https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/</a>.</p>
+
+                                        <p>The rp2350's security architecture includes several interrelated mechanisms that together provide authentication of code running on the chip, protected one-time-programmable memory, fine-grained control of debugging features, and so on. An anti-fuse OTP memory serves as the system's root of trust, informing the configuration of the ARM TrustZone and additional attack mitigations such as glitch detectors. Raspberry Pi even builds an impressive custom Redundancy Coprocessor (RCP) that hardens the execution of boot ROM code on the Cortex-M33 cores with stack protection, data validation and instruction latency randomisation.</p>
+
+                                        <p>There you have it. Hacking the rp2350 should be impossible, right? Let's prove that wrong.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
