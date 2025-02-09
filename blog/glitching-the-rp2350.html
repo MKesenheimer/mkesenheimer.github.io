@@ -84,7 +84,13 @@
 
                                         <p>The rp2350's security architecture includes several interrelated mechanisms that together provide authentication of code running on the chip, protected one-time-programmable memory, fine-grained control of debugging features, and so on. An anti-fuse OTP memory serves as the system's root of trust, informing the configuration of the ARM TrustZone and additional attack mitigations such as glitch detectors. Raspberry Pi even builds an impressive custom Redundancy Coprocessor (RCP) that hardens the execution of boot ROM code on the Cortex-M33 cores with stack protection, data validation and instruction latency randomisation.</p>
 
-                                        <p>There you have it. Hacking the rp2350 should be impossible, right? Let's prove that wrong.</p>
+                                        <p>There you have it. Hacking the rp2350 should be impossible, right? Let's prove that wrong. In the following sections I will show how I verified the results by Aedan Cullen.</p>
+
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h1>Preparing the target</h1>
+                                            </div>
+                                        </div>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
