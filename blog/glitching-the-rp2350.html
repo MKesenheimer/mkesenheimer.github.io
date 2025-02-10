@@ -138,7 +138,15 @@
                                             </div>
                                         </div>
 
-                                        <p></p>
+                                        <p>Our setup is as follows. The Pico Glitcher supplies the target board with voltage. At the same time, a voltage of 3.3V is applied to the USB_OTP_VDD pin via a current meter. The reset output of the Pico Glitcher is connected both to the reset pin of the target board and to the TRIGGER input of the Pico Glitcher itself. The trigger signal will be the reference point for timing our glitches.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/02/rp2350-glitching.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>The contact to the USB_OTP_VDD pin is made with a PCBite measuring probe, see the following figures.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -146,15 +154,13 @@
                                             </figure>
                                         </div>
 
-                                        <p></p>
-
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/02/09-glitching-setup-rp2350.JPG" width="3264" height="2448" />
                                             </figure>
                                         </div>
 
-                                        <p></p>
+                                        <p>The overall setup can be seen in the next two figures.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -162,47 +168,35 @@
                                             </figure>
                                         </div>
 
-                                        <p></p>
-
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/02/11-overall.JPG" width="3264" height="2448" />
                                             </figure>
                                         </div>
 
-                                        <p></p>
+                                        <p>After setting up our environment, we verify whether the board is still accessible via USB and, in particular, whether the current curve recorded at the USB_OTP_VDD pin has the same structure measured by Aedan Cullen. And indeed, the following image shows a strongly fluctuating current consumption via the USB_OTP_VDD pin. This is due to the different current consumption via this pin during the start-up process, as different registers are addressed and read.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/02/12-voltage-trace.bmp" width="3264" height="2448" />
+                                                <img title="" alt="" src="/Resources/Persistent/2025/02/12-current-trace.bmp" width="3264" height="2448" />
                                             </figure>
                                         </div>
 
-                                        <p></p>
+                                        <p>We position our glitch exactly at the point defined by Aeden Cullen after the OTP bits have been read. In our case this is about 1.75ms after the reset. (Credits Aeden Cullen)</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/02/13-glitch1.bmp" width="3264" height="2448" />
+                                                <img title="" alt="" src="/Resources/Persistent/2025/02/glitch-timing-aedan_cullen.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
 
-                                        <p></p>
+                                        <p>Firstly, we get an overview of the parameter space by calling the glitcher script. This script can be found at <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/rp2350-glitching/rpi2350-glitching.py">rpi2350-glitching</a> and is included in the <a href="https://github.com/MKesenheimer/fault-injection-library/tree/master">fault-injection-library</a>.</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/02/14-glitch2.bmp" width="3264" height="2448" />
-                                            </figure>
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">python rpi2350-glitching.py --rpico /dev/tty.usbmodem11401 --delay 1_700_000 1_800_000 --length 1000 5000</code>
+                                            </pre>
                                         </div>
-
-                                        <p></p>
-
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/02/15-glitch3.bmp" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p></p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -210,7 +204,23 @@
                                             </figure>
                                         </div>
 
-                                        <p></p>
+                                        <p>The following figure shows the current trace with the glitch at 1.76ms after the reset.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/02/14-glitch2.bmp" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Once the first successful points have been found, the search can be refined. To do this, we call the script with the following parameters:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">python rpi2350-glitching.py --rpico /dev/tty.usbmodem11401 --delay 1_730_000 1_765_000 --length 4300 550</code>
+                                            </pre>
+                                        </div>
+
+                                        <p>This leads to this parameter space:</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
