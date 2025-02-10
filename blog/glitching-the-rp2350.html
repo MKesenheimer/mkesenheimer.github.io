@@ -84,21 +84,27 @@
 
                                         <p>As you might have guessed by now, I'm a big fan of the Raspberry Pico microcontrollers. These microcontrollers are very easy to program (for example via Micropython), and still manage to be very powerful (see <a href="https://github.com/MKesenheimer/fault-injection-library">findus and the Pico Glitcher</a>).  Early on, I wondered whether this series of microcontrollers could be glitched. Besides, wouldn't it be damn cool to glitch the Raspberry Pico with a Raspberry Pico?</p>
 
-                                        <p>The question was answered for me at the end of 2024 by Aedan Cullen, who gave a very interesting talk at 38C3. You should definitely watch his video on how to attack the rp2350. He goes into remarkable technical depth in this video (<a href="https://media.ccc.de/v/38c3-hacking-the-rp2350">link to the video</a>). In summary, he presented his research on fault injection of the rp2350.</p>
+                                        <p>At the end of 2024, security researcher Aedan Cullen answered this question during his talk at 38C3. He presented fascinating research on fault injection attacks targeting the RP2350 microcontroller. If you haven't seen his talk yet, I highly recommend watching it here:  (<a href="https://media.ccc.de/v/38c3-hacking-the-rp2350">Hacking the RP2350 (38C3)</a>).</p>
 
-                                        <p>The question of whether the rp2350 is vulnerable should be answered in a competition. The Raspberry Foundation offered a bounty of $10,000 for those who could find a vulnerability in the boot mechanism (<a href="https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/">https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/</a>). The results of this challenge can be found at <a href="https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/">https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/</a>.</p>
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>The $10,000 RP2350 Hacking Challenge</h2>
+                                            </div>
+                                        </div>
 
-                                        <p>The rp2350's security architecture includes several interrelated mechanisms that together provide authentication of code running on the chip, protected one-time-programmable memory, fine-grained control of debugging features, and so on. An anti-fuse OTP memory serves as the system's root of trust, informing the configuration of the ARM TrustZone and additional attack mitigations such as glitch detectors. Raspberry Pi even builds an impressive custom Redundancy Coprocessor (RCP) that hardens the execution of boot ROM code on the Cortex-M33 cores with stack protection, data validation and instruction latency randomisation.</p>
+                                        <p>To assess the security of the RP2350, the Raspberry Pi Foundation launched a $10,000 bounty for anyone who could break the boot mechanism (<a href="https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/">https://www.raspberrypi.com/news/raspberry-pi-pico-2-our-new-5-microcontroller-board-on-sale-now/</a>). The challenge results are summarized here: <a href="https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/">https://www.raspberrypi.com/news/security-through-transparency-rp2350-hacking-challenge-results-are-in/</a>.</p>
+
+                                        <p>The rp2350's security architecture includes several interrelated mechanisms that together provide authentication of code running on the chip, protected one-time-programmable memory, fine-grained control of debugging features, and so on. An anti-fuse OTP memory serves as the system's root of trust, informing the configuration of the ARM TrustZone and additional attack mitigations such as glitch detectors. Raspberry Pi even builds an impressive custom Redundancy Coprocessor (RCP) that hardens the execution of boot ROM code on the Cortex-M33 cores with stack protection, data validation and instruction latency randomization.</p>
 
                                         <p>There you have it. Hacking the rp2350 should be impossible, right? Let's prove that wrong. In the following sections I will show how I verified the results by Aedan Cullen.</p>
 
                                         <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
                                             <div>
-                                                <h1>Preparing the target</h1>
+                                                <h1>Reproducing the Attack</h1>
                                             </div>
                                         </div>
 
-                                        <p>I started working on a Pico board based on the example from Aedan Cullen. The first step was to remove the microcontroller from the board in order to access the traces.</p>
+                                        <p>I set out to verify Aedan Cullen's research by replicating the attack myself. The first step was to remove the microcontroller from the board in order to access the traces.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -114,7 +120,7 @@
                                             </figure>
                                         </div>
 
-                                        <p>Here is a better resolution image. Unfortunately, I don't have a microscope to take the picture myself. So the credit goes to Aeden Cullen.</p>
+                                        <p>Here is a better resolution image. Unfortunately, I don't have a microscope to take the picture myself. So the credit goes to Aedan Cullen.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -180,6 +186,12 @@
                                             </figure>
                                         </div>
 
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h1>Identifying the Glitch Timing</h1>
+                                            </div>
+                                        </div>
+
                                         <p>After setting up our environment, we verify whether the board is still accessible via USB and, in particular, whether the current curve recorded at the USB_OTP_VDD pin has the same structure measured by Aedan Cullen. And indeed, the following image shows a strongly fluctuating current consumption via the USB_OTP_VDD pin. This is due to the different current consumption via this pin during the start-up process, as different registers are addressed and read.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
@@ -188,7 +200,7 @@
                                             </figure>
                                         </div>
 
-                                        <p>We position our glitch exactly at the point defined by Aeden Cullen after the OTP bits have been read. In our case this is about 1.75ms after the reset. (Credits Aeden Cullen)</p>
+                                        <p>We position our glitch exactly at the point defined by Aedan Cullen after the OTP bits have been read. In our case this is about 1.75ms after the reset. (Credits Aedan Cullen).</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -218,6 +230,12 @@
                                             </figure>
                                         </div>
 
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h1>Refining the Glitch Attack</h1>
+                                            </div>
+                                        </div>
+
                                         <p>Once the first successful points have been found, the search can be refined. To do this, we call the script with the following parameters:</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
@@ -241,6 +259,22 @@
                                                 <img title="" alt="" src="/Resources/Persistent/2025/02/18-success.png" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h1>Conclusion</h1>
+                                            </div>
+                                        </div>
+
+                                        <p>To summarize:</p>
+
+                                        <ul>
+                                            <li>The RP2350's security isn't flawless - it can be glitched under specific conditions.</li>
+                                            <li>Fault injection attacks remain a critical threat, even against modern microcontrollers.</li>
+                                            <li>Hardware security requires multi-layered protection - Raspberry P's efforts (TrustZone, glitch detectors, RCP) are impressive but still vulnerable.</li>
+                                        </ul>
+
+                                        <p>I'll be further exploring fault injection attacks and potential countermeasures. If you're interested, stay tuned for future posts!</p>
                                     </div>
                                 </div>
                             </div>
