@@ -219,7 +219,7 @@ return color, weight</code>
                                             </div>
                                         </div>
 
-                                        <p>To test the genetic algorithm and the multiplexing stage, the ESP32v1.3 was attacked. The complete script to attack this processor can be found <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/esp32v1.3-glitching/esp32v1.3-glitcher.py">here</a>.</p>
+                                        <p>To test the genetic algorithm and the multiplexing stage, the ESP32v1.3 was attacked. The complete script to attack this processor can be found <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/esp32v1.3/esp32v1.3-glitcher.py">here</a>.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -227,7 +227,7 @@ return color, weight</code>
                                             </figure>
                                         </div>
 
-                                        <p>In this case, the ESP32 was flashed with a simple program that increments a control variable in a loop (similar to the program used for the <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/rp2040-glitching/rpi-program/main.cpp">glitching attack on the rp2040</a>). While this control variable is incremented, a GPIO pin is enabled and the glitch is set while this pin is high.</p>
+                                        <p>In this case, the ESP32 was flashed with a simple program that increments a control variable in a loop (similar to the program used for the <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/projects/rp2040/rpi-program/main.cpp">glitching attack on the rp2040</a>). While this control variable is incremented, a GPIO pin is enabled and the glitch is set while this pin is high.</p>
 
                                         <p>The result is that the control variable is incorrectly incremented and subsequently the variable does not contain the expected result. The correctness of the variable can be checked by sending the control variable to the attacker computer via UART.</p>
 
