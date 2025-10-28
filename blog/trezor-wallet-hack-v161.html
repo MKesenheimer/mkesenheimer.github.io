@@ -85,18 +85,20 @@
 
                                         <p>Voltage glitching, which involves briefly tampering with the device's power supply to induce faults, can be necessary if the owner of the device has forgotten their PIN for unlocking the crypto wallet. By precisely timing these glitches, we can bypass security checks and extract sensitive data, such as the wallets passphrase.</p>
 
-                                        <p>This article will explain how to attack the Trezor One with firmware versions v1.6.1 and newer, and how to get from read-out protection level 2 (RDP2) to complete flash access. While <a href="https://blog.kraken.com/product/security/kraken-identifies-critical-flaw-in-trezor-hardware-wallets">a previous research from Kraken</a> showed that it is possible to get complete flash access to the device, the flash layout is different for devices with legacy firmware version v1.6.1. For this attack, the STM32-QFP64 adapter from Waveshare proved to be very helpful.</p>
+                                        <p>This article will explain how to attack the Trezor One with firmware versions v1.6.1 and newer, and how to get from read-out protection level 2 (RDP2) to complete flash access. While <a href="https://blog.kraken.com/product/security/kraken-identifies-critical-flaw-in-trezor-hardware-wallets">a previous research from Kraken</a> showed that it is possible to get complete flash access to the device, the flash layout is different for devices with legacy firmware version v1.6.1.</p>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>STM32-QFP64 adapter</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>For this attack, the STM32-QFP64 adapter from Waveshare proved to be very helpful.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
                                                 <img title="" alt="" src="/Resources/Persistent/2025/10/images-flash-dump/01-stm32-qfp64-adapter.png" width="3264" height="2448" />
                                             </figure>
-                                        </div>
-
-                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
-                                            <div>
-                                                <h2>Preparation of the STM32-QFP64 adapter</h2>
-                                            </div>
                                         </div>
 
                                         <p>An SMA connector is soldered to the bottom of the board as shown below. This helps injecting the voltage glitches precisely and without much distortion. The SMA connector is held in place with a bit of glue.</p>
@@ -113,7 +115,7 @@
                                             </div>
                                         </div>
 
-                                        <p>The complete setup is shown in the following figure.</p>
+                                        <p>The complete setup for this attack is shown in the following figure.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
