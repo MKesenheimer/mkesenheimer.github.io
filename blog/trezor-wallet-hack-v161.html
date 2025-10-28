@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/blog/pico-glitcher-v2.html">Pico Glitcher</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Attacking the Trezor One Crypto Wallet (new firmware)</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">Glitching firmware versions v1.6.1 and newer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <!-- Text -->
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-warning">
+                                            <div>
+                                                <p>I am selling the PicoGlitcher on <a href="https://www.tindie.com/stores/faulty-hardware/">tindie.com</a>.</p>
+                                                
+                                                <p>More links:</p>
+                                                <ul>
+                                                    <li>The Pico Glitcher and findus (the software to control the Pico Glitcher) is open source: <a href="https://github.com/MKesenheimer/fault-injection-library">fault-injection-library</a></li>
+                                                    <li>Documentation of the Pico Glitcher and findus: <a href="https://fault-injection-library.readthedocs.io/en/latest/">fault-injection-library.readthedocs.io</a></li>
+                                                    <li>hackaday.io project page: <a href="https://hackaday.io/project/196357-picoglitcher">hackaday.io/project/196357-picoglitcher</a></li>
+                                                    <li>The Pico Glitcher was featured on Hackaday: <a href="https://hackaday.com/2024/10/30/use-picoglitcher-for-voltage-glitching-attacks/">hackaday.com/2024/10/30/use-picoglitcher-for-voltage-glitching-attacks/</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <p>The Trezor One is one of the earliest and most popular hardware wallets for securely storing cryptocurrencies. It isolates private keys from internet-connected devices, providing strong protection against malware and remote attacks.</p>
+
+                                        <p>Voltage glitching, which involves briefly tampering with the device's power supply to induce faults, can be necessary if the owner of the device has forgotten their PIN for unlocking the crypto wallet. By precisely timing these glitches, we can bypass security checks and extract sensitive data, such as the wallets passphrase.</p>
+
+                                        <p>This article will explain how to attack the Trezor One with firmware versions v1.6.1 and newer, and how to get from read-out protection level 2 (RDP2) to complete flash access. While <a href="https://blog.kraken.com/product/security/kraken-identifies-critical-flaw-in-trezor-hardware-wallets">a previous research from Kraken</a> showed that it is possible to get complete flash access to the device, 
+
+                                            With RDP1 enabled, other attacks can be performed, for example reading out the chips SRAM to extact the passphrase. This attack has been shown previously by <a href="https://blog.kraken.com/product/security/kraken-identifies-critical-flaw-in-trezor-hardware-wallets">Kraken</a>, <a href="https://chip.fail">chip.fail</a> and <a href="https://wallet.fail">wallet.fail</a>. However, as the issue of extracting the wallet's passphrase with SRAM access has been resolved in later firmware versions, this attack will not work on versions v1.6.1 and above. A later blog post will cover a new attack that works on all recent Trezor wallets.</p>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
