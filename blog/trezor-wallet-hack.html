@@ -189,7 +189,7 @@
 
                                         <p>The level of the voltage supply should slowly rise in comparison to the voltage on the 'V_CAP' line. Furthermore, the voltage output on the 'VCAP' line is delayed approximately 150ms after the device is powered on. Powering the device and measuring the voltage traces can be done with the command:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">power-on --rpico /dev/tty-device</code>
                                             </pre>
@@ -211,7 +211,7 @@
 
                                         <p>Successful glitches should be found about 176us after the 'VCAP' line comes up. We start by searching a wider parameter space and reduce the parameter space when the first positive events are observed. The glitch length is not critical, but in general shorter glitches are preferable.</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">python stm32f2-boot-debugger.py --rpico /dev/tty-device --length 100 500 --delay 175_600 176_700 --halt [--resume]</code>
                                             </pre>
@@ -219,7 +219,7 @@
 
                                         <p>We can use the 'analyzer' from 'findus' to analyze the glitch parameters:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">analyzer --directory databases --auto-update 60</code>
                                             </pre>
@@ -233,7 +233,7 @@
 
                                         <p>When the script is stopped (when a successful glitch is detected), further instructions are printed to the terminal:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
 [+] Experiment 158	12914	(3)	176526	126	R	b'success: read zero'
@@ -255,7 +255,7 @@
 
                                         <p>In this state, we can either try to dump the RAM contents:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; dump_image ram.bin 0x20000000 0x1fffffff; exit"</code>
                                             </pre>
@@ -263,7 +263,7 @@
 
                                         <p>Or we can connect to the device via telnet or gdb. First, a debug connection with openocd is initialized:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32f4x.cfg -c "init; reset run"</code>
                                             </pre>
@@ -271,7 +271,7 @@
 
                                         <p>Then we connect to the device via telnet:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">telnet localhost 4444</code>
                                             </pre>
@@ -279,7 +279,7 @@
 
                                         <p>Or GDB:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">
 arm-none-eabi-gdb
@@ -292,7 +292,7 @@ arm-none-eabi-gdb
 
                                         <p>By dumping the RAM in this state, the recovery key should be visible in the dump. Observe the RAM dump with the 'strings' command:</p>
 
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
                                                 <code class="language-php">strings ram.bin</code>
                                             </pre>
