@@ -89,11 +89,31 @@
 
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
                                             <div>
+                                                <h2>Prerequisites</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>The following tools and materials are needed for the attack:</p>
+
+                                        <ul>
+                                            <li>Pico Glitcher v2.1 or later</li>
+                                            <li>ST-Link-V2 debug adapter</li>
+                                            <li>An adjustable power supply (for example RD6006)</li>
+                                            <li>Logic Analyzer (for example Dreamwave Logic Pro)</li>
+                                            <li>[QFP-64 STM32 adapter](https://www.waveshare.com/stm32-qfp64.htm)</li>
+                                            <li>4.7kΩ resistors</li>
+                                            <li>SMA cables and connectors</li>
+                                            <li>Jumper cables</li>
+                                            <li>Optional: a breadboard</li>
+                                        </ul>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
                                                 <h2>STM32-QFP64 adapter</h2>
                                             </div>
                                         </div>
 
-                                        <p>For this attack, the STM32-QFP64 adapter from Waveshare proved to be very helpful.</p>
+                                        <p>For this attack, the STM32-QFP64 adapter from Waveshare proved to be very helpful. This adapter can be used to quickly swap out different targets and to easily access different pins of the chip. It also supplies power to the chip and enables different boot configurations to be selected via the jumpers.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -147,7 +167,7 @@
                                             </figure>
                                         </div>
 
-                                        <p>The `4.7kΩ` pull-up resistors on the `TX` and `RX` line:</p>
+                                        <p>The '4.7kΩ' pull-up resistors on the 'TX' and 'RX' line:</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-image">
                                             <figure>
@@ -176,6 +196,30 @@
                                                 <img title="" alt="" src="/Resources/Persistent/2025/10/images-flash-dump/10-setup.jpg" width="3264" height="2448" />
                                             </figure>
                                         </div>
+
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Voltage traces</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>We can now verify the startup sequence of the STM32F205 by measuring the voltage traces during startup:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/10/images-flash-dump/20-startup.bmp" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>The level of the voltage supply should slowly rise in comparison to the voltage on the 'V_CAP' line. Furthermore, the voltage output on the 'VCAP' line is delayed approximately '150ms' after the device is powered on. Powering the device and measuring the voltage traces can be done with the command:</p>
+
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-code">
+                                            <pre class="line-numbers-rows">
+                                                <code class="language-php">power-on --rpico /dev/tty-device</code>
+                                            </pre>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
