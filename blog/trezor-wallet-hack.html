@@ -47,12 +47,12 @@
                         <div class="neos-contentcollection">
                             <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
                                 <div>
-                                    <h1 style="text-align: center">Pico Glitcher v2</h1>
+                                    <h1 style="text-align: center">Attacking the Trezor One Crypto Wallet</h1>
                                 </div>
                             </div>
                             <div class="paddingTop0 paddingBottom0 kesenheimer-text">
                                 <div>
-                                    <p style="text-align:center">A device to perform fault-injection attacks</p>
+                                    <p style="text-align:center">Successfully glitching firmware versions v1.6.1 and later</p>
                                 </div>
                             </div>
                         </div>
@@ -87,132 +87,38 @@
                                             </div>
                                         </div>
 
-                                        <p>Compared to hardware <a href="https://fault-injection-library.readthedocs.io/en/latest/overview/#what-is-the-pico-glitcher-v1">revision 1</a>, several new features have been added in revision 2. However, the basic usage is the same and the scripts for version 1 will also (likely) work for version 2.</p>
-                                        
-                                        <!-- front image -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/front.jpg" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p>The hardware is based on the Raspberry Pi Pico, two high-power MOSFETs for crowbar glitch generation, and two level shifters to ensure compatibility over a wide voltage range. A newly designed input stage (EXT1 and EXT2) can be used to filter out noise and other disturbances via adjustable Schmitt Triggers. The multiplexing output can be used to quickly switch between up to four different voltage levels and to supply the target board with power.</p>
-
-                                        <p>The second revision of the Pico Glitcher can also be modified to suit your needs. The Pico Glitcher v2 is built from the following components:</p>
-
-                                        <!-- components -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/pico-glitcher-v2.1-components.png" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p>If you want to write code for additional communication protocols, such as a UART-to-USB adapter, or an SPI-to-USB adapter, then the unused GPIO pins are perfect for that. Pins GPIO16 - GPIO19 are connected to the Raspberry Pi Pico without a level shifter and can be used bi-directionally. The output pins with level-shifting are GPIO4 - GPIO9. For inputs with level shifter the pins GPIO15, GPIO20 and GPIO21 can be used.</p>
-
-                                        <!-- section multiplexing -->
                                         <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
                                             <div>
-                                                <h2>Multiplexing</h2>
+                                                <h2>Glitching firmware versions pior to v1.6.0</h2>
                                             </div>
                                         </div>
 
-                                        <p>Multiplexing is a technique to quickly switch between different supply voltage levels of the microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the microcontroller. A fundamental difference is that with the multiplexing-fault-injection method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
+                                        <p>This short summary will explain how to attack the Trezor One and how to get from RDP level 2 to RDP level 1 with access to RAM. With RAM access, other attacks can be performed, for example another voltage glitching attack to downgrade from RDP-1 to RDP-0.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                        <p>With the second hardware revision of the Pico Glitcher, it is possible to create different voltage profiles and apply them to the supply voltage of the target. This is made possible by the introduction of the multiplexing stage. The multiplexing stage also allows the target to be supplied with power. It is therefore not necessary to additionally supply the target with voltage via the 'VTARGET' output.</p>
-
-                                        <p>The following setup can be used to test the multiplexing stage of the Pico Glitcher v2:</p>
-
-                                        <!-- Multiplexing test setup -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/multiplexing-test-setup.png" width="3264" height="2448" />
-                                            </figure>
+                <!-- Block -->
+                <div class="color-white paddingTop30 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <!-- Text -->
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div class="paddingTop0 paddingBottom15 kesenheimer-headline">
+                                        <div>
+                                            <h1>Glitching firmware versions v1.6.1 and later</h1>
                                         </div>
-
-                                        <p>Note that the power supply is optional and can be used to generate a third, intermediate voltage. Without the additional power supply, the multiplexing stage of the Pico Glitcher can switch between 3.3V, 1.8V and 0V. See <a href="https://github.com/MKesenheimer/fault-injection-library/blob/master/example/pico-glitcher.py">fault-injection-library/example/pico-glitcher.py</a> for a complete test script and <a href="https://fault-injection-library.readthedocs.io/en/latest/multiplexing/#using-the-multiplexing-stage">fault-injection-library.readthedocs.io</a> for a detailed overview on how to setup and use the multiplexing stage.</p>
-
-                                        <p>The software for controlling the multiplexing stage is extremely flexible and a vast number of voltage profiles with countless parameterizations can be generated. Up to four different voltage steps can be parametrized and utilized with the general multiplexing configuration similar to</p>
-
-                                        <div class="paddingTop0 paddingBottom0 kesenheimer-code">
-                                            <pre class="line-numbers-rows">
-                                                <code class="language-php">mul_config = {"t1": t1, "v1": "GND", "t2": t2, "v2": "1.8", "t3": t3, "v3": "VCC", "t4": t4, "v4": "3.3"}</code>
-                                            </pre>
-                                        </div>
-
-                                        <p>where VCC is a user-supplied voltage level by the VIN input. Below are some examples of voltage traces that can be applied to the target.</p>
-
-                                        <p><ul>
-                                            <li>1.8V voltage step, custom voltage of 0.95V, followed by a pull to GND:</li>
-                                        </ul></p>
-
-                                        <!-- Multiplexing annotated voltage trace -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/ps_1000ns_annotated.png" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p><ul>
-                                            <li>The same pulse, but a factor 10 shorter:</li>
-                                        </ul></p>
-
-                                        <!-- Multiplexing 100ns pulse -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/ps.bmp" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p><ul>
-                                            <li>Double glitch (both to GND), separated by 400ns:</li>
-                                        </ul></p>
-
-                                        <!-- Multiplexing double glitch -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/double-crowbar-glitch.bmp" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p>In order to switch quickly between different voltage levels, the chip 'TS3A4751' from Texas Instruments is used. This chip is a 4-channel analog switch in SPST (single-pull-single-through) configuration. To make the analog switch easier to control and to reduce the signal lines from the Raspberry Pi Pico to the analog switch, a digital demultiplexer is used ('SN74LVC1G139DCUT'). Since the voltage levels are reversed after the demultiplexer, a 4-channel not-gate is used to reverse the voltage levels.</p>
-
-                                        <!-- Multiplexing schematics -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/multiplexing-schematics.png" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p>This setup seems rather complicated to switch between four different voltage levels. However, the choice of analogue switches is not exactly extensive or does not match the requirements of a fast-switching fault-injection device. The required properties of the analogue switch are as follows:</p>
-
-                                        <p><ul>
-                                            <li>Fast switching: less than 5ns switching time.</li>
-                                            <li>Number of channels: four channels for flexible switching between as many voltage levels as possible.</li>
-                                            <li>Low resistance: to avoid switching losses, a low resistance of 1Ω or less is required.</li>
-                                            <li>High output current: a high continuous current of at least 100mA is needed to keep the device powered even for a long time. This maximum current should be suitable for most microcontrollers.</li>
-                                        </ul></p>
-
-                                        <p>All these requirements are met by the 'TS3A4751', even if the choice of this chip has made controlling it a little more complicated.</p>
-
-                                        <!-- Section Schmitt Trigger inputs-->
-                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
-                                            <div>
-                                                <h2>Schmitt Trigger inputs</h2>
-                                            </div>
-                                        </div>
-
-                                        <p>The trigger inputs EXT1 and EXT2 are particularly useful for noisy logic signals, as the noise can be easily suppressed by the adjustable Schmitt Trigger. If, for example, the signal oscillates or is disturbed in any other way, this disturbances can be cut off by selecting a suitable threshold.</p>
-
-                                        <!-- Schmitt Trigger schematic -->
-                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
-                                            <figure>
-                                                <img title="" alt="" src="/Resources/Persistent/2025/01/schmitt-trigger-input-test.png" width="3264" height="2448" />
-                                            </figure>
-                                        </div>
-
-                                        <p>Use the potentiometer labeled THR to adjust the threshold of the Schmitt Trigger. The threshold is lowered by turning the potentiometer to the left.</p>
-
-                                        <p>The potentiometer ATN can be used for an additionally signal reduction, if necessary. Turning the potentiometer all the way to the right disables attenuation and uses the full signal range.</p>
+                                    </div>
+                                    <div>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
