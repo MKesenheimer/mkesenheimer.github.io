@@ -370,7 +370,7 @@ STORAGE_ROM = FLASH_STORAGE_START + sizeof(storage_magic) + sizeof(storage_uuid)
 
                                         <div class="paddingTop0 paddingBottom15 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">python stm32f2-bootloader-memread-mux.py --rpico /dev/tty.usbmodem1401 --length 100 150 --delay 195_000 198_000 --target /dev/tty.usbmodem1303 --delay2 105_000 106_000 --length2 10 50 --address 0x08008190 --size 0x1fe
+                                                <code class="language-php">python stm32f2-bootloader-memread-mux.py --rpico /dev/pico-tty-device --length 100 150 --delay 195_000 198_000 --target /dev/stm32-tty-device --delay2 105_000 106_000 --length2 10 50 --address 0x08008190 --size 0x1fe
                                                 </code>
                                             </pre>
                                         </div>
