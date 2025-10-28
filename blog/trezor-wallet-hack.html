@@ -191,7 +191,7 @@
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">power-on --rpico /dev/<tty-device></code>
+                                                <code class="language-php">power-on --rpico /dev/tty-device</code>
                                             </pre>
                                         </div>
 
@@ -209,11 +209,11 @@
                                             </figure>
                                         </div>
 
-                                        <p>Successful glitches should be found about 176us after the 'VCAP' line comes up. Start by searching a wider parameter space and reduce the parameter space when the first positive events are observed. The glitch length is not critical, but in general shorter glitches are preferable.</p>
+                                        <p>Successful glitches should be found about 176us after the 'VCAP' line comes up. We start by searching a wider parameter space and reduce the parameter space when the first positive events are observed. The glitch length is not critical, but in general shorter glitches are preferable.</p>
 
                                         <div class="paddingTop0 paddingBottom30 kesenheimer-code">
                                             <pre class="line-numbers-rows">
-                                                <code class="language-php">python stm32f2-boot-debugger.py --rpico /dev/<tty-device> --length 100 500 --delay 175_600 176_700 --halt [--resume]</code>
+                                                <code class="language-php">python stm32f2-boot-debugger.py --rpico /dev/tty-device --length 100 500 --delay 175_600 176_700 --halt [--resume]</code>
                                             </pre>
                                         </div>
 
