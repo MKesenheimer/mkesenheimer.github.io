@@ -88,7 +88,8 @@ html body {
     background: #002241;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
-    overflow-x:hidden
+    overflow-x: hidden;
+    margin: 0;
 }
 
 html body a, html body abbr, html body address, html body area, html body article, html body aside, html body audio, html body b, html body bdi, html body bdo, html body blockquote, html body body, html body br, html body button, html body canvas, html body caption, html body cite, html body code, html body col, html body colgroup, html body datalist, html body dd, html body del, html body details, html body dfn, html body dialog, html body div, html body dl, html body dt, html body em, html body embed, html body fieldset, html body figcaption, html body figure, html body footer, html body form, html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 header, html body hr, html body html, html body i, html body iframe, html body img, html body input, html body ins, html body kbd, html body keygen, html body label, html body legend, html body main, html body map, html body mark, html body menu, html body menuitem, html body meter, html body nav, html body object, html body optgroup, html body option, html body output, html body p, html body param, html body picture, html body pre, html body progress, html body q, html body rp, html body rt, html body ruby, html body s, html body samp, html body section, html body select, html body small, html body source, html body span, html body strong, html body sub, html body summary, html body sup, html body table, html body tbody, html body td, html body textarea, html body tfoot, html body th, html body thead, html body time, html body tr, html body u, html body var, html body video, html body wbr {
@@ -407,6 +408,12 @@ html body .kesenheimer-container .rotate45:after {
     border-color:transparent rgba(0, 0, 0, 0.4) transparent transparent
 }
 
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 html body #wrapper #header {
     margin-bottom: 30px
 }
@@ -446,6 +453,10 @@ html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li.current a {
     color: #bd503d
 }
 
+#content {
+    flex: 1;
+}
+
 html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
     position: relative
 }
@@ -457,7 +468,6 @@ html body #wrapper #content > .neos-contentcollection .kesenheimer-container.col
 }
 
 html body #wrapper #footer {
-    position: relative;
     margin-top: 100px;
 }
 
