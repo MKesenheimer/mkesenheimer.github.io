@@ -408,12 +408,6 @@ html body .kesenheimer-container .rotate45:after {
     border-color:transparent rgba(0, 0, 0, 0.4) transparent transparent
 }
 
-#wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 html body #wrapper #header {
     margin-bottom: 30px
 }
@@ -453,10 +447,6 @@ html body #wrapper #header .menu .kesenheimer-menu > menu-ul > li.current a {
     color: #bd503d
 }
 
-#content {
-    flex: 1;
-}
-
 html body #wrapper #content > .neos-contentcollection .kesenheimer-container.color-white > .inner {
     position: relative
 }
@@ -468,6 +458,7 @@ html body #wrapper #content > .neos-contentcollection .kesenheimer-container.col
 }
 
 html body #wrapper #footer {
+    position: relative;
     margin-top: 100px;
 }
 
