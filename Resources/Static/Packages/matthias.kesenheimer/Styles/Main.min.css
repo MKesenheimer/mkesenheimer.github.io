@@ -457,15 +457,14 @@ html body #wrapper #content > .neos-contentcollection .kesenheimer-container.col
 }
 
 html body #wrapper #footer {
-    position: relative
+    position: relative;
+    margin-top: 100px;
 }
 
 html body #wrapper #footer .copy {
-    position: absolute;
-    padding: 0;
+    position: static;
     width: 100%;
-    bottom: 0;
-    background: #001b23
+    background: #001b23;
 }
 
 html body #wrapper #footer .copy .kesenheimer-text {
