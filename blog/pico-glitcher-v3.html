@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/mkesenheimer.github.io/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#002241" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#002241" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/prism.css" />
+    <link rel="stylesheet" media="all" href="/Resources/Static/Packages/matthias.kesenheimer/Styles/Main.min.css" />
+
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/jQuery.js"></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/anime.min.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/prism.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Plugins/chart.js" defer></script>
+    <script src="/Resources/Static/Packages/matthias.kesenheimer/JavaScript/Main.js" defer></script>
+    <title>Physik, Elektronik und mehr... | Blog</title>
+    <meta name="robots" content="index,follow" />
+</head>
+
+<body class>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu">
+                <nav class="paddingTop30 paddingBottom15 kesenheimer-menu">
+                    <menu-ul>
+                        <li class=""><a href="/about-me.html">Über mich</a></li>
+                        <li class="current"><a href="/">Blog</a></li>
+                        <li class=""><a href="/blog/pico-glitcher-v2.html">Pico Glitcher</a></li>
+                        <li class=""><a href="/contact.html">Kontakt</a></li>
+                    </menu-ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="content">
+            <div class="neos-contentcollection">
+                <div class="paddingTop0 paddingBottom30 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-headline">
+                                <div>
+                                    <h1 style="text-align: center">Pico Glitcher v2</h1>
+                                </div>
+                            </div>
+                            <div class="paddingTop0 paddingBottom0 kesenheimer-text">
+                                <div>
+                                    <p style="text-align:center">A device to perform fault-injection attacks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block -->
+                <div class="color-white paddingTop0 paddingBottom0 kesenheimer-container">
+                    <div class="inner container-fluid">
+                        <div class="neos-contentcollection">
+                            <!-- Text -->
+                            <div class="neos-nodetypes-html">
+                                <div class="paddingTop30 paddingBottom15 kesenheimer-text">
+                                    <div>
+                                        <div class="paddingTop0 paddingBottom15 kesenheimer-warning">
+                                            <div>
+                                                <p>I am selling the PicoGlitcher on <a href="https://www.tindie.com/stores/faulty-hardware/">tindie.com</a>.</p>
+                                                
+                                                <p>More links:</p>
+                                                <ul>
+                                                    <li>The Pico Glitcher and findus (the software to control the Pico Glitcher) are open source: <a href="https://github.com/MKesenheimer/fault-injection-library">fault-injection-library</a></li>
+                                                    <li>Documentation of the Pico Glitcher and findus: <a href="https://fault-injection-library.readthedocs.io/en/latest/">fault-injection-library.readthedocs.io</a></li>
+                                                    <li>hackaday.io project page: <a href="https://hackaday.io/project/196357-picoglitcher">hackaday.io/project/196357-picoglitcher</a></li>
+                                                    <li>The Pico Glitcher was featured on Hackaday: <a href="https://hackaday.com/2024/10/30/use-picoglitcher-for-voltage-glitching-attacks/">hackaday.com/2024/10/30/use-picoglitcher-for-voltage-glitching-attacks/</a></li>
+                                                </ul>
+                                                <p>If you have feature requests or issues, please contact me:</p>
+                                                <ul>
+                                                    <li>twitter: <a href="https://x.com/BartimaeusvUruk">@BartimaeusvUruk</a></li>
+                                                    <li>mastodon: <a href="https://mastodon.social/@mkesenheimer">@mkesenheimer@mastodon.social</a></li>
+                                                    <li>discord: <a href="https://discord.gg/8mqEVPG6k7">https://discord.gg/8mqEVPG6k7</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <p>Compared to Pico Glitcher <a href="https://mkesenheimer.github.io/blog/pico-glitcher-v2.html">version 2</a>, several improvements were made in revision 3. However, the basic usage is the same and the software for version 2 will also work for version 3.</p>
+                                        
+                                        <!-- front image -->
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2026/01/pgfpv3.0_1.JPG" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Summary of changes:</p>
+
+                                        <p><ul>
+                                            <li>The Pico Glitcher version 3 is based on the Raspberry Pi Pico 2: higher clock speed, better accuracy in glitching attacks, more power!</li>
+                                            <li>Improved power supply: You can now choose from four different voltages to interface with various microcontrollers: 1.2V, 1.8V, 3.3V, and 5V.</li>
+                                            <li>Improved Schmitt trigger inputs provide even better and more reliable triggering.</li>
+                                        </ul></p>
+                                        
+                                        <p>Everything else is unchanged: Two high-power MOSFETs for crowbar glitch generation, and two level shifters to ensure compatibility over a wide voltage range. An Schmitt Trigger input stage (EXT1 and EXT2) can be used to filter out noise and other disturbances via adjustable Schmitt Triggers. The multiplexing output can be used to quickly switch between up to four different voltage levels and to supply the target board with power.</p>
+
+                                        <!-- Section Pico 2-->
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Upgrade to the Raspberry Pi Pico 2</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>Compared to the original Raspberry Pi Pico, the Pico 2 is simply a better platform for voltage glitching. The most obvious advantage is performance. The Pico 2 runs at a significantly higher clock speed, which directly improves timing resolution. In glitching attacks, timing is everything. Finer timing granularity means you can place glitches more precisely relative to the target's execution, which increases both reliability and repeatability.</p>
+
+                                        <p>The Pico 2 also has a more capable microcontroller core and a faster peripheral subsystem. This reduces internal latency and jitter when generating glitch pulses or coordinating trigger events. On the Pico 1, software and peripheral delays can blur timing edges. On the Pico 2, those edges are sharper and more predictable, which translates into cleaner and more consistent glitches.</p>
+
+                                        <p>Memory and DMA improvements further help with complex glitching setups. The Pico 2 can handle tighter loops, faster state machines, and higher-rate signal generation without starving the CPU or missing critical timing windows. This matters when combining voltage glitches with precise triggers, delays, or pattern-based attacks.</p>
+
+                                        <p>Finally, the Pico 2 offers more overall headroom. Higher performance means you can push glitch widths shorter, offsets finer, and repetition rates higher before hitting architectural limits. In practice, this gives you more usable attack surface and less time fighting the tool itself.</p>
+
+                                        <p>In short, the Pico 2 is not just a minor upgrade. For voltage glitching, it delivers better timing accuracy, lower jitter, and more control, all of which directly improve attack success.</p>
+
+                                        <!-- Section Power Levels-->
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Improved Power Supply</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>The improved power supply makes the Pico Glitcher far more flexible when attacking real-world targets. Modern microcontrollers operate at a wide range of core and I/O voltages, and voltage glitching is most effective when the glitch amplitude closely matches the target's supply rail. By supporting 1.2 V and 1.8 V directly, the Pico Glitcher can interface cleanly with low-power and high-performance MCUs without level shifters or external regulators.</p>
+
+                                        <p>Having native support for 3.3 V and 5 V also simplifies working with older or more traditional designs. The ability to select the correct voltage reduces the risk of over- or under-driving the target, which can otherwise lead to unstable behavior, resets, or permanent damage instead of controlled faults.</p>
+
+                                        <p>From a glitching perspective, selectable supply voltages give finer control over fault injection. Matching the nominal supply voltage allows smaller, more precise voltage drops during a glitch, increasing the chance of inducing subtle logic errors rather than full system crashes. This results in more reproducible faults and a higher success rate during attacks.</p>
+
+                                        <p>Overall, the multi-voltage power supply removes guesswork and external hardware from the setup. It lets you adapt quickly to different targets, tune glitch parameters more accurately, and focus on the attack instead of power management.</p>
+
+                                        <!-- Section Schmitt Trigger inputs-->
+                                        <div class="paddingTop15 paddingBottom15 kesenheimer-headline">
+                                            <div>
+                                                <h2>Improved Schmitt Trigger inputs</h2>
+                                            </div>
+                                        </div>
+
+                                        <p>The trigger inputs EXT1 and EXT2 are particularly useful for noisy logic signals, as the noise can be easily suppressed by the adjustable Schmitt Trigger. If, for example, the signal oscillates or is disturbed in any other way, this disturbances can be cut off by selecting a suitable threshold.</p>
+
+                                        <!-- Schmitt Trigger schematic -->
+                                        <div class="paddingTop0 paddingBottom30 kesenheimer-image">
+                                            <figure>
+                                                <img title="" alt="" src="/Resources/Persistent/2025/01/schmitt-trigger-input-test.png" width="3264" height="2448" />
+                                            </figure>
+                                        </div>
+
+                                        <p>Use the potentiometer labeled THR to adjust the threshold of the Schmitt Trigger. The threshold is lowered by turning the potentiometer to the left.</p>
+
+                                        <p>The potentiometer ATN can be used for an additionally signal reduction, if necessary. Turning the potentiometer all the way to the right disables attenuation and uses the full signal range.</p>
+
+                                        <p>The HYS potentiometer is used to adjust the hysteresis of the Schmitt trigger input EXT2. It controls the difference between the upper and lower switching thresholds. By changing this difference, it directly determines how much the input signal must move before the output changes state.</p>
+
+                                        <p>With increased hysteresis, the circuit switches "late" on a rising input, because the signal must climb higher before crossing the upper threshold. On a falling input, it switches "early", since the lower threshold is set higher. Reducing the hysteresis has the opposite effect: the rising transition occurs earlier, and the falling transition occurs later.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row paddingTop0 paddingBottom30 neos-nodetypes-twocolumn">
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 is-page neos-contentcollection"></div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 is-page neos-contentcollection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="copy">
+                <div class="inner">
+                    <div class="neos-contentcollection">
+                        <div class="paddingTop15 paddingBottom15 kesenheimer-text">
+                            <div>
+                                <p style="text-align:center">
+                                    <a href="/impressum.html">Impressum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
