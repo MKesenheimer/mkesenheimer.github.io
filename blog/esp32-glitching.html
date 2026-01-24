@@ -33,7 +33,7 @@
                     <menu-ul>
                         <li class=""><a href="/about-me.html">Über mich</a></li>
                         <li class="current"><a href="/">Blog</a></li>
-                        <li class=""><a href="/blog/pico-glitcher-v2.html">Pico Glitcher</a></li>
+                        <li class=""><a href="/blog/pico-glitcher-v3.html">Pico Glitcher</a></li>
                         <li class=""><a href="/contact.html">Kontakt</a></li>
                     </menu-ul>
                 </nav>
@@ -81,7 +81,7 @@
                                             </div>
                                         </div>
 
-                                        <p>As previously covered <a href="/blog/pico-glitcher-v2.html">here</a>, voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
+                                        <p>As previously covered <a href="/blog/pico-glitcher-v3.html">here</a>, voltage multiplexing is a technique to quickly switch between different supply voltage levels of the target microcontroller. Similar to glitching with the <a href="https://fault-injection-library.readthedocs.io/en/latest/glitches/">crowbar technique</a>, this can cause a fault in the target microcontroller. A fundamental difference is that with the voltage multiplexing method, the supply voltage of the microcontroller is not pulled to GND, but intermediate voltages can also be used, for example 1.8V or user-defined voltages. It is also possible to go through a sequence of different supply voltages, so called voltage profiles.</p>
 
                                         <p>By using the multiplexing method, the possible parameter combinations can increase exponentially, which makes the search for suitable parameters more difficult. Of course, one can also keep multiple parameters constant and only vary one specific parameter. Another option is to vary all parameters and apply a genetic algorithm to the search space to find suitable parameters.</p>
 
